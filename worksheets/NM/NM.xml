@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- rob@wave:~/courses/handouts/290demos$ xsltproc ~/mathbook/mathbook/xsl/mathbook-smc.xsl RREF-demo.xml > RREF-demo.pre -->
+<!-- rob@wave:~/courses/handouts/290demos$ ~/mathbook/mathbook/script/UUID_sagews RREF-demo.pre RREF-demo.sagews -->
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <article xml:id="NM">
+        <title>Demo: Section NM</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+            <p>First, a nonsingular <m>5\times 5</m> matrix, created at random.</p>
+
+            <sage>
+                <input>
+                A = random_matrix(QQ, 5, algorithm="unimodular", upper_bound=20)
+                A
+                </input>
+            </sage>
+
+
+            <p>Augment with the zero vector and row-reduce (Definition NM), or don't augment (Theorem NMRRI).</p>
+
+            <sage />
+
+            <p>Build some random vectors, augment and row-reduce.  Always a unique solution to the linear system represented by the augmented matrix.</p>
+
+            <sage />
+
+            <p>Cheap, easy and powerful:</p>
+
+            <sage>
+                <input>A.is_singular()</input>
+            </sage>
+
+            <p>Now, a carefully crafted singular matrix.</p>
+
+            <sage>
+                <input>
+                B = matrix(QQ, [[7,-1,-12,21,-8], [-3,3,0,-9,6], [3,3,-12,9,0], [2,3,-10,6,1], [-2,2,0,-6,4]])
+                B
+                </input>
+            </sage>
+
+
+            <p>Augment with the zero vector and row-reduce (Definition NM), or don't augment (Theorem NMRRI).</p>
+
+            <sage />
+
+            <p>Cheap, easy and powerful:</p>
+
+            <sage>
+                <input>B.is_singular()
+                </input>
+            </sage>
+
+            <p>Two carefully crafted vectors for linear systems with <c>B</c> as coefficient matrix.</p>
+
+            <sage>
+                <input>
+                c = vector(QQ, [17,-15,-3,-5,-10])
+                d = vector(QQ, [-3,1,-2,1,2])
+                </input>
+            </sage>
+
+            <p>Which column vectors will create consistent systems? (Stay tuned.)</p>
+
+            <sage />
+
+            <p>A null space is called a <q>right kernel</q> in Sage.</p>
+
+            <sage>
+                <input>
+                NS = B.right_kernel()
+                NS.list()
+                </input>
+            </sage>
+
+            <p>We can test membership in the null space.</p>
+
+            <sage>
+                <input>u = vector(QQ, [0,0,3,4,6])</input>
+            </sage>
+
+            <sage />
+
+            <sage>
+                <input>v = vector(QQ, [1,0,0,5,-2])</input>
+            </sage>
+
+            <sage />
+
+    </article>
+
+</mathbook>
