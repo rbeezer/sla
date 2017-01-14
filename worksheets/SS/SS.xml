@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- rob@wave:~/courses/handouts/290demos$ xsltproc ~/mathbook/mathbook/xsl/mathbook-smc.xsl RREF-demo.xml > RREF-demo.pre -->
-<!-- rob@wave:~/courses/handouts/290demos$ ~/mathbook/mathbook/script/UUID_sagews RREF-demo.pre RREF-demo.sagews -->
+<!-- Sage and Linear Algebra Worksheets -->
+<!--          Robert A. Beezer          -->
+<!--  Copyright 2017 License: CC BY-SA  -->
+<!--  See COPYING for more information  -->
+
 <mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <!-- EDIT output string/ID -->
     <article xml:id="SS">
-        <title>Demo: Section SS</title>
+        <title>Sage and Linear Algebra Worksheet</title>
+        <subtitle>FCLA Section SS</subtitle>
 
-        <frontmatter xml:id="index">
-            <titlepage>
-                <author>
-                    <personname>Robert Beezer</personname>
-                    <department>Department of Mathematics and Computer Science</department>
-                    <institution>University of Puget Sound</institution>
-                </author>
-                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
-                <date>Math 290, Spring 2016</date>
-            </titlepage>
+        <!-- header inclusion needs -xinclude switch on xsltproc -->
+        <frontmatter>
+            <xi:include href="../header.xml" />
         </frontmatter>
+
 
         <section>
             <title>Vector Spaces</title>
 
-            <p>It is easy in Sage to make a reasonable facsimile of <m>\mathbf{C}^n</m>.  We just restrict our attention to rational entries rather than complex entries.</p>
+            <p>It is easy in Sage to make a reasonable facsimile of <m>\mathbf{C}^n</m>.  We just restrict our attention to rational entries rather than complex entries.  This vector space contains vectors with 4 slots, each filled with a rational number.</p>
 
             <sage>
                 <input>
@@ -32,12 +29,13 @@
                 </input>
             </sage>
 
-           <p>We can test membership using the word/command <c>in</c>.</p>
+            <exercise>
+                <statement>
+                    <p>We can test membership using the word/command <c>in</c>. Try vectors with different numers of slots, and perhaps include the complex number <c>2 + 3*I</c> as an entry.</p>
+                </statement>
+            </exercise>
 
-            <sage>
-                <input>
-                </input>
-            </sage>
+            <sage />
 
         </section>
 
@@ -63,7 +61,7 @@
                 <input>A.right_kernel(basis='pivot')</input>
             </sage>
 
-            <p>Rows of the <q>basis matrix</q> are vectors in yesterday's linear combination (with scalars <m>x_3</m>, <m>x_5</m>, <m>x_6</m>).  This is a spanning set for the null space of the matrix <m>A</m>.</p>
+            <p>Rows of the <q>basis matrix</q> are vectors in yesterday's linear combination (with scalars <m>x_3</m>, <m>x_5</m>, <m>x_6</m>).  This is a spanning set for the null space of the matrix <m>A</m>.  See Theorem VFSLS and Theorem SSNS.</p>
 
             <p>Theorem PSPHS can explain how to use a single solution to the non-homogeneous system and the spanning set of the null space of the coefficient matrix to arrive at all solutions to the system.  Here is a single solution to the system.</p>
 
@@ -71,8 +69,7 @@
                 <input>A.solve_right(b)</input>
             </sage>
 
-            <p>Notice that this vector is the solution when we set each free variable to zero, which is the <q>other</q> vector from yesterday.</p>
-
+            <p>Notice that this vector is the solution when we set each free variable to zero, which is the <q>other</q> vector from yesterday that is not part of the linear combination.</p>
         </section>
 
         <section>
@@ -92,7 +89,11 @@
                 </input>
             </sage>
 
-            <p>Make a <q>random</q> linear combination and test for membership (which will be trivially true).  There are more like this.</p>
+            <exercise>
+                <statement>
+                    <p>Make a <q>random</q> linear combination of the five vectors and test for membership (which will be trivially true, repeatedly).  Remember to use the <c>*</c> operator for vector scalar multiplication.</p>
+                </statement>
+            </exercise>
 
             <sage />
 
@@ -105,8 +106,10 @@
                 </input>
             </sage>
 
+            <p>It should make sense that arbitrary linear combinations are in the span.  How did we manufacture a vector <em>not</em> in the span?  Stay tuned.</p>
+
+        <xi:include href="../legal.xml" />
+
         </section>
-
     </article>
-
 </mathbook>
