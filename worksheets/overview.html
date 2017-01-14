@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2017-01-13T20:59:15-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sage and Linear Algebra Worksheets</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="overview.html"><span class="title">Sage and Linear Algebra Worksheets</span><span class="subtitle">Overview</span></a></h1>
+<p class="byline">Robert Beezer</p>
+</div>
+</div></div>
+<nav id="primary-navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" onclick="window.location.href='overview.html'">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="article" id="overview"><section class="frontmatter" id="frontmatter-1"><h1 class="heading">
+<span class="title">Sage and Linear Algebra Worksheets</span><span class="subtitle">Overview</span>
+</h1>
+<address class="contributors"><p>Robert Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound</p></address>
+<address class="contributors">Spring 2017</address>
+<p></p></section><article class="paragraphs" id="paragraphs-1"><h5 class="heading"><span class="title">Introduction</span></h5>
+<p id="p-1">This is an overview, and Table of Contents, for the worksheets distributed here.  This work is licensed under a <a class="external-url" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a></p></article><article class="paragraphs" id="paragraphs-2"><h5 class="heading"><span class="title">Section RREF: Reduced Row-Echelon Form</span></h5>
+<p id="p-2">Construct two matrices, learning Sage syntax.  Row-reduce each.</p>
+<p id="p-3">Short: 5-10 minutes, 2 exercises. [<a class="external-url" href="RREF/RREF.html" target="_blank">HTML</a>] [<a class="external-url" href="RREF/RREF.pdf" target="_blank">PDF</a>]</p></article><article class="paragraphs" id="paragraphs-3"><h5 class="heading"><span class="title">Section NM: Reduced Row-Echelon Form</span></h5>
+<p id="p-4">Demonstrate Definition NM, Theorem NMRRI, Definition NSM, Theorem NMUS.  Experiment with random vectors of constants.  Foreshadow the column space of a matrix.  Preliminary work with vector spaces (membership).</p>
+<p id="p-5">Medium to Long: 20 minutes, 6 exercises. [<a class="external-url" href="NM/NM.html" target="_blank">HTML</a>] [<a class="external-url" href="NM/NM.pdf" target="_blank">PDF</a>]</p></article><article class="paragraphs" id="paragraphs-4"><h5 class="heading"><span class="title">Section SS: Spanning Sets</span></h5>
+<p id="p-6">For Section LC, I illustrate Theorem VFSLS by writing the row-reduced version of an augmented matrix with white chalk for the pivot columns (first columns of an identity matrix), white chalk for the zero rows, and then different colors for each of the remaining columns.  Then the vectors that describe the solution get the same numbers, or their negatives, in the same colors.  But first I place the “pattern of zeros and ones” in place in white.  Part of the entries in white is that they are known from just knowledge of the sets \(D\) and \(F\).  This example gets recycled in this Sage worksheet on the following day.  This is similar to Example VFSAI.</p>
+<p id="p-7">Null spaces, spans and membership round out the topics.  There is some foreshadowing of bases for subspaces.</p>
+<p id="p-8">Medium: 15 minutes, 2 exercises. [<a class="external-url" href="SS/SS.html" target="_blank">HTML</a>] [<a class="external-url" href="SS/SS.pdf" target="_blank">PDF</a>]</p></article><article class="paragraphs" id="paragraphs-5"><h5 class="heading"><span class="title">Section MISLE: Matrix Inverses and Systems of Linear Equations</span></h5>
+<p id="p-9">A computational illustration of Theorem CINM and its proof.  A nonsingular matrix versus a singular matrix.</p>
+<p id="p-10">Medium: 15 minutes, 4 exercises. [<a class="external-url" href="MISLE/MISLE.html" target="_blank">HTML</a>] [<a class="external-url" href="MISLE/MISLE.pdf" target="_blank">PDF</a>]</p></article><article class="paragraphs" id="paragraphs-6"><p id="p-11">This work is Copyright 2016 by Robert A. Beezer.  It is licensed under a <a class="external-url" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></article></section></div></main>
+</div>
+</body>
+</html>

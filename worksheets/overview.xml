@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Sage and Linear Algebra Worksheets -->
+<!--          Robert A. Beezer          -->
+<!--  Copyright 2016 License: CC BY-SA  -->
+<!--  See COPYING for more information  -->
+
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <article xml:id="overview">
+        <title>Sage and Linear Algebra Worksheets</title>
+        <subtitle>Overview</subtitle>
+
+        <!-- header inclusion needs -xinclude switch on xsltproc -->
+        <frontmatter>
+            <xi:include href="./header.xml" />
+        </frontmatter>
+
+        <paragraphs>
+            <title>Introduction</title>
+
+            <p>This is an overview, and Table of Contents, for the worksheets distributed here.  This work is licensed under a <url href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</url></p>.
+        </paragraphs>
+
+        <paragraphs>
+            <title>Section RREF: Reduced Row-Echelon Form</title>
+
+            <p>Construct two matrices, learning Sage syntax.  Row-reduce each.</p>
+
+            <p>Short: 5-10 minutes, 2 exercises. [<url href="RREF/RREF.html">HTML</url>]<nbsp />[<url href="RREF/RREF.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Section NM: Reduced Row-Echelon Form</title>
+
+            <p>Demonstrate Definition NM, Theorem NMRRI, Definition NSM, Theorem NMUS.  Experiment with random vectors of constants.  Foreshadow the column space of a matrix.  Preliminary work with vector spaces (membership).</p>
+
+            <p>Medium to Long: 20 minutes, 6 exercises. [<url href="NM/NM.html">HTML</url>]<nbsp />[<url href="NM/NM.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Section SS: Spanning Sets</title>
+
+            <p>For Section LC, I illustrate Theorem VFSLS by writing the row-reduced version of an augmented matrix with white chalk for the pivot columns (first columns of an identity matrix), white chalk for the zero rows, and then different colors for each of the remaining columns.  Then the vectors that describe the solution get the same numbers, or their negatives, in the same colors.  But first I place the <q>pattern of zeros and ones</q> in place in white.  Part of the entries in white is that they are known from just knowledge of the sets <m>D</m> and <m>F</m>.  This example gets recycled in this Sage worksheet on the following day.  This is similar to Example VFSAI.</p>
+
+            <p>Null spaces, spans and membership round out the topics.  There is some foreshadowing of bases for subspaces.</p>
+
+            <p>Medium: 15 minutes, 2 exercises. [<url href="SS/SS.html">HTML</url>]<nbsp />[<url href="SS/SS.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Section MISLE: Matrix Inverses and Systems of Linear Equations</title>
+
+            <p>A computational illustration of Theorem CINM and its proof.  A nonsingular matrix versus a singular matrix.</p>
+
+            <p>Medium: 15 minutes, 4 exercises. [<url href="MISLE/MISLE.html">HTML</url>]<nbsp />[<url href="MISLE/MISLE.pdf">PDF</url>]</p>
+        </paragraphs>
+
+
+        <paragraphs>
+            <xi:include href="./legal.xml" />
+        </paragraphs>
+
+    </article>
+</mathbook>
+
