@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- rob@wave:~/courses/handouts/290demos$ xsltproc ~/mathbook/mathbook/xsl/mathbook-smc.xsl RREF-demo.xml > RREF-demo.pre -->
+<!-- rob@wave:~/courses/handouts/290demos$ ~/mathbook/mathbook/script/UUID_sagews RREF-demo.pre RREF-demo.sagews -->
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <!-- EDIT output string/ID -->
+    <article xml:id="SS">
+        <title>Demo: Section SS</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+        <section>
+            <title>Vector Spaces</title>
+
+            <p>It is easy in Sage to make a reasonable facsimile of <m>\mathbf{C}^n</m>.  We just restrict our attention to rational entries rather than complex entries.</p>
+
+            <sage>
+                <input>
+                V = QQ^4
+                V
+                </input>
+            </sage>
+
+           <p>We can test membership using the word/command <c>in</c>.</p>
+
+            <sage>
+                <input>
+                </input>
+            </sage>
+
+        </section>
+
+        <section>
+            <title>Vector Form of Solutions to Homogeneous Systems</title>
+
+            <p>These are the coefficient matrix and vector of constants from yesterday's big system that led to a colored matrix in reduced row-echelon form.</p>
+
+            <p>The <c>.right_kernel()</c> method will give the vectors of the vector form of the solutions to a homogeneous system when used with the <c>basis='pivot'</c> option.</p>
+
+            <sage>
+                <input>
+                A = matrix(QQ, [[  1,  2, 12,   1,  13,  5,  2],
+                                [ -2, -3, -21,  0, -13,  2, -5],
+                                [  1,  3,  15,  4,  28, 25,  0],
+                                [ -2, -3, -21, -1, -15, -6, -3],
+                                [  1,  1,   9,  1,   4,  9,  1]])
+                b = vector(QQ, [8, -15, 7, -10, 3])
+                </input>
+            </sage>
+
+            <sage>
+                <input>A.right_kernel(basis='pivot')</input>
+            </sage>
+
+            <p>Rows of the <q>basis matrix</q> are vectors in yesterday's linear combination (with scalars <m>x_3</m>, <m>x_5</m>, <m>x_6</m>).  This is a spanning set for the null space of the matrix <m>A</m>.</p>
+
+            <p>Theorem PSPHS can explain how to use a single solution to the non-homogeneous system and the spanning set of the null space of the coefficient matrix to arrive at all solutions to the system.  Here is a single solution to the system.</p>
+
+            <sage>
+                <input>A.solve_right(b)</input>
+            </sage>
+
+            <p>Notice that this vector is the solution when we set each free variable to zero, which is the <q>other</q> vector from yesterday.</p>
+
+        </section>
+
+        <section>
+            <title>Spanning Sets</title>
+
+            <p>Example ABS from FCLA.</p>
+
+            <sage>
+                <input>
+                x1 = vector(QQ,[1,1,3,1])
+                x2 = vector(QQ,[2,1,2,-1])
+                x3 = vector(QQ,[7,3,5,-5])
+                x4 = vector(QQ,[1,1,-1,2])
+                x5 = vector(QQ,[-1,0,9,0])
+                W = span([x1, x2, x3, x4, x5])
+                W
+                </input>
+            </sage>
+
+            <p>Make a <q>random</q> linear combination and test for membership (which will be trivially true).  There are more like this.</p>
+
+            <sage />
+
+            <p>But not any old vector is in <m>W</m>.</p>
+
+            <sage>
+                <input>
+                v = vector(QQ, [1, 1, -3, 2])
+                v in W
+                </input>
+            </sage>
+
+        </section>
+
+    </article>
+
+</mathbook>
