@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<mathbook>
+
+    <!-- EDIT output string/ID in Makefile too-->
+    <article xml:id="MISLE">
+        <title>Demo: Section MISLE</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+        <section>
+            <title>An invertible matrix</title>
+
+            <p>An invertible <m>6\times 6</m> matrix.</p>
+
+
+            <sage><input>
+            A = matrix(QQ, [[1, 2, -1, -2, -1, -6], 
+                            [-2, -3, 1, 3, 1, 6], 
+                            [2, 4, -1, -4, 0, -7], 
+                            [0, -1, 1, 2, -1, 1], 
+                            [2, 4, -2, -4, -1, -8], 
+                            [1, 0, 0, 0, -1, 2]])
+            A
+            </input></sage>
+
+
+            <sage><input>
+            Ainv = A.inverse()
+            Ainv
+            </input></sage>
+
+            <sage><input>
+            Ainv*A
+            </input></sage>
+
+            <sage><input>
+            A*Ainv
+            </input></sage>
+
+            <p>Building the inverse, column by column. Use several different columns of the identity matrix.</p>
+
+            <sage><input>
+            y = vector(QQ, [1,0,0,0,0,0])
+            P = A.augment(y, subdivide=True)
+            P.rref()
+            </input></sage>
+
+
+            <p>The following is the approach of Theorem CINM.</p>
+
+            <sage><input>
+            B = A.augment(identity_matrix(6), subdivide=True)
+            B
+            </input></sage>
+
+            <sage><input>
+            B.rref()
+            </input></sage>
+
+            <sage />
+
+        </section>
+
+        <section>
+            <title>A matrix without an inverse</title>
+
+            <p>Now, a non-invertible <m>6\times 6</m> matrix.</p>
+
+            <sage><input>
+            C = matrix(QQ, [[-1, 0, 2, 8, 8, 0], 
+                            [-1, -1, 0, 1, 0, 3], 
+                            [-1, -2, -1, -4, -4, 5], 
+                            [1, 2, 1, 4, 5, -5], 
+                            [-1, -1, -1, -1, -8, 4], 
+                            [0, 1, 0, 3, 5, -1]])
+            C
+            </input></sage>
+
+
+            <sage><input>
+            C.inverse()
+            </input></sage>
+
+            <p>Trying to build the inverse, column by column.  Try different columns.</p>
+
+            <sage><input>
+            y = vector(QQ, [1,0,0,0,0,0])
+            P = C.augment(y, subdivide=True)
+            P.rref()
+            </input></sage>
+
+            <p>Any one of these results is enough to conclude that <m>C</m> does not have an inverse, following the logic of Example MWIAA.</p>
+
+            <p>It also happens that <em>no</em> column of the identity matrix leads to a
+           consistent system (for this matrix).</p>
+
+            <sage><input>
+            D = C.augment(identity_matrix(6), subdivide=True)
+            D
+            </input></sage>
+
+            <sage><input>
+            D.rref()
+            </input></sage>
+
+            <sage />
+
+        </section>
+
+    </article>
+
+</mathbook>
