@@ -1,10 +1,12 @@
-︠307d7dda-4c6c-4874-a5b9-d2f83fb756f2︠
+︠5222b52a-6e7c-4eaf-adfc-7cfb3d34e5cc︠
 %auto
-%hide
-load("mathbook-content.css")
-load("mathbook-add-on.css")
-︡f3360b4d-59ac-4523-aa8e-3513e42ab71b︡
-︠a0ed7e8c-be56-4aa8-ae51-d97ec53e0e61︠
+%html(hide=True)
+<div class="mathbook-content">
+<link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
+<link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
+</div>
+︡71fa3a06-465c-4337-a217-f83e47c8bbd7︡
+︠75860c00-2577-42bb-a9ec-1d44c9c8174e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div style="display:none;">\(
@@ -12,23 +14,23 @@ load("mathbook-add-on.css")
 \newcommand{\gt}{ &gt; }
 \newcommand{\amp}{ &amp; }
 \)</div></div>
-︡a028e967-625b-4906-a2fb-3c4aa10df0c6︡
-︠2664e5e5-c482-4f13-a532-16f619717714︠
+︡fb482443-468b-4eb7-a945-552aae3675eb︡
+︠4d7869da-c115-4df0-a495-9ebc96adc22b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡d4b48a96-f5a8-48a9-ab0d-e14d757e6e58︡
-︠e54610d2-f212-428c-ab15-0784c922cf60︠
+︡d7940fed-9bfb-41cb-a114-7b337c92a64d︡
+︠24beaa4a-d1ea-4144-a222-2bad444777a0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="MISLE"></section></div>
-︡d462b728-a2bc-45e5-a2a6-7adfea91c612︡
-︠6e7c0243-bf67-4bb5-a0d0-65a459eeab4b︠
+︡cc47af2f-9f18-4a3d-ae5f-17bc5f1a7811︡
+︠8ded59d8-977a-4f1d-ac03-c2b7e070af8c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡dba57a8c-e3b4-4b70-a18e-1e4c395170cc︡
-︠ca760e18-bfc6-447e-a586-4a58681ca9d6︠
+︡01aeff8d-814f-4c31-a902-dd48538d33cc︡
+︠fcdabda3-a25e-4112-a3b3-580905c920de︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -39,20 +41,20 @@ load("mathbook-add-on.css")
 <address class="contributors">Spring 2017</address>
 <p></p>
 </div>
-︡591c01b1-9616-4d5d-abb6-2f1777f94921︡
-︠07b14b3f-cd6e-4344-a10f-82e9a61af532︠
+︡cdb97671-a230-4051-a39d-6e5686c50e5e︡
+︠c1b7b2e2-4948-495d-ab86-8f5e5d522608︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-1"><header title="Section 1 An Invertible Matrix"><h1 class="heading hide-type" alt="Section 1 An Invertible Matrix">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">An Invertible Matrix</span>
 </h1></header></section></div>
-︡64916dd9-d974-47a9-acb9-b3cad61e1134︡
-︠3a9ccfa9-9830-4cbb-a677-f3bcd83f640a︠
+︡4d9f4423-67db-4f60-ad19-4a899e7e0950︡
+︠29db92fb-6633-412a-a1fc-a363df14e2e3︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">An invertible \(6\times 6\) matrix.</p></div>
-︡9352f22a-cc20-4dfb-a853-f56b14453a94︡
-︠537b67d8-1954-4923-a5b9-9be0605a595f︠
+︡20d0b63b-2a15-4d28-a747-3fba28a4c86a︡
+︠c9b9960d-1373-4856-a0ca-80a3adc418d8︠
 A = matrix(QQ, [[ 1,  2, -1, -2, -1, -6], 
                 [-2, -3,  1,  3,  1,  6], 
                 [ 2,  4, -1, -4,  0, -7], 
@@ -60,62 +62,60 @@ A = matrix(QQ, [[ 1,  2, -1, -2, -1, -6],
                 [ 2,  4, -2, -4, -1, -8], 
                 [ 1,  0,  0,  0, -1,  2]])
 A
-︡db2469b4-2de7-417a-a5d5-e60c76cc1256︡
-︠221568e2-c0fa-4812-a260-75671eeeaf1f︠
+︡3a1f4b54-8770-4a05-a112-ba25ec2a143e︡
+︠c79e6d9c-1249-42fa-a80c-ab6c1494fb82︠
 Ainv = A.inverse()
 Ainv
-︡53178806-bc7b-46fc-a913-98800aee98ea︡
-︠74d9b62b-cd83-48f3-a584-82d12db1c59a︠
+︡a593300c-c2f0-4c2f-a6af-35ba2ceb1d69︡
+︠01fa42a4-f66e-4720-a69b-6c0162e5ef35︠
 Ainv*A
-︡f1edba3d-60ae-443d-a786-c1892b7ec436︡
-︠f38e0384-0f4b-4e9e-ab07-2d8b7b6e923d︠
+︡9468eaa8-eaf5-4878-a9d1-44e55573a63e︡
+︠bc2241cf-9b99-4120-a9be-b02958fdca4f︠
 A*Ainv
-︡92011149-559a-4173-a034-751018b775ab︡
-︠33e44f59-9bf2-4609-a90c-e7208384b095︠
+︡8fbb10ce-0699-4fbb-a047-ef719d99b63f︡
+︠5ce17024-e2a8-4ba3-a7a8-e986b234beae︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">Building the inverse, now column by column, by solving systems of equations with the vector of constants equal to columns of an identity matrix.</p></div>
-︡bd991e86-8127-4487-ad27-a0fd0819cca6︡
-︠263cf4a8-b2ad-4ae6-a1c8-979959163d3d︠
+︡d0bc23c4-7b62-442c-a797-0818fca3161b︡
+︠5fc0ce39-2b49-4d8b-aa05-21e39df410a2︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-1" id="exercise-1"><article class="exercise-like"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h5 class="heading">
 <span class="type">Exercise</span><span class="codenumber">1</span>
-</h5></article></a></div>
-<div id="hk-exercise-1" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-3">Edit and re-run the next cell, using several different columns of the identity matrix.  Compare the solution vectors with the columns of the inverse of <tt class="code-inline tex2jax_ignore">A</tt> above.</p></article></div>
-</div>
-︡364623bd-c607-44a6-aac3-25abe05f79da︡
-︠701b73f2-1b81-43cc-a968-c9e75c7ace49︠
+</h5>
+<p id="p-3">Edit and re-run the next cell, using several different columns of the identity matrix.  Compare the solution vectors with the columns of the inverse of <tt class="code-inline tex2jax_ignore">A</tt> above.</p></article></div>
+︡c0280e74-7a0c-43d5-af86-5a74d12d53d0︡
+︠6a08317a-6e46-4b84-a07c-6d7e15f32570︠
 y = vector(QQ, [1,0,0,0,0,0])
 P = A.augment(y, subdivide=True)
 P.rref()
-︡9bab61f6-302c-4258-aeef-7b852e2a8f9d︡
-︠9383ef4d-58e7-440d-adfb-c775d93f4cfd︠
+︡5da65d8c-7ebc-4464-a97c-6eadcb2bf406︡
+︠563fd9d6-6542-4199-a620-38ed5a9868d7︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-4">Consolidating the above as the following illustrates Theorem CINM and its proof.</p></div>
-︡9802be20-c88a-40cb-adab-9620cf90fdde︡
-︠b77b92ab-273b-4238-ad12-8a9aa5a46923︠
+︡e2e22cbf-2256-4470-ade2-d1bce1779d07︡
+︠5fa31c0d-c2f2-4939-a907-be87a781f2f0︠
 B = A.augment(identity_matrix(6), subdivide=True)
 B
-︡8daf9424-05b3-40d7-a8a8-a333ed982f24︡
-︠3b2dbb2d-f22b-4638-adc3-6769b574d940︠
+︡a4f48118-eeae-4031-a9c2-18090a19c1cb︡
+︠16f1b82c-00ab-4eaf-a04c-2552f5d0f92b︠
 B.rref()
-︡e7b156c7-4c96-47fa-a0d6-34dae8f5dcf1︡
-︠de99fffc-7381-4a01-a50e-b439e12d7fa7︠
+︡53154cd7-9e73-4a6e-a963-598bc7098f3a︡
+︠b9ede3ac-b3a2-4749-a6e0-9491f590f103︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-2"><header title="Section 2 A Matrix Without an Inverse"><h1 class="heading hide-type" alt="Section 2 A Matrix Without an Inverse">
 <span class="type">Section</span><span class="codenumber">2</span><span class="title">A Matrix Without an Inverse</span>
 </h1></header></section></div>
-︡175b15a0-114a-42fb-a34c-2f059e7bceb6︡
-︠5ceb7f12-0245-4d74-a8b8-4d85313bdf98︠
+︡cbdb8bf2-7a62-4dd7-a636-6ca0e967a69a︡
+︠95661e20-1ab7-4d85-a4f9-a65564fcb934︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-5">Now, a non-invertible \(6\times 6\) matrix.</p></div>
-︡6f45bc5c-f6e3-4bca-af55-8930e7222f2b︡
-︠79bcf684-27b1-4b6d-a562-beceeb60e8f0︠
+︡4daa3b96-bb06-43df-a82e-1d472bb286cb︡
+︠b085bc04-3cf3-4321-a2b4-1c26451f7963︠
 C = matrix(QQ, [[-1,  0,  2,  8,  8,  0], 
                 [-1, -1,  0,  1,  0,  3], 
                 [-1, -2, -1, -4, -4,  5], 
@@ -123,72 +123,66 @@ C = matrix(QQ, [[-1,  0,  2,  8,  8,  0],
                 [-1, -1, -1, -1, -8,  4], 
                 [ 0,  1,  0,  3,  5, -1]])
 C
-︡47a0396c-e939-4af0-a846-a047f33531e3︡
-︠12ac2d59-932d-4dcc-ad51-301871ba6fc4︠
+︡513d6ea7-3d33-4166-a391-8aea02f126b8︡
+︠a19ef0c9-707b-4381-aaca-b45ae5ce7e43︠
 C.inverse()
-︡2e7daaaf-3435-4202-afe8-0282a036aa57︡
-︠e8565f00-f342-4973-ac61-474d9edd488a︠
+︡7f41d31a-d9a5-44ee-a68a-14f6edcbc3a1︡
+︠710c2d04-7ee1-4320-a199-badb1c9d8512︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-2" id="exercise-2"><article class="exercise-like"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-2"><h5 class="heading">
 <span class="type">Exercise</span><span class="codenumber">2</span>
-</h5></article></a></div>
-<div id="hk-exercise-2" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-6">Edit and re-run the next cell, using several different columns of the identity matrix, in attempts to construct columns of the inverse.  Just one of these failures is enough to be certain that <tt class="code-inline tex2jax_ignore">A</tt> does not have an inverse, following the logic of Example MWIAA.</p></article></div>
-</div>
-︡f724d74d-731c-46b4-a98a-bd1fabe793f1︡
-︠de8f3677-3fa5-4c01-a0a9-b56d40828257︠
+</h5>
+<p id="p-6">Edit and re-run the next cell, using several different columns of the identity matrix, in attempts to construct columns of the inverse.  Just one of these failures is enough to be certain that <tt class="code-inline tex2jax_ignore">A</tt> does not have an inverse, following the logic of Example MWIAA.</p></article></div>
+︡68365635-ba39-4c6c-ad75-6304f108e8df︡
+︠b38fad6d-2186-4a5c-a624-b88cc7ddfb6d︠
 y = vector(QQ, [1,0,0,0,0,0])
 P = C.augment(y, subdivide=True)
 P.rref()
-︡436d393b-07ab-4c6c-ad76-72bdf0e836a9︡
-︠efc4c0ef-bf75-4a4c-a613-d95975a5ddc8︠
+︡b2131b17-9381-4a37-a799-c5241fcecca3︡
+︠a55b866a-efd7-418a-a9f4-3b950b5ca194︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-7">It is the case that <!--Style me with CSS--><em>no</em> column of the identity matrix leads to a consistent system (for this matrix).  We can see all six systems with a computation reminiscent of Theorem CINM.</p></div>
-︡7a74f34e-3fdb-457f-a2e1-6cac511f7ed3︡
-︠64ed8e1d-c5d9-4031-a050-1bdb73d92570︠
+︡53aae215-d05b-4763-a2f2-62d08ebda5f4︡
+︠a474f671-c411-4f97-a2b7-51a3231d0c30︠
 D = C.augment(identity_matrix(6), subdivide=True)
 D
-︡9e47bd6d-b338-4d4b-af41-05dd140fe345︡
-︠3d385f6b-d1f0-49c4-a5c8-6ce3af8af6e3︠
+︡0e5825fa-6bf8-4ce2-a41e-c7f6a29cfa83︡
+︠b9101451-fcce-459d-a7df-5965007ac755︠
 D.rref()
-︡c100a5f0-1c20-4dbd-a119-a769b093b8a9︡
-︠b6bb6516-6239-4314-a136-ade0691fcc87︠
+︡a0ec0006-102e-4e77-abf5-a4f19f21ae8f︡
+︠4302f120-740a-42f1-a9a0-f55e6fd80879︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-3" id="exercise-3"><article class="exercise-like"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-3"><h5 class="heading">
 <span class="type">Exercise</span><span class="codenumber">3</span>
-</h5></article></a></div>
-<div id="hk-exercise-3" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-8">You might struggle to find <!--Style me with CSS--><em>any</em> vector of constants that will combine with <tt class="code-inline tex2jax_ignore">C</tt> to be a consistent systems.  (Though there are some.  And I can think of seven that are real easy to find if you think about it a bit.)</p></article></div>
-</div>
-︡53e1f570-be3f-4770-ac83-231048958610︡
-︠d73c8310-4de7-4c5f-ad17-03a23ead3245︠
+</h5>
+<p id="p-8">You might struggle to find <!--Style me with CSS--><em>any</em> vector of constants that will combine with <tt class="code-inline tex2jax_ignore">C</tt> to be a consistent systems.  (Though there are some.  And I can think of seven that are real easy to find if you think about it a bit.)</p></article></div>
+︡7bc8eb91-c05c-4a7b-ac16-d0c2f31cc254︡
+︠bd075e3e-ffe4-4c9c-a85d-f2ec4df6ac8f︠
 w = vector(QQ, [     ])
 P = C.augment(w, subdivide=True)
 P.rref()
-︡22d6e69f-6dc4-4599-a46a-c7e69253f963︡
-︠f85cf429-3870-4dc9-a61f-0d6f4f193029︠
+︡03d1b2ff-0fff-44b8-a04e-e41d05b0c5d4︡
+︠5e82f45e-35e2-452e-ae32-c27df83a9006︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-4" id="exercise-4"><article class="exercise-like"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-4"><h5 class="heading">
 <span class="type">Exercise</span><span class="codenumber">4</span>
-</h5></article></a></div>
-<div id="hk-exercise-4" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-9">Do you see the fundamental difference between the matrices <tt class="code-inline tex2jax_ignore">A</tt> and <tt class="code-inline tex2jax_ignore">B</tt>?</p></article></div>
-</div>
-︡4129e2d0-b193-4160-aad1-aef1d30ed4e0︡
-︠e221c03a-1fcb-42d2-a28f-43d44a858597︠
-︡68a8969c-1bbe-46ec-a805-75859cf1177b︡
-︠ed386cf0-81b4-4022-aca3-1299726747fb︠
+</h5>
+<p id="p-9">Do you see the fundamental difference between the matrices <tt class="code-inline tex2jax_ignore">A</tt> and <tt class="code-inline tex2jax_ignore">B</tt>?</p></article></div>
+︡554d831d-2531-4793-a577-849029853164︡
+︠7bac820a-0204-447d-a8d5-f6996b2f1607︠
+︡a8345b75-6886-4cce-aa4c-f429d95f8759︡
+︠ff2237eb-d535-4cf2-aaa7-7ab938397c0d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-10">This work is Copyright 2016 by Robert A. Beezer.  It is licensed under a <a class="external-url" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
-︡3d966f36-fc8b-408d-a348-76b0f335a8d9︡
-︠33ce7480-b866-41e0-aa90-872c4a2b88ae︠
+︡50c820f1-cd6f-422f-a5c9-c347d80117d2︡
+︠124a7496-2311-4f2d-aa4f-fba2e2f859ea︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡1e1dd926-9eef-44fe-a5a7-63f8f4210bab︡
+︡7fcb9403-a27b-446e-a212-10ec3de253c3︡
 

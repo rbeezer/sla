@@ -1,10 +1,12 @@
-︠96ace362-4ba0-4385-a4b0-63b0fc51c189︠
+︠be276d84-7c81-49ff-ac61-ff20cae47090︠
 %auto
-%hide
-load("mathbook-content.css")
-load("mathbook-add-on.css")
-︡210dee14-060b-4733-ac8e-df28f144316b︡
-︠b9db6b98-0ae0-4554-a92d-8fcb8bcc00e6︠
+%html(hide=True)
+<div class="mathbook-content">
+<link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
+<link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
+</div>
+︡34f6b533-abf3-4c93-ab5a-c59f5694b044︡
+︠1881f473-72e7-45a0-a966-33bc212b5dca︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div style="display:none;">\(
@@ -12,23 +14,23 @@ load("mathbook-add-on.css")
 \newcommand{\gt}{ &gt; }
 \newcommand{\amp}{ &amp; }
 \)</div></div>
-︡b9f8464d-e47c-45d2-a974-7f33abf78f76︡
-︠63f6c4c0-1b59-48a7-aa4e-ece2f9ee07e8︠
+︡1e3a02e7-5694-4dff-ae85-4b808a2a6883︡
+︠2a265293-ae93-4372-a26b-7a60bfbe9262︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡e4cea827-842e-4da9-a54d-43a269b58cc6︡
-︠7b196a67-4510-405d-aedc-bc31f93bf384︠
+︡59d8f2b8-557f-48a7-abdd-658d54c02638︡
+︠533c7072-cadd-490d-adb5-ae4d4e1867a6︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="NM"></section></div>
-︡dfff9590-de5e-4e64-ab51-80eb1e559582︡
-︠96195bef-ccd1-4bc8-af7d-00efb0d1576d︠
+︡a0adc2e4-4bf2-4882-a56e-b0d0e1ff9574︡
+︠c246f18e-6d95-4f2e-a284-135e4303398b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡903b9978-9346-4403-adfb-a0b9f79c9e3f︡
-︠cd00899f-1226-4976-ac56-706395a21315︠
+︡e4d3bd54-bb15-4107-af30-453a37d3b1d3︡
+︠cc8a0475-8209-471a-af1e-f63307beb6f9︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -39,151 +41,139 @@ load("mathbook-add-on.css")
 <address class="contributors">Spring 2017</address>
 <p></p>
 </div>
-︡3d23dbd7-bfae-4535-ac0b-28b8c4d67fa9︡
-︠5d68143e-ced6-4d3a-a3fb-e249a0e87681︠
+︡9c52656d-af0b-488d-a37e-1644a4b536b3︡
+︠f5f576be-46d4-416d-ae94-dab1f56aa915︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">First, a guaranteed nonsingular \(5\times 5\) matrix, created at random.</p></div>
-︡fdf651b9-f78d-4e50-a980-46390e9e614f︡
-︠24d2a235-c3c4-41ba-a242-2996294b8bdd︠
+︡c1bc6331-177f-4c96-a97f-e5a96aed4976︡
+︠f37a0ed3-0fa8-4f71-a519-5fef85a72f19︠
 A = random_matrix(QQ, 5, algorithm="unimodular", upper_bound=20)
 A
-︡af172ba5-169e-4ba9-a5cd-7f6158a94351︡
-︠0f1173d1-9e83-4c3d-a58a-30991f2c87fe︠
+︡50ddadb8-0b7b-4363-a4c4-e13c1c1b34a4︡
+︠ef5bc088-8930-4576-a8c2-ca4f75b90fdb︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-1" id="exercise-1"><article class="exercise-like"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h5 class="heading">
 <span class="type">Exercise</span><span class="codenumber">1</span>
-</h5></article></a></div>
-<div id="hk-exercise-1" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-2">Augment with the zero vector, using the matrix method <tt class="code-inline tex2jax_ignore">.augment()</tt> and the vector constructor <tt class="code-inline tex2jax_ignore">zero_vector(QQ, 5)</tt>.  Then row-reduce to use Definition NM.  Or instead, do not augment and apply Theorem NMRRI.</p></article></div>
-</div>
-︡8fda14ee-58cd-4b91-a9f9-32adcbce8557︡
-︠3e708857-6bf3-49ac-aa4c-47ee4aa1926e︠
-︡a9d1a69f-dfbd-4347-a0fc-c33a185c9ef0︡
-︠d99aa413-4e3f-4b74-a373-0363e8c44633︠
+</h5>
+<p id="p-2">Augment with the zero vector, using the matrix method <tt class="code-inline tex2jax_ignore">.augment()</tt> and the vector constructor <tt class="code-inline tex2jax_ignore">zero_vector(QQ, 5)</tt>.  Then row-reduce to use Definition NM.  Or instead, do not augment and apply Theorem NMRRI.</p></article></div>
+︡4ba9779f-f193-42eb-a867-b320395f26e0︡
+︠13cbc335-337c-479b-a222-9e5ce95488a7︠
+︡9ba6779a-dde4-495e-a571-710dee642ecd︡
+︠6681cf86-a538-4ade-a926-a98a669dacb7︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-2" id="exercise-2"><article class="exercise-like"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-2"><h5 class="heading">
 <span class="type">Exercise</span><span class="codenumber">2</span>
-</h5></article></a></div>
-<div id="hk-exercise-2" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-3">Build some random vectors with <tt class="code-inline tex2jax_ignore">random_vector(QQ, 5)</tt>, augment the matrix and row-reduce.  There will always be a unique solution to the linear system represented by the augmented matrix.  This is Theorem NMUS.</p></article></div>
-</div>
-︡60d0b74c-b9bf-4976-adbd-1b17ff0c4527︡
-︠997693ee-097b-4813-afef-cfbd7bd771da︠
-︡8630dc3b-b353-4fe4-a3d2-292d7a95206f︡
-︠af5ef3a3-e673-4971-adae-0d82b0d45f4b︠
+</h5>
+<p id="p-3">Build some random vectors with <tt class="code-inline tex2jax_ignore">random_vector(QQ, 5)</tt>, augment the matrix and row-reduce.  There will always be a unique solution to the linear system represented by the augmented matrix.  This is Theorem NMUS.</p></article></div>
+︡92e13a1b-1b14-44b2-a254-9fe1a573220e︡
+︠9917b42c-0381-48dd-aa02-f92eac420750︠
+︡5ea765b8-2ccb-4d58-abf9-ef20ddc10d85︡
+︠ee485ae1-31d0-4cb5-a575-e54152f2400d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-4">Instead—cheap, easy and powerful:</p></div>
-︡efb4db78-e5e5-497d-ab57-a5428f253748︡
-︠327e759e-d84c-4ed3-ab89-22e75668ba00︠
+︡6eca6255-3961-492d-ae84-37989fb92f92︡
+︠cf09a7bf-ce82-4015-ad0d-245cdeb87e80︠
 A.is_singular()
-︡233a2afc-8c4c-493a-ade3-61548bbf3693︡
-︠7b7a5a45-6c2b-49be-a38d-6efc288d7c41︠
+︡0501ea89-a482-4784-ac65-a89f46d0f5e7︡
+︠5fc60a18-3bdb-4e44-a31a-8b32b79988e6︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-5">Now, a carefully crafted singular matrix.</p></div>
-︡fbc7521a-886a-4305-a24d-0bcf7e70cec1︡
-︠0ccd3205-c8d3-4204-a838-63322b19be87︠
+︡f45ca56c-ea7b-4660-ab91-51d8490d2851︡
+︠f55520b9-c934-45aa-a554-7b653ae471cd︠
 B = matrix(QQ, [[ 7, -1, -12, 21, -8],
                 [-3,  3,   0, -9,  6],
                 [ 3,  3, -12,  9,  0],
                 [ 2,  3, -10,  6,  1],
                 [-2,  2,   0, -6,  4]])
 B
-︡f84c57f5-cce9-4f0a-a49d-cf0023b3d616︡
-︠e1f2d5ac-b789-418a-abc3-992a94d48ab9︠
+︡2c37158c-f463-49cd-a413-89eee29d60e2︡
+︠e0f28080-d754-4ae0-a832-bbb9aab37146︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-3" id="exercise-3"><article class="exercise-like"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-3"><h5 class="heading">
 <span class="type">Exercise</span><span class="codenumber">3</span>
-</h5></article></a></div>
-<div id="hk-exercise-3" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-6">Augment with the zero vector and row-reduce (Definition NM), or don't augment and row-reduce (Theorem NMRRI).]</p></article></div>
-</div>
-︡1aa0d857-40fd-4905-a3b2-65b9f4dc9674︡
-︠08fb8c3e-48e3-4573-abbf-d149a3d807f8︠
-︡cf0ba98d-7d55-40bd-a468-33a8c5baec1d︡
-︠4ec596e2-46f9-4cf4-a94b-28ec0b1b6f88︠
+</h5>
+<p id="p-6">Augment with the zero vector and row-reduce (Definition NM), or don't augment and row-reduce (Theorem NMRRI).]</p></article></div>
+︡43636e4e-f254-4603-a786-a326cd081896︡
+︠ee952f47-e393-4704-ab8c-22f48c28431e︠
+︡90d35f39-61c0-4541-a909-52b56328c6ce︡
+︠55e2932c-d9da-4a2f-abcf-411f7839100d︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-4" id="exercise-4"><article class="exercise-like"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-4"><h5 class="heading">
 <span class="type">Exercise</span><span class="codenumber">4</span>
-</h5></article></a></div>
-<div id="hk-exercise-4" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-7">A random vector of constants will only rarely build a consistent system when paired with <tt class="code-inline tex2jax_ignore">B</tt>.  Try it.  But this is not a theorem, see the vector <tt class="code-inline tex2jax_ignore">c</tt> below.</p></article></div>
-</div>
-︡dc691f00-1461-4e30-a3d5-efddcd8e9ee1︡
-︠7bed5fc5-fe96-4089-a1b6-6a6372101aff︠
-︡c6aa3fa0-59ff-40f7-aa03-17d7a5ab6c65︡
-︠b3c6d057-1a10-4920-a1c1-4d825280eec5︠
+</h5>
+<p id="p-7">A random vector of constants will only rarely build a consistent system when paired with <tt class="code-inline tex2jax_ignore">B</tt>.  Try it.  But this is not a theorem, see the vector <tt class="code-inline tex2jax_ignore">c</tt> below.</p></article></div>
+︡e63c9cfb-8d56-47f9-a6a5-5f76fef28029︡
+︠d0f1c8dc-46aa-4d19-a674-bd3243035948︠
+︡229136a1-2f7d-495e-a3b6-764b88f9c430︡
+︠c52666c1-7f0f-4c94-aacf-14650fdf8a4b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-8">Instead—cheap, easy and powerful:</p></div>
-︡4781e613-d2ef-4381-a39d-4ebd11092e8e︡
-︠4c6dd43f-8117-405f-a189-fd7ba9ca2e9a︠
+︡b11d7743-9b29-4ae3-ae90-ea54f53d5c8a︡
+︠83b91315-7b09-44b8-a7a1-78cddb2198e1︠
 B.is_singular()
-︡de74b59e-41f6-49fb-a814-2129cd298581︡
-︠06f7aac4-9168-48f8-a47a-89bb388620ca︠
+︡374f1522-b9eb-4327-aca1-e2aaf7629fb7︡
+︠0ee5dfbf-2690-42d3-a99e-b70520d8367e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-9">Two carefully crafted vectors for linear systems with <tt class="code-inline tex2jax_ignore">B</tt> as coefficient matrix.</p></div>
-︡2c013bc0-f625-4fa4-a7ec-276e2a7a19bd︡
-︠3d94fdfc-ee20-441a-a899-5b0ba251d7b8︠
+︡e8cdeada-a004-4031-a4da-2923e44cd734︡
+︠51d2fccc-67c7-4bda-ac18-741a80eccc3f︠
 c = vector(QQ, [17,-15,-3,-5,-10])
 d = vector(QQ, [-3,1,-2,1,2])
-︡4e5e35c3-1a23-4b65-a5fe-f4af05256fd1︡
-︠810ef43c-7469-471f-ad7e-b63663b99286︠
+︡091eb0a8-c0f9-48a6-a278-bedc85d72936︡
+︠94fa3bad-37e3-407d-a794-053d2b3f3586︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-5" id="exercise-5"><article class="exercise-like"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-5"><h5 class="heading">
 <span class="type">Exercise</span><span class="codenumber">5</span>
-</h5></article></a></div>
-<div id="hk-exercise-5" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-10">Which of these two column vectors will create a consistent system for this singular coefficient matrix? (Stay tuned.)</p></article></div>
-</div>
-︡3174f782-306a-49eb-a9b3-77abd1e9a7b3︡
-︠df4533dc-61cd-4b6c-a7f7-b7f52d606081︠
-︡4608b4c9-13ae-4064-acd3-49a3ec05d765︡
-︠8ac928df-1e2c-4c22-a1f0-439f68c7dae3︠
+</h5>
+<p id="p-10">Which of these two column vectors will create a consistent system for this singular coefficient matrix? (Stay tuned.)</p></article></div>
+︡c1bbbe66-caeb-4ee2-ab6c-0614330723db︡
+︠a9d5484b-f06d-4c4c-ae02-b18d5c153490︠
+︡f3ac9e5d-a5e1-42b6-aea6-158a2e743b8d︡
+︠c7164a59-8ff7-4112-a70c-d226c54398e1︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-11">A null space is called a <em class="terminology">right kernel</em> in Sage.</p></div>
-︡f7dc004d-05c2-4295-a4a4-5e7fee7a6444︡
-︠84b60b64-97a6-49cf-af19-468b56ad0115︠
+︡5a961d16-7a56-4178-a4e9-1cb42796b3fa︡
+︠545eb6cd-c372-4a99-a2e8-b04747feeb1d︠
 NS = B.right_kernel()
 NS.list()
-︡5aa10ad7-f7ea-4d76-ac78-6bfe75422534︡
-︠b8e5aef8-5f03-49db-a0a2-90e8e5d3708a︠
+︡562b5e11-be43-41fd-ab2c-3ec850f4edf0︡
+︠a57c0cb2-d612-4a21-a8d4-41209718cf6c︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-6" id="exercise-6"><article class="exercise-like"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-6"><h5 class="heading">
 <span class="type">Exercise</span><span class="codenumber">6</span>
-</h5></article></a></div>
-<div id="hk-exercise-6" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-12">We can test membership in the null space.  Try <tt class="code-inline tex2jax_ignore">u in NS</tt> and then repeat with <tt class="code-inline tex2jax_ignore">v</tt>.</p></article></div>
-</div>
-︡43328e18-6786-4a24-a62e-9ce74cc2f328︡
-︠e6c195fa-e626-4dd8-a13b-0c7e4cb1eb50︠
+</h5>
+<p id="p-12">We can test membership in the null space.  Try <tt class="code-inline tex2jax_ignore">u in NS</tt> and then repeat with <tt class="code-inline tex2jax_ignore">v</tt>.</p></article></div>
+︡0027d238-50f6-42a9-a427-868b6227bf71︡
+︠c82ef012-9638-4d63-a7b5-e3b7e2a1a511︠
 u = vector(QQ, [0,0,3,4,6])
-︡43605055-b3bd-4a9a-a3ae-eba69f250015︡
-︠05876d8b-23fe-40a7-abd2-9cd42734d35e︠
-︡9541daf5-6296-4190-a94e-bea92c151f96︡
-︠e2c24ad3-f468-4a72-ab07-9c536707d176︠
+︡6ea9c99d-c24f-4b26-aea1-395f141b6b17︡
+︠d757121a-0dc5-4d88-a362-5aba9cfb8569︠
+︡c412c25d-d5aa-4b82-a3b8-5131bcea760e︡
+︠0d31ff45-c1a7-4b5f-ad8b-6eca086e3e53︠
 v = vector(QQ, [1,0,0,5,-2])
-︡85848de5-0e96-474e-aafe-19a7c0ed8cff︡
-︠275bcd8b-399d-4011-aeb1-dca7378241f4︠
-︡12b6e847-380d-451e-a7f9-8c634aadcfec︡
-︠3fef6c7b-3b34-4885-a605-f825b7f64c52︠
+︡d50070fb-5ccf-4385-a36e-ecdb6d3db6c0︡
+︠996a9da9-8f55-4f9d-a4c4-3b0067d95902︠
+︡9ab045de-f6d5-4cce-aa1b-e47f4d717ca8︡
+︠e42a5602-5f93-445f-a3f1-fe56da44cc07︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-13">This work is Copyright 2016 by Robert A. Beezer.  It is licensed under a <a class="external-url" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
-︡99279940-48c8-4d41-a3b1-8a9b0520b6d1︡
-︠5aa1849a-c2fe-40d8-aa2d-761198b5d31a︠
+︡5fb7a1ea-339d-47e3-a612-810d8e8c2493︡
+︠9916118c-9e11-4eac-a669-3deca30743e8︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡97448d92-8557-4364-ac07-a8dca746c19e︡
+︡c71dd3f6-f941-4a3c-a692-fdfe9a2a26d0︡
 
