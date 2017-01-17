@@ -10,7 +10,7 @@ These are designed to be presented in class, and the overview includes time esti
 For each section covered there is
   * PDF: which does not show the empty Sage cells present elsewhere
   * HTML: a single webpage, with active Sage cells, and empty cells for the exercises.  There is no facility for saving your work with these.
-  * SageMathCloud: the native format on SageMathCloud, `*.sagews`.  Make a (free) account and upload, or pay for an account and just clone this repository with the provided internet access.  Be sure to copy the two CSS files to any folder where you place these files, they will not even render properly as-is.  Some assembly required.
+  * SageMathCloud: the native format on SageMathCloud, `*.sagews`.  Make a (free) account and upload, or pay for an account and just clone this repository with the provided internet access.
   * Jupyter Notebooks: experimental.  Functional now, but missing headers, `*.ipynb`.  These are tested in SageMathCloud, elsewhere you may need to locate and select a Sage kernel.  You can similarly save your work with your SageMathCloud account.
 
 There is a bash script, which you can experiment with.  However we are distributing, and updating, all the same outputs via this repository.
