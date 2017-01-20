@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<mathbook>
+
+    <!-- EDIT output string/ID in Makefile too-->
+    <article xml:id="CRS">
+        <title>Demo: Section CRS</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+        <section>
+            <title>Column and Row Spaces</title>
+
+            <p>This is an illustration of Theorem CSCS (and the utility of linearly independent spanning sets). <m>A</m> is a <m>5\times 7</m> matrix.</p>
+
+            <sage><input>
+            A = matrix(QQ, [[1, -1, -2, 0, 0, -2, 0], 
+                [-4, 5, 6, -3, -1, 5, 0], 
+                [-3, -2, -3, 1, -2, -2, 5], 
+                [-7, 3, 3, -2, -3, 3, 5], 
+                [-1, -5, -5, 4, -1, -3, 5]])
+            A
+            </input></sage>
+
+            <p>And its column space:</p>
+
+            <sage><input>
+            A.column_space()
+            </input></sage>
+
+            <p>Grab the elements of a linearly independent spanning set.</p>
+
+            <sage><input>
+            S = A.column_space().basis()
+            S
+            </input></sage>
+
+            <p>Any linear combination of the elements of <c>S</c> will lead to a vector of constants that will form a consistent system with coefficient matrix <c>A</c>.</p>
+
+            <sage><input>
+            b = *S[0] + *S[1] + *S[2]
+            b
+            </input></sage>
+
+
+            <sage><input>
+            P = A.augment(b, subdivide=True)
+            P.rref()
+            </input></sage>
+
+            <p>If we perturb a vector slightly, in the right place, we can quickly create an inconsistent system.</p>
+
+            <p>The vector <c>c</c> will create a consistent system.</p>
+
+            <sage><input>
+            c = *S[0] + *S[1] + *S[2]
+            c
+            </input></sage>
+
+            <p>We change one entry, in a copy of <c>c</c>, in a strategic location that is totally determined by the values of the first three entries.</p>
+
+            <sage><input>
+            d = copy(c)
+            d[4] = d[4]+1
+            d
+            </input></sage>
+
+            <sage><input>
+            P = A.augment(d, subdivide=True)
+            P.rref()
+            </input></sage>
+
+            <p>Moral: Elements of the column space are <q>vectors of constants</q> that lead to consistent systems.  It is easy, especially with a linearly independent spanning set for the column space, to make a vector-of-constants that yields an inconsistent system.</p>
+
+        </section>
+
+    </article>
+
+</mathbook>
