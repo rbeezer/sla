@@ -65,6 +65,14 @@
         </paragraphs>
 
         <paragraphs>
+            <title>Section FS: Four Subspaces</title>
+
+            <p>Computations of all the constituent matrices of extended echelon form, and exercises exploring the matrices <m>J</m> and <m>L</m> for an <m>8\times 10</m> matrix.</p>
+
+            <p>Medium: 15 minutes, 2 exercises. [<url href="FS/FS.html">HTML</url>]<nbsp />[<url href="FS/FS.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
             <xi:include href="./legal.xml" />
         </paragraphs>
 

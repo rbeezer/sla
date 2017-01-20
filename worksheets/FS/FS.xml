@@ -1,47 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!-- Sage and Linear Algebra Worksheets -->
+<!--          Robert A. Beezer          -->
+<!--  Copyright 2017 License: CC BY-SA  -->
+<!--  See COPYING for more information  -->
 
-<mathbook>
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <!-- EDIT output string/ID in Makefile too-->
     <article xml:id="FS">
-        <title>Demo: Section FS</title>
+        <title>Sage and Linear Algebra Worksheet</title>
+        <subtitle>FCLA Section FS</subtitle>
 
-        <frontmatter xml:id="index">
-            <titlepage>
-                <author>
-                    <personname>Robert Beezer</personname>
-                    <department>Department of Mathematics and Computer Science</department>
-                    <institution>University of Puget Sound</institution>
-                </author>
-                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
-                <date>Math 290, Spring 2016</date>
-            </titlepage>
+        <!-- header inclusion needs -xinclude switch on xsltproc -->
+        <frontmatter>
+            <xi:include href="../header.xml" />
         </frontmatter>
-
 
         <section>
             <title>Four Subsets</title>
 
+            <p><c>A</c> is an <m>8\times 10</m> matrix.</p>
+
             <sage><input>
-            A = matrix(QQ, [[194, -41, -899, -396, 49, 112, 874, -355, 1139, -1221], 
-                [269, -57, -1247, -549, 68, 155, 1212, -492, 1579, -1693], 
-                [16, -3, -73, -33, 4, 10, 72, -30, 95, -101], 
-                [115, -24, -532, -235, 29, 67, 518, -211, 676, -724], 
-                [10, 1, -37, -23, 2, 12, 44, -24, 67, -65], 
-                [-59, 13, 275, 120, -15, -33, -266, 107, -345, 371], 
-                [36, -7, -165, -74, 9, 22, 162, -67, 213, -227], 
-                [-20, 4, 92, 41, -5, -12, -90, 37, -118, 126]])
+            A = matrix(QQ,
+            [[194, -41,  -899, -396,  49, 112,  874, -355, 1139, -1221],
+             [269, -57, -1247, -549,  68, 155, 1212, -492, 1579, -1693],
+             [16,   -3,   -73,  -33,   4,  10,   72,  -30,   95,  -101],
+             [115, -24,  -532, -235,  29,  67,  518, -211,  676,  -724],
+             [ 10,   1,   -37,  -23,   2,  12,   44,  -24,   67,   -65],
+             [-59,  13,   275,  120, -15, -33, -266,  107, -345,   371],
+             [ 36,  -7,  -165,  -74,   9,  22,  162,  -67,  213,  -227],
+             [-20,   4,    92,   41,  -5, -12,  -90,   37, -118,  126]])
             A
             </input></sage>
 
+            <p>We get the extended echelon form, along with the natural subdivisions into four submatrices.  We unpack the four submatrices, and stack them in pairs to also get the left and right portions.</p>
 
             <sage><input>
             N = A.extended_echelon_form(subdivide=True)
             N
             </input></sage>
 
-            <p>Grab the four pieces of <m>N</m>.</p>
 
             <sage><input>
             C = N.subdivision(0,0)
@@ -65,28 +64,35 @@
             J
             </input></sage>
 
-            <p>Some properties of the pieces, as given in Theorem PEEF.</p>
+            <exercise>
+                <statement>
+                    <p>Verify some of the properties of these matrices, as given in Theorem PEEF.<ol>
+                        <li>Is <c>J</c> nonsingular?</li>
+                        <li>How are <c>A</c>, <c>B</c>, and <c>J</c> related?  Observe that the matrix <c>J</c> effectively reproduces the net effect of a sequence of row operations that converts <c>A</c> to <c>B</c>.</li>
+                    </ol></p>
+                </statement>
+            </exercise>
 
-            <p><m>J</m> is nonsingular.</p>
+            <sage />
 
-            <sage><input>
-            J.is_singular()
-            </input></sage>
+            <sage />
 
-            <p><m>A</m>, <m>B</m> and <m>J</m> are related.  Effectively, <m>J</m> consolidates the net effect of all of the row operations that convert <m>A</m> into <m>B</m>.</p>
+            <p>Imagine the equation in the last part of the exercise, but instead replace <m>A</m> by an augmented matrix of a linear system with a vector of constants <c>b</c>.  The row operations that convert <c>A</c> to <c>B</c>, will also act on the vector of constants.  Will the result be a pivot column (an inconsistent system) or a vector with zeros in all of the same rows as the zero rows of <c>B</c>?  Equivalent question:  is the vector of constants outside the column space, or within the column space?</p>
 
-            <sage><input>
-            J*A == B
-            </input></sage>
+            <p>The answer to the first question is that the zeros will occur in the proper entries to avoid a pivot column exactly if <c>b</c> is in the null space of the matrix <c>L</c>.  So consistent systems come from the vectors in the null space of <c>L</c>, and by Theorem CSCS, we know this set of vectors is also the column space.</p>
 
-            <p>Imagine in the above equation that we replace <m>A</m> by an augmented matrix of a linear system.  If the vector of constants, used in a linear combination of the columns of <m>L</m>, produces zeros in the final entries of the product by <m>J</m>, then the system will be consistent since there will be no pivot column in the last column of the row-reduced version of the augmented matrix.  This is another way of saying the null space of <m>L</m> is the column space of <m>A</m>.</p>
+            <exercise>
+                <statement>
+                    <p>Illustrate the previous discussion with a random choice of the vector <c>b</c> from the null space of <c>L</c>.</p>
+                </statement>
+            </exercise>
 
             <sage><input>
             NL = L.right_kernel(basis='pivot')
             NL
             </input></sage>
 
-            <p>We create an arbitrary element of the null space of <m>L</m>.</p>
+            <p>We create an arbitrary element of the null space of <c>L</c> with a linear combination.</p>
 
             <sage><input>
             NLbasis = NL.basis()
@@ -97,27 +103,27 @@
             b
             </input></sage>
 
-            <p><m>b</m> will create a consistent system with <m>A</m> as coefficient matrix.</p>
+            <p><c>b</c> will create a consistent system with <c>A</c> as coefficient matrix.</p>
 
             <sage><input>
             P = A.augment(b, subdivide=True)
             P.rref()
             </input></sage>
 
-            <p>The column space of <m>A</m> is equal to the null space of <m>L</m>.  This is part of Theorem FS.</p>
+            <p>The column space of <c>A</c> is equal to the null space of <c>L</c>.  This is part of Theorem FS.</p>
 
             <sage><input>
             CA = A.column_space()
             CA
             </input></sage>
 
-            <p>Since the vector <m>b</m> leads to a consistent system, we know it is in the column space of <m>A</m>.  But we can check with Sage.</p>
+            <p>Since the vector <c>b</c> leads to a consistent system, we know it is in the column space of <c>A</c>.  But we can check with Sage.</p>
 
             <sage><input>
             b in CA
             </input></sage>
 
-            <p>Sage relies on <q>echelonized</q> bases to represent infinite sets of vectors and to be able to test equality (which seems pretty amazing at first!).</p>
+            <p>Sage relies on <term>echelonized bases</term> to represent infinite sets of vectors and to be able to test vector space equality (which seems pretty amazing at first!).</p>
 
             <sage><input>
             NL.echelonized_basis()
@@ -126,9 +132,6 @@
             <sage><input>
             CA == NL
             </input></sage>
-
         </section>
-
     </article>
-
 </mathbook>
