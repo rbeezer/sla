@@ -56,6 +56,13 @@
             <p>Medium: 15 minutes, 4 exercises. [<url href="MISLE/MISLE.html">HTML</url>]<nbsp />[<url href="MISLE/MISLE.pdf">PDF</url>]</p>
         </paragraphs>
 
+        <paragraphs>
+            <title>Section CRS: Column and Row Space</title>
+
+            <p>A detailed demonstration of Theorem CSCS, in both directions.  You could do this quickly, or you could linger a while and drive the point home.</p>
+
+            <p>Short to Medium: 10 minutes, 2 exercises. [<url href="CRS/CRS.html">HTML</url>]<nbsp />[<url href="CRS/CRS.pdf">PDF</url>]</p>
+        </paragraphs>
 
         <paragraphs>
             <xi:include href="./legal.xml" />

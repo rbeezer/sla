@@ -34,7 +34,7 @@ declare MBX=${HOME}/mathbook/mathbook
 declare LATEX="texfot xelatex"
 
 # FCLA sections with worksheets, in order
-ALLSECTIONS=(RREF NM SS MISLE)
+ALLSECTIONS=(RREF NM SS MISLE CRS)
 
 # http://stackoverflow.com/questions/12303974/assign-array-to-variable
 # assignment array variable b=( "${a[@]}" )
@@ -51,7 +51,10 @@ fi
 install -d ${SCRATCH}
 cd ${SCRATCH}
 
-# Overview HTML only
+echo "*******************"
+echo "Processing Overview"
+echo "*******************"
+# Overview HTML, LaTeX
 xsltproc -xinclude ${MBX}/xsl/mathbook-html.xsl  ${ROOT}/worksheets/overview.xml
 xsltproc -xinclude ${MBX}/xsl/mathbook-latex.xsl ${ROOT}/worksheets/overview.xml
 ${LATEX} overview.tex
