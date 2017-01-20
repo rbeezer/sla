@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<mathbook>
+
+    <!-- EDIT output string/ID in Makefile too-->
+    <article xml:id="FS">
+        <title>Demo: Section FS</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+
+        <section>
+            <title>Four Subsets</title>
+
+            <sage><input>
+            A = matrix(QQ, [[194, -41, -899, -396, 49, 112, 874, -355, 1139, -1221], 
+                [269, -57, -1247, -549, 68, 155, 1212, -492, 1579, -1693], 
+                [16, -3, -73, -33, 4, 10, 72, -30, 95, -101], 
+                [115, -24, -532, -235, 29, 67, 518, -211, 676, -724], 
+                [10, 1, -37, -23, 2, 12, 44, -24, 67, -65], 
+                [-59, 13, 275, 120, -15, -33, -266, 107, -345, 371], 
+                [36, -7, -165, -74, 9, 22, 162, -67, 213, -227], 
+                [-20, 4, 92, 41, -5, -12, -90, 37, -118, 126]])
+            A
+            </input></sage>
+
+
+            <sage><input>
+            N = A.extended_echelon_form(subdivide=True)
+            N
+            </input></sage>
+
+            <p>Grab the four pieces of <m>N</m>.</p>
+
+            <sage><input>
+            C = N.subdivision(0,0)
+            Z = N.subdivision(1,0)
+            K = N.subdivision(0,1)
+            L = N.subdivision(1,1)
+            </input></sage>
+
+            <p>And build two bigger pieces.</p>
+
+            <sage><input>
+            B = C.stack(Z)
+            J = K.stack(L)
+            </input></sage>
+
+            <sage><input>
+            B
+            </input></sage>
+
+            <sage><input>
+            J
+            </input></sage>
+
+            <p>Some properties of the pieces, as given in Theorem PEEF.</p>
+
+            <p><m>J</m> is nonsingular.</p>
+
+            <sage><input>
+            J.is_singular()
+            </input></sage>
+
+            <p><m>A</m>, <m>B</m> and <m>J</m> are related.  Effectively, <m>J</m> consolidates the net effect of all of the row operations that convert <m>A</m> into <m>B</m>.</p>
+
+            <sage><input>
+            J*A == B
+            </input></sage>
+
+            <p>Imagine in the above equation that we replace <m>A</m> by an augmented matrix of a linear system.  If the vector of constants, used in a linear combination of the columns of <m>L</m>, produces zeros in the final entries of the product by <m>J</m>, then the system will be consistent since there will be no pivot column in the last column of the row-reduced version of the augmented matrix.  This is another way of saying the null space of <m>L</m> is the column space of <m>A</m>.</p>
+
+            <sage><input>
+            NL = L.right_kernel(basis='pivot')
+            NL
+            </input></sage>
+
+            <p>We create an arbitrary element of the null space of <m>L</m>.</p>
+
+            <sage><input>
+            NLbasis = NL.basis()
+            </input></sage>
+
+            <sage><input>
+            b = *NLbasis[0] + *NLbasis[1] + *NLbasis[2]
+            b
+            </input></sage>
+
+            <p><m>b</m> will create a consistent system with <m>A</m> as coefficient matrix.</p>
+
+            <sage><input>
+            P = A.augment(b, subdivide=True)
+            P.rref()
+            </input></sage>
+
+            <p>The column space of <m>A</m> is equal to the null space of <m>L</m>.  This is part of Theorem FS.</p>
+
+            <sage><input>
+            CA = A.column_space()
+            CA
+            </input></sage>
+
+            <p>Since the vector <m>b</m> leads to a consistent system, we know it is in the column space of <m>A</m>.  But we can check with Sage.</p>
+
+            <sage><input>
+            b in CA
+            </input></sage>
+
+            <p>Sage relies on <q>echelonized</q> bases to represent infinite sets of vectors and to be able to test equality (which seems pretty amazing at first!).</p>
+
+            <sage><input>
+            NL.echelonized_basis()
+            </input></sage>
+
+            <sage><input>
+            CA == NL
+            </input></sage>
+
+        </section>
+
+    </article>
+
+</mathbook>
