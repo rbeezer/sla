@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<mathbook>
+
+    <!-- EDIT output string/ID in Makefile too-->
+    <article xml:id="B">
+        <title>Demo: Section B</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+        <section>
+            <title>Bases</title>
+
+            <p>Five <q>random</q> vectors, each with 4 entries, collected into a set <c>S</c>.</p>
+
+            <sage><input>
+            v1 = vector(QQ, [-4, -2, 3, -11])
+            v2 = vector(QQ, [-2, 7, 3, 9])
+            v3 = vector(QQ, [6, -4, -7, 5])
+            v4 = vector(QQ, [-1, 0, 3, -4])
+            v5 = vector(QQ, [-4, 5, -5, 11])
+            S = [v1, v2, v3, v4, v5]
+            </input></sage>
+
+            <p>Consider the subspace spanned by these five vectors.  We will make these vectors the <em>rows</em> of a matrix and row-reduce to see a basis for the space (subspace, or row space, take your pick).</p>
+
+            <sage><input>
+            A = matrix(S)
+            A
+            </input></sage>
+
+            <sage><input>A.rref()</input></sage>
+
+            <p>Sage does this semi-automatically.</p>
+
+            <sage><input>
+            W = span(S)
+            B = W.basis()
+            B
+            </input></sage>
+
+            <p>Construct a <em>random</em> vector in this subspace.</p>
+
+            <sage><input>
+            w = *v1 + *v2 + *v3 + *v4 + *v5
+            w
+            </input></sage>
+
+            <p>Quick check?</p>
+
+            <sage><input>w in W</input></sage>
+
+            <p>This vector (or any other linear combination of the five vectors) should be a (unique) linear combination of the three basis vectors.  Can you construct the correct linear combination from the three basis vectors? How many ways?</p>
+
+            <sage><input>*B[0] + *B[1] + *B[2]</input></sage>
+        </section>
+
+        <section>
+            <title>Nonsingular Matrices</title>
+
+            <sage><input>
+            entries = [[1, 1, 1, -1, -2, 4, 2, -3, 1, -6],
+            [-2, -1, -2, 2, 4, -7, -4, 5, -1, 7],
+            [1, -1, 2, -2, -5, 8, 5, -3, 4, -4],
+            [-1, -2, 0, 1, 0, -5, 0, -3, -5, 6],
+            [0, -2, 1, -1, -2, 3, 2, 3, 3, 7],
+            [1, 0, 1, -1, -2, 4, 2, 0, 2, 0],
+            [-1, 0, -1, 1, 3, -1, -2, 7, 5, 1],
+            [1, 1, 1, -1, -2, 8, 3, 2, 8, -6],
+            [0, 2, -1, 1, 2, -1, -2, 2, 2, -6],
+            [1, 3, 0, 0, 1, 3, 0, 0, 3, -8]]
+            M = matrix(QQ, entries)
+            M
+            </input></sage>
+
+            <sage><input>
+            not M.is_singular()
+            </input></sage>
+
+            <p>A totally random vector with 10 entries:</p>
+
+            <sage><input>
+            v = random_vector(ZZ, 10, x=-9, y=9)
+            v
+            </input></sage>
+
+            <p>The columns of the matrix are a basis of <m>\mathbb{C}^{10}</m>.  So the vector <c>v</c> should be a linear combination of the columns of the matrix.</p>
+
+            <p>First, the old-fashioned way, thus exposing Theorem NMUS.</p>
+
+            <sage><input>
+            aug = M.augment(v)
+            aug.rref()
+            </input></sage>
+
+            <p>Now, the modern way, with an inverse, since a nonsingular matrix is invertible, thus exposing Theorem SNCM.</p>
+
+            <sage><input>M.inverse()*v</input></sage>
+
+            <p>The Sage way. First, create a space with a <q>user basis</q>.</p>
+
+            <sage><input>
+            X = (QQ^10).subspace_with_basis(M.columns())
+            X
+            </input></sage>
+
+            <p>Sage still carries an <q>echelonized</q> basis, in addition to the <q>user-installed</q> basis.</p>
+
+            <sage><input>
+            X.basis()
+            </input></sage>
+
+            <sage><input>
+            X.echelonized_basis()
+            </input></sage>
+
+            <p>Now ask for a coordinatization, relative to the basis in <c>X</c>, thus exposing Theorem VRRB.</p>
+
+            <sage><input>
+            X.coordinates(v)
+            </input></sage>
+        </section>
+
+        <section>
+            <title>Orthonormal Bases</title>
+
+            <p>A particularly simple orthonormal basis of <m>\mathbb{C}^3</m>, collected into the set <c>S</c>.</p>
+
+            <sage><input>
+            v1 = vector(QQ, [1/3, 2/3, 2/3])
+            v2 = vector(QQ, [2/3, -2/3, 1/3])
+            v3 = vector(QQ, [2/3, 1/3, -2/3])
+            S = [v1, v2, v3]
+            </input></sage>
+
+            <p>If these vectors are an orthonormal basis, then as the columns of a matrix they should create an orthonormal basis.</p>
+
+            <sage><input>
+            Q = column_matrix(S)
+            Q
+            </input></sage>
+
+            <sage><input>Q.conjugate_transpose()*Q</input></sage>
+
+            <sage><input>Q.is_unitary()</input></sage>
+
+            <p>A totally random vector with 3 entries.</p>
+
+            <sage><input>
+            v = random_vector(ZZ, 3, x=-9, y=9)
+            v
+            </input></sage>
+
+            <p>Four ways to express <c>c</c> as a (unique) linear combination of the basis vectors.  Which is most efficient?</p>
+
+            <p>First, the old-fashioned way, thus exposing Theorem NMUS.</p>
+
+            <sage><input>
+            aug = Q.augment(v)
+            aug.rref()
+            </input></sage>
+
+            <p>Now, the modern way, with an inverse, since a nonsingular matrix is invertible,  thus exposing Theorem SNCM.</p>
+
+            <sage><input>Q.inverse()*v</input></sage>
+
+            <p>The Sage way. Create a space with a <q>user basis</q> and ask for a coordinatization, thus exposing Theorem VRRB.</p>
+
+            <sage><input>
+            X = (QQ^3).subspace_with_basis(Q.columns())
+            X.coordinates(v)
+            </input></sage>
+
+            <p>Finally, exploiting the orthonormal basis, and computing scalars for the linear combination with an inner product, thus exposing Theorem COB.  (Sage's <c>.inner_product()</c> does not conjugate the entries of either vector, so we use the more careful <c>.hermitian_inner_product()</c> vector method instead.)</p>
+
+            <sage><input>
+            a1 = v1.hermitian_inner_product(v)
+            a2 = v2.hermitian_inner_product(v)
+            a3 = v3.hermitian_inner_product(v)
+            a1, a2, a3
+            </input></sage>
+        </section>
+    </article>
+</mathbook>
