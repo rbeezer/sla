@@ -100,18 +100,18 @@
 
         <sage />
 
-        <p>A null space is called a <term>right kernel</term> in Sage.</p>
+        <p>A null space is called a <term>right kernel</term> in Sage.  It's description contains a lot of things we do not understand yet.</p>
 
         <sage>
             <input>
             NS = B.right_kernel()
-            NS.list()
+            NS
             </input>
         </sage>
 
         <exercise>
             <statement>
-                <p>We can test membership in the null space.  Try <c>u in NS</c> and then repeat with <c>v</c>.</p>
+                <p>But we can test membership in the null space, which is the most basic property of a set.  Try <c>u in NS</c> and then repeat with <c>v</c>.</p>
             </statement>
         </exercise>
 
