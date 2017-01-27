@@ -73,6 +73,14 @@
         </paragraphs>
 
         <paragraphs>
+            <title>Section B: Bases</title>
+
+            <p>Theme: express vectors from <m>\mathbb{C}^n</m> as (unique) linear combinations of basis vectors.  Techniques include solving systems, inverting matrices, obtaining a <term>coordinatization</term> from Sage, and Theorem COB for an orthonormal basis.  The second and fourth exercises each has several parts.</p>
+
+            <p>Long: 20-25 minutes, 4 exercises. [<url href="B/B.html">HTML</url>]<nbsp />[<url href="B/B.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
             <xi:include href="./legal.xml" />
         </paragraphs>
 
