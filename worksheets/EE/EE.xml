@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<mathbook>
+
+    <!-- EDIT output string/ID in Makefile too-->
+    <article xml:id="EE">
+        <title>Demo: Section EE</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+         <section>
+            <title>Eigenvalues and Eigenvectors</title>
+
+            <p>A <m>6\times 6</m> matrix with nice eigenvalues.</p>
+
+            <sage><input>
+            A = matrix(QQ, [
+                [-31, -23, -16, 12, 120, -17], 
+                [-3, 7, 0, -12, 60, -21], 
+                [-28, -14, -9, -4, 152, -30], 
+                [-36, -20, -16, -1, 192, -32], 
+                [-9, -5, -4, 0, 47, -8],
+                [-1, 1, 0, -4, 20, -3]
+                ])
+            A
+            </input></sage>
+
+
+            <sage><input>
+            p = A.characteristic_polynomial()
+            p
+            </input></sage>
+
+
+            <sage><input>
+            p.factor()
+            </input></sage>
+
+            <p>Eigenvalues are the roots of the characteristic polynomial (Theorem EMRCP), which should be obvious from the factored version, including their (algebraic) multiplicities.  Of course, it can be very easy to get these in Sage.</p>
+
+            <sage><input>
+            A.eigenvalues()
+            </input></sage>
+
+            <p>We can create the singular matrices <m>A-\lambda I_6</m> for each eigenvalue (we will choose to do two with <q>random</q> choices for the eigenvalue).   Row-reducing these matrices will exhibit their nonzero nullity.</p>
+
+            <sage><input>
+            (A-( )*identity_matrix(6)).rref()
+            </input></sage>
+
+            <sage><input>
+            (A-( )*identity_matrix(6)).rref()
+            </input></sage>
+
+            <p>We now examine the eigenspace for the eigenvalue <m>\lambda=3</m>, using Sage's right kernel command and the pivot basis.</p>
+
+            <sage><input>
+            E6 = (A-3*identity_matrix(6)).right_kernel(basis='pivot')
+            E6
+            </input></sage>
+
+            <p>A basis for the eigenspace will allow us to create eigenvectors of <c>A</c> for the eigenvalue <m>\lambda=3</m> at will.</p>
+
+            <sage><input>
+            B = E6.basis()
+            B
+            </input></sage>
+
+            <p>An arbitrary linear combination of the basis vectors of the eigenspace:</p>
+
+            <sage><input>
+            v = *B[0] + *B[1]
+            v
+            </input></sage>
+
+            <p>We can check this.  Compare <m>Av</m> with <m>3v</m>.</p>
+
+            <sage><input>
+            A*v
+            </input></sage>
+
+            <sage><input>
+            3*v
+            </input></sage>
+
+            <p>Here's an easy check:</p>
+
+            <sage><input>
+            A*v - 3*v
+            </input></sage>
+
+            <p>Can you make more eigenvectors?</p>
+        </section>
+
+        <section>
+            <title>Eigenspaces, Eigenmatrices</title>
+
+            <p>Continuing with <c>A</c> from above, we can get eigen-stuff quickly from Sage, once we understand what is really happening (according to the definitions).</p>
+
+            <p>As always we want the <q>right</q> versions of the relevant commands.  Eigenspaces are in the second parts of pairs, where the first part of each pair is the eigenvalue.  Notice that they are vector spaces (with bases, etc).  The basis vectors are Sage's version of a basis, with vectors from an echelonized matrix, typically with lots of zeros and ones in the first part of the vectors.</p>
+
+            <sage><input>
+            A.eigenspaces_right()
+            </input></sage>
+
+            <p>The <c>eigenmatrix</c> commands return pair of matrices.  The first is a diagonal matrix with the eigenvalues on the diagonal.  The second is a square matrix with linearly independent eigenvectors in the columns, and the order of the eigenvectors is the same as the order of the eigenvalues.  That is, the eigenvector in column <c>i</c> of the second matrix is a basis vector for the eigenspace of the eigenvalue in column <c>i</c> of the first matrix.</p>
+
+            <sage><input>
+            A.eigenmatrix_right()
+            </input></sage>
+
+            <p>Sometimes the dimension of an eigenspace (the geometric multiplicity) is strictly less than the number of times the eigenvalue appears as a root of the characteristic polynomial.  This is the case with <c>C</c> next, but was not the case with <c>A</c> above.</p>
+
+            <sage><input>
+            C = matrix(QQ, [
+                [128, 20, 44, -50, 236, -18, -330, -565], 
+                [-23, -16, -5, 6, -40, 27, 62, 128], 
+                [-44, -12, -15, 16, -78, 20, 110, 207], 
+                [-2, 10, -4, 3, -10, -23, 20, -9], 
+                [-61, 5, -25, 27, -116, -26, 153, 225], 
+                [-12, -12, -1, 2, -20, 24, 34, 82], 
+                [-23, -3, -8, 9, -42, 2, 57, 99], 
+                [13, 6, 3, -4, 23, -12, -35, -72]
+                ])
+            C
+            </input></sage>
+
+            <sage><input>
+            C.eigenmatrix_right()
+            </input></sage>
+
+        </section>
+
+        <section>
+            <title>Fancy Footwork</title>
+
+            <p>A totally random matrix is unlikely to have a characteristic polynomial that factors if we restict ourseves to the rationals.  But we can find all the roots over <m>\overline{Q}</m>, the set of all algebraic numbers.</p>
+
+            <sage><input>
+            D = random_matrix(QQ, 10)
+            D
+            </input></sage>
+
+            <sage><input>
+            p = D.characteristic_polynomial()
+            p.factor()
+            </input></sage>
+
+            <sage><input>
+            p.roots(ring=QQbar, multiplicities=False)
+            </input></sage>
+
+            <p>If we make a <q>block diagonal</q> matrix, then the characteristic polynomial will definitely factor some</p>
+
+            <sage><input>
+            E = block_diagonal_matrix( [random_matrix(QQ, 5), random_matrix(QQ, 5)])
+            E
+            </input></sage>
+
+            <sage><input>
+            p = E.charpoly()
+            p.factor()
+            </input></sage>
+
+            <p>Finally a large example, illustrating how fast Sage is at making characteristic polynomials and at factoring.</p>
+
+            <sage><input>
+            F = block_diagonal_matrix( [random_matrix(QQ, 50), random_matrix(QQ, 50)])
+            p = F.charpoly()
+            p.factor()
+            </input></sage>
+
+            <p>This is such a common operation, that Sage has a shorthand method for the <q>Factored Characteristic Polynomial</q>, namely <c>.fcp()</c>.</p>
+
+            <sage><input>
+            F.fcp()
+            </input></sage>
+
+            <p>Nothing short of amazing!</p>
+
+        </section>
+
+        <section>
+            <title>Numerical Matrices</title>
+
+            <p>If we use <c>CDF</c> (Complex Double Field) for the number system of the entries of our matrix, we get (good) approximate values for eigenvalues.  (If we are OK with the approximate nature, these routines are very, very fast.)</p>
+
+            <sage><input>
+            G = random_matrix(QQ, 300)
+            H = G.change_ring(CDF)
+            H.eigenvalues()
+            </input></sage>
+
+        </section>
+    </article>
+</mathbook>
