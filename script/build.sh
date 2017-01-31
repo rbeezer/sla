@@ -34,7 +34,7 @@ declare MBX=${HOME}/mathbook/mathbook
 declare LATEX="texfot xelatex"
 
 # FCLA sections with worksheets, in order
-ALLSECTIONS=(RREF NM SS MISLE CRS FS)
+ALLSECTIONS=(RREF NM SS MISLE CRS FS B PDM)
 
 # http://stackoverflow.com/questions/12303974/assign-array-to-variable
 # assignment array variable b=( "${a[@]}" )

@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!-- Sage and Linear Algebra Worksheets -->
+<!--          Robert A. Beezer          -->
+<!--  Copyright 2017 License: CC BY-SA  -->
+<!--  See COPYING for more information  -->
 
-<mathbook>
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <!-- EDIT output string/ID in Makefile too-->
     <article xml:id="PDM">
-        <title>Demo: Section PDM</title>
+        <title>Sage and Linear Algebra Worksheet</title>
+        <subtitle>FCLA Section PDM</subtitle>
 
-        <frontmatter xml:id="index">
-            <titlepage>
-                <author>
-                    <personname>Robert Beezer</personname>
-                    <department>Department of Mathematics and Computer Science</department>
-                    <institution>University of Puget Sound</institution>
-                </author>
-                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
-                <date>Math 290, Spring 2016</date>
-            </titlepage>
+        <!-- header inclusion needs -xinclude switch on xsltproc -->
+        <frontmatter>
+            <xi:include href="../header.xml" />
         </frontmatter>
 
         <section>
@@ -24,7 +21,11 @@
 
             <p>This is a topic not covered in our text.  You <em>can</em> find a discussion in <booktitle>A Second Course in Linear Algebra</booktitle> at <url href="http://linear.ups.edu/scla/html/index.html" />.</p>
 
-            <p>Our goal is to row-reduce a matrix with elementary matrices, track the changes, and arrive at an expression for a square matrix <m>A</m> as a product of a lower-triangular matrix, <m>L</m>, and an upper-triangular matrix, <m>U</m>, that is <me>A=LU</me> the so-called <q>LU</q> decomposition.  I sometimes prefer to call it <q>triangular form.</q></p>
+            <p>Our goal is to row-reduce a matrix with elementary matrices, track the changes, and arrive at an expression for a square matrix <m>A</m> as a product of a lower-triangular matrix, <m>L</m>, and an upper-triangular matrix, <m>U</m>, that is <me>A=LU</me> the so-called <term>LU decomposition</term>.  I sometimes prefer to call it <term>triangular form</term>.</p>
+
+            <p>There are no exercises in this worksheet, but instead there is a careful and detailed exposition of using elementary matrices (row operations) to arrive at a <term>matrix decomposition</term>.  There are many kinds of matrix decompositions, such as the <term>singular value decomposition</term> (SVD), where five or six form part of the linear algebra canon.  Again, see <booktitle>A Second Course in Linear Algebra</booktitle> for details on these.</p>
+
+            <p>We decompose a <m>5\times 5</m> matrix.  It is most natural to describe an LU decomposition of a square matrix, but the decomposition can be generalized to rectangular matrices.</p>
 
             <sage><input>
             entries = [[-6, -10, 0, 10, 14],
@@ -44,7 +45,7 @@
             B
             </input></sage>
 
-            <p>Now in second column, moving to <q>row-echelon form</q> (i.e. not <q>reduced</q>).</p>
+            <p>Now in second column, moving to <term>row-echelon form</term> (<ie /> <em>not</em> <term>reduced row-echelon form</term>).</p>
 
             <sage><input>
             actionB = elementary_matrix(QQ, 5, row1=2, row2=1, scale=2)*elementary_matrix(QQ, 5, row1=3, row2=1, scale=7/3)*elementary_matrix(QQ, 5, row1=4, row2=1, scale=-8/3)*elementary_matrix(QQ, 5, row1=1, scale=-3)
@@ -76,45 +77,51 @@
             </input></sage>
 
 
-            <p>Clearly, <m>F</m> has determinant 1.  By virtue of the above manipulations (row operations) we expect that <me>\det(A) = \left(\frac{1}{-1/6}\right)\left(\frac{1}{-3}\right)\left(\frac{1}{-1/3}\right)\left(\frac{1}{1}\right)\left(\frac{1}{1}\right)\det(F) = -6.</me> Let's check.</p>
+            <p>Clearly, <c>F</c> has determinant 1, since it is an upper triangular matrix with diagonal entries equal to <m>1</m>.  By tracking the effect of the above manipulations (tantamount to performing row operations) we expect that <me>\det(A) = \left(\frac{1}{-1/6}\right)\left(\frac{1}{-3}\right)\left(\frac{1}{-1/3}\right)\left(\frac{1}{1}\right)\left(\frac{1}{1}\right)\det(F) = -6.</me> Let's check.</p>
 
             <sage><input>
             A.determinant()
             </input></sage>
 
-            <p>Yep.  But it gets better.  <m>F</m> is the product of the <q>action</q> matrices on the left of <m>A</m>.</p>
+            <p>Yep.  But it gets better.  <c>F</c> is the product of the <q>action</q> matrices on the left of <c>A</c>.</p>
 
             <sage><input>
             total_action = prod([actionE, actionD, actionC, actionB, actionA])
             total_action
             </input></sage>
 
-            <p>Notice that the elementary matrices we used are all lower triangular (because we just created zeros below the diagonal, no row swaps), and so their product is lower triangular.  Now check that we have the correct matrix.</p>
+            <p>Notice that the elementary matrices we used are all lower triangular (because we just formed zeros below the diagonal of the original matrix as we brought it to row-echelon form, and there were no row swaps).  Hence their product is again lower triangular.  Now check that we have the correct matrix.</p>
 
             <sage><input>
             F == total_action * A
             </input></sage>
 
-            <p>The <q>total action</q> matrix is a product of elementary matrices, which are individually nonsingular.  So the product is nonsingular.  Futhermore, the inverse is again lower triangular.</p>
+            <p>The <q>total action</q> matrix is a product of elementary matrices, which are individually nonsingular.  So their product is nonsingular.  Futhermore, the inverse is again lower triangular.</p>
 
             <sage><input>
             ta_inv = total_action.inverse()
             ta_inv
             </input></sage>
 
-            <p>We reach our goal by rearranging the equality above, writing <m>A</m> as a product of a lower-triangular matrix with an upper-triangular matrix,</p>
+            <p>We reach our goal by rearranging the equality above, writing <c>A</c> as a product of a lower-triangular matrix with an upper-triangular matrix.</p>
 
             <sage><input>
             A == ta_inv * F
             </input></sage>
 
-            <p>Yes.  So we have decomposed the original matrix (<m>A</m>) into the product of a lower triangular matrix (inverse of the total action matrix) and an upper triangular matrix with all ones on the diagonal (<m>F</m>, the row-echelon matrix).</p>
+            <p>Yes!  So we have decomposed the original matrix (<c>A</c>) into the product of a lower triangular matrix (inverse of the total action matrix) and an upper triangular matrix with all ones on the diagonal (<c>F</c>, the original matrix in row-echelon form).</p>
 
             <sage><input>
             A, ta_inv, F
             </input></sage>
 
-            <p>This decomposition (an <q>LU decomposition</q>) can be useful for solving systems quickly.  You <q>back solve</q> with one matrix, then <q>forward solve</q> with the other.</p>
+            <p>This decomposition (the <term>LU decomposition</term>) can be useful for solving systems quickly.  You <term>forward solve</term> with <m>L</m>, then <term>back solve</term> with <m>U</m>.</p>
+
+            <p>More specifically, suppose you want to solve <m>A\mathbf{x}=\mathbf{b}</m> for <m>\mathbf{x}</m>, and you have a decomposition <m>A=LU</m>.  First solve the intermediate system, <m>L\mathbf{y}=\mathbf{b}</m> for <m>\mathbf{y}</m>, which can be accomplished easily by determining the entries of <m>\mathbf{y}</m> in order, exploiting the lower triangular nature of <m>L</m>.  This is what is meant by the term <term>forward solve</term>.</p>
+
+            <p>With a solution for <m>\mathbf{y}</m>, form the system <m>U\mathbf{x}=\mathbf{y}</m>.  You can check that a solution, <m>\mathbf{x}</m>, to this system is also a solution to the original system <m>A\mathbf{x}=\mathbf{b}</m>.  Further, this solution can be found easily by determining the entries of <m>\mathbf{x}</m> in reverse order, exploiting the upper triangular nature of <m>U</m>.  This is what is meant by the term <term>back solve</term>.</p>
+
+            <p>We solve <em>two</em> simple systems, but only do half as many row-operations as if we went fully to reduced row-echelon form.  If you count the opertions carefully, you will see that this is a big win, roughly reducing computation time by a factor of half for large systems.</p>
         </section>
     </article>
 </mathbook>
