@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<mathbook>
+
+    <!-- EDIT output string/ID in Makefile too-->
+    <article xml:id="LT">
+        <title>Demo: Section LT</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+        <introduction>
+            <p>Sage has very capable linear transformations from <m>\mathbb{Q}^n</m> to <m>\mathbb{Q}^m</m>.</p>
+        </introduction>
+
+        <section>
+            <title>Creation via Symbolic Functions</title>
+
+            <p>Start with a symbolic function.</p>
+
+            <!-- [[1, 2, 1, 5], [1, 5, 4, 8], [0, -1, -1, -1]] -->
+
+            <sage><input>
+            var('x1 x2 x3 x4')
+            f(x1, x2, x3, x4) = (x1 + 2*x2 + x3 + 5*x4, x1 + 5*x2 + 4*x3 + 8*x4, -x2 - x3 - x4)
+            </input></sage>
+
+            <p>Then specify the domain and codomain.  We need to be careful about how <c>T</c> prints, Sage likes rows.</p>
+
+            <sage><input>
+            T = linear_transformation(QQ^4, QQ^3, f)
+            T
+            </input></sage>
+
+            <p>At a most basic level, <c>T</c> behaves as a function.</p>
+
+            <sage><input>
+            u = random_vector(ZZ, 4, x=-9, y=9).change_ring(QQ)
+            u, T(u)
+            </input></sage>
+
+            <p>We can check Theorem LTTZZ, zero goes to zero.</p>
+
+            <sage><input>
+            z4 = zero_vector(QQ, 4)
+            z3 = zero_vector(QQ, 3)
+            z4, T(z4), T(z4) == z3
+            </input></sage>
+
+        </section>
+
+        <section>
+            <title>Creation via Matrices</title>
+
+            <p>We can also create a linear transformation from a matrix, as in Theorem MBLT, with one caveat.  For a matrix <m>A</m>, the default is to create the function <m>T(\mathbf{v})=\mathbf{v}A</m>.  The keywords option <c>side='right'</c> will indicate that we want to put the vector on the right of the matrix.</p>
+
+            <sage><input>
+            A = matrix(QQ, [[1, 2, 1, 5], [1, 5, 4, 8], [0, -1, -1, -1]])
+            S = linear_transformation(A, side='right')
+            </input></sage>
+
+            <p>Notice that we do not have to specify the domain or codomain, these are inferred from the size and type of the matrix.  <c>S</c> is not new, it is exactly the linear transformation <c>T</c> above.</p>
+
+            <sage><input>
+            S == T
+            </input></sage>
+
+            <p>Again, notice how <c>S</c> prints <mdash /> the matrix representation is the transpose of what we like to use.  This does not <em>change</em> the linear transformation as a function, it just changes how we think about it (we like linear combinations of columns, Sage likes linear combinations of rows).</p>
+
+            <sage><input>
+            A, S
+            </input></sage>
+
+        </section>
+
+        <section>
+            <title>Creation via Values on a Basis</title>
+
+            <p>Starting with a domain and a codomain, we can provide a list of the images of basis vectors for the domain.</p>
+
+            <sage><input>
+            v1 = vector(QQ, [1, 1, 0])
+            v2 = vector(QQ, [2, 5, -1])
+            v3 = vector(QQ, [1, 4, -1])
+            v4 = vector(QQ, [5, 8, -1])
+            R = linear_transformation(QQ^4, QQ^3, [v1, v2, v3, v4])
+            </input></sage>
+
+            <p>That's right <mdash /> same function again.</p>
+
+            <sage><input>
+            R == T
+            </input></sage>
+
+            <p>We can check how this construction works.</p>
+
+            <sage><input>
+            d3 = R.domain().basis()[2]
+            R(d3); R(d3) == v3
+            </input></sage>
+
+            <p>We can give the domain an alternate basis and create a different linear transformation, despite seemingly having the same construction.  First we build the domain with a different user basis.</p>
+
+            <sage><input>
+            u1 = vector(QQ, [1, 0, 0, 0])
+            u2 = vector(QQ, [1, 1, 0, 0])
+            u3 = vector(QQ, [1, 1, 1, 0])
+            u4 = vector(QQ, [1, 1, 1, 1])
+            dom4 = (QQ^4).subspace_with_basis([u1, u2, u3, u4])
+            dom4
+            </input></sage>
+
+            <sage><input>
+            L = linear_transformation(dom4, QQ^3, [v1, v2, v3, v4])
+            L
+            </input></sage>
+
+            <p>Even though the matrix representation prints the same, this is not the same function, we will need ideas from Chapter R before we can understand the difference.</p>
+
+            <sage><input>
+            R(u3), L(u3)
+            </input></sage>
+
+            <p>This code should consistently return <c>False</c>.</p>
+
+            <sage><input>
+            v = random_vector(QQ, 4)
+            R(v) == L(v)
+            </input></sage>
+
+        </section>
+
+        <section>
+            <title>Basic Properties</title>
+
+            <p>Illustrations with <c>T</c>.</p>
+
+            <sage><input>
+            T.domain()
+            </input></sage>
+
+
+            <sage><input>
+            T.codomain()
+            </input></sage>
+
+            <p>A defining property, so always <c>True</c>.</p>
+
+            <sage><input>
+            u = random_vector(QQ, 4)
+            v = random_vector(QQ, 4)
+            u, v, T(u+v) == T(u) + T(v)
+            </input></sage>
+
+            <p>A defining property, so also always <c>True</c>.</p>
+
+            <sage><input>
+            alpha = (QQ).random_element()
+            u = random_vector(QQ, 4)
+            alpha, u, T(alpha*u) == alpha*T(u)
+            </input></sage>
+
+            <p>We can do <q>arithmetic</q> with linear transformations, though the addition seems to allow bad things to happen.</p>
+
+            <sage><input>
+            R+S
+            </input></sage>
+
+            <p>Scalar multiples also, and they are well-behaved.</p>
+
+            <sage><input>
+            12*T
+            </input></sage>
+
+            <p>The following is wrong.  (In other words, there is a bug in Sage.)</p>
+
+            <sage><input>
+            P = R + L
+            P
+            </input></sage>
+
+            <p>As we can see<ellipsis /></p>
+
+            <sage><input>
+            Q = L + R
+            Q.is_equal_function(P)
+            </input></sage>
+
+            <p>The problem is that Sage is simply adding the matrices representing the linear transformations, without checking that they are defined using domains with the <em>same</em> basis.  We will understand the subtlety better in Chapter R.</p>
+
+        </section>
+    </article>
+</mathbook>
