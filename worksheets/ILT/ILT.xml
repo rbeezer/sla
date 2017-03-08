@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<mathbook>
+
+    <!-- EDIT output string/ID in Makefile too-->
+    <article xml:id="ILT">
+        <title>Demo: Section ILT</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+        <section>
+            <title>Injective Linear Transformations</title>
+
+            <p>Two carefully-crafted linear transformations: <c>T</c> is injective, <c>S</c> is not.</p>
+
+            <sage><input>
+            A = matrix(QQ, [[1, 2, 2], [3, 7, 6], [1, 2, 1], [2, 5, 7]])
+            T = linear_transformation(QQ^3, QQ^4, A, side='right')
+            </input></sage>
+
+            <sage><input>
+            T.is_injective()
+            </input></sage>
+
+            <sage><input>
+            T.kernel()
+            </input></sage>
+
+            <sage><input>
+            B = matrix(QQ, [[0, 1, -2], [-1, 1, 3], [-2, 5, 0], [0, 2, -4]])
+            S = linear_transformation(QQ^3, QQ^4, B, side='right')
+            </input></sage>
+
+            <sage><input>
+            S.is_injective()
+            </input></sage>
+
+            <sage><input>
+            K = S.kernel()
+            K
+            </input></sage>
+
+            <p>We create two different inputs, which differ by a random vector from the kernel (which we hope is not simply the zero vector, a distinct possibility).  We always get the same output from <c>S</c>, predictably.  If we try this with <c>T</c> then the kernel vector is <em>always</em> the zero vector and the demonstration is very uninteresting.</p>
+
+            <sage><input>
+            z = K.random_element()
+            u = random_vector(QQ, 3)
+            w = u + z
+            u, w, S(u), S(w), S(u) == S(w)
+            </input></sage>
+
+        </section>
+    </article>
+</mathbook>
