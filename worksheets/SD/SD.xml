@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!-- Sage and Linear Algebra Worksheets -->
+<!--          Robert A. Beezer          -->
+<!--  Copyright 2017 License: CC BY-SA  -->
+<!--  See COPYING for more information  -->
 
-<mathbook>
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <!-- EDIT output string/ID in Makefile too-->
     <article xml:id="SD">
-        <title>Demo: Section SD</title>
+        <title>Sage and Linear Algebra Worksheet</title>
+        <subtitle>FCLA Section SD</subtitle>
 
-        <frontmatter xml:id="index">
-            <titlepage>
-                <author>
-                    <personname>Robert Beezer</personname>
-                    <department>Department of Mathematics and Computer Science</department>
-                    <institution>University of Puget Sound</institution>
-                </author>
-                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
-                <date>Math 290, Spring 2016</date>
-            </titlepage>
+        <!-- header inclusion needs -xinclude switch on xsltproc -->
+        <frontmatter>
+            <xi:include href="../header.xml" />
         </frontmatter>
 
         <section>
@@ -31,7 +28,7 @@
             A, B
             </input></sage>
 
-            <p>This command seems to be broken.  My fault.  It could be fixed using rational canonical form (from Math 420).</p>
+            <p>This next command might be broken, and might even just hang.  My fault.  It will be fixed, using rational canonical form, for Sage 7.6.  See <url href="https://trac.sagemath.org/ticket/18505">Trac ticket <hash />18505</url> for the details.</p>
 
             <sage><input>
             A.is_similar(B)
@@ -43,15 +40,20 @@
 
             <p>These two matrices are from the earlier demo for Section EE.  First is diagonalizable, second is not.  The easiest way to see the difference is with the <c>eigenmatrix</c> commands.</p>
 
+            <exercise>
+                <statement>
+                    <p>Diagonalize the matrix <m>A</m>.</p>
+                </statement>
+            </exercise>
+
             <sage><input>
             A = matrix(QQ, [
-                [-31, -23, -16, 12, 120, -17], 
-                [-3, 7, 0, -12, 60, -21], 
-                [-28, -14, -9, -4, 152, -30], 
-                [-36, -20, -16, -1, 192, -32], 
-                [-9, -5, -4, 0, 47, -8],
-                [-1, 1, 0, -4, 20, -3]
-                ])
+                [-31, -23, -16,  12, 120, -17],
+                [ -3,   7,   0, -12,  60, -21],
+                [-28, -14,  -9,  -4, 152, -30],
+                [-36, -20, -16,  -1, 192, -32],
+                [ -9,  -5,  -4,   0,  47,  -8],
+                [ -1,   1,   0,  -4,  20,  -3]
             A
             </input></sage>
 
@@ -72,18 +74,22 @@
             A*S == S*D
             </input></sage>
 
-            <p>Now, in contrast, a matrix that is not diagonalizable.</p>
+            <exercise>
+                <statement>
+                    <p>Now, in contrast, a matrix that is not diagonalizable.  Try to diagonalize the matrix <m>C</m>.</p>
+                </statement>
+            </exercise>
 
             <sage><input>
             C = matrix(QQ, [
-                [128, 20, 44, -50, 236, -18, -330, -565], 
-                [-23, -16, -5, 6, -40, 27, 62, 128], 
-                [-44, -12, -15, 16, -78, 20, 110, 207], 
-                [-2, 10, -4, 3, -10, -23, 20, -9], 
-                [-61, 5, -25, 27, -116, -26, 153, 225], 
-                [-12, -12, -1, 2, -20, 24, 34, 82], 
-                [-23, -3, -8, 9, -42, 2, 57, 99], 
-                [13, 6, 3, -4, 23, -12, -35, -72]
+                [128,   20,  44, -50,  236, -18, -330, -565],
+                [ -23, -16,  -5,   6,  -40,  27,   62,  128],
+                [ -44, -12, -15,  16,  -78,  20,  110,  207],
+                [ -2,   10,  -4,   3,  -10, -23,   20,   -9],
+                [ -61,   5, -25,  27, -116, -26,  153,  225],
+                [ -12, -12,  -1,   2,  -20,  24,   34,   82],
+                [ -23,  -3,  -8,   9,  -42,   2,   57,   99],
+                [  13,   6,   3,  -4,   23, -12,  -35,  -72]
                 ])
             C
             </input></sage>
@@ -115,7 +121,15 @@
         <section>
             <title>Nearly Diagonalizable</title>
 
-            <p>A matrix that is not diagonalizable will always be similar to a matrix that is <em>almost</em> diagonalizable.  The <q>nearly diagonal</q> matrix is called the Jordan Canonical Form of the matrix.  While beyond the scope of this course, here is Sage computing this canonical form for the matrix <c>C</c>.  Notice the eigenvalues of <c>C</c> on the diagonal and the 1's on the <q>super-diagonal</q>.</p>
+            <p>A matrix that is not diagonalizable will always be similar to a matrix that is <em>almost</em> diagonalizable.  The <q>nearly diagonal</q> matrix is called the <term>Jordan canonical form</term> of the matrix.</p>
+
+            <exercise>
+                <statement>
+                    <p>While beyond the scope of this course, use Sage to compute the Jordan canonical form for the matrix <c>C</c>.  Notice the eigenvalues of <c>C</c> on the diagonal and the 1's on the <term>super-diagonal</term>.</p>
+
+                    <p>Peculiarly, the similarity matrix need not be computed to get the form, and it is a significant computational expense.  So we ask for it explicitly.</p>
+                </statement>
+            </exercise>
 
             <sage><input>
             J, T = C.jordan_form(transformation=True)
@@ -128,7 +142,11 @@
             T.inverse()*C*T == J
             </input></sage>
 
-            <p>Rational Canonical Form is another interesting version of this idea, try <c>.rational_form()</c> on <c>C</c>.  And if you do, then execute the following two cells and see if the coefficients look familiar.  (Learn more about <q>companion matrices</q> if this makes you curious.</p>
+            <exercise>
+                <statement>
+                    <p><term>Rational canonical form</term> is another interesting version of this idea, try <c>.rational_form()</c> on <c>C</c>.  And if you do, then execute the following two cells and see if the coefficients look familiar.  (Learn more about <term>companion matrices</term> if this makes you curious.</p>
+                </statement>
+            </exercise>
 
             <sage><input>
             C.rational_form()
