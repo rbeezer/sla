@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<mathbook>
+
+    <!-- EDIT output string/ID in Makefile too-->
+    <article xml:id="SLT">
+        <title>Demo: Section SLT</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+        <section>
+            <title>Surjective Linear Transformations</title>
+
+            <p>Two carefully-crafted linear transformations: <c>T</c> is surjective, <c>S</c> is not.</p>
+
+            <sage><input>
+            A = matrix(QQ, [[2, 2, 5, -2], [2, 3, 1, -4], [-3, -4, -4, 5]])
+            T = linear_transformation(QQ^4, QQ^3, A, side='right')
+            </input></sage>
+
+            <sage><input>
+            T.is_surjective()
+            </input></sage>
+
+            <p>The range is known in Sage as the <q>image.</q>  For a surjective linear transformation, it will be the entire codomain.  Note that the image is a vector space.</p>
+
+            <sage><input>
+            T.image()
+            </input></sage>
+
+            <sage><input>
+            T.image() == T.codomain()
+            </input></sage>
+
+            <sage><input>
+            B = matrix(QQ, [[1, -2, 0, 3], [3, -5, 1, 7], [-1, 4, 2, -7]])
+            S = linear_transformation(QQ^4, QQ^3, B, side='right')
+            </input></sage>
+
+            <sage><input>
+            S.is_surjective()
+            </input></sage>
+
+            <sage><input>
+            IM = S.image()
+            IM
+            </input></sage>
+
+            <sage><input>
+            IM == S.codomain()
+            </input></sage>
+        </section>
+
+        <section>
+            <title>Pre-Images</title>
+
+            <p>We can create inputs associated with any output.  First, we make an arbitrary output, but make sure it really is an output, as a linear combination of a basis of the image (see basis above).  We print the two vectors in the opposite of what we would consider the <q>normal</q> order.</p>
+
+            <sage><input>
+            bas = IM.basis()
+            out = ()*bas[0] + ()*bas[1]
+            inp = S.preimage_representative(out)
+            out, inp
+            </input></sage>
+
+            <p>A check on our work.</p>
+
+            <sage><input>
+            S(inp)
+            </input></sage>
+
+            <p>We can make other inputs, using the kernel.</p>
+
+            <sage><input>
+            K = S.kernel()
+            K
+            </input></sage>
+
+            <p>Any value of <c>new_inp</c> is in the preimage of <c>out</c>, and every element of the preimage can be built this way.  Notice the role the kernel plays, much like in the worksheet about injective linear transformations.</p>
+
+            <sage><input>
+            z = K.random_element()
+            new_inp = inp + z
+            new_inp, S(new_inp)
+            </input></sage>
+
+            <p>Elements outside the range (image) will have empty preimages.  We mildly <q>wreck</q> an element of the range.</p>
+
+            <sage><input>
+            in_range = ()*bas[0] + ()*bas[1]
+            in_range
+            </input></sage>
+
+            <p>With two initial entries determined by the zeros and ones in the basis vectors, the third entry must be determined, so we can <q>twiddle</q> it just a bit to obtain a vector of the codomain that lies outside the range.  We will ask Sage for a pre-image representative anyway and see what happens.</p>
+
+            <sage><input>
+            outside_range = vector(QQ, [ , , ])
+            S.preimage_representative(outside_range)
+            </input></sage>
+        </section>
+    </article>
+</mathbook>
