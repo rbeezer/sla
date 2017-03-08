@@ -1,38 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!-- Sage and Linear Algebra Worksheets -->
+<!--          Robert A. Beezer          -->
+<!--  Copyright 2017 License: CC BY-SA  -->
+<!--  See COPYING for more information  -->
 
-<mathbook>
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <!-- EDIT output string/ID in Makefile too-->
     <article xml:id="EE">
-        <title>Demo: Section EE</title>
+        <title>Sage and Linear Algebra Worksheet</title>
+        <subtitle>FCLA Section EE</subtitle>
 
-        <frontmatter xml:id="index">
-            <titlepage>
-                <author>
-                    <personname>Robert Beezer</personname>
-                    <department>Department of Mathematics and Computer Science</department>
-                    <institution>University of Puget Sound</institution>
-                </author>
-                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
-                <date>Math 290, Spring 2016</date>
-            </titlepage>
+        <!-- header inclusion needs -xinclude switch on xsltproc -->
+        <frontmatter>
+            <xi:include href="../header.xml" />
         </frontmatter>
 
          <section>
             <title>Eigenvalues and Eigenvectors</title>
 
-            <p>A <m>6\times 6</m> matrix with nice eigenvalues.</p>
+            <p>A <m>6\times 6</m> matrix with <q>nice</q> eigenvalues.</p>
 
             <sage><input>
             A = matrix(QQ, [
-                [-31, -23, -16, 12, 120, -17], 
-                [-3, 7, 0, -12, 60, -21], 
-                [-28, -14, -9, -4, 152, -30], 
-                [-36, -20, -16, -1, 192, -32], 
-                [-9, -5, -4, 0, 47, -8],
-                [-1, 1, 0, -4, 20, -3]
-                ])
+                [-31, -23, -16,  12, 120, -17],
+                [ -3,   7,   0, -12,  60, -21],
+                [-28, -14,  -9,  -4, 152, -30],
+                [-36, -20, -16,  -1, 192, -32],
+                [ -9,  -5,  -4,   0,  47,  -8],
+                [ -1,   1,   0,  -4,  20,  -3]
+                ]) 
             A
             </input></sage>
 
@@ -53,7 +50,12 @@
             A.eigenvalues()
             </input></sage>
 
-            <p>We can create the singular matrices <m>A-\lambda I_6</m> for each eigenvalue (we will choose to do two with <q>random</q> choices for the eigenvalue).   Row-reducing these matrices will exhibit their nonzero nullity.</p>
+            <exercise>
+                <statement>
+                    <p>Create the singular matrices <m>A-\lambda I_6</m> for each eigenvalue (we will choose to do two with <q>random</q> choices for the eigenvalue).   Row-reducing these matrices will exhibit their nonzero nullity.</p>
+
+                </statement>
+            </exercise>
 
             <sage><input>
             (A-( )*identity_matrix(6)).rref()
@@ -63,21 +65,25 @@
             (A-( )*identity_matrix(6)).rref()
             </input></sage>
 
-            <p>We now examine the eigenspace for the eigenvalue <m>\lambda=3</m>, using Sage's right kernel command and the pivot basis.</p>
+
+            <exercise>
+                <statement>
+                    <p>Examine the eigenspace for the eigenvalue <m>\lambda=3</m>, using Sage's right kernel command and the pivot basis.</p>
+
+                    <p>Use a basis for the eigenspace to create eigenvectors of <c>A</c> for the eigenvalue <m>\lambda=3</m> at will.</p>
+                </statement>
+            </exercise>
 
             <sage><input>
             E6 = (A-3*identity_matrix(6)).right_kernel(basis='pivot')
             E6
             </input></sage>
 
-            <p>A basis for the eigenspace will allow us to create eigenvectors of <c>A</c> for the eigenvalue <m>\lambda=3</m> at will.</p>
 
             <sage><input>
             B = E6.basis()
             B
             </input></sage>
-
-            <p>An arbitrary linear combination of the basis vectors of the eigenspace:</p>
 
             <sage><input>
             v = *B[0] + *B[1]
@@ -124,14 +130,14 @@
 
             <sage><input>
             C = matrix(QQ, [
-                [128, 20, 44, -50, 236, -18, -330, -565], 
-                [-23, -16, -5, 6, -40, 27, 62, 128], 
-                [-44, -12, -15, 16, -78, 20, 110, 207], 
-                [-2, 10, -4, 3, -10, -23, 20, -9], 
-                [-61, 5, -25, 27, -116, -26, 153, 225], 
-                [-12, -12, -1, 2, -20, 24, 34, 82], 
-                [-23, -3, -8, 9, -42, 2, 57, 99], 
-                [13, 6, 3, -4, 23, -12, -35, -72]
+                [128,   20,  44, -50,  236, -18, -330, -565],
+                [ -23, -16,  -5,   6,  -40,  27,   62,  128],
+                [ -44, -12, -15,  16,  -78,  20,  110,  207],
+                [ -2,   10,  -4,   3,  -10, -23,   20,   -9],
+                [ -61,   5, -25,  27, -116, -26,  153,  225],
+                [ -12, -12,  -1,   2,  -20,  24,   34,   82],
+                [ -23,  -3,  -8,   9,  -42,   2,   57,   99],
+                [  13,   6,   3,  -4,   23, -12,  -35,  -72]
                 ])
             C
             </input></sage>
@@ -145,7 +151,7 @@
         <section>
             <title>Fancy Footwork</title>
 
-            <p>A totally random matrix is unlikely to have a characteristic polynomial that factors if we restict ourseves to the rationals.  But we can find all the roots over <m>\overline{Q}</m>, the set of all algebraic numbers.</p>
+            <p>A totally random matrix is unlikely to have a characteristic polynomial that factors if we restrict ourseves to the rationals.  But we can find all the roots over <m>\overline{Q}</m>, the set of all algebraic numbers.  (This is the set of all real roots of all possible polynomials with integer coefficients.)</p>
 
             <sage><input>
             D = random_matrix(QQ, 10)
@@ -181,7 +187,7 @@
             p.factor()
             </input></sage>
 
-            <p>This is such a common operation, that Sage has a shorthand method for the <q>Factored Characteristic Polynomial</q>, namely <c>.fcp()</c>.</p>
+            <p>This is such a common operation, that Sage has a shorthand method for the <term>Factored Characteristic Polynomial</term>, namely <c>.fcp()</c>.</p>
 
             <sage><input>
             F.fcp()

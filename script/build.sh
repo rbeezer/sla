@@ -24,7 +24,7 @@
 # install
 # xsltproc
 # A LaTeX installation
-#   texfot - utility to restict output
+#   texfot - utility to restrict output
 #   xelatex - preferable for Unicode characters
 # MathBook XML distribution
 
@@ -33,8 +33,8 @@ declare SCRATCH=/tmp/sla
 declare MBX=${HOME}/mathbook/mathbook
 declare LATEX="texfot xelatex"
 
-# FCLA sections with worksheets, in order
-ALLSECTIONS=(RREF NM SS MISLE CRS FS B PDM)
+# FCLA sections that have worksheets, in order
+ALLSECTIONS=(RREF NM SS MISLE CRS FS B PDM EE)
 
 # http://stackoverflow.com/questions/12303974/assign-array-to-variable
 # assignment array variable b=( "${a[@]}" )

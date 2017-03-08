@@ -89,6 +89,14 @@
         </paragraphs>
 
         <paragraphs>
+            <title>Section EE: Eigenvalues and Eigenvectors</title>
+
+            <p>Just two exercises to experiment with, but lots of otehr things to demonstrate.  The theme of this worksheet is really just to show all the computational tools for various computations related to eigenvalues and eigenvectors that we would never want to do by hand.  The later sections has some impressive examples of how fast Sage can be, for both exact and numerical linear algebra.</p>
+
+            <p>Long: 15-20 minutes, two exercises. [<url href="EE/EE.html">HTML</url>]<nbsp />[<url href="EE/EE.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
             <xi:include href="./legal.xml" />
         </paragraphs>
 

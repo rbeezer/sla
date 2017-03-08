@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2017-03-07T16:10:50-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sage and Linear Algebra Worksheet</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate Sage Code'});
+});
+</script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="EE.html"><span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section EE</span></a></h1>
+<p class="byline">Robert Beezer</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="EE.html#frontmatter-1" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="EE.html#section-1" data-scroll="section-1"><span class="codenumber">1</span><span class="title">Eigenvalues and Eigenvectors</span></a></h2>
+<h2 class="link"><a href="EE.html#section-2" data-scroll="section-2"><span class="codenumber">2</span><span class="title">Eigenspaces, Eigenmatrices</span></a></h2>
+<h2 class="link"><a href="EE.html#section-3" data-scroll="section-3"><span class="codenumber">3</span><span class="title">Fancy Footwork</span></a></h2>
+<h2 class="link"><a href="EE.html#section-4" data-scroll="section-4"><span class="codenumber">4</span><span class="title">Numerical Matrices</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="article" id="EE"><section class="frontmatter" id="frontmatter-1"><h1 class="heading">
+<span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section EE</span>
+</h1>
+<address class="contributors"><p>Robert Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound</p></address>
+<address class="contributors">Spring 2017</address>
+<p></p></section><section class="section" id="section-1"><header title="Section 1 Eigenvalues and Eigenvectors"><h1 class="heading hide-type" alt="Section 1 Eigenvalues and Eigenvectors">
+<span class="type">Section</span><span class="codenumber">1</span><span class="title">Eigenvalues and Eigenvectors</span>
+</h1></header><p id="p-1">A \(6\times 6\) matrix with “nice” eigenvalues.</p>
+<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">A = matrix(QQ, [
+    [-31, -23, -16,  12, 120, -17],
+    [ -3,   7,   0, -12,  60, -21],
+    [-28, -14,  -9,  -4, 152, -30],
+    [-36, -20, -16,  -1, 192, -32],
+    [ -9,  -5,  -4,   0,  47,  -8],
+    [ -1,   1,   0,  -4,  20,  -3]
+    ]) 
+A
+</script></div>
+<div class="sagecell-sage" id="sage-2"><script type="text/x-sage">p = A.characteristic_polynomial()
+p
+</script></div>
+<div class="sagecell-sage" id="sage-3"><script type="text/x-sage">p.factor()
+</script></div>
+<p id="p-2">Eigenvalues are the roots of the characteristic polynomial (Theorem EMRCP), which should be obvious from the factored version, including their (algebraic) multiplicities.  Of course, it can be very easy to get these in Sage.</p>
+<div class="sagecell-sage" id="sage-4"><script type="text/x-sage">A.eigenvalues()
+</script></div>
+<article class="exercise-like" id="exercise-1"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">1</span>
+</h5>
+<p id="p-3">Create the singular matrices \(A-\lambda I_6\) for each eigenvalue (we will choose to do two with “random” choices for the eigenvalue).   Row-reducing these matrices will exhibit their nonzero nullity.</p></article><div class="sagecell-sage" id="sage-5"><script type="text/x-sage">(A-( )*identity_matrix(6)).rref()
+</script></div>
+<div class="sagecell-sage" id="sage-6"><script type="text/x-sage">(A-( )*identity_matrix(6)).rref()
+</script></div>
+<article class="exercise-like" id="exercise-2"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">2</span>
+</h5>
+<p id="p-4">Examine the eigenspace for the eigenvalue \(\lambda=3\text{,}\) using Sage's right kernel command and the pivot basis.</p>
+<p id="p-5">Use a basis for the eigenspace to create eigenvectors of <tt class="code-inline tex2jax_ignore">A</tt> for the eigenvalue \(\lambda=3\) at will.</p></article><div class="sagecell-sage" id="sage-7"><script type="text/x-sage">E6 = (A-3*identity_matrix(6)).right_kernel(basis='pivot')
+E6
+</script></div>
+<div class="sagecell-sage" id="sage-8"><script type="text/x-sage">B = E6.basis()
+B
+</script></div>
+<div class="sagecell-sage" id="sage-9"><script type="text/x-sage">v = *B[0] + *B[1]
+v
+</script></div>
+<p id="p-6">We can check this.  Compare \(Av\) with \(3v\text{.}\)</p>
+<div class="sagecell-sage" id="sage-10"><script type="text/x-sage">A*v
+</script></div>
+<div class="sagecell-sage" id="sage-11"><script type="text/x-sage">3*v
+</script></div>
+<p id="p-7">Here's an easy check:</p>
+<div class="sagecell-sage" id="sage-12"><script type="text/x-sage">A*v - 3*v
+</script></div>
+<p id="p-8">Can you make more eigenvectors?</p></section><section class="section" id="section-2"><header title="Section 2 Eigenspaces, Eigenmatrices"><h1 class="heading hide-type" alt="Section 2 Eigenspaces, Eigenmatrices">
+<span class="type">Section</span><span class="codenumber">2</span><span class="title">Eigenspaces, Eigenmatrices</span>
+</h1></header><p id="p-9">Continuing with <tt class="code-inline tex2jax_ignore">A</tt> from above, we can get eigen-stuff quickly from Sage, once we understand what is really happening (according to the definitions).</p>
+<p id="p-10">As always we want the “right” versions of the relevant commands.  Eigenspaces are in the second parts of pairs, where the first part of each pair is the eigenvalue.  Notice that they are vector spaces (with bases, etc).  The basis vectors are Sage's version of a basis, with vectors from an echelonized matrix, typically with lots of zeros and ones in the first part of the vectors.</p>
+<div class="sagecell-sage" id="sage-13"><script type="text/x-sage">A.eigenspaces_right()
+</script></div>
+<p id="p-11">The <tt class="code-inline tex2jax_ignore">eigenmatrix</tt> commands return pair of matrices.  The first is a diagonal matrix with the eigenvalues on the diagonal.  The second is a square matrix with linearly independent eigenvectors in the columns, and the order of the eigenvectors is the same as the order of the eigenvalues.  That is, the eigenvector in column <tt class="code-inline tex2jax_ignore">i</tt> of the second matrix is a basis vector for the eigenspace of the eigenvalue in column <tt class="code-inline tex2jax_ignore">i</tt> of the first matrix.</p>
+<div class="sagecell-sage" id="sage-14"><script type="text/x-sage">A.eigenmatrix_right()
+</script></div>
+<p id="p-12">Sometimes the dimension of an eigenspace (the geometric multiplicity) is strictly less than the number of times the eigenvalue appears as a root of the characteristic polynomial.  This is the case with <tt class="code-inline tex2jax_ignore">C</tt> next, but was not the case with <tt class="code-inline tex2jax_ignore">A</tt> above.</p>
+<div class="sagecell-sage" id="sage-15"><script type="text/x-sage">C = matrix(QQ, [
+    [128,   20,  44, -50,  236, -18, -330, -565],
+    [ -23, -16,  -5,   6,  -40,  27,   62,  128],
+    [ -44, -12, -15,  16,  -78,  20,  110,  207],
+    [ -2,   10,  -4,   3,  -10, -23,   20,   -9],
+    [ -61,   5, -25,  27, -116, -26,  153,  225],
+    [ -12, -12,  -1,   2,  -20,  24,   34,   82],
+    [ -23,  -3,  -8,   9,  -42,   2,   57,   99],
+    [  13,   6,   3,  -4,   23, -12,  -35,  -72]
+    ])
+C
+</script></div>
+<div class="sagecell-sage" id="sage-16"><script type="text/x-sage">C.eigenmatrix_right()
+</script></div></section><section class="section" id="section-3"><header title="Section 3 Fancy Footwork"><h1 class="heading hide-type" alt="Section 3 Fancy Footwork">
+<span class="type">Section</span><span class="codenumber">3</span><span class="title">Fancy Footwork</span>
+</h1></header><p id="p-13">A totally random matrix is unlikely to have a characteristic polynomial that factors if we restrict ourseves to the rationals.  But we can find all the roots over \(\overline{Q}\text{,}\) the set of all algebraic numbers.  (This is the set of all real roots of all possible polynomials with integer coefficients.)</p>
+<div class="sagecell-sage" id="sage-17"><script type="text/x-sage">D = random_matrix(QQ, 10)
+D
+</script></div>
+<div class="sagecell-sage" id="sage-18"><script type="text/x-sage">p = D.characteristic_polynomial()
+p.factor()
+</script></div>
+<div class="sagecell-sage" id="sage-19"><script type="text/x-sage">p.roots(ring=QQbar, multiplicities=False)
+</script></div>
+<p id="p-14">If we make a “block diagonal” matrix, then the characteristic polynomial will definitely factor some</p>
+<div class="sagecell-sage" id="sage-20"><script type="text/x-sage">E = block_diagonal_matrix( [random_matrix(QQ, 5), random_matrix(QQ, 5)])
+E
+</script></div>
+<div class="sagecell-sage" id="sage-21"><script type="text/x-sage">p = E.charpoly()
+p.factor()
+</script></div>
+<p id="p-15">Finally a large example, illustrating how fast Sage is at making characteristic polynomials and at factoring.</p>
+<div class="sagecell-sage" id="sage-22"><script type="text/x-sage">F = block_diagonal_matrix( [random_matrix(QQ, 50), random_matrix(QQ, 50)])
+p = F.charpoly()
+p.factor()
+</script></div>
+<p id="p-16">This is such a common operation, that Sage has a shorthand method for the <em class="terminology">Factored Characteristic Polynomial</em>, namely <tt class="code-inline tex2jax_ignore">.fcp()</tt>.</p>
+<div class="sagecell-sage" id="sage-23"><script type="text/x-sage">F.fcp()
+</script></div>
+<p id="p-17">Nothing short of amazing!</p></section><section class="section" id="section-4"><header title="Section 4 Numerical Matrices"><h1 class="heading hide-type" alt="Section 4 Numerical Matrices">
+<span class="type">Section</span><span class="codenumber">4</span><span class="title">Numerical Matrices</span>
+</h1></header><p id="p-18">If we use <tt class="code-inline tex2jax_ignore">CDF</tt> (Complex Double Field) for the number system of the entries of our matrix, we get (good) approximate values for eigenvalues.  (If we are OK with the approximate nature, these routines are very, very fast.)</p>
+<div class="sagecell-sage" id="sage-24"><script type="text/x-sage">G = random_matrix(QQ, 300)
+H = G.change_ring(CDF)
+H.eigenvalues()
+</script></div></section></section></div></main>
+</div>
+</body>
+</html>
