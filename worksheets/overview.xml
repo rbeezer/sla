@@ -115,6 +115,14 @@
         </paragraphs>
 
         <paragraphs>
+            <title>Section ILT: Injective Linear Transformations</title>
+
+            <p>Two linear transformations, one injective, the other non-injective.  Checks on injectiveness and kernels, along with a demonstration of the non-injective linear transformation failing the definition.</p>
+
+            <p>Short: no exercises. [<url href="ILT/ILT.html">HTML</url>]<nbsp />[<url href="ILT/ILT.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
             <xi:include href="./legal.xml" />
         </paragraphs>
 
