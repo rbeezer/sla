@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!-- Sage and Linear Algebra Worksheets -->
+<!--          Robert A. Beezer          -->
+<!--  Copyright 2017 License: CC BY-SA  -->
+<!--  See COPYING for more information  -->
 
-<mathbook>
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <!-- EDIT output string/ID in Makefile too-->
     <article xml:id="IVLT">
-        <title>Demo: Section IVLT</title>
+        <title>Sage and Linear Algebra Worksheet</title>
+        <subtitle>FCLA Section IVLT</subtitle>
 
-        <frontmatter xml:id="index">
-            <titlepage>
-                <author>
-                    <personname>Robert Beezer</personname>
-                    <department>Department of Mathematics and Computer Science</department>
-                    <institution>University of Puget Sound</institution>
-                </author>
-                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
-                <date>Math 290, Spring 2016</date>
-            </titlepage>
+        <!-- header inclusion needs -xinclude switch on xsltproc -->
+        <frontmatter>
+            <xi:include href="../header.xml" />
         </frontmatter>
 
         <section>
@@ -44,7 +41,7 @@
             S
             </input></sage>
 
-            <p>The <c>*</c> operator, like we would use for multiplication, will create a composition.  This will perfectly natural once we discuss Section MR.  Here, composing an invertible linear transformation with its inverse will yield an identity linear transformation.</p>
+            <p>The <c>*</c> operator, like we would use for multiplication, will create a composition.  This will be perfectly natural once we discuss Section MR.  Here, composing an invertible linear transformation with its inverse will yield an identity linear transformation.</p>
 
             <sage><input>
             comp = S*T

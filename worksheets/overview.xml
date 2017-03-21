@@ -109,7 +109,7 @@
 
             <p>Three ways to create linear transformations from <m>\mathbb{Q}^n</m> to <m>\mathbb{Q}^m</m>, in addition to basic queries and operations for Sage linear transformations.</p>
 
-            <p>I do not present any of the four linear transformation worksheets in class, but instead suggest students work through them themselves, if they are interested.  So they are not organized with exercises.</p>
+            <p>I do not present any of the four linear transformation worksheets in class, but instead suggest students work through them themselves, if they are interested.  So they are mostly not organized with exercises.</p>
 
             <p>Medium: no exercises. [<url href="LT/LT.html">HTML</url>]<nbsp />[<url href="LT/LT.pdf">PDF</url>]</p>
         </paragraphs>
@@ -130,6 +130,14 @@
             <p>Some work with pre-images, including three exercises.</p>
 
             <p>Medium: three exercises. [<url href="SLT/SLT.html">HTML</url>]<nbsp />[<url href="SLT/SLT.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Section IVLT: Invertible Linear Transformations</title>
+
+            <p>An invertible linear transformation, its inverse, and the composition of the two.  Twice.  There is some work with the rank and nullity of a Sage linear transformation.</p>
+
+            <p>Medium: no exercises. [<url href="IVLT/IVLT.html">HTML</url>]<nbsp />[<url href="IVLT/IVLT.pdf">PDF</url>]</p>
         </paragraphs>
 
         <paragraphs>

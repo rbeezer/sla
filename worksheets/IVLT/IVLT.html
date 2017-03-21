@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2017-03-20T18:44:33-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sage and Linear Algebra Worksheet</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate Sage Code'});
+});
+</script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="IVLT.html"><span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section IVLT</span></a></h1>
+<p class="byline">Robert Beezer</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="IVLT.html#frontmatter-1" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="IVLT.html#section-1" data-scroll="section-1"><span class="codenumber">1</span><span class="title">Invertible Linear Transformations</span></a></h2>
+<h2 class="link"><a href="IVLT.html#section-2" data-scroll="section-2"><span class="codenumber">2</span><span class="title">Defining an Invertible Linear Transformation on Bases</span></a></h2>
+<h2 class="link"><a href="IVLT.html#section-3" data-scroll="section-3"><span class="codenumber">3</span><span class="title">Rank and Nullity</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="article" id="IVLT"><section class="frontmatter" id="frontmatter-1"><h1 class="heading">
+<span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section IVLT</span>
+</h1>
+<address class="contributors"><p>Robert Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound</p></address>
+<address class="contributors">Spring 2017</address>
+<p></p></section><section class="section" id="section-1"><header title="Section 1 Invertible Linear Transformations"><h1 class="heading hide-type" alt="Section 1 Invertible Linear Transformations">
+<span class="type">Section</span><span class="codenumber">1</span><span class="title">Invertible Linear Transformations</span>
+</h1></header><p id="p-1">A carefully-crafted invertible linear transformation from \(\mathbb{Q}^5\) to \(\mathbb{Q}^5\text{.}\)</p>
+<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">A = matrix(QQ, [[1, 1, -1, -2, 0], [-3, -2, 1, 4, 7],
+    [2, 2, -1, -3, -4], [-4, -3, 3, 8, 3], [5, 6, -7, -8, 8]])
+T = linear_transformation(QQ^5, QQ^5, A, side='right')
+T
+</script></div>
+<div class="sagecell-sage" id="sage-2"><script type="text/x-sage">T.is_injective(), T.is_surjective()
+</script></div>
+<div class="sagecell-sage" id="sage-3"><script type="text/x-sage">T.is_invertible()
+</script></div>
+<div class="sagecell-sage" id="sage-4"><script type="text/x-sage">S = T.inverse()
+S
+</script></div>
+<p id="p-2">The <tt class="code-inline tex2jax_ignore">*</tt> operator, like we would use for multiplication, will create a composition.  This will be perfectly natural once we discuss Section MR.  Here, composing an invertible linear transformation with its inverse will yield an identity linear transformation.</p>
+<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">comp = S*T
+comp
+</script></div>
+<div class="sagecell-sage" id="sage-6"><script type="text/x-sage">comp.is_identity()
+</script></div></section><section class="section" id="section-2"><header title="Section 2 Defining an Invertible Linear Transformation on Bases"><h1 class="heading hide-type" alt="Section 2 Defining an Invertible Linear Transformation on Bases">
+<span class="type">Section</span><span class="codenumber">2</span><span class="title">Defining an Invertible Linear Transformation on Bases</span>
+</h1></header><p id="p-3">Now, an invertible linear transformation defined on a basis, and the resulting inverse linear transformation.  We get two “random” bases of \(\mathbb{Q}^7\) from nonsingular (determinant one) matrices.</p>
+<div class="sagecell-sage" id="sage-7"><script type="text/x-sage">C = random_matrix(QQ, 7, 7, algorithm='unimodular', upper_bound=99)
+Cbasis = C.columns()
+D = random_matrix(QQ, 7, 7, algorithm='unimodular', upper_bound=99)
+Dbasis = D.columns()
+</script></div>
+<p id="p-4">Vector spaces with defined user bases.</p>
+<div class="sagecell-sage" id="sage-8"><script type="text/x-sage">Cspace = (QQ^7).subspace_with_basis(Cbasis)
+Dspace = (QQ^7).subspace_with_basis(Dbasis)
+Cspace, Dspace
+</script></div>
+<p id="p-5">The invertible linear transformation defined with images as the vectors in the codomain basis <tt class="code-inline tex2jax_ignore">D</tt>.</p>
+<div class="sagecell-sage" id="sage-9"><script type="text/x-sage">T = linear_transformation(Cspace, QQ^7, Dbasis)
+T
+</script></div>
+<div class="sagecell-sage" id="sage-10"><script type="text/x-sage">T.is_invertible()
+</script></div>
+<p id="p-6">Now we simply “turn around” the definition, to make the inverse.</p>
+<div class="sagecell-sage" id="sage-11"><script type="text/x-sage">S = linear_transformation(Dspace, QQ^7, Cbasis)
+S
+</script></div>
+<div class="sagecell-sage" id="sage-12"><script type="text/x-sage">S.is_invertible()
+</script></div>
+<p id="p-7">Composition with vector spaces using different bases does not seem to be working properly.  So we just check some random inputs to the composition.</p>
+<div class="sagecell-sage" id="sage-13"><script type="text/x-sage">comp = S*T
+comp.is_identity()
+</script></div>
+<div class="sagecell-sage" id="sage-14"><script type="text/x-sage">v = random_vector(QQ, 7)
+v, T(S(v)) == v, S(T(v)) == v
+</script></div></section><section class="section" id="section-3"><header title="Section 3 Rank and Nullity"><h1 class="heading hide-type" alt="Section 3 Rank and Nullity">
+<span class="type">Section</span><span class="codenumber">3</span><span class="title">Rank and Nullity</span>
+</h1></header><p id="p-8">A general (i.e. not invertible) linear transformation from \(\mathbb{Q}^6\) to \(\mathbb{Q}^5\text{.}\)</p>
+<div class="sagecell-sage" id="sage-15"><script type="text/x-sage">F = matrix(QQ, [[1, 0, 2, -1, -4, 2], [-1, -1, -4, 3, 6, -5], [0, 1, 3, -2, -4, 5],
+    [0, 4, 6, -8, -4, 8], [0, 1, 2, -2, -2, 3]])
+R = linear_transformation(QQ^6, QQ^5, F, side='right')
+R
+</script></div>
+<p id="p-9">Rank is dimension of range (image).  Note there are not left/right variants.</p>
+<div class="sagecell-sage" id="sage-16"><script type="text/x-sage">R.image()
+</script></div>
+<div class="sagecell-sage" id="sage-17"><script type="text/x-sage">R.rank()
+</script></div>
+<p id="p-10">Nullity is dimension of kernel.  Note there are not left/right variants.</p>
+<div class="sagecell-sage" id="sage-18"><script type="text/x-sage">R.kernel()
+</script></div>
+<div class="sagecell-sage" id="sage-19"><script type="text/x-sage">R.nullity()
+</script></div>
+<p id="p-11">Note that rank and nullity sum to the dimension of the domain (which is \(6\) here).</p></section></section></div></main>
+</div>
+</body>
+</html>
