@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<mathbook>
+
+    <!-- EDIT output string/ID in Makefile too-->
+    <article xml:id="MR">
+        <title>Demo: Section MR</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+        <section>
+            <title>A Linear Transformation and some Bases</title>
+
+            <p>In this section we define a linear transformation from <m>\mathbb{C}^6</m> to <m>\mathbb{C}^4</m>.  The definition is a <m>4\times 6</m> matrix of rank <m>4</m> that we will use to multiply input vectors with a matrix-vector product.  It is not important if the linear transformation is injective and/or surjective.</p>
+
+            <sage><input>
+            m, n = 4, 6
+            A = random_matrix(QQ, m, n, algorithm='echelonizable', rank=m, upper_bound=9)
+            A
+            </input></sage>
+
+            <sage><input>
+            T = linear_transformation(A, side='right')
+            T
+            </input></sage>
+
+            <p>And we construct two random bases, one for the domain and one for the codomain, extracted from the columns of unimodular matrices.</p>
+
+            <sage><input>
+            Dmat = random_matrix(QQ, n, n, algorithm='unimodular', upper_bound=9)
+            D = Dmat.columns()
+            D
+            </input></sage>
+
+
+            <sage><input>
+            Cmat = random_matrix(QQ, m, m, algorithm='unimodular', upper_bound=9)
+            C = Cmat.columns()
+            C
+            </input></sage>
+        </section>
+
+        <section>
+            <title>A Matrix Representation, Old Style</title>
+
+            <p>We will coordinatize the outputs of the linear transformation, for inputs from the basis of the domain, relative to the basis of the codomain, and pack them in a matrix.</p>
+
+            <p>Outputs on the domain basis first.</p>
+
+            <sage><input>
+            outputs = [T(b) for b in D]
+            outputs
+            </input></sage>
+
+            <p>We make a vector space for the codomain, with the desired basis.</p>
+
+            <sage><input>
+            VC = (QQ^m).subspace_with_basis(C)
+            VC
+            </input></sage>
+
+            <p>Now, coordinate versions of the outputs.</p>
+
+            <sage><input>
+            coord = [VC.coordinate_vector(t) for t in outputs]
+            coord
+            </input></sage>
+
+            <p>And then we pack them into a matrix.</p>
+
+            <sage><input>
+            rep = column_matrix(coord)
+            rep
+            </input></sage>
+
+            <p>Does the representation <q>work</q> as it should?  We need a vector space for the domain before we can check.</p>
+
+            <sage><input>
+            VD = (QQ^n).subspace_with_basis(D)
+            VD
+            </input></sage>
+
+            <p>OK, coordinatize input, multiply by representation matrix, un-coordinatize (linear combination).  This is the fundamental Theorem FTMR at work.</p>
+
+            <sage><input>
+            u = random_vector(QQ, 6)
+            out = VC.linear_combination_of_basis(rep*VD.coordinate_vector(u))
+            u, out, T(u) ==  out
+            </input></sage>
+
+            <p>Nice.</p>
+        </section>
+
+        <section>
+            <title>A Matrix Representation, Sage Style</title>
+
+            <p>Now we do it Sage style.  The matrix of the linear transformation first, as we like to see it.</p>
+
+            <sage><input>
+            T.matrix(side='right')
+            </input></sage>
+
+            <p>Now we replace the domain and codomain with new vector spaces, carrying different bases.  We are not really <q>restricting</q> the domain and codomain, we are replacing them.</p>
+
+            <sage><input>
+            S = T.restrict_domain(VD).restrict_codomain(VC)
+            rep2 = S.matrix(side='right')
+            rep2
+            </input></sage>
+
+            <p>Bingo!  This is representation we found above.  A one-liner in Sage.</p>
+
+            <sage><input>
+            rep2 == rep
+            </input></sage>
+        </section>
+
+        <section>
+            <title>Sneak Preview</title>
+
+            <p>Ponder the following computation <mdash /> matrix representations and nonsingular matrices with columns from the two bases.</p>
+
+            <sage><input>
+            S.matrix(side='right') - Cmat.inverse()*T.matrix(side='right')*Dmat
+            </input></sage>
+
+            <p>Notice how Sage is conflicted about if <c>S</c> and <c>T</c> are equal or not.</p>
+
+            <sage><input>
+            S == T
+            </input></sage>
+
+            <sage><input>
+            S.is_equal_function(T)
+            </input></sage>
+        </section>
+    </article>
+</mathbook>
