@@ -105,6 +105,16 @@
         </paragraphs>
 
         <paragraphs>
+            <title>Section LT: Linear Transformations</title>
+
+            <p>Three ways to create linear transformations from <m>\mathbb{Q}^n</m> to <m>\mathbb{Q}^m</m>, in addition to basic queries and operations for Sage linear transformations.</p>
+
+            <p>I do not present any of the four linear transformation worksheets in class, but instead suggest students work through them themselves, if they are interested.  So they are not organized with exercises.</p>
+
+            <p>Medium: no exercises. [<url href="LT/LT.html">HTML</url>]<nbsp />[<url href="LT/LT.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
             <xi:include href="./legal.xml" />
         </paragraphs>
 
