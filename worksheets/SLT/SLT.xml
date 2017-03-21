@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!-- Sage and Linear Algebra Worksheets -->
+<!--          Robert A. Beezer          -->
+<!--  Copyright 2017 License: CC BY-SA  -->
+<!--  See COPYING for more information  -->
 
-<mathbook>
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <!-- EDIT output string/ID in Makefile too-->
     <article xml:id="SLT">
-        <title>Demo: Section SLT</title>
+        <title>Sage and Linear Algebra Worksheet</title>
+        <subtitle>FCLA Section SLT</subtitle>
 
-        <frontmatter xml:id="index">
-            <titlepage>
-                <author>
-                    <personname>Robert Beezer</personname>
-                    <department>Department of Mathematics and Computer Science</department>
-                    <institution>University of Puget Sound</institution>
-                </author>
-                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
-                <date>Math 290, Spring 2016</date>
-            </titlepage>
+        <!-- header inclusion needs -xinclude switch on xsltproc -->
+        <frontmatter>
+            <xi:include href="../header.xml" />
         </frontmatter>
 
         <section>
@@ -65,7 +62,11 @@
         <section>
             <title>Pre-Images</title>
 
-            <p>We can create inputs associated with any output.  First, we make an arbitrary output, but make sure it really is an output, as a linear combination of a basis of the image (see basis above).  We print the two vectors in the opposite of what we would consider the <q>normal</q> order.</p>
+            <exercise>
+                <statement>
+                    <p>We can create inputs associated with any output.  First, we make an arbitrary output, but make sure it really is an output, as a linear combination of a basis of the image (see basis above).  We print the two vectors in the opposite of what we would consider the <q>normal</q> order.</p>
+                </statement>
+            </exercise>
 
             <sage><input>
             bas = IM.basis()
@@ -80,14 +81,18 @@
             S(inp)
             </input></sage>
 
-            <p>We can make other inputs, using the kernel.</p>
+            <exercise>
+                <statement>
+                <p>We can make other inputs, using the kernel.</p>
+
+                <p>Any value of <c>new_inp</c> is in the preimage of <c>out</c>, and every element of the preimage can be built this way.  Notice the role the kernel plays, much like in the worksheet about injective linear transformations.</p>
+                </statement>
+            </exercise>
 
             <sage><input>
             K = S.kernel()
             K
             </input></sage>
-
-            <p>Any value of <c>new_inp</c> is in the preimage of <c>out</c>, and every element of the preimage can be built this way.  Notice the role the kernel plays, much like in the worksheet about injective linear transformations.</p>
 
             <sage><input>
             z = K.random_element()
@@ -95,14 +100,18 @@
             new_inp, S(new_inp)
             </input></sage>
 
-            <p>Elements outside the range (image) will have empty preimages.  We mildly <q>wreck</q> an element of the range.</p>
+            <exercise>
+                <statement>
+                <p>Elements outside the range (image) will have empty preimages.  We mildly <q>wreck</q> an element of the range.</p>
+
+                <p>With two initial entries determined by the zeros and ones in the basis vectors, the third entry must be determined, so we can <q>twiddle</q> it just a bit to obtain a vector of the codomain that lies outside the range.  We will ask Sage for a pre-image representative anyway and see what happens.</p>
+                </statement>
+            </exercise>
 
             <sage><input>
             in_range = ()*bas[0] + ()*bas[1]
             in_range
             </input></sage>
-
-            <p>With two initial entries determined by the zeros and ones in the basis vectors, the third entry must be determined, so we can <q>twiddle</q> it just a bit to obtain a vector of the codomain that lies outside the range.  We will ask Sage for a pre-image representative anyway and see what happens.</p>
 
             <sage><input>
             outside_range = vector(QQ, [ , , ])
