@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<mathbook>
+
+    <!-- EDIT output string/ID in Makefile too-->
+    <article xml:id="VR">
+        <title>Demo: Section VR</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Robert Beezer</personname>
+                    <department>Department of Mathematics and Computer Science</department>
+                    <institution>University of Puget Sound</institution>
+                </author>
+                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
+                <date>Math 290, Spring 2016</date>
+            </titlepage>
+        </frontmatter>
+
+        <section>
+            <title>Vector Representations</title>
+
+            <p>It is easy to form vector representations of vectors in <m>\mathbb{C}^n</m>.</p>
+
+            <p>We get a nonstandard basis quickly from the columns of a nonsingular matrix (square, full rank).</p>
+
+            <sage><input>
+            n = 6
+            A = random_matrix(QQ, n, n, algorithm='echelonizable', rank=n, upper_bound=9)
+            A
+            </input></sage>
+
+            <p>The columns of <c>A</c> become the <q>user basis</q> of a vector space.</p>
+
+            <sage><input>
+            B = A.columns()
+            V = (QQ^n).subspace_with_basis(B)
+            V
+            </input></sage>
+
+
+            <sage><input>
+            u = random_vector(QQ, n)
+            u
+            </input></sage>
+
+            <p>Now, we get values of the invertible linear transformation <m>\rho_B</m> with the Sage method <c>.coordinate_vector()</c> method of the vector space.</p>
+
+            <sage><input>
+            c = V.coordinate_vector(u)
+            c
+            </input></sage>
+
+            <p>The inverse linear transformation is also available as the <c>.linear_combination_of_basis()</c> method of the vector space.</p>
+
+            <sage><input>
+            round_trip = V.linear_combination_of_basis(c)
+            round_trip
+            </input></sage>
+
+            <p>And the automated check:</p>
+
+            <sage><input>
+            u == round_trip
+            </input></sage>
+
+            <p>Notice that this is something we could do <q>by hand</q> with just reduced row-echelon form. The coordinitization of <c>u</c> relative to the basis <c>B</c> is just a (unique) solution to a linear system.</p>
+
+            <sage><input>
+            aug = column_matrix(B + [u])
+            aug.rref()
+            </input></sage>
+
+            <p>The following stanza will always return <c>True</c> as we <q>coordinatize</q> and then use the coordinates to form a linear combination of the basis.</p>
+
+            <sage><input>
+            w = random_vector(QQ, n)
+            x = V.coordinate_vector(w)
+            y = V.linear_combination_of_basis(x)
+            y == w
+            </input></sage>
+        </section>
+
+        <!-- Might be better to compute something of interest in abstract vector space by coordinatizing  -->
+        <section>
+            <title>Abstract Vector Spaces</title>
+
+            <p>Sage does not implement abstract vector spaces.  It presumes we have <q>nice</q> standard bases available and can apply an intermediate coordinatization ourselves.</p>
+
+            <!-- [[1, 1, 2, 5], [-2, -1, -3, -8], [2, 1, 4, 7], [-2, 1, 3, -7]] -->
+            <!-- (-33/14, 1/2, 1, 1) -->
+            <p>Problem: In <m>P_3</m>, the vector space of polynomials with degree at most <m>3</m>, find the vector representation of <m>p = \left(x^{3} + x^{2} + \frac{1}{2} \, x - \frac{33}{14}\right)</m> relative to the basis for <m>P_3</m>:
+            <me>B = \left\{
+            5 \, x^{3} + 2 \, x^{2} + x + 1,\,
+            -8 \, x^{3} - 3 \, x^{2} - x - 2,\,
+            7 \, x^{3} + 4 \, x^{2} + x + 2,\,
+            -7 \, x^{3} + 3 \, x^{2} + x - 2
+            \right\}</me></p>
+
+            <p>Solution:  Coordinatize with respect to the basis <m>\left\{1, x, x^2, x^3\right\}</m>.</p>
+
+            <sage><input>
+            A = matrix(QQ, [[1, -2, 2, -2], [1, -1, 1, 1], [2, -3, 4, 3], [5, -8, 7, -7]])
+            B = A.columns()
+            B
+            </input></sage>
+
+            <p><c>B</c> is a basis, since <c>A</c> is nonsingular.</p>
+
+            <sage><input>
+            A.is_singular()
+            </input></sage>
+
+            <p>Now coordinatize <c>p</c>.</p>
+
+            <sage><input>
+            p = vector(QQ, [-33/14, 1/2, 1, 1])
+            p
+            </input></sage>
+
+            <p>We'll get a coordinatization old-style.</p>
+
+            <sage><input>
+            aug = column_matrix(B + [p])
+            r = aug.rref()
+            r
+            </input></sage>
+
+            <p>Let's check to see if this is right and we can recover <c>p</c>.</p>
+
+            <sage><input>
+            soln = r.column(4)
+            round_trip = sum([soln[i]*B[i] for i in range(4)])
+            round_trip, round_trip == p
+            </input></sage>
+        </section>
+    </article>
+</mathbook>
