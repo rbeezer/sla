@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2017-03-27T15:08:06-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sage and Linear Algebra Worksheet</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate Sage Code'});
+});
+</script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="VR.html"><span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section VR</span></a></h1>
+<p class="byline">Robert Beezer</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="VR.html#frontmatter-1" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="VR.html#section-1" data-scroll="section-1"><span class="codenumber">1</span><span class="title">Vector Representations</span></a></h2>
+<h2 class="link"><a href="VR.html#section-2" data-scroll="section-2"><span class="codenumber">2</span><span class="title">Abstract Vector Spaces</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="article" id="VR"><section class="frontmatter" id="frontmatter-1"><h1 class="heading">
+<span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section VR</span>
+</h1>
+<address class="contributors"><p>Robert Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound</p></address>
+<address class="contributors">Spring 2017</address>
+<p></p></section><section class="section" id="section-1"><header title="Section 1 Vector Representations"><h1 class="heading hide-type" alt="Section 1 Vector Representations">
+<span class="type">Section</span><span class="codenumber">1</span><span class="title">Vector Representations</span>
+</h1></header><p id="p-1">It is easy to form vector representations of vectors in \(\mathbb{C}^n\text{.}\)</p>
+<p id="p-2">We get a nonstandard basis quickly from the columns of a nonsingular matrix.  The keyword <tt class="code-inline tex2jax_ignore">algorithm='unimodular'</tt> requests a matrix with determinant \(1\text{.}\)</p>
+<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">n = 6
+A = random_matrix(QQ, n, algorithm='unimodular', upper_bound=9)
+A
+</script></div>
+<p id="p-3">The columns of <tt class="code-inline tex2jax_ignore">A</tt> become the “user basis” of a vector space.</p>
+<div class="sagecell-sage" id="sage-2"><script type="text/x-sage">B = A.columns()
+V = (QQ^n).subspace_with_basis(B)
+V
+</script></div>
+<div class="sagecell-sage" id="sage-3"><script type="text/x-sage">u = random_vector(QQ, n)
+u
+</script></div>
+<p id="p-4">Now, we get values of the invertible linear transformation \(\rho_B\) with the Sage method <tt class="code-inline tex2jax_ignore">.coordinate_vector()</tt> method of the vector space.</p>
+<div class="sagecell-sage" id="sage-4"><script type="text/x-sage">c = V.coordinate_vector(u)
+c
+</script></div>
+<p id="p-5">The inverse linear transformation is also available as the <tt class="code-inline tex2jax_ignore">.linear_combination_of_basis()</tt> method of the vector space.</p>
+<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">round_trip = V.linear_combination_of_basis(c)
+round_trip
+</script></div>
+<p id="p-6">And the automated check:</p>
+<div class="sagecell-sage" id="sage-6"><script type="text/x-sage">u == round_trip
+</script></div>
+<p id="p-7">Notice that this is something we could do “by hand” with just reduced row-echelon form. The coordinitization of <tt class="code-inline tex2jax_ignore">u</tt> relative to the basis <tt class="code-inline tex2jax_ignore">B</tt> is just a (unique) solution to a linear system.</p>
+<div class="sagecell-sage" id="sage-7"><script type="text/x-sage">aug = column_matrix(B + [u])
+aug.rref()
+</script></div>
+<p id="p-8">The following stanza will always return <tt class="code-inline tex2jax_ignore">True</tt> as we “coordinatize” and then use the coordinates to form a linear combination of the basis.</p>
+<div class="sagecell-sage" id="sage-8"><script type="text/x-sage">w = random_vector(QQ, n)
+x = V.coordinate_vector(w)
+y = V.linear_combination_of_basis(x)
+y == w
+</script></div></section><section class="section" id="section-2"><header title="Section 2 Abstract Vector Spaces"><h1 class="heading hide-type" alt="Section 2 Abstract Vector Spaces">
+<span class="type">Section</span><span class="codenumber">2</span><span class="title">Abstract Vector Spaces</span>
+</h1></header><p id="p-9">Sage does not implement abstract vector spaces.  It presumes we have “nice” standard bases available and can apply an intermediate coordinatization ourselves.</p>
+<article class="exercise-like" id="exercise-1"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">1</span>
+</h5>
+<p id="p-10">In \(P_3\text{,}\) the vector space of polynomials with degree at most \(3\text{,}\) find the vector representation of \(p = \left(x^{3} + x^{2} + \frac{1}{2} \, x - \frac{33}{14}\right)\) relative to the basis for \(P_3\text{:}\)
+\begin{align*}
+B = \{&amp;
+5x^{3} + 2x^{2} + x + 1,\,
+-8x^{3} - 3x^{2} - x - 2,\\
+&amp; 7x^{3} + 4x^{2} + x + 2,\,
+-7x^{3} + 3x^{2} + x - 2\}\text{.}
+\end{align*}
+</p>
+<p id="p-11">Hint:  Coordinatize with respect to the basis \(\left\{1, x, x^2, x^3\right\}\text{.}\)</p></article><div class="sagecell-sage" id="sage-9"><script type="text/x-sage">A = matrix(QQ, [[1, -2, 2, -2], [1, -1, 1, 1], [2, -3, 4, 3], [5, -8, 7, -7]])
+B = A.columns()
+B
+</script></div>
+<p id="p-12"><tt class="code-inline tex2jax_ignore">B</tt> is a basis, since <tt class="code-inline tex2jax_ignore">A</tt> is nonsingular.</p>
+<div class="sagecell-sage" id="sage-10"><script type="text/x-sage">A.is_singular()
+</script></div>
+<p id="p-13">Now coordinatize <tt class="code-inline tex2jax_ignore">p</tt>.</p>
+<div class="sagecell-sage" id="sage-11"><script type="text/x-sage">p = vector(QQ, [-33/14, 1/2, 1, 1])
+p
+</script></div>
+<p id="p-14">We'll get a coordinatization old-style.</p>
+<div class="sagecell-sage" id="sage-12"><script type="text/x-sage">aug = column_matrix(B + [p])
+r = aug.rref()
+r
+</script></div>
+<p id="p-15">Let's check to see if this is right and we can recover <tt class="code-inline tex2jax_ignore">p</tt>.</p>
+<div class="sagecell-sage" id="sage-13"><script type="text/x-sage">soln = r.column(4)
+round_trip = sum([soln[i]*B[i] for i in range(4)])
+round_trip, round_trip == p
+</script></div></section></section></div></main>
+</div>
+</body>
+</html>

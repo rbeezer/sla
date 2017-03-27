@@ -141,6 +141,14 @@
         </paragraphs>
 
         <paragraphs>
+            <title>Section VR: Vector Representations</title>
+
+            <p>Two examples, one in <m>\mathbb{Q}^6</m>, and the other in <m>P_3</m>.</p>
+
+            <p>Short, 10 minutes: no exercises. [<url href="VR/VR.html">HTML</url>]<nbsp />[<url href="VR/VR.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
             <xi:include href="./legal.xml" />
         </paragraphs>
 
