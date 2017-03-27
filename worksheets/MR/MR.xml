@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!-- Sage and Linear Algebra Worksheets -->
+<!--          Robert A. Beezer          -->
+<!--  Copyright 2017 License: CC BY-SA  -->
+<!--  See COPYING for more information  -->
 
-<mathbook>
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <!-- EDIT output string/ID in Makefile too-->
     <article xml:id="MR">
-        <title>Demo: Section MR</title>
+        <title>Sage and Linear Algebra Worksheet</title>
+        <subtitle>FCLA Section MR</subtitle>
 
-        <frontmatter xml:id="index">
-            <titlepage>
-                <author>
-                    <personname>Robert Beezer</personname>
-                    <department>Department of Mathematics and Computer Science</department>
-                    <institution>University of Puget Sound</institution>
-                </author>
-                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
-                <date>Math 290, Spring 2016</date>
-            </titlepage>
+        <!-- header inclusion needs -xinclude switch on xsltproc -->
+        <frontmatter>
+            <xi:include href="../header.xml" />
         </frontmatter>
 
         <section>
@@ -111,7 +108,7 @@
             T.matrix(side='right')
             </input></sage>
 
-            <p>Now we replace the domain and codomain with new vector spaces, carrying different bases.  We are not really <q>restricting</q> the domain and codomain, we are replacing them.</p>
+            <p>Now we replace the domain and codomain with new vector spaces, carrying different bases.  We are not really <q>restricting</q> the domain and codomain, we are replacing them by the same vector space, but each has a different basis.</p>
 
             <sage><input>
             S = T.restrict_domain(VD).restrict_codomain(VC)

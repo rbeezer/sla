@@ -149,6 +149,14 @@
         </paragraphs>
 
         <paragraphs>
+            <title>Section MR: Matrix Representations</title>
+
+            <p>A random linear transformation from <m>\mathbb{Q}^6</m> to <m>\mathbb{Q}^4</m> is used to build a matrix representation with random bases of the domain and codomain.  The first construction mirrors Definition MR, and uses it to demonstrate Theorem FTMR.  The second construction is semi-automatic with the right linear transformation commands in Sage.  Everthing is then in place for a sneak preview of Theorem MRCB of Section CB, so we go ahead and do the relevant computation.</p>
+
+            <p>Medium, 15 minutes: no exercises. [<url href="MR/MR.html">HTML</url>]<nbsp />[<url href="MR/MR.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
             <xi:include href="./legal.xml" />
         </paragraphs>
 
