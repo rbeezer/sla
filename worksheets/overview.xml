@@ -157,6 +157,16 @@
         </paragraphs>
 
         <paragraphs>
+            <title>Section CB: Change of Basis</title>
+
+            <p>One random linear transformation (from <m>\mathbb{Q}^3</m> to <m>\mathbb{Q}^7</m>), four random bases, two matrix representations, and two change-of-basis matrices, all rolled into a demonstration of Theorem MRCB.</p>
+
+            <p>Then an engineered linear transformation from <m>\mathbb{Q}^8</m> to <m>\mathbb{Q}^8</m> provides a diagonal representation with a basis of eigenvectors.  Eigenvalues and eigenvectors are investigated as properties of the linear transformation (rather than as properties of a matrix).  The connections to similarity and Section SD are made explicit.</p>
+
+            <p>Medium, 20 minutes: one simple exercise. [<url href="MR/MR.html">HTML</url>]<nbsp />[<url href="MR/MR.pdf">PDF</url>]</p>
+        </paragraphs>
+
+        <paragraphs>
             <xi:include href="./legal.xml" />
         </paragraphs>
 

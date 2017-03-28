@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- rob@wave:~/courses/handouts/290demos$ xsltproc ~/mathbook/mathbook/xsl/mathbook-smc.xsl B-demo.xml > B-demo.pre -->
-<!-- rob@wave:~/courses/handouts/290demos$ ~/mathbook/mathbook/script/UUID_sagews B-demo.pre B-demo.sagews -->
+<!-- Sage and Linear Algebra Worksheets -->
+<!--          Robert A. Beezer          -->
+<!--  Copyright 2017 License: CC BY-SA  -->
+<!--  See COPYING for more information  -->
 
-<!-- OR -->
+<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<!-- rob@lava:~/courses/handouts/290demos$ ../420demos/mkexer B-demo -->
-
-<mathbook>
-
-    <!-- EDIT output string/ID in Makefile too-->
     <article xml:id="CB">
-        <title>Demo: Section CB</title>
+        <title>Sage and Linear Algebra Worksheet</title>
+        <subtitle>FCLA Section CB</subtitle>
 
-        <frontmatter xml:id="index">
-            <titlepage>
-                <author>
-                    <personname>Robert Beezer</personname>
-                    <department>Department of Mathematics and Computer Science</department>
-                    <institution>University of Puget Sound</institution>
-                </author>
-                <!-- <xi:include href="course-term.xml" /> -->  <!-- a date element -->
-                <date>Math 290, Spring 2016</date>
-            </titlepage>
+        <!-- header inclusion needs -xinclude switch on xsltproc -->
+        <frontmatter>
+            <xi:include href="../header.xml" />
         </frontmatter>
 
         <section>
             <title>A Linear Transformation, Two Vector Spaces, Four Bases</title>
 
-            <p>In this section we deﬁne a linear transformation from <m>\mathbb{C}^{3}</m> to <m>\mathbb{C}^{7}</m>. The deﬁnition is a <m>7\times 3</m> matrix of rank <m>3</m> that we will use to multiply input vectors with a matrix-vector product. It is not important if the linear transformation is injective and/or surjective.</p>
+            <p>In this section we deﬁne a linear transformation from <m>\mathbb{C}^{3}</m> to <m>\mathbb{C}^{7}</m> using a randomly selected matrix. The deﬁnition is a <m>7\times 3</m> matrix of rank <m>3</m> that we will use to multiply input vectors with a matrix-vector product. It is not important if the linear transformation is injective and/or surjective.</p>
 
             <p>We will build two representations, using a total of four bases — two for the domain and two for the codomain.</p>
 
@@ -67,10 +58,14 @@
             VC2 = (QQ^m).subspace_with_basis(C2)
             </input></sage>
 
-            <p>Check out a few of these<ellipsis /></p>
+            <exercise>
+                <statement>
+                    <p>Check out a few of these bases by just asking Sage to display them.</p>
+                </statement>
+            </exercise>
 
             <sage><input>
-            X
+            D1
             </input></sage>
 
             <p>Now we build two <em>different</em> representations.</p>
@@ -90,7 +85,7 @@
         <section>
             <title>Change of Basis Matrices</title>
 
-            <p>A natural way to build a change-of-basis matrix in Sage is to adjust the bases for the identity linear transformation.</p>
+            <p>A natural way to build a change-of-basis matrix in Sage is to adjust the bases for domain and range of the identity linear transformation by supplying an identity matrix to the linear tansformation constructor.</p>
 
             <sage><input>
             identity_domain = linear_transformation(QQ^n, QQ^n, identity_matrix(n))
@@ -142,14 +137,14 @@
 
             <sage><input>
             A = matrix(QQ,
-            [[-2, 3, -20, 15, 1, 30, -5, 17],
-            [-27, -38, -30, -50, 268, -73, 210, -273],
-            [-12, -24, -7, -30, 142, -48, 100, -160],
-            [-3, -15, 35, -32, 35, -57, 20, -71],
-            [-9, -9, -10, -10, 65, -11, 50, -59],
-            [-3, -6, -20, 0, 58, 1, 40, -55],
-            [3, 0, 5, 0, -10, -3, -12, 1],
-            [0, 3, 0, 5, -19, 10, -15, 25]])
+            [[ -2,   3, -20,  15,   1,  30,  -5,   17],
+             [-27, -38, -30, -50, 268, -73, 210, -273],
+             [-12, -24,  -7, -30, 142, -48, 100, -160],
+             [ -3, -15,  35, -32,  35, -57,  20,  -71],
+             [ -9,  -9, -10, -10,  65, -11,  50,  -59],
+             [ -3,  -6, -20,   0,  58,   1,  40,  -55],
+             [  3,   0,   5,   0, -10,  -3, -12,    1],
+             [  0,   3,   0,   5, -19,  10, -15,   25]])
             T = linear_transformation(A, side='right')
             T
             </input></sage>
@@ -157,18 +152,17 @@
             <p>A basis of <m>\mathbb{C}^8</m>. And a vector space with this basis.</p>
 
             <sage><input>
-            v1 = vector(QQ, [-4, -6, -1, 7, -2, -4, 1, 0])
-            v2 = vector(QQ, [3, -10, -6, -6, -2, 0, 0, 1])
-            v3 = vector(QQ, [0, -9, -4, -1, -3, -1, 1, 0])
-            v4 = vector(QQ, [1, -12, -8, -5, -3, -2, 0, 1])
-            v5 = vector(QQ, [0, 3, 2, 2, 1, 0, 0, 0])
-            v6 = vector(QQ, [1, 0, 0, -2, 0, 1, 0, 0])
-            v7 = vector(QQ, [0, 0, 2, 3, 0, 0, 1, 0])
-            v8 = vector(QQ, [3, -4, -2, -3, 0, 0, 0, 1])
+            v1 = vector(QQ, [-4,  -6, -1,  7, -2, -4, 1, 0])
+            v2 = vector(QQ, [ 3, -10, -6, -6, -2,  0, 0, 1])
+            v3 = vector(QQ, [ 0,  -9, -4, -1, -3, -1, 1, 0])
+            v4 = vector(QQ, [ 1, -12, -8, -5, -3, -2, 0, 1])
+            v5 = vector(QQ, [ 0,   3,  2,  2,  1,  0, 0, 0])
+            v6 = vector(QQ, [ 1,   0,  0, -2,  0,  1, 0, 0])
+            v7 = vector(QQ, [ 0,   0,  2,  3,  0,  0, 1, 0])
+            v8 = vector(QQ, [ 3,  -4, -2, -3,  0,  0, 0, 1])
             B = [v1, v2, v3, v4, v5, v6, v7, v8]
             V = (QQ^8).subspace_with_basis(B)
             </input></sage>
-
 
             <sage><input>
             S = T.restrict_domain(V).restrict_codomain(V)
