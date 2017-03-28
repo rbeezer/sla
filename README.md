@@ -17,4 +17,6 @@ There is a bash script, which you can experiment with.  However we are distribut
 
 See [the overview](worksheets/overview.html) for brief descriptions of each worksheet.  If you plan to present these in class, you might practice the exercises in advance.  They are not hard, but better to be prepared than to stumble around in class.
 
+Copyright:  2016-2017 Robert A. Beezer
+
 License:  CC BY-SA ([CreativeCommons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/))
