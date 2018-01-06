@@ -1,71 +1,67 @@
 <!DOCTYPE html>
 <!--**************************************-->
-<!--* Generated from MathBook XML source *-->
-<!--*    on 2017-03-20T17:26:10-07:00    *-->
+<!--*    Generated from PreTeXt source   *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
 <!--**************************************-->
-<html>
+<html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Demo: Section ILT</title>
-<meta name="Keywords" content="Authored in MathBook XML">
+<title>Sage and Linear Algebra Worksheet</title>
+<meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
-// contrib directory for accessibility menu, moot after v2.6+?
-MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']],
     },
     TeX: {
-        // [Contrib]accessibility menu moot after v2.6+?
-        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
-        equationNumbers: { autoNumber: "none",
-                           useLabelIds: true,
-                           // JS comment, XML CDATA protect XHTML quality of file
-                           // if removed in XSL, use entities
-                           //<![CDATA[
-                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
-                           //]]>
-                         },
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
         TagSide: "right",
         TagIndent: ".8em",
     },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
     "HTML-CSS": {
         scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
     },
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><script>$(function () {
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
     // Make *any* div with class 'sagecell-sage' an executable Sage cell
     // Their results will be linked, only within language type
     sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
                            linked: true,
                            languages: ['sage'],
-                           evalButtonText: 'Evaluate Sage Code'});
+                           evalButtonText: 'Evaluate (Sage)'});
 });
-</script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-article has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="ILT.html"><span class="title">Demo: Section ILT</span></a></h1>
+<h1 class="heading"><a href="ILT.html"><span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section ILT</span></a></h1>
 <p class="byline">Robert Beezer</p>
 </div>
 </div></div>
 <nav id="primary-navbar" class="navbar" style=""><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Prev</span><span id="upbutton" class="up-button button disabled toolbar-item">Up</span><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
 <button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
@@ -73,14 +69,17 @@ MathJax.Hub.Config({
 </div>
 </div></nav></header><div class="page">
 <aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="ILT.html#index" data-scroll="index"><span class="title">Front Matter</span></a></h2>
-<h2 class="link"><a href="ILT.html#section-1" data-scroll="section-1"><span class="codenumber">1</span><span class="title">Injective Linear Transformations</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="article" id="ILT"><section class="frontmatter" id="index"><h1 class="heading"><span class="title">Demo: Section ILT</span></h1>
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="ILT.html#section-1" data-scroll="section-1"><span class="codenumber">1</span><span class="title">Injective Linear Transformations</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="article" id="ILT"><section class="frontmatter" id="frontmatter-1"><h1 class="heading">
+<span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section ILT</span>
+</h1>
 <address class="contributors"><p>Robert Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound</p></address>
-<address class="contributors">Math 290, Spring 2016</address>
-<p></p></section><section class="section" id="section-1"><header title="Section 1 Injective Linear Transformations"><h1 class="heading hide-type" alt="Section 1 Injective Linear Transformations">
+<address class="contributors">Spring 2017</address>
+<p></p></section><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 Injective Linear Transformations">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">Injective Linear Transformations</span>
-</h1></header><p id="p-1">Two carefully-crafted linear transformations: <tt class="code-inline tex2jax_ignore">T</tt> is injective, <tt class="code-inline tex2jax_ignore">S</tt> is not.</p>
+</h2>
+<p id="p-1">Two carefully-crafted linear transformations: <code class="code-inline tex2jax_ignore">T</code> is injective, <code class="code-inline tex2jax_ignore">S</code> is not.</p>
 <div class="sagecell-sage" id="sage-1"><script type="text/x-sage">A = matrix(QQ, [[1, 2, 2], [3, 7, 6], [1, 2, 1], [2, 5, 7]])
 T = linear_transformation(QQ^3, QQ^4, A, side='right')
 </script></div>
@@ -96,7 +95,7 @@ S = linear_transformation(QQ^3, QQ^4, B, side='right')
 <div class="sagecell-sage" id="sage-6"><script type="text/x-sage">K = S.kernel()
 K
 </script></div>
-<p id="p-2">We create two different inputs, which differ by a random vector from the kernel (which we hope is not simply the zero vector, a distinct possibility).  We always get the same output from <tt class="code-inline tex2jax_ignore">S</tt>, predictably.  If we try this with <tt class="code-inline tex2jax_ignore">T</tt> then the kernel vector is <!--Style me with CSS--><em>always</em> the zero vector and the demonstration is very uninteresting.</p>
+<p id="p-2">We create two different inputs, which differ by a random vector from the kernel (which we hope is not simply the zero vector, a distinct possibility).  We always get the same output from <code class="code-inline tex2jax_ignore">S</code>, predictably.  If we try this with <code class="code-inline tex2jax_ignore">T</code> then the kernel vector is <em class="emphasis">always</em> the zero vector and the demonstration is very uninteresting.</p>
 <div class="sagecell-sage" id="sage-7"><script type="text/x-sage">z = K.random_element()
 u = random_vector(QQ, 3)
 w = u + z

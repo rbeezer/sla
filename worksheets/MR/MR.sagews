@@ -1,36 +1,36 @@
-︠d0071630-736a-46a4-a133-a09a6776b5f5︠
+︠333a98c0-2b63-4e94-a09b-403d34cc1e8f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡cc6c4837-8abf-4519-a93d-cde684dfb94a︡
-︠f176ebe1-37ce-461f-a0b2-d80bf80d7b6c︠
+︡6b395c12-d4d3-47bd-acc6-717beafa719f︡
+︠0fa49f0b-2dff-416b-ae38-5a9c68753e6c︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><div style="display:none;">\(
+<div class="mathbook-content"><div class="hidden-content">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡56ecdc8b-eb3a-499b-a9a7-c70c2f42cce3︡
-︠93970638-2136-4cd0-a87a-f41f04f57b25︠
+︡d7c8b58b-0a9f-4ab6-a699-ef48ca030327︡
+︠00ec8921-52bf-426a-a9c4-3a383f343386︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡eb9829f6-1285-4843-a8cb-2cf4cf8b5067︡
-︠27edfaf6-9c00-475d-ae3f-ca2304e23be8︠
+︡a8685f27-08ac-47c2-a26e-69991c940d88︡
+︠fd885869-5175-4413-addd-859916718fc0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="MR"></section></div>
-︡d0fbee6d-5fa6-4f1b-adff-ccaefb3ed69c︡
-︠e6cd2bc8-9184-4786-a355-322d128406aa︠
+︡dce643fb-d5d4-4a16-adf3-a8941aa9c398︡
+︠4652da6c-5412-48c4-af93-24bc8d63627f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡281f53b1-c434-48bc-aee2-4147f5a89be3︡
-︠51c612ac-4717-4ba3-a891-be3f5250afb9︠
+︡bb61e4b5-0092-432f-a718-b4d705479ba0︡
+︠b6c27b62-073a-4a6c-a9de-292f0354bf05︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -41,177 +41,177 @@
 <address class="contributors">Spring 2017</address>
 <p></p>
 </div>
-︡31af8b12-86a9-4e53-a1ec-29b6908f13ec︡
-︠c1e70632-9c83-4578-a987-6b111b2aa3e9︠
+︡0cbce375-58d8-427f-af1c-e451464abf9b︡
+︠5971664d-ca69-4391-a293-f7748bbd66cf︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-1"><header title="Section 1 A Linear Transformation and some Bases"><h1 class="heading hide-type" alt="Section 1 A Linear Transformation and some Bases">
+<div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 A Linear Transformation and some Bases">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">A Linear Transformation and some Bases</span>
-</h1></header></section></div>
-︡0bae3b46-dd36-408d-a926-181293ecd9fc︡
-︠207cea72-1504-4c1d-aaaf-0c72f15de36d︠
+</h2></section></div>
+︡12993f07-dd23-465d-a876-b6d2b6e634c0︡
+︠4e2d85c9-da60-4ed5-ab5c-203f3f615962︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">In this section we define a linear transformation from \(\mathbb{C}^6\) to \(\mathbb{C}^4\text{.}\)  The definition is a \(4\times 6\) matrix of rank \(4\) that we will use to multiply input vectors with a matrix-vector product.  It is not important if the linear transformation is injective and/or surjective.</p></div>
-︡f8d75c1d-f23f-46f0-a4ab-3b8be7d34b7b︡
-︠9746ea3f-722b-419b-a2d5-e016cfd9324a︠
+︡aa1c8a25-40fb-40d8-a68d-3ae6a2513bba︡
+︠e5502da5-2f51-4a6e-a2d7-002f7d1de599︠
 m, n = 4, 6
 A = random_matrix(QQ, m, n, algorithm='echelonizable', rank=m, upper_bound=9)
 A
-︡ed2340d7-0593-40bc-abea-1cb237110445︡
-︠f2225733-f489-4794-a443-e50a731952e9︠
+︡f7e47112-641c-45b3-a4e0-cf1ee8bf695f︡
+︠34719f2b-19f3-455f-a89e-85d94c2fc891︠
 T = linear_transformation(A, side='right')
 T
-︡7eca0213-507e-49f7-ae3c-1212c96e3b01︡
-︠48f02024-385b-46fb-aedf-af1c2e68d93e︠
+︡7c6eefd1-afaa-430f-a289-01feb3ad366d︡
+︠7eadd8db-a8a5-42e6-a20e-c10b0bfa9210︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">And we construct two random bases, one for the domain and one for the codomain, extracted from the columns of unimodular matrices.</p></div>
-︡a86a98ac-de42-4ab1-a59f-44f60157920d︡
-︠0b565ef0-adef-4f8a-a1e4-1280991e0b11︠
+︡f9ea6b34-6dc1-43ff-a910-8e299259debe︡
+︠eb7d5e88-2f6f-41ae-a14f-1ce4577a049c︠
 Dmat = random_matrix(QQ, n, n, algorithm='unimodular', upper_bound=9)
 D = Dmat.columns()
 D
-︡81ce81d8-1850-4758-a277-689e938b1872︡
-︠9f46ed7c-694b-4ac1-a3f9-a5244b7d785e︠
+︡388b6eaf-7ced-4b08-a91c-93978fff9043︡
+︠d8c5324d-1ba0-4960-a102-e9571d61d021︠
 Cmat = random_matrix(QQ, m, m, algorithm='unimodular', upper_bound=9)
 C = Cmat.columns()
 C
-︡bfe05ced-947e-401a-a24a-bffd349a1037︡
-︠ef7cfd9e-a222-4024-ab49-5085db966b79︠
+︡3f905d29-b445-44eb-a50b-7e5d57bc98cb︡
+︠90a30f13-9c7e-41cc-ad2c-99bf7072c0a9︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-2"><header title="Section 2 A Matrix Representation, Old Style"><h1 class="heading hide-type" alt="Section 2 A Matrix Representation, Old Style">
+<div class="mathbook-content"><section class="section" id="section-2"><h2 class="heading hide-type" alt="Section 2 A Matrix Representation, Old Style">
 <span class="type">Section</span><span class="codenumber">2</span><span class="title">A Matrix Representation, Old Style</span>
-</h1></header></section></div>
-︡259a297b-72e9-44fc-a9a1-201b5e7e5ead︡
-︠7d3175ae-1100-4b5f-a7fa-92aadf95ef38︠
+</h2></section></div>
+︡b4968969-cf54-4d71-aa53-6ec2e4256f61︡
+︠82528ebe-78ed-4db5-ae5a-1c9ee721d913︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-3">We will coordinatize the outputs of the linear transformation, for inputs from the basis of the domain, relative to the basis of the codomain, and pack them in a matrix.</p></div>
-︡cb5fcd56-b78c-4732-a7b1-143bf1a86989︡
-︠1457414a-8010-4c94-ae0f-0143d357cb04︠
+︡aa50cee8-c61a-43e6-a8db-2e8cd64f8189︡
+︠433a3081-957a-40b9-a636-265a2216198a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-4">Outputs on the domain basis first.</p></div>
-︡529aadcf-84fa-44b3-a8a3-8b5cf204ad0b︡
-︠15ea088c-7106-4b52-aedd-258727a3c40c︠
+︡3dd77080-2159-4b54-a4c8-bef0912a8441︡
+︠f7edf6e7-608c-4a42-af9e-74d7569801c5︠
 outputs = [T(b) for b in D]
 outputs
-︡022ed276-fe7f-4524-a812-638ebb65e2af︡
-︠fb11af41-530c-436f-a8e0-b4333fea5dd0︠
+︡2cc19c77-4e8c-4a21-ad2a-caf914fac0c9︡
+︠5f520fe8-726f-4f12-a0e4-bafa30e3ba37︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-5">We make a vector space for the codomain, with the desired basis.</p></div>
-︡ccbee5d2-6367-4f9d-af2c-fd03042fe8cc︡
-︠89848695-908f-4789-a58c-1892ba6ea577︠
+︡4869a799-f0c6-40b7-a2c6-7707147f82ab︡
+︠ae418f82-8824-4e30-a56c-bd3c441c49fe︠
 VC = (QQ^m).subspace_with_basis(C)
 VC
-︡1f0a381d-ebe7-4b60-a5b8-1c0bec65b0b2︡
-︠7d187509-2f41-46f7-a752-f6e01dd8388e︠
+︡5ad9b684-81cb-46ae-a604-2c25879a4d34︡
+︠c9e9390b-e8da-4435-a395-7b1a0a2a4678︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-6">Now, coordinate versions of the outputs.</p></div>
-︡a0bc8319-c491-46f1-ad76-f7de7ec47fdf︡
-︠d80948c6-29bb-4b1b-ace2-3e90d1f96693︠
+︡a319d43d-016e-4ba1-a0da-556707121699︡
+︠e4d0da50-851f-43d9-a5d7-03d6beed0f3a︠
 coord = [VC.coordinate_vector(t) for t in outputs]
 coord
-︡66b600fc-6162-4d13-a9e2-b1151f718d71︡
-︠1d8d48d3-545c-463e-aacc-d7efd0e41729︠
+︡82f63d18-d9ef-492c-a27a-a8e8e96c66ca︡
+︠15c0bfdc-8b66-4bf8-a820-2d8157ab4120︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-7">And then we pack them into a matrix.</p></div>
-︡83710bad-f025-4d88-ab34-70c6096ee750︡
-︠0e37f43a-12b4-478d-a030-4b1011a7f8f4︠
+︡b3684282-f0e5-4795-a028-04596a016528︡
+︠6ecc71ef-4d02-437c-a98e-18371922a87d︠
 rep = column_matrix(coord)
 rep
-︡802c820b-d2e9-4661-a365-4b05c266a6f9︡
-︠a89d4205-de7c-47e3-a81a-e55fb2118b88︠
+︡0dcda3f8-3364-459b-a233-04c4bedd1868︡
+︠67624063-997f-4dd9-a9fc-d01a4d82b9a1︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-8">Does the representation “work” as it should?  We need a vector space for the domain before we can check.</p></div>
-︡420e0501-aef2-4b70-ae02-9e8fd31e5aad︡
-︠2f02e18e-32d3-459a-a57b-819107416ab0︠
+︡21893d99-1338-4205-aca5-975b298ac447︡
+︠578e0bca-5dd8-4608-acd3-17a72c1b7dfc︠
 VD = (QQ^n).subspace_with_basis(D)
 VD
-︡8df90eb8-deba-4213-ac7b-8fd10d95ef09︡
-︠f97f28de-1acd-45fe-a9b5-535255febedb︠
+︡454c4570-fded-455e-ae1b-133ca59b1091︡
+︠dd719b61-c6fa-434f-a221-d340ff68b894︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-9">OK, coordinatize input, multiply by representation matrix, un-coordinatize (linear combination).  This is the fundamental Theorem FTMR at work.</p></div>
-︡8d40d78b-5962-46c1-a55d-ab1fd75d60b3︡
-︠c4114f9c-ae61-41cd-a323-0ce2cb929f35︠
+︡97209ccf-e86d-43a1-a2c3-4a79b78203aa︡
+︠841a5a61-a490-41db-a207-642ddd55f59a︠
 u = random_vector(QQ, 6)
 out = VC.linear_combination_of_basis(rep*VD.coordinate_vector(u))
 u, out, T(u) ==  out
-︡30951d4a-9f9f-41ac-aeee-1ebf18bba5be︡
-︠aee34f09-aa93-4aae-a69c-5ab1aca685b3︠
+︡f1e0b3b1-456e-467b-a1ac-900bed93389d︡
+︠38e19a54-c9a2-480a-a424-0b4163f07380︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-10">Nice.</p></div>
-︡35219619-0b49-4fe4-ae5d-aa76c2369bc5︡
-︠efb01472-e7e2-41d0-a5c5-260addd046c0︠
+︡0c9fd293-76c2-4853-a3a5-7b0cc7fc86f1︡
+︠6fdffb29-eafb-4c80-afbb-4265e3def54f︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-3"><header title="Section 3 A Matrix Representation, Sage Style"><h1 class="heading hide-type" alt="Section 3 A Matrix Representation, Sage Style">
+<div class="mathbook-content"><section class="section" id="section-3"><h2 class="heading hide-type" alt="Section 3 A Matrix Representation, Sage Style">
 <span class="type">Section</span><span class="codenumber">3</span><span class="title">A Matrix Representation, Sage Style</span>
-</h1></header></section></div>
-︡baf6b0a3-39b1-4bcf-ab2b-1422fffc033c︡
-︠3e735340-6792-494e-a800-425645631664︠
+</h2></section></div>
+︡6bf3befd-7d77-483f-a93a-47dbdcfbae0f︡
+︠e7adb5ca-348b-4b0f-aa92-5ea298e93884︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-11">Now we do it Sage style.  The matrix of the linear transformation first, as we like to see it.</p></div>
-︡3a3be8e2-8592-4736-a6b7-709c6d2d1348︡
-︠872c2041-3d6c-4fe0-a64b-ebc7825a06e4︠
+︡86b24780-2c4a-47fa-a7a4-9f241cc05f9e︡
+︠314f486c-889d-430c-ad76-216557217711︠
 T.matrix(side='right')
-︡e7c13e28-0557-4255-a2c9-ea4a2cd77de5︡
-︠1dcde0c1-8d6e-4494-a9b0-2ab74d425bf3︠
+︡642a362a-2b3c-496c-a644-d663bbadd25e︡
+︠3b2656c8-1f44-4bda-a83f-c05230eeeb13︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-12">Now we replace the domain and codomain with new vector spaces, carrying different bases.  We are not really “restricting” the domain and codomain, we are replacing them by the same vector space, but each has a different basis.</p></div>
-︡110effec-0697-45d0-a96c-99650b24e80e︡
-︠c1fdffce-bd44-4592-a629-2c29135473c7︠
+︡a5fcb538-d472-493f-a4b3-3848a8997758︡
+︠bfeacaff-2d4a-4fdd-af28-3507dbf756ea︠
 S = T.restrict_domain(VD).restrict_codomain(VC)
 rep2 = S.matrix(side='right')
 rep2
-︡19916802-6b0b-4065-a3c8-cf5f872eba18︡
-︠131a4735-aa0b-4611-ac4d-50caf5124dc6︠
+︡fa9e4584-5a29-4427-a219-a5ebcc7c3c32︡
+︠63df1159-6a48-448a-abac-55131e08a44e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-13">Bingo!  This is representation we found above.  A one-liner in Sage.</p></div>
-︡5e979efc-3974-45e6-a6aa-4fb1ab7bdb8a︡
-︠1e8b61a5-edf6-4244-a9bf-30ff29b9495d︠
+︡7a14a260-bcaf-45e8-a0a3-cf9e3ac42786︡
+︠50174c9b-c577-45d6-add1-1a0b845487c1︠
 rep2 == rep
-︡37cb22dd-8ba7-41dc-a568-5a84aad542ea︡
-︠021ce4fb-176c-4f7a-abd1-32cc7674cb7b︠
+︡e21096d2-1989-41d6-a7b4-8de987ddc658︡
+︠74a943f2-60be-49db-a046-4d337ba496be︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-4"><header title="Section 4 Sneak Preview"><h1 class="heading hide-type" alt="Section 4 Sneak Preview">
+<div class="mathbook-content"><section class="section" id="section-4"><h2 class="heading hide-type" alt="Section 4 Sneak Preview">
 <span class="type">Section</span><span class="codenumber">4</span><span class="title">Sneak Preview</span>
-</h1></header></section></div>
-︡67d84bc4-6ebd-4bb5-a563-7a536dad1699︡
-︠100f85b5-9245-4ff0-a457-7c1d08aa6c10︠
+</h2></section></div>
+︡e239b8ca-a2a6-4143-ac48-3957cc361cdc︡
+︠bcff5a71-5140-4754-ab29-3529df5067d3︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-14">Ponder the following computation — matrix representations and nonsingular matrices with columns from the two bases.</p></div>
-︡620629cd-e5f2-4ae2-ab37-2b4495c4f210︡
-︠3733e5ca-3b02-4ea1-a065-881dca28f2b0︠
+︡39f384df-631b-4391-a843-1894163779e4︡
+︠d2dc5613-5867-4490-a525-83d28e9b5054︠
 S.matrix(side='right') - Cmat.inverse()*T.matrix(side='right')*Dmat
-︡3e7726df-00a0-439b-a491-a2ab0763056b︡
-︠59ad0d4d-c4e7-4510-a15a-30cdbd410476︠
+︡4262fb81-fe95-46de-a720-cb4aed978f7e︡
+︠3c19e057-146b-4ac8-a83b-9f7ea6b3d425︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-15">Notice how Sage is conflicted about if <tt class="code-inline tex2jax_ignore">S</tt> and <tt class="code-inline tex2jax_ignore">T</tt> are equal or not.</p></div>
-︡0d0bb18f-e43d-4b9e-aca4-6d43b0002159︡
-︠85680198-08d4-459e-a358-7b6cf2c02e17︠
+<div class="mathbook-content"><p id="p-15">Notice how Sage is conflicted about if <code class="code-inline tex2jax_ignore">S</code> and <code class="code-inline tex2jax_ignore">T</code> are equal or not.</p></div>
+︡3514f055-869e-423a-aacd-66de5841b26e︡
+︠7939d392-8292-40b6-ab63-9ca7bfff1b27︠
 S == T
-︡79de2efb-7044-459d-a3d3-c5f31e5ef8c0︡
-︠f4ad2cb2-823c-4686-a4c3-8887ba618595︠
+︡990c2d0c-08e9-4bf5-a1ab-448fb3fa3055︡
+︠7ff8b26b-e64d-40fc-a507-05b956c41047︠
 S.is_equal_function(T)
-︡69916ce1-f632-439b-a9e8-d605dc04d8a7︡
-︠553ed68c-caf5-407a-a306-e23d6fdfa3f1︠
+︡6c65427a-e503-4312-af63-77920e9d2bd7︡
+︠3219b68e-d967-45e4-a70a-564e05b9ab72︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡a56d433c-007f-4676-a0b6-7a9a80a5048f︡
+︡4a4540bc-e864-40b3-a423-f8a37a9243eb︡
 

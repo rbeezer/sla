@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <!--**************************************-->
-<!--* Generated from MathBook XML source *-->
-<!--*    on 2017-01-26T16:09:33-08:00    *-->
+<!--*    Generated from PreTeXt source   *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
 <!--**************************************-->
-<html>
+<html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Sage and Linear Algebra Worksheet</title>
-<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
-// contrib directory for accessibility menu, moot after v2.6+?
-MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']],
     },
     TeX: {
-        // [Contrib]accessibility menu moot after v2.6+?
-        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
-        equationNumbers: { autoNumber: "none",
-                           useLabelIds: true,
-                           // JS comment, XML CDATA protect XHTML quality of file
-                           // if removed in XSL, use entities
-                           //<![CDATA[
-                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
-                           //]]>
-                         },
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
         TagSide: "right",
         TagIndent: ".8em",
     },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
     "HTML-CSS": {
         scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
     },
 });
-    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script>$(function () {
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
     // Make *any* div with class 'sagecell-sage' an executable Sage cell
     // Their results will be linked, only within language type
     sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
                            linked: true,
                            languages: ['sage'],
-                           evalButtonText: 'Evaluate Sage Code'});
+                           evalButtonText: 'Evaluate (Sage)'});
 });
-</script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-article has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(
-\newcommand{\lt}{ &lt; }
-\newcommand{\gt}{ &gt; }
-\newcommand{\amp}{ &amp; }
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
@@ -63,9 +59,9 @@ MathJax.Hub.Config({
 <p class="byline">Robert Beezer</p>
 </div>
 </div></div>
-<nav id="primary-navbar"><div class="container">
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" onclick="window.location.href='B.html'">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Prev</span><span id="upbutton" class="up-button button disabled toolbar-item">Up</span><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
 <button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
@@ -73,18 +69,19 @@ MathJax.Hub.Config({
 </div>
 </div></nav></header><div class="page">
 <aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="B.html#frontmatter-1" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
 <h2 class="link"><a href="B.html#section-1" data-scroll="section-1"><span class="codenumber">1</span><span class="title">Bases</span></a></h2>
 <h2 class="link"><a href="B.html#section-2" data-scroll="section-2"><span class="codenumber">2</span><span class="title">Nonsingular Matrices</span></a></h2>
-<h2 class="link"><a href="B.html#section-3" data-scroll="section-3"><span class="codenumber">3</span><span class="title">Orthonormal Bases</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+<h2 class="link"><a href="B.html#section-3" data-scroll="section-3"><span class="codenumber">3</span><span class="title">Orthonormal Bases</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
 </div></aside><main class="main"><div id="content" class="mathbook-content"><section class="article" id="B"><section class="frontmatter" id="frontmatter-1"><h1 class="heading">
 <span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section B</span>
 </h1>
 <address class="contributors"><p>Robert Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound</p></address>
 <address class="contributors">Spring 2017</address>
-<p></p></section><section class="section" id="section-1"><header title="Section 1 Bases"><h1 class="heading hide-type" alt="Section 1 Bases">
+<p></p></section><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 Bases">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">Bases</span>
-</h1></header><p id="p-1">Five “random” vectors, each with 4 entries, collected into a set <tt class="code-inline tex2jax_ignore">S</tt>.</p>
+</h2>
+<p id="p-1">Five “random” vectors, each with 4 entries, collected into a set <code class="code-inline tex2jax_ignore">S</code>.</p>
 <div class="sagecell-sage" id="sage-1"><script type="text/x-sage">v1 = vector(QQ, [-4, -2,  3, -11])
 v2 = vector(QQ, [-2,  7,  3,   9])
 v3 = vector(QQ, [ 6, -4, -7,   5])
@@ -92,7 +89,7 @@ v4 = vector(QQ, [-1,  0,  3,  -4])
 v5 = vector(QQ, [-4,  5, -5,  11])
 S = [v1, v2, v3, v4, v5]
 </script></div>
-<p id="p-2">Consider the subspace spanned by these five vectors.  We will make these vectors the <!--Style me with CSS--><em>rows</em> of a matrix and row-reduce to see a basis for the space (subspace, or row space, take your pick).  This is an application of Theorem BRS.</p>
+<p id="p-2">Consider the subspace spanned by these five vectors.  We will make these vectors the <em class="emphasis">rows</em> of a matrix and row-reduce to see a basis for the space (subspace, or row space, take your pick).  This is an application of Theorem BRS.</p>
 <div class="sagecell-sage" id="sage-2"><script type="text/x-sage">A = matrix(S)
 A
 </script></div>
@@ -103,19 +100,20 @@ A
 B = W.basis()
 B
 </script></div>
-<article class="exercise-like" id="exercise-1"><h5 class="heading">
+<article class="exercise-like" id="exercise-1"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">1</span>
-</h5>
-<p id="p-4">Construct a <!--Style me with CSS--><em>random</em> vector, <tt class="code-inline tex2jax_ignore">w</tt>, in this subspace by choosing scalars for a linear combination of the vectors we used to build <tt class="code-inline tex2jax_ignore">W</tt> as a span originally.</p>
-<p id="p-5">Then use the three <!--Style me with CSS--><em>basis</em> vectors in <tt class="code-inline tex2jax_ignore">B</tt> to recreate the vector <tt class="code-inline tex2jax_ignore">w</tt>.  Question: how many ways can you do this?  By Theorem VRRB there should always be exactly one way to create <tt class="code-inline tex2jax_ignore">w</tt> using a linear combination of a basis of <tt class="code-inline tex2jax_ignore">W</tt>.</p></article><div class="sagecell-sage" id="sage-5"><script type="text/x-sage">w = *v1 + *v2 + *v3 + *v4 + *v5
+</h6>
+<p id="p-4">Construct a <em class="emphasis">random</em> vector, <code class="code-inline tex2jax_ignore">w</code>, in this subspace by choosing scalars for a linear combination of the vectors we used to build <code class="code-inline tex2jax_ignore">W</code> as a span originally.</p>
+<p id="p-5">Then use the three <em class="emphasis">basis</em> vectors in <code class="code-inline tex2jax_ignore">B</code> to recreate the vector <code class="code-inline tex2jax_ignore">w</code>.  Question: how many ways can you do this?  By Theorem VRRB there should always be exactly one way to create <code class="code-inline tex2jax_ignore">w</code> using a linear combination of a basis of <code class="code-inline tex2jax_ignore">W</code>.</p></article><div class="sagecell-sage" id="sage-5"><script type="text/x-sage">w = *v1 + *v2 + *v3 + *v4 + *v5
 w
 </script></div>
 <div class="sagecell-sage" id="sage-6"><script type="text/x-sage">w in W
 </script></div>
 <div class="sagecell-sage" id="sage-7"><script type="text/x-sage">*B[0] + *B[1] + *B[2]
-</script></div></section><section class="section" id="section-2"><header title="Section 2 Nonsingular Matrices"><h1 class="heading hide-type" alt="Section 2 Nonsingular Matrices">
+</script></div></section><section class="section" id="section-2"><h2 class="heading hide-type" alt="Section 2 Nonsingular Matrices">
 <span class="type">Section</span><span class="codenumber">2</span><span class="title">Nonsingular Matrices</span>
-</h1></header><p id="p-6">We will obtain a basis of \(\mathbb{C}^{10}\) from the columns of a \(10\times 10\) nonsingular matrix.</p>
+</h2>
+<p id="p-6">We will obtain a basis of \(\mathbb{C}^{10}\) from the columns of a \(10\times 10\) nonsingular matrix.</p>
 <div class="sagecell-sage" id="sage-8"><script type="text/x-sage">entries = [[ 1,  1,  1, -1, -2,  4,  2, -3,  1, -6],
            [-2, -1, -2,  2,  4, -7, -4,  5, -1,  7],
            [ 1, -1,  2, -2, -5,  8,  5, -3,  4, -4],
@@ -135,10 +133,10 @@ M
 <div class="sagecell-sage" id="sage-10"><script type="text/x-sage">v = random_vector(ZZ, 10, x=-9, y=9)
 v
 </script></div>
-<article class="exercise-like" id="exercise-2"><h5 class="heading">
+<article class="exercise-like" id="exercise-2"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">2</span>
-</h5>
-<p id="p-8">By Theorem CNMB, the columns of the matrix are a basis of \(\mathbb{C}^{10}\).  So the vector <tt class="code-inline tex2jax_ignore">v</tt> should be a linear combination of the columns of the matrix.  Verify this fact in three ways.</p>
+</h6>
+<p id="p-8">By Theorem CNMB, the columns of the matrix are a basis of \(\mathbb{C}^{10}\text{.}\)  So the vector <code class="code-inline tex2jax_ignore">v</code> should be a linear combination of the columns of the matrix.  Verify this fact in three ways.</p>
 <ol id="ol-1" style="list-style-type: decimal;">
 <li id="li-1">First, the old-fashioned way, thus exposing Theorem NMUS.</li>
 <li id="li-2">Then, the modern way, with an inverse, since a nonsingular matrix is invertible, thus exposing Theorem SNCM.</li>
@@ -148,28 +146,29 @@ aug.rref()
 </script></div>
 <div class="sagecell-sage" id="sage-12"><script type="text/x-sage">M.inverse()*v
 </script></div>
-<p id="p-9">The Sage way: first create a space with a <em class="terminology">user basis</em>.</p>
+<p id="p-9">The Sage way: first create a space with a <b class="terminology">user basis</b>.</p>
 <div class="sagecell-sage" id="sage-13"><script type="text/x-sage">X = (QQ^10).subspace_with_basis(M.columns())
 X
 </script></div>
-<p id="p-10">Sage still carries an <em class="terminology">echelonized basis</em>, in addition to the <em class="terminology">user-installed</em> basis.</p>
+<p id="p-10">Sage still carries an <b class="terminology">echelonized basis</b>, in addition to the <b class="terminology">user-installed</b> basis.</p>
 <div class="sagecell-sage" id="sage-14"><script type="text/x-sage">X.basis()
 </script></div>
 <div class="sagecell-sage" id="sage-15"><script type="text/x-sage">X.echelonized_basis()
 </script></div>
-<p id="p-11">Now ask for a coordinatization, relative to the basis in <tt class="code-inline tex2jax_ignore">X</tt>, thus exposing Theorem VRRB.</p>
+<p id="p-11">Now ask for a coordinatization, relative to the basis in <code class="code-inline tex2jax_ignore">X</code>, thus exposing Theorem VRRB.</p>
 <div class="sagecell-sage" id="sage-16"><script type="text/x-sage">X.coordinates(v)
-</script></div></section><section class="section" id="section-3"><header title="Section 3 Orthonormal Bases"><h1 class="heading hide-type" alt="Section 3 Orthonormal Bases">
+</script></div></section><section class="section" id="section-3"><h2 class="heading hide-type" alt="Section 3 Orthonormal Bases">
 <span class="type">Section</span><span class="codenumber">3</span><span class="title">Orthonormal Bases</span>
-</h1></header><p id="p-12">A particularly simple orthonormal basis of \(\mathbb{C}^3\), collected into the set <tt class="code-inline tex2jax_ignore">S</tt>.</p>
+</h2>
+<p id="p-12">A particularly simple orthonormal basis of \(\mathbb{C}^3\text{,}\) collected into the set <code class="code-inline tex2jax_ignore">S</code>.</p>
 <div class="sagecell-sage" id="sage-17"><script type="text/x-sage">v1 = vector(QQ, [1/3, 2/3, 2/3])
 v2 = vector(QQ, [2/3, -2/3, 1/3])
 v3 = vector(QQ, [2/3, 1/3, -2/3])
 S = [v1, v2, v3]
 </script></div>
-<article class="exercise-like" id="exercise-3"><h5 class="heading">
+<article class="exercise-like" id="exercise-3"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">3</span>
-</h5>
+</h6>
 <p id="p-13">If these vectors are an orthonormal basis, then as the columns of a matrix they should create an orthonormal basis.</p></article><div class="sagecell-sage" id="sage-18"><script type="text/x-sage">Q = column_matrix(S)
 Q
 </script></div>
@@ -177,9 +176,9 @@ Q
 </script></div>
 <div class="sagecell-sage" id="sage-20"><script type="text/x-sage">Q.is_unitary()
 </script></div>
-<article class="exercise-like" id="exercise-4"><h5 class="heading">
+<article class="exercise-like" id="exercise-4"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">4</span>
-</h5>
+</h6>
 <p id="p-14">Build a random vector of size \(3\) and find our ways to express the vector as a (unique) linear combination of the basis vectors.  Which method is most efficient?</p></article><p id="p-15">A totally random vector with 3 entries.</p>
 <div class="sagecell-sage" id="sage-21"><script type="text/x-sage">v = random_vector(ZZ, 3, x=-9, y=9)
 v
@@ -195,7 +194,7 @@ aug.rref()
 <div class="sagecell-sage" id="sage-24"><script type="text/x-sage">X = (QQ^3).subspace_with_basis(Q.columns())
 X.coordinates(v)
 </script></div>
-<p id="p-19">Finally, exploiting the orthonormal basis, and computing scalars for the linear combination with an inner product, thus exposing Theorem COB.  (Sage's <tt class="code-inline tex2jax_ignore">.inner_product()</tt> does not conjugate the entries of either vector, so we use the more careful <tt class="code-inline tex2jax_ignore">.hermitian_inner_product()</tt> vector method instead.)</p>
+<p id="p-19">Finally, exploiting the orthonormal basis, and computing scalars for the linear combination with an inner product, thus exposing Theorem COB.  (Sage's <code class="code-inline tex2jax_ignore">.inner_product()</code> does not conjugate the entries of either vector, so we use the more careful <code class="code-inline tex2jax_ignore">.hermitian_inner_product()</code> vector method instead.)</p>
 <div class="sagecell-sage" id="sage-25"><script type="text/x-sage">a1 = v1.hermitian_inner_product(v)
 a2 = v2.hermitian_inner_product(v)
 a3 = v3.hermitian_inner_product(v)

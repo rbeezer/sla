@@ -1,36 +1,36 @@
-︠115ebd1c-614e-4b5d-a6c7-aee8872910aa︠
+︠8b55134e-f2fb-41ca-a4dc-bbd1b75bd0b6︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡fbc5982b-48c9-477e-a4eb-b99a2124b356︡
-︠e41bab3c-6753-41ca-af18-bc25646982de︠
+︡241892be-1b01-472d-a16b-e26c414ad1a9︡
+︠7dd967b1-6dd7-4e49-ab60-653d18f52d7d︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><div style="display:none;">\(
-\newcommand{\lt}{ &lt; }
-\newcommand{\gt}{ &gt; }
-\newcommand{\amp}{ &amp; }
+<div class="mathbook-content"><div class="hidden-content">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
 \)</div></div>
-︡8b3a6d59-ac1f-4f3c-aa2d-3ea5319aa2c7︡
-︠05330916-3b25-4b28-a7cb-50905c1f6b13︠
+︡7ea581c4-2310-4af5-a4bc-5118f30f93c0︡
+︠03fb97c5-bf9c-4f3b-a487-0d8268567fa4︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡32966907-f322-49e5-a161-db26b73d6a88︡
-︠e4f20748-04af-4d3f-a1bd-d5676ff30d6b︠
+︡fa8e5161-7100-4e04-aa5c-169a8f2e6ad0︡
+︠7c103ddd-db34-4026-afc6-1d09e8822fbc︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="CRS"></section></div>
-︡440470cc-9c03-4be6-abf1-8c7f4ef32f18︡
-︠b5dba5b6-1421-48ef-af9e-12b81f712914︠
+︡928a3b80-95cc-4ade-a1ca-8e7886118404︡
+︠0a695a4e-ad46-4ae3-a8f0-37fa07128a69︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡2c9f7443-a57d-470b-a7f5-50709900b2ac︡
-︠6c80b050-306b-4ddb-a94a-eaa6b4fb4aef︠
+︡e74409e5-893c-4fdb-a35a-382233a562fd︡
+︠bd402491-a2ad-4eaa-a9e0-41974dbe2111︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -41,93 +41,93 @@
 <address class="contributors">Spring 2017</address>
 <p></p>
 </div>
-︡75bf67fb-73bd-4e8b-a920-30ae7526171f︡
-︠68428a98-51b1-4faa-aa3c-a7d554b8ac0c︠
+︡fde3d187-229d-4088-aa26-a684ed1ac3cd︡
+︠5bb4f857-f8a9-46a1-ae53-50ad49a5369f︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-1"><header title="Section 1 Column and Row Spaces"><h1 class="heading hide-type" alt="Section 1 Column and Row Spaces">
+<div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 Column and Row Spaces">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">Column and Row Spaces</span>
-</h1></header></section></div>
-︡b6508ea2-7032-412c-abd0-7875dd996456︡
-︠01d6165c-8ccb-4fee-ab9b-c134611fa730︠
+</h2></section></div>
+︡4ebf2a88-270c-4167-a25c-6ac070926d9f︡
+︠ded8d035-85d8-42ef-a914-67f2873299f3︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-1">This is an illustration of Theorem CSCS (and the utility of linearly independent spanning sets). <tt class="code-inline tex2jax_ignore">A</tt> is a \(5\times 7\) matrix.</p></div>
-︡e41bb310-f9cb-45b9-a473-f4538b59bf1f︡
-︠0f41a04c-035d-4fb9-a9f0-df423ce86a88︠
+<div class="mathbook-content"><p id="p-1">This is an illustration of Theorem CSCS (and the utility of linearly independent spanning sets). <code class="code-inline tex2jax_ignore">A</code> is a \(5\times 7\) matrix.</p></div>
+︡9c165f68-5fe3-4701-a7a3-c0ab32265c04︡
+︠f9110717-066e-49ef-ab5a-e1b9decf51b6︠
 A = matrix(QQ, [[ 1, -1, -2,  0,  0, -2, 0],
                 [-4,  5,  6, -3, -1,  5, 0],
                 [-3, -2, -3,  1, -2, -2, 5],
                 [-7,  3,  3, -2, -3,  3, 5],
                 [-1, -5, -5,  4, -1, -3, 5]])
 A
-︡a87ea2fe-ef24-4d2f-a6cf-79fcc29bb054︡
-︠8fd0e72e-61e9-45bb-a528-59246f70a300︠
+︡6b07c0ee-7e4e-4dec-ac92-7842211e070c︡
+︠d67de4ed-25b7-4485-a05f-3c77fa809979︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">And its column space:</p></div>
-︡78048fbb-d2cb-4b26-a789-fd3229199bda︡
-︠b42b9ba4-6773-4326-aa9e-39c6be0c8a85︠
+︡650e3f31-c677-4db0-a3c6-2f3a624f3d9b︡
+︠7f07d460-526d-4a49-ab75-1a544c79ba65︠
 A.column_space()
-︡44a7f33a-8a2f-4d51-a3fb-234e90dad545︡
-︠b9a51984-40e6-40cc-a10c-d2f1192e3f48︠
+︡6e4662bc-31fa-4eae-a856-d702c4f3dae4︡
+︠0424b876-5a85-4460-a3e6-9cd9f9dedb9c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-3">Grab the elements of a linearly independent spanning set.</p></div>
-︡5f2f539d-8de6-44e2-a103-dd5df6615a19︡
-︠36965eaf-c2db-492a-ac3a-f185e7b491fa︠
+︡0912edb5-31fb-4642-a671-c0ea9d47c235︡
+︠e3e06dd1-2132-4d97-af0e-1dff79db19e4︠
 S = A.column_space().basis()
 S
-︡a3049623-6f63-4af5-a4c9-fba708fcd8dc︡
-︠2803c99f-cfe2-4392-a8ee-1dac5a4572d4︠
+︡ed7ddeba-0db3-408d-a78d-69a592f6e0fc︡
+︠4e9cc6b7-0b4c-4e54-abdd-937390587486︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">1</span>
-</h5>
-<p id="p-4">Use the cells below to make a linear combination of the three vectors of the column space provided in <tt class="code-inline tex2jax_ignore">S</tt>.  Of course, this will also be a column space vector.  As such, we can use it as the vector of constants in a linear system of equations, and the system will be guaranteed to be consistent.</p></article></div>
-︡f0df398d-95d7-4811-aa9f-9bd383ec86f6︡
-︠be78da26-8bb6-4337-a4e1-48d2c56b2e11︠
+</h6>
+<p id="p-4">Use the cells below to make a linear combination of the three vectors of the column space provided in <code class="code-inline tex2jax_ignore">S</code>.  Of course, this will also be a column space vector.  As such, we can use it as the vector of constants in a linear system of equations, and the system will be guaranteed to be consistent.</p></article></div>
+︡0d599104-800d-4df3-a2a0-f4367d7d5e2e︡
+︠52bbb5cb-a5ca-4399-a6c4-7b8a207aed90︠
 b = *S[0] + *S[1] + *S[2]
 b
-︡5cfc5c77-303e-4662-adb1-ef9b26181373︡
-︠4c039501-d311-4277-a452-6320f460d844︠
+︡bf36afc6-b6c8-4102-ab7e-0ea98ca079e0︡
+︠a9fd09cc-073d-405d-a204-003aac74ceda︠
 P = A.augment(b, subdivide=True)
 P.rref()
-︡b81cca2c-bf0c-4124-a879-bedeed34e0d2︡
-︠58a64616-3d63-4976-ae0e-7cc5aa2ef0ec︠
-︡335daa4b-0787-4b2f-a100-08ccd7705614︡
-︠34781226-d3d5-4b98-aab9-bb177feff451︠
+︡f74e4481-1995-479a-a5bb-abcd669da5b7︡
+︠0bf5a392-5bce-4147-ac93-73e304a925fe︠
+︡c09c53fe-65a2-43b6-ab70-ef3d332dd42c︡
+︠2fcbb2fb-150b-4847-aeff-eee2c26e0333︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-2"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-2"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">2</span>
-</h5>
-<p id="p-5">Repeat the exercise above, but with a slight variation to produce an inconsistent system.  Notice that the vectors of <tt class="code-inline tex2jax_ignore">S</tt> have a nice pattern of zeros and ones in several of the entries (three to be precise).  The scalars you choose for the linear combination will automatically become three entries of the vector.  What about the other entries?  I like to say they are “forced.”  Let's wiggle one of these forced entries just a little bit.  Such a vector will now leave the column space and when used as a vector of constants, will create an inconsistent system.</p></article></div>
-︡88500723-df6b-4514-aecf-77a9e28d1817︡
-︠9afea05c-42ca-4e1c-a208-17fc0ee8c01e︠
+</h6>
+<p id="p-5">Repeat the exercise above, but with a slight variation to produce an inconsistent system.  Notice that the vectors of <code class="code-inline tex2jax_ignore">S</code> have a nice pattern of zeros and ones in several of the entries (three to be precise).  The scalars you choose for the linear combination will automatically become three entries of the vector.  What about the other entries?  I like to say they are “forced.”  Let's wiggle one of these forced entries just a little bit.  Such a vector will now leave the column space and when used as a vector of constants, will create an inconsistent system.</p></article></div>
+︡062d2ef1-a06b-4ce0-a4df-3ce2ea45948c︡
+︠892b6496-647c-403b-a078-0b5ed4929272︠
 c = *S[0] + *S[1] + *S[2]
 c
-︡7a87928f-fc2b-470d-a32d-b45b05afe6f0︡
-︠57bee417-3036-4ca6-aae9-7add5d20c17c︠
+︡efb1a264-8c90-4993-a4ab-da6294627f4e︡
+︠13ed48fb-d876-4800-ac4a-715e4e2a19a6︠
 d = copy(c)
 d[4] = d[4]+1
 d
-︡1c3ca21b-95cd-4b88-a227-ba18766a63cd︡
-︠fea3b55c-0f1d-4dd5-a608-db3e4b5a6bd2︠
+︡8ca6aff9-ac21-42a2-a366-ee83dd2083a2︡
+︠a2f49948-3e45-4f70-a1b7-8961c3ee362d︠
 P = A.augment(d, subdivide=True)
 P.rref()
-︡9d040b96-896a-4738-ada8-5739674b2a70︡
-︠d1de5e9e-528b-4cff-a4c9-c110b77f2aaa︠
-︡b7b8507f-ec16-47e5-a721-0f31ff97eb19︡
-︠5c11571d-6f98-4617-ab89-d981b704ef00︠
+︡9d092926-2646-4c4e-ac69-3f390fdfe051︡
+︠efee818b-7a2c-41e0-a0a7-ae7d87c57b6d︠
+︡c4cb35cc-0472-4080-a19b-93a0028d8f8e︡
+︠d53917ee-4f2b-4234-a34d-ee08e1b6f368︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-6">Moral of the Story: the elements of the column space are <!--Style me with CSS--><em>exactly</em> those vectors of constants that lead to consistent systems.  It is easy, especially with a linearly independent spanning set for the column space, to make a vector of constants that yields an inconsistent system.</p></div>
-︡86d97218-0789-40eb-a7a4-17d99919e09e︡
-︠eca72012-716a-43f8-a81f-aeac56493b3c︠
+<div class="mathbook-content"><p id="p-6">Moral of the Story: the elements of the column space are <em class="emphasis">exactly</em> those vectors of constants that lead to consistent systems.  It is easy, especially with a linearly independent spanning set for the column space, to make a vector of constants that yields an inconsistent system.</p></div>
+︡23d5dfdc-d1cf-4ce2-a027-e15fa405bf91︡
+︠ecb6b071-2e33-4e13-a3b8-fce977995f32︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡328d9beb-d5c3-4002-a984-832308a51e05︡
+︡02fb8bcf-dfe0-42d2-a60d-ffae8151ba1f︡
 

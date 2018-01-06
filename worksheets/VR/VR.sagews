@@ -1,36 +1,36 @@
-︠37645508-3279-4a3b-afad-52abd63daa48︠
+︠1b2b20d7-b7b1-4b6e-ae9a-83a8639ce949︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡0806c6cd-e0f6-4999-a593-3e6da44d2f77︡
-︠78f8fceb-9db8-4352-adbb-1e98c3c01e09︠
+︡0553073e-ef59-4010-aef9-97d303690534︡
+︠f3a47bba-99af-43a1-a390-d38a69ed3f36︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><div style="display:none;">\(
+<div class="mathbook-content"><div class="hidden-content">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡5815011e-dac8-43fe-a5da-1e9a65e26f17︡
-︠87facfbd-e88a-41ca-a027-b354ecadf1c0︠
+︡42ae61a1-c3b6-43f1-a43a-50dda4692985︡
+︠0c7abeb5-f89b-4eca-af0e-a5e839ca2f4b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡8587047c-255b-4067-ab79-22d87b518435︡
-︠f3c0594a-2ddc-4db6-adf4-009f65f0a577︠
+︡448cf3ab-9a33-451f-a010-eb6d3a6049f9︡
+︠612886db-75fd-4973-afc0-76db7542ee8a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="VR"></section></div>
-︡07bc706b-b999-4574-ac54-064a5b05bab3︡
-︠2cad81df-d986-42ee-a7a3-bb9f5fa55500︠
+︡8fba8415-f8be-4546-a942-ac8870dc3cab︡
+︠63b1e36f-8674-45d9-ab7d-e1a79176db38︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡82c3f54d-517e-48ac-a717-bc25c856eace︡
-︠b51881ed-e3f6-4180-aef1-5ae8fa051efe︠
+︡79c2ba51-ae82-42df-ab86-9683d155830b︡
+︠c758903f-2dda-4f07-afc0-667ea4ffa83a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -41,108 +41,108 @@
 <address class="contributors">Spring 2017</address>
 <p></p>
 </div>
-︡da4e3cf1-ae49-4461-a540-79b52b030210︡
-︠1fb5ee2d-fcc4-451a-a66e-7d833af4df6f︠
+︡3f287c8b-bb89-4589-ad76-ddc5b69b6439︡
+︠f681f0e8-b934-439c-ac63-241f9d538b8b︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-1"><header title="Section 1 Vector Representations"><h1 class="heading hide-type" alt="Section 1 Vector Representations">
+<div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 Vector Representations">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">Vector Representations</span>
-</h1></header></section></div>
-︡07fbddaf-bab7-4e09-a97f-8fd021b1591c︡
-︠8137d047-0f2b-471c-a0a3-023e35fe7579︠
+</h2></section></div>
+︡472d92d7-a81e-4d47-a91e-d43e3cb80448︡
+︠f9026944-0fd2-4da6-a447-31b60f3c740c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">It is easy to form vector representations of vectors in \(\mathbb{C}^n\text{.}\)</p></div>
-︡10a5886d-06d2-4243-ae5e-261544a4329b︡
-︠bbc604f7-1fde-42f3-a5e9-30f453907c31︠
+︡d06d3d67-176f-4949-a09e-7cf32f26caac︡
+︠77dd40bb-8d3e-4cc3-a6cc-44848b3a1f5c︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-2">We get a nonstandard basis quickly from the columns of a nonsingular matrix.  The keyword <tt class="code-inline tex2jax_ignore">algorithm='unimodular'</tt> requests a matrix with determinant \(1\text{.}\)</p></div>
-︡8ec45d84-4a31-4951-acb0-5f05358d60a9︡
-︠127d7daf-1fa5-413a-a206-2653b9946f40︠
+<div class="mathbook-content"><p id="p-2">We get a nonstandard basis quickly from the columns of a nonsingular matrix.  The keyword <code class="code-inline tex2jax_ignore">algorithm='unimodular'</code> requests a matrix with determinant \(1\text{.}\)</p></div>
+︡cc49a9a5-4227-41f4-a460-0a58ed42862d︡
+︠2ea684f2-a45d-4b6c-a0a3-1ad63c48ece1︠
 n = 6
 A = random_matrix(QQ, n, algorithm='unimodular', upper_bound=9)
 A
-︡85303ade-afd4-44e8-af19-54fa7b30fa03︡
-︠b99e9d97-c379-48b8-a0aa-90f9b74f8398︠
+︡91047997-b3b1-4177-ae71-19cef0b39a07︡
+︠ba8ce057-81b3-42cb-a9b3-bcc7bc86f10f︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-3">The columns of <tt class="code-inline tex2jax_ignore">A</tt> become the “user basis” of a vector space.</p></div>
-︡74103bec-2a09-4485-ad80-7207bbe0a634︡
-︠ea80bcb9-9e49-4881-ad5a-ddce4892848c︠
+<div class="mathbook-content"><p id="p-3">The columns of <code class="code-inline tex2jax_ignore">A</code> become the “user basis” of a vector space.</p></div>
+︡9c92882d-faeb-4e07-aaa2-e5fada661672︡
+︠61e03786-4803-43f4-abaf-e84d317a880f︠
 B = A.columns()
 V = (QQ^n).subspace_with_basis(B)
 V
-︡877172d2-c600-4f99-a16f-b4c8211c3a0c︡
-︠694dab07-ecef-4de8-a60f-5b4246363704︠
+︡a7097400-a58b-49bb-ae75-d5e1213abb2c︡
+︠bd3c7b07-bbd3-466f-a146-71b53d66722a︠
 u = random_vector(QQ, n)
 u
-︡46d84744-f30d-43ec-ab4c-b98fbd6f3964︡
-︠daba3f27-31b4-4fe2-aca7-85114deac242︠
+︡ee81afdb-7864-4bca-abef-160db4b2b34d︡
+︠e3b65662-1da7-4264-ac23-c49d151d7c0c︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-4">Now, we get values of the invertible linear transformation \(\rho_B\) with the Sage method <tt class="code-inline tex2jax_ignore">.coordinate_vector()</tt> method of the vector space.</p></div>
-︡61d1c11e-95f4-4af2-adbc-442557241e66︡
-︠1d8ff400-3963-4d02-a0dd-c22f7769b782︠
+<div class="mathbook-content"><p id="p-4">Now, we get values of the invertible linear transformation \(\rho_B\) with the Sage method <code class="code-inline tex2jax_ignore">.coordinate_vector()</code> method of the vector space.</p></div>
+︡aff565cc-7da2-45c8-aa9a-d5e620b3d30e︡
+︠faef044c-1c9b-4ee8-a781-2661d919dfcd︠
 c = V.coordinate_vector(u)
 c
-︡eaf69eb9-fe26-4106-a404-2d64cdb277a0︡
-︠98a8f37a-c68f-4caf-a3e0-80de49c0b375︠
+︡ec7db710-33cd-4ebb-a724-85bf6888157d︡
+︠36aa3515-6583-427e-aee1-366e6c7f484c︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-5">The inverse linear transformation is also available as the <tt class="code-inline tex2jax_ignore">.linear_combination_of_basis()</tt> method of the vector space.</p></div>
-︡30ed9d10-7d70-4d4a-ad79-d09aee3affe6︡
-︠52730011-08f8-48cc-a3a4-c7461345d34c︠
+<div class="mathbook-content"><p id="p-5">The inverse linear transformation is also available as the <code class="code-inline tex2jax_ignore">.linear_combination_of_basis()</code> method of the vector space.</p></div>
+︡68302764-cd95-40cc-afaa-0e17d74469cb︡
+︠6339460b-ad84-4291-af8c-99ab0725b9e8︠
 round_trip = V.linear_combination_of_basis(c)
 round_trip
-︡aaf1df1e-1270-4a0d-a637-b0ef602a50ea︡
-︠d85ca3bb-1ce9-4d89-aafd-2bd1a31de7ed︠
+︡54b9e0fe-bac3-4ffc-a0e5-c7e73fe64a03︡
+︠257ef5ff-4aa1-4d90-aaae-f76ee9ed0370︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-6">And the automated check:</p></div>
-︡2c578fa4-bc09-46e2-af91-dbcbc7ee5d64︡
-︠a900180c-cb9d-45fb-a7f4-9c068de6c442︠
+︡6a5e9548-492e-4a08-aab3-9ba098a86abe︡
+︠a2800255-a9ed-488e-a139-4d4ede776d12︠
 u == round_trip
-︡8fc9fd20-afc3-4d12-a992-d3fe97b8e7c2︡
-︠a517e141-1e0e-42df-a569-74c636deeb6b︠
+︡bc44c561-a1b9-4f41-ad55-692b8f9f60d8︡
+︠2946e1c4-266e-4f52-a128-6918498d9fd6︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-7">Notice that this is something we could do “by hand” with just reduced row-echelon form. The coordinitization of <tt class="code-inline tex2jax_ignore">u</tt> relative to the basis <tt class="code-inline tex2jax_ignore">B</tt> is just a (unique) solution to a linear system.</p></div>
-︡d10f8f1d-03c1-41ee-a135-aaa71ddecb92︡
-︠77477c68-a7b6-48d5-a7e8-d837f44d309c︠
+<div class="mathbook-content"><p id="p-7">Notice that this is something we could do “by hand” with just reduced row-echelon form. The coordinitization of <code class="code-inline tex2jax_ignore">u</code> relative to the basis <code class="code-inline tex2jax_ignore">B</code> is just a (unique) solution to a linear system.</p></div>
+︡800c6ed2-309a-4e9f-a1a2-91bba052ee2c︡
+︠5ac56244-575e-4148-a152-3f4faef01de3︠
 aug = column_matrix(B + [u])
 aug.rref()
-︡30477b4e-4e50-45ed-aa6b-3347b4cf2f0b︡
-︠b4b0c3b0-10f7-4056-adfc-930eab36b55c︠
+︡94d5948e-8e5e-4d72-a588-7c8cb3ab3b82︡
+︠e26b80f0-e8e3-47bb-a903-280b5bef61bf︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-8">The following stanza will always return <tt class="code-inline tex2jax_ignore">True</tt> as we “coordinatize” and then use the coordinates to form a linear combination of the basis.</p></div>
-︡010c1dfd-e1dd-48d2-afb2-b55c3f7762cb︡
-︠edcf9ec9-caa9-4837-ab23-de82ac213840︠
+<div class="mathbook-content"><p id="p-8">The following stanza will always return <code class="code-inline tex2jax_ignore">True</code> as we “coordinatize” and then use the coordinates to form a linear combination of the basis.</p></div>
+︡492a5aa5-b8e9-4c55-a7f6-b2fbd47b4edf︡
+︠e190cfa6-45f2-4fb8-a437-beaba7f13400︠
 w = random_vector(QQ, n)
 x = V.coordinate_vector(w)
 y = V.linear_combination_of_basis(x)
 y == w
-︡43e127ff-1bab-452e-add0-0be9e851a99e︡
-︠ae18f40e-31ad-4cf0-abce-bdaa683c9d63︠
+︡3e2deec9-50e4-43d0-ac24-4e2e9d59f8ef︡
+︠91ebfcab-50c4-45f2-a5c5-903ceda479c5︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-2"><header title="Section 2 Abstract Vector Spaces"><h1 class="heading hide-type" alt="Section 2 Abstract Vector Spaces">
+<div class="mathbook-content"><section class="section" id="section-2"><h2 class="heading hide-type" alt="Section 2 Abstract Vector Spaces">
 <span class="type">Section</span><span class="codenumber">2</span><span class="title">Abstract Vector Spaces</span>
-</h1></header></section></div>
-︡b01d9019-f5b9-4379-a336-2e4c9a5c7f9d︡
-︠35e52764-159c-4fd4-a917-03640ff6b665︠
+</h2></section></div>
+︡9677264c-1ade-4e2e-a17a-61aae988d01a︡
+︠5b0d2247-f61c-440e-a216-c887360beec0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-9">Sage does not implement abstract vector spaces.  It presumes we have “nice” standard bases available and can apply an intermediate coordinatization ourselves.</p></div>
-︡49a2fda5-2bbc-48b9-ac5a-45daaeaa451b︡
-︠b5468343-96e4-4270-ab35-58b3252df720︠
+︡92b9fdc4-4ca6-49e6-a808-ed1754d50b4c︡
+︠cde77e54-2a0c-40ab-a72c-f1a08f555519︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">1</span>
-</h5>
-<p id="p-10">In \(P_3\text{,}\) the vector space of polynomials with degree at most \(3\text{,}\) find the vector representation of \(p = \left(x^{3} + x^{2} + \frac{1}{2} \, x - \frac{33}{14}\right)\) relative to the basis for \(P_3\text{:}\)
+</h6>
+<p id="p-10">In \(P_3\text{,}\) the vector space of polynomials with degree at most \(3\text{,}\) find the vector representation of \(p = x^{3} + x^{2} + \frac{1}{2} \, x - \frac{33}{14}\) relative to the basis for \(P_3\text{:}\)</p>
 \begin{align*}
 B = \{&amp;
 5x^{3} + 2x^{2} + x + 1,\,
@@ -150,54 +150,53 @@ B = \{&amp;
 &amp; 7x^{3} + 4x^{2} + x + 2,\,
 -7x^{3} + 3x^{2} + x - 2\}\text{.}
 \end{align*}
-</p>
 <p id="p-11">Hint:  Coordinatize with respect to the basis \(\left\{1, x, x^2, x^3\right\}\text{.}\)</p></article></div>
-︡2e674fa8-24f0-4917-a9db-e33966f83ff6︡
-︠f1468953-2781-4813-a0a0-c93f3a623912︠
+︡2d714ff9-3234-4f4e-aab1-7b21ca110671︡
+︠09e7a36a-dac1-4ec5-ad71-eec109b1ab72︠
 A = matrix(QQ, [[1, -2, 2, -2], [1, -1, 1, 1], [2, -3, 4, 3], [5, -8, 7, -7]])
 B = A.columns()
 B
-︡01458ded-1159-42db-a6e6-6afa935068a7︡
-︠aa9ff1de-fef4-4821-a38f-afa9a3df437e︠
+︡d7bcf5f6-0d0d-4ef9-a4c0-5be2cfb70637︡
+︠80f4cfac-5a95-4784-a0c1-02cf49e01f74︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-12"><tt class="code-inline tex2jax_ignore">B</tt> is a basis, since <tt class="code-inline tex2jax_ignore">A</tt> is nonsingular.</p></div>
-︡b285286f-75e7-4a79-acb2-c526fdaccef4︡
-︠cb7509d7-95d7-4c7f-a63a-8ffb5e80b5eb︠
+<div class="mathbook-content"><p id="p-12"><code class="code-inline tex2jax_ignore">B</code> is a basis, since <code class="code-inline tex2jax_ignore">A</code> is nonsingular.</p></div>
+︡7056425e-fb98-4001-a51d-620325c15d0d︡
+︠17e7e294-18fb-410c-a35d-1b01e26b4c84︠
 A.is_singular()
-︡9a60f6ad-e32b-4bf2-aa56-4d639c21cd6a︡
-︠8f5f056a-24e5-4fa4-a249-997fd0cf28d8︠
+︡99c81bba-0c3f-4850-a485-2a13b051bad3︡
+︠e7db0f6b-a68d-4603-a65c-c76ea2f03aa1︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-13">Now coordinatize <tt class="code-inline tex2jax_ignore">p</tt>.</p></div>
-︡368859dc-4002-460d-aa31-4cacc7d87f04︡
-︠83b1c1a9-df9e-42ff-afa3-0f0bcc395a96︠
+<div class="mathbook-content"><p id="p-13">Now coordinatize <code class="code-inline tex2jax_ignore">p</code>.</p></div>
+︡e99c49bb-452c-438d-a7f2-3c9aa4ca5040︡
+︠13ab0f4b-a91d-4545-a2b5-5f1fac37797b︠
 p = vector(QQ, [-33/14, 1/2, 1, 1])
 p
-︡f1ab36cd-fac9-49e9-a8d4-be4b908d9d73︡
-︠375e284f-6493-4e21-a7bf-c7e0380b5a9d︠
+︡a9f44f49-bf2c-4c81-a1bd-70d9f763fdd6︡
+︠9808d581-e301-40ca-a1e6-e67bf735b239︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-14">We'll get a coordinatization old-style.</p></div>
-︡dd53b7bf-6130-4512-a79d-654557d6330c︡
-︠0ea615dd-54f9-444a-a7b4-52aa70156587︠
+︡9c194efd-fd10-4f1d-aa2b-1128d1017b3a︡
+︠4d657b46-934a-434b-a0ee-cf0e8d08e842︠
 aug = column_matrix(B + [p])
 r = aug.rref()
 r
-︡295cf72d-4724-4078-abe4-f469ee90305c︡
-︠776d4656-3ad6-4edd-a78c-b8012efce3c4︠
+︡2909f753-de61-48a5-a4b4-28427d076f0a︡
+︠2342c392-660d-4898-aed3-20c73344ba3b︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-15">Let's check to see if this is right and we can recover <tt class="code-inline tex2jax_ignore">p</tt>.</p></div>
-︡f4c510c6-7f05-46e3-a35c-014026f23d5f︡
-︠243ea5f6-b76c-4ccb-af01-b02f15607aec︠
+<div class="mathbook-content"><p id="p-15">Let's check to see if this is right and we can recover <code class="code-inline tex2jax_ignore">p</code>.</p></div>
+︡55ea7ad1-c48d-4207-aaf4-e25a99ded890︡
+︠4f629ed6-fab7-47d7-ae77-3699022e1f7a︠
 soln = r.column(4)
 round_trip = sum([soln[i]*B[i] for i in range(4)])
 round_trip, round_trip == p
-︡901dfb3e-1f58-4b25-a715-8c6ac7f377d5︡
-︠5bbd3b1a-740d-4f13-a7cb-1ede759c6219︠
+︡0b96d24b-9454-4bd2-a3ca-af03816bf7a7︡
+︠44dd1c1b-7a6b-4dcc-addd-db849ce0c39c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡765338f5-37a4-4495-a801-3201086a4dc5︡
+︡ce1ab27c-ef74-4a50-a62d-409d4393366c︡
 

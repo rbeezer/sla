@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <!--**************************************-->
-<!--* Generated from MathBook XML source *-->
-<!--*    on 2017-03-07T16:56:51-08:00    *-->
+<!--*    Generated from PreTeXt source   *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
 <!--**************************************-->
-<html>
+<html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Sage and Linear Algebra Worksheet</title>
-<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
-// contrib directory for accessibility menu, moot after v2.6+?
-MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']],
     },
     TeX: {
-        // [Contrib]accessibility menu moot after v2.6+?
-        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
-        equationNumbers: { autoNumber: "none",
-                           useLabelIds: true,
-                           // JS comment, XML CDATA protect XHTML quality of file
-                           // if removed in XSL, use entities
-                           //<![CDATA[
-                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
-                           //]]>
-                         },
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
         TagSide: "right",
         TagIndent: ".8em",
     },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
     "HTML-CSS": {
         scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
     },
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><script>$(function () {
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
     // Make *any* div with class 'sagecell-sage' an executable Sage cell
     // Their results will be linked, only within language type
     sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
                            linked: true,
                            languages: ['sage'],
-                           evalButtonText: 'Evaluate Sage Code'});
+                           evalButtonText: 'Evaluate (Sage)'});
 });
-</script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-article has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -65,7 +61,7 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar" style=""><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Prev</span><span id="upbutton" class="up-button button disabled toolbar-item">Up</span><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
 <button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
@@ -73,31 +69,33 @@ MathJax.Hub.Config({
 </div>
 </div></nav></header><div class="page">
 <aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="SD.html#frontmatter-1" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
 <h2 class="link"><a href="SD.html#section-1" data-scroll="section-1"><span class="codenumber">1</span><span class="title">Similarity</span></a></h2>
 <h2 class="link"><a href="SD.html#section-2" data-scroll="section-2"><span class="codenumber">2</span><span class="title">Diagonalization</span></a></h2>
-<h2 class="link"><a href="SD.html#section-3" data-scroll="section-3"><span class="codenumber">3</span><span class="title">Nearly Diagonalizable</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+<h2 class="link"><a href="SD.html#section-3" data-scroll="section-3"><span class="codenumber">3</span><span class="title">Nearly Diagonalizable</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
 </div></aside><main class="main"><div id="content" class="mathbook-content"><section class="article" id="SD"><section class="frontmatter" id="frontmatter-1"><h1 class="heading">
 <span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section SD</span>
 </h1>
 <address class="contributors"><p>Robert Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound</p></address>
 <address class="contributors">Spring 2017</address>
-<p></p></section><section class="section" id="section-1"><header title="Section 1 Similarity"><h1 class="heading hide-type" alt="Section 1 Similarity">
+<p></p></section><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 Similarity">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">Similarity</span>
-</h1></header><p id="p-1">We manufacture two matrices that are similar, and use Sage to check.  A “unimodular” matrix is one with determinant 1.  A unimodular matrix with integer entries will have an inverse with integer entries (that is a theorem, and Exercise PDM.M20).</p>
+</h2>
+<p id="p-1">We manufacture two matrices that are similar, and use Sage to check.  A “unimodular” matrix is one with determinant 1.  A unimodular matrix with integer entries will have an inverse with integer entries (that is a theorem, and Exercise PDM.M20).</p>
 <div class="sagecell-sage" id="sage-1"><script type="text/x-sage">A = random_matrix(ZZ, 10, x = -9, y = 9).change_ring(QQ)
 S = random_matrix(QQ, 10, algorithm='unimodular', upper_bound=9)
 B = S.inverse()*A*S
 A, B
 </script></div>
-<p id="p-2">This next command might be broken, and might even just hang.  My fault.  It will be fixed, using rational canonical form, for Sage 7.6.  See <a class="external-url" href="https://trac.sagemath.org/ticket/18505" target="_blank">Trac ticket #18505</a> for the details.</p>
+<p id="p-2">This next command might be broken, and might even just hang.  My fault.  It will be fixed, using rational canonical form, for Sage 7.6.  See <a class="url" href="https://trac.sagemath.org/ticket/18505" target="_blank">Trac ticket #18505</a> for the details.</p>
 <div class="sagecell-sage" id="sage-2"><script type="text/x-sage">A.is_similar(B)
-</script></div></section><section class="section" id="section-2"><header title="Section 2 Diagonalization"><h1 class="heading hide-type" alt="Section 2 Diagonalization">
+</script></div></section><section class="section" id="section-2"><h2 class="heading hide-type" alt="Section 2 Diagonalization">
 <span class="type">Section</span><span class="codenumber">2</span><span class="title">Diagonalization</span>
-</h1></header><p id="p-3">These two matrices are from the earlier demo for Section EE.  First is diagonalizable, second is not.  The easiest way to see the difference is with the <tt class="code-inline tex2jax_ignore">eigenmatrix</tt> commands.</p>
-<article class="exercise-like" id="exercise-1"><h5 class="heading">
+</h2>
+<p id="p-3">These two matrices are from the earlier demo for Section EE.  First is diagonalizable, second is not.  The easiest way to see the difference is with the <code class="code-inline tex2jax_ignore">eigenmatrix</code> commands.</p>
+<article class="exercise-like" id="exercise-1"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">1</span>
-</h5>
+</h6>
 <p id="p-4">Diagonalize the matrix \(A\text{.}\)</p></article><div class="sagecell-sage" id="sage-3"><script type="text/x-sage">A = matrix(QQ, [
     [-31, -23, -16,  12, 120, -17],
     [ -3,   7,   0, -12,  60, -21],
@@ -105,9 +103,10 @@ A, B
     [-36, -20, -16,  -1, 192, -32],
     [ -9,  -5,  -4,   0,  47,  -8],
     [ -1,   1,   0,  -4,  20,  -3]
+    ])
 A
 </script></div>
-<p id="p-5"><tt class="code-inline tex2jax_ignore">S</tt>, the matrix whose columns are eigenvectors, will “diagonalize” <tt class="code-inline tex2jax_ignore">A</tt>.</p>
+<p id="p-5"><code class="code-inline tex2jax_ignore">S</code>, the matrix whose columns are eigenvectors, will “diagonalize” <code class="code-inline tex2jax_ignore">A</code>.</p>
 <div class="sagecell-sage" id="sage-4"><script type="text/x-sage">D, S = A.eigenmatrix_right()
 D, S
 </script></div>
@@ -116,9 +115,9 @@ D, S
 <p id="p-6">Here is an equivalent formulation.</p>
 <div class="sagecell-sage" id="sage-6"><script type="text/x-sage">A*S == S*D
 </script></div>
-<article class="exercise-like" id="exercise-2"><h5 class="heading">
+<article class="exercise-like" id="exercise-2"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">2</span>
-</h5>
+</h6>
 <p id="p-7">Now, in contrast, a matrix that is not diagonalizable.  Try to diagonalize the matrix \(C\text{.}\)</p></article><div class="sagecell-sage" id="sage-7"><script type="text/x-sage">C = matrix(QQ, [
     [128,   20,  44, -50,  236, -18, -330, -565],
     [ -23, -16,  -5,   6,  -40,  27,   62,  128],
@@ -134,31 +133,32 @@ C
 <div class="sagecell-sage" id="sage-8"><script type="text/x-sage">D, S = C.eigenmatrix_right()
 D, S
 </script></div>
-<p id="p-8">The zero columns in <tt class="code-inline tex2jax_ignore">S</tt> tell us that at least one eigenvalue has a geometric multiplicity strictly less than the algebraic multiplicity of the eigenvalue.  So by Theorem DMFE the matrix <tt class="code-inline tex2jax_ignore">C</tt> is not diagonalizable.</p>
-<p id="p-9">A second consequence of the zero columns of <tt class="code-inline tex2jax_ignore">S</tt> is that it will not be an invertible matrix.  But the output from Sage still obeys a fundamental relationship.</p>
+<p id="p-8">The zero columns in <code class="code-inline tex2jax_ignore">S</code> tell us that at least one eigenvalue has a geometric multiplicity strictly less than the algebraic multiplicity of the eigenvalue.  So by Theorem DMFE the matrix <code class="code-inline tex2jax_ignore">C</code> is not diagonalizable.</p>
+<p id="p-9">A second consequence of the zero columns of <code class="code-inline tex2jax_ignore">S</code> is that it will not be an invertible matrix.  But the output from Sage still obeys a fundamental relationship.</p>
 <div class="sagecell-sage" id="sage-9"><script type="text/x-sage">C*S == S*D
 </script></div>
-<p id="p-10">Perhaps simpler is the built-in function <tt class="code-inline tex2jax_ignore">.is_diagonalizable()</tt>.</p>
+<p id="p-10">Perhaps simpler is the built-in function <code class="code-inline tex2jax_ignore">.is_diagonalizable()</code>.</p>
 <div class="sagecell-sage" id="sage-10"><script type="text/x-sage">A.is_diagonalizable()
 </script></div>
 <div class="sagecell-sage" id="sage-11"><script type="text/x-sage">C.is_diagonalizable()
-</script></div></section><section class="section" id="section-3"><header title="Section 3 Nearly Diagonalizable"><h1 class="heading hide-type" alt="Section 3 Nearly Diagonalizable">
+</script></div></section><section class="section" id="section-3"><h2 class="heading hide-type" alt="Section 3 Nearly Diagonalizable">
 <span class="type">Section</span><span class="codenumber">3</span><span class="title">Nearly Diagonalizable</span>
-</h1></header><p id="p-11">A matrix that is not diagonalizable will always be similar to a matrix that is <!--Style me with CSS--><em>almost</em> diagonalizable.  The “nearly diagonal” matrix is called the <em class="terminology">Jordan canonical form</em> of the matrix.</p>
-<article class="exercise-like" id="exercise-3"><h5 class="heading">
+</h2>
+<p id="p-11">A matrix that is not diagonalizable will always be similar to a matrix that is <em class="emphasis">almost</em> diagonalizable.  The “nearly diagonal” matrix is called the <b class="terminology">Jordan canonical form</b> of the matrix.</p>
+<article class="exercise-like" id="exercise-3"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">3</span>
-</h5>
-<p id="p-12">While beyond the scope of this course, use Sage to compute the Jordan canonical form for the matrix <tt class="code-inline tex2jax_ignore">C</tt>.  Notice the eigenvalues of <tt class="code-inline tex2jax_ignore">C</tt> on the diagonal and the 1's on the <em class="terminology">super-diagonal</em>.</p>
+</h6>
+<p id="p-12">While beyond the scope of this course, use Sage to compute the Jordan canonical form for the matrix <code class="code-inline tex2jax_ignore">C</code>.  Notice the eigenvalues of <code class="code-inline tex2jax_ignore">C</code> on the diagonal and the 1's on the <b class="terminology">super-diagonal</b>.</p>
 <p id="p-13">Peculiarly, the similarity matrix need not be computed to get the form, and it is a significant computational expense.  So we ask for it explicitly.</p></article><div class="sagecell-sage" id="sage-12"><script type="text/x-sage">J, T = C.jordan_form(transformation=True)
 J, T
 </script></div>
-<p id="p-14">The transformation matrix, <tt class="code-inline tex2jax_ignore">T</tt>, is invertible and will “almost diagonalize” <tt class="code-inline tex2jax_ignore">C</tt>.</p>
+<p id="p-14">The transformation matrix, <code class="code-inline tex2jax_ignore">T</code>, is invertible and will “almost diagonalize” <code class="code-inline tex2jax_ignore">C</code>.</p>
 <div class="sagecell-sage" id="sage-13"><script type="text/x-sage">T.inverse()*C*T == J
 </script></div>
-<article class="exercise-like" id="exercise-4"><h5 class="heading">
+<article class="exercise-like" id="exercise-4"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">4</span>
-</h5>
-<p id="p-15"><em class="terminology">Rational canonical form</em> is another interesting version of this idea, try <tt class="code-inline tex2jax_ignore">.rational_form()</tt> on <tt class="code-inline tex2jax_ignore">C</tt>.  And if you do, then execute the following two cells and see if the coefficients look familiar.  (Learn more about <em class="terminology">companion matrices</em> if this makes you curious.</p></article><div class="sagecell-sage" id="sage-14"><script type="text/x-sage">C.rational_form()
+</h6>
+<p id="p-15"><b class="terminology">Rational canonical form</b> is another interesting version of this idea, try <code class="code-inline tex2jax_ignore">.rational_form()</code> on <code class="code-inline tex2jax_ignore">C</code>.  And if you do, then execute the following two cells and see if the coefficients look familiar.  Learn more about <b class="terminology">companion matrices</b> if this makes you curious.</p></article><div class="sagecell-sage" id="sage-14"><script type="text/x-sage">C.rational_form()
 </script></div>
 <div class="sagecell-sage" id="sage-15"><script type="text/x-sage">C.fcp()
 </script></div>

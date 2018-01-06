@@ -1,36 +1,36 @@
-︠2a108928-fd9f-4ed1-ac0e-8cf74c25b0a8︠
+︠1973b27f-5a6f-41c8-af6e-20f9db47f7ac︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡0d32ecc0-4cde-4bcb-ad8b-b08b8c8a13bc︡
-︠bc9ff7bb-7085-4e31-a91a-5dbd8390db39︠
+︡8b6ff227-1728-4635-af2b-d4cce98318bb︡
+︠437a36c5-dec0-4633-ab26-7fb4cae4dfc8︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><div style="display:none;">\(
+<div class="mathbook-content"><div class="hidden-content">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡7f50f57b-0fb8-45ac-a74e-19bc64ff4da8︡
-︠618c2719-229e-4be8-a85c-66513c52caf7︠
+︡b0c2bf97-4760-47c4-ab86-206e42826613︡
+︠fc4bffa9-7e0d-4f8a-a342-a630573e9a4b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡369b3b25-547e-433d-abb3-81ae3da9073f︡
-︠94c237d2-c870-4b2b-ae9f-6c083d48fa69︠
+︡d381e818-1872-466b-a0af-34665be8a82e︡
+︠281f640b-6ee0-41a4-a3eb-7982f7ac6690︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="SLT"></section></div>
-︡e0ea3220-4f9c-405f-ab38-aa5b28970817︡
-︠2f80ab2c-c7b5-43ba-a37e-c291dba72b04︠
+︡fb91af5b-bc99-4db4-a1e2-d6b59bc372a0︡
+︠3abdb6c1-17eb-41b6-a5c5-89b4f50b97e3︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡324b2e75-b4c7-4a03-a43a-3fcd1a8b2b72︡
-︠0a44663d-ce18-46c9-a90c-44c11dba9d61︠
+︡82d4f9ab-ac38-4754-aeb0-34af89485d04︡
+︠196fd688-1345-4ccb-a0a6-1eabd351cbfc︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -41,118 +41,118 @@
 <address class="contributors">Spring 2017</address>
 <p></p>
 </div>
-︡06c4b2be-07d2-404e-a9df-5232350f0ad6︡
-︠bdd7189d-7a45-4c49-aad7-939d5d36d40a︠
+︡f056f3c7-beb0-447c-af76-6850424a4053︡
+︠d533b267-a265-42ad-af94-6fdb01d4b151︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-1"><header title="Section 1 Surjective Linear Transformations"><h1 class="heading hide-type" alt="Section 1 Surjective Linear Transformations">
+<div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 Surjective Linear Transformations">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">Surjective Linear Transformations</span>
-</h1></header></section></div>
-︡ac87390d-777b-4d40-a6ee-e827685ae2ee︡
-︠d8a50ef1-c693-4268-a2c6-1af326b809be︠
+</h2></section></div>
+︡426861ac-95ff-4b29-a813-d73a24c0982e︡
+︠9610f729-4bf3-4ba5-a526-8feca10629f4︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-1">Two carefully-crafted linear transformations: <tt class="code-inline tex2jax_ignore">T</tt> is surjective, <tt class="code-inline tex2jax_ignore">S</tt> is not.</p></div>
-︡8873d81c-9d22-4158-a975-0800c367b616︡
-︠49ecdc4e-8dcb-4fe1-a888-d81d9d1f5c66︠
+<div class="mathbook-content"><p id="p-1">Two carefully-crafted linear transformations: <code class="code-inline tex2jax_ignore">T</code> is surjective, <code class="code-inline tex2jax_ignore">S</code> is not.</p></div>
+︡88b98a1a-4563-481d-ae70-5004ca5d1770︡
+︠cf97922a-d6f3-4985-a76d-7cd7092574de︠
 A = matrix(QQ, [[2, 2, 5, -2], [2, 3, 1, -4], [-3, -4, -4, 5]])
 T = linear_transformation(QQ^4, QQ^3, A, side='right')
-︡3b027deb-b798-4397-a41f-df8ec1ce11a7︡
-︠8e28095f-516e-4aa7-a1e9-0c89a5b73c9e︠
+︡4ade2604-1eb1-4259-a8c0-54c2cccf2330︡
+︠18bf7d67-276d-4983-a20f-254f71c40f74︠
 T.is_surjective()
-︡31c69dff-c503-43ad-abbc-5c8d6321b6d4︡
-︠416170e7-fbcf-4e0a-acc6-9131e951a088︠
+︡09cb9390-bb81-491a-ac3a-c6f16722b223︡
+︠72d3e677-632e-44b0-ae83-94a850073ca6︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">The range is known in Sage as the “image.”  For a surjective linear transformation, it will be the entire codomain.  Note that the image is a vector space.</p></div>
-︡5c9be1bd-8b84-4a74-a540-bd2fe084234a︡
-︠ba755561-2ecb-4372-a8d7-994b83b07e3c︠
+︡f18c563d-ea00-495c-a944-dd976f867c31︡
+︠223af912-6fd6-406c-adf0-2cdb44acb29e︠
 T.image()
-︡8f6f4c5a-e89a-43c2-a65f-de8190551c34︡
-︠8c4fb8b1-399d-44da-a63f-61df37f8c040︠
+︡4b076017-3770-4e86-aa56-b73837de480d︡
+︠6487ce7d-6a5e-4b46-a1fc-8a3b37205685︠
 T.image() == T.codomain()
-︡5dc9d828-9622-4370-ade3-d45b38230e45︡
-︠ea3a3026-9ccc-4f03-afe2-3b686a18e272︠
+︡4fac66be-429a-404e-a76d-3e879becb334︡
+︠97333aaf-8f12-4917-a78e-5cdd36913456︠
 B = matrix(QQ, [[1, -2, 0, 3], [3, -5, 1, 7], [-1, 4, 2, -7]])
 S = linear_transformation(QQ^4, QQ^3, B, side='right')
-︡85cb00c3-6603-42f3-a6e1-82cfa39cc7e3︡
-︠a6962a7e-dd4d-417d-a4dc-55e2495e5164︠
+︡8fdb315d-0ec1-4162-a9eb-73741bbadef2︡
+︠47223539-338f-4496-a724-2a8aea694384︠
 S.is_surjective()
-︡50ae7d8e-b6c0-44d7-a115-d7ab9f5fda13︡
-︠e7395b6e-9245-4292-aaa4-f8ba35985737︠
+︡6db8ffd2-8060-40aa-a61d-b473f6d5f288︡
+︠6f527515-8a6e-4a78-a5ea-29fade0a30cc︠
 IM = S.image()
 IM
-︡b1efb4a1-2337-4960-ab1b-f13bc70606d3︡
-︠d85b70f1-2155-49ec-aaad-5af85bf61fcf︠
+︡83be5346-9c0f-4ab7-a315-e4fdecbe6ff3︡
+︠c7686bca-2573-452f-ac60-245213ed25d1︠
 IM == S.codomain()
-︡39784f94-1b66-40f5-ad9f-beaa7f676773︡
-︠6ace31dc-5e7b-458b-aa64-a134ca422aa9︠
+︡8a9f20be-be42-4195-a06b-1906b2a90cfd︡
+︠e7787a82-930d-4627-ac3e-7478b2a5ca2b︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-2"><header title="Section 2 Pre-Images"><h1 class="heading hide-type" alt="Section 2 Pre-Images">
+<div class="mathbook-content"><section class="section" id="section-2"><h2 class="heading hide-type" alt="Section 2 Pre-Images">
 <span class="type">Section</span><span class="codenumber">2</span><span class="title">Pre-Images</span>
-</h1></header></section></div>
-︡e04af7cd-42bb-4e14-a9ca-e7c1b8c0aeb5︡
-︠896c4540-282e-4410-a8ac-383f9f76024b︠
+</h2></section></div>
+︡713f9ba1-d35e-41c1-a984-709f8512aedd︡
+︠a4ed488f-963f-455c-a6e4-b6545d97046d︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">1</span>
-</h5>
+</h6>
 <p id="p-3">We can create inputs associated with any output.  First, we make an arbitrary output, but make sure it really is an output, as a linear combination of a basis of the image (see basis above).  We print the two vectors in the opposite of what we would consider the “normal” order.</p></article></div>
-︡7c4e983d-965c-449d-a427-16055a5d05f5︡
-︠07155ae9-88fd-4447-a18a-9a0af6443593︠
+︡2020d796-62da-422f-ae9d-344889621767︡
+︠5977a5f3-c669-408b-af74-da9131b94d1b︠
 bas = IM.basis()
 out = ()*bas[0] + ()*bas[1]
 inp = S.preimage_representative(out)
 out, inp
-︡aaab006e-af69-4dbd-a4d6-f7001f6649be︡
-︠c5971988-827f-4c4a-a998-08f0900f6582︠
+︡464cee2d-1e47-4840-a437-9112343ee8b0︡
+︠3067d45f-27e6-4e6a-aeae-640763ca2b2d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-4">A check on our work.</p></div>
-︡447dc974-1f69-4f2d-aac7-2cf1d82e8840︡
-︠b85251cc-5dcb-46be-a45a-b77b854a3c37︠
+︡b5e2cb62-b99a-4080-ab6b-adfa45d100d2︡
+︠e87ca481-63bf-4db7-ae6e-a0b9b0f9209f︠
 S(inp)
-︡cef2153d-19bd-4529-a36e-e155dea19edc︡
-︠6ab5cdb0-bc97-4af9-a32f-10176e510ffd︠
+︡278a33ec-5500-44dc-acc2-b6360e708901︡
+︠9382dc5c-8a19-4b67-a723-adad4bcbc45d︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-2"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-2"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">2</span>
-</h5>
+</h6>
 <p id="p-5">We can make other inputs, using the kernel.</p>
-<p id="p-6">Any value of <tt class="code-inline tex2jax_ignore">new_inp</tt> is in the preimage of <tt class="code-inline tex2jax_ignore">out</tt>, and every element of the preimage can be built this way.  Notice the role the kernel plays, much like in the worksheet about injective linear transformations.</p></article></div>
-︡c587b556-513f-48de-a111-1323a810a2f9︡
-︠fbf83bd9-23a5-4223-a135-358582ea38c2︠
+<p id="p-6">Any value of <code class="code-inline tex2jax_ignore">new_inp</code> is in the preimage of <code class="code-inline tex2jax_ignore">out</code>, and every element of the preimage can be built this way.  Notice the role the kernel plays, much like in the worksheet about injective linear transformations.</p></article></div>
+︡6f0e1eb6-a41c-4dc2-a445-8e32c7e83ad9︡
+︠73882a6e-1132-4e0f-a154-6e291e1f75a5︠
 K = S.kernel()
 K
-︡1ce141d1-af44-4577-a99b-ec0628902c8e︡
-︠fabdbfe8-1985-4edd-a567-0541b6956c1e︠
+︡e1879b10-932d-450d-a513-981c22a3129b︡
+︠77d0f7b0-853a-429b-a0fd-49555780ba34︠
 z = K.random_element()
 new_inp = inp + z
 new_inp, S(new_inp)
-︡b086d45c-d665-4c43-aa9a-2af6bbc50211︡
-︠0c2930d9-cbf3-41c7-a471-e9bef79bcadd︠
+︡6ac3abb6-c3c0-4efa-aaf9-733c994190bc︡
+︠517152d1-8945-4a34-a4d4-e58121a6347e︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-3"><h5 class="heading">
+<div class="mathbook-content"><article class="exercise-like" id="exercise-3"><h6 class="heading">
 <span class="type">Exercise</span><span class="codenumber">3</span>
-</h5>
+</h6>
 <p id="p-7">Elements outside the range (image) will have empty preimages.  We mildly “wreck” an element of the range.</p>
 <p id="p-8">With two initial entries determined by the zeros and ones in the basis vectors, the third entry must be determined, so we can “twiddle” it just a bit to obtain a vector of the codomain that lies outside the range.  We will ask Sage for a pre-image representative anyway and see what happens.</p></article></div>
-︡ceae7df5-6c16-4f23-a66a-753332ade68b︡
-︠44ae32c2-83e9-4adb-ad41-8b7bebe89cf1︠
+︡1c08d6ab-734c-48e0-ac3e-113935adcd23︡
+︠c4fdcd37-8bbd-474c-a81f-6209b4e52a34︠
 in_range = ()*bas[0] + ()*bas[1]
 in_range
-︡8352185e-ad29-46c7-a1ab-326ad55bef8d︡
-︠000532e8-0962-42cf-a9e9-52bbc8124f1d︠
+︡ef8ed5c1-d5c9-424d-afce-e20fbb3a1554︡
+︠a343218e-363f-4f63-ac5f-b42b3e7788de︠
 outside_range = vector(QQ, [ , , ])
 S.preimage_representative(outside_range)
-︡c1ed7106-a0f1-432d-a3cc-c1e7db0ee5df︡
-︠e6672924-e896-47c9-a584-8163090b2026︠
+︡d721a433-3696-469d-a952-917ccba333c0︡
+︠302c1042-96b0-4917-a421-465acb6b3035︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡00d67f0a-4f3d-45aa-aef3-3749a42bf5c2︡
+︡f6513718-abe5-4c77-a3c9-50fabc62792b︡
 
