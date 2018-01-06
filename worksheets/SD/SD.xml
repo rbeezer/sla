@@ -54,6 +54,7 @@
                 [-36, -20, -16,  -1, 192, -32],
                 [ -9,  -5,  -4,   0,  47,  -8],
                 [ -1,   1,   0,  -4,  20,  -3]
+                ])
             A
             </input></sage>
 
@@ -144,7 +145,7 @@
 
             <exercise>
                 <statement>
-                    <p><term>Rational canonical form</term> is another interesting version of this idea, try <c>.rational_form()</c> on <c>C</c>.  And if you do, then execute the following two cells and see if the coefficients look familiar.  (Learn more about <term>companion matrices</term> if this makes you curious.</p>
+                    <p><term>Rational canonical form</term> is another interesting version of this idea, try <c>.rational_form()</c> on <c>C</c>.  And if you do, then execute the following two cells and see if the coefficients look familiar.  Learn more about <term>companion matrices</term> if this makes you curious.</p>
                 </statement>
             </exercise>
 

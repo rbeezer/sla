@@ -83,9 +83,11 @@
         <paragraphs>
             <title>Section PDM: Properties of Determinants</title>
 
-            <p>This worksheet is different from all the others.  It uses elementary matrices and triangular matrices to construct the LU decomposition of a <m>5\times 5</m> matrix.  It follows the logic of a constructive proof of the existence of such a decomposition, and uses some properties of determinants as checks along the way.  The conclusion discusses how to solve a linear system by first constructing an LU decomposition.  This topic is not in the textbook, though all the prequisites are.</p>
+            <p>This worksheet is different from all the others.  It uses elementary matrices and triangular matrices to construct the <term>LU decomposition</term> of a <m>5\times 5</m> matrix.  It follows the logic of a constructive proof of the existence of such a decomposition, and uses some properties of determinants as checks along the way.  The conclusion discusses how to solve a linear system by first constructing an LU decomposition, then <term>forward-solving</term> and <term>back-solving</term> .</p>
 
-            <p>Long: 15-20 minutes, no exercises. [<url href="PDM/PDM.html">HTML</url>]<nbsp />[<url href="PDM/PDM.pdf">PDF</url>]</p>
+            <p>This topic is not in the textbook, though all the prerequisites are.  It is meant as a demonstration of the utility of elementary matrices and a glimpse at topics that might be part of a more advanced course.</p>
+
+            <p>Long: 20 minutes, no exercises. [<url href="PDM/PDM.html">HTML</url>]<nbsp />[<url href="PDM/PDM.pdf">PDF</url>]</p>
         </paragraphs>
 
         <paragraphs>

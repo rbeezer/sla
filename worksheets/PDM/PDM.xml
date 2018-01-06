@@ -23,21 +23,21 @@
 
             <p>Our goal is to row-reduce a matrix with elementary matrices, track the changes, and arrive at an expression for a square matrix <m>A</m> as a product of a lower-triangular matrix, <m>L</m>, and an upper-triangular matrix, <m>U</m>, that is <me>A=LU</me> the so-called <term>LU decomposition</term>.  I sometimes prefer to call it <term>triangular form</term>.</p>
 
-            <p>There are no exercises in this worksheet, but instead there is a careful and detailed exposition of using elementary matrices (row operations) to arrive at a <term>matrix decomposition</term>.  There are many kinds of matrix decompositions, such as the <term>singular value decomposition</term> (SVD), where five or six form part of the linear algebra canon.  Again, see <booktitle>A Second Course in Linear Algebra</booktitle> for details on these.</p>
+            <p>There are no exercises in this worksheet, but instead there is a careful and detailed exposition of using elementary matrices (row operations) to arrive at a <term>matrix decomposition</term>.  There are many kinds of matrix decompositions, such as the <term>singular value decomposition</term> (SVD).  Five or six such decompositions form a central part of the linear algebra canon.  Again, see <booktitle>A Second Course in Linear Algebra</booktitle> for details on these.</p>
 
             <p>We decompose a <m>5\times 5</m> matrix.  It is most natural to describe an LU decomposition of a square matrix, but the decomposition can be generalized to rectangular matrices.</p>
 
             <sage><input>
-            entries = [[-6, -10, 0, 10, 14],
-            [2, 3, 0, -4, -3],
-            [0, -2, -3, 1, 8],
-            [5, 6, -3, -7, -3],
-            [-1, 1, 6, -1, -8]]
-            A = matrix(QQ, entries)
+            entries = 
+            A = matrix(QQ, [[-6, -10,  0, 10, 14],
+                            [ 2,   3,  0, -4, -3],
+                            [ 0,  -2, -3,  1,  8],
+                            [ 5,   6, -3, -7, -3],
+                            [-1,   1,  6, -1, -8]])
             A
             </input></sage>
 
-            <p>Elementary matrices to <q>do</q> row operations in first column.</p>
+            <p>Elementary matrices to <q>do</q> row operations in the first column.</p>
 
             <sage><input>
             actionA = elementary_matrix(QQ, 5, row1=1, row2=0, scale=-2)*elementary_matrix(QQ, 5, row1=3, row2=0, scale=-5)*elementary_matrix(QQ, 5, row1=4, row2=0, scale=1)*elementary_matrix(QQ, 5, row1=0, scale=-1/6)
@@ -53,6 +53,7 @@
             C
             </input></sage>
 
+            <p>The <q>bottom</q> of the third column.</p>
 
             <sage><input>
             actionC = elementary_matrix(QQ, 5, row1=3, row2=2, scale=3)*elementary_matrix(QQ, 5, row1=4, row2=2, scale=-6)*elementary_matrix(QQ, 5, row1=2, scale=-1/3)
