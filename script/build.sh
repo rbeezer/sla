@@ -29,9 +29,13 @@
 # MathBook XML distribution
 
 declare ROOT=${HOME}/books/fcla/sla
+declare OUTPUT=${ROOT}/worksheets
 declare SCRATCH=/tmp/sla
 declare MBX=${HOME}/mathbook/mathbook
 declare LATEX="texfot xelatex"
+
+# With output in a repository, dates in files is a bad idea
+declare NODATE="-stringparam debug.datedfiles no"
 
 # FCLA sections that have worksheets, in order
 ALLSECTIONS=(RREF NM SS MISLE CRS FS B PDM EE SD LT ILT SLT IVLT VR MR CB)
@@ -39,6 +43,7 @@ ALLSECTIONS=(RREF NM SS MISLE CRS FS B PDM EE SD LT ILT SLT IVLT VR MR CB)
 # http://stackoverflow.com/questions/12303974/assign-array-to-variable
 # assignment array variable b=( "${a[@]}" )
 if [ "X${1}" == "X" ] ; then
+    echo "Output will be copied into repo, work on a branch"
     echo "Provide the string 'all' or a section acronym"
     exit
 elif [ "${1}" == "all" ] ; then
@@ -55,10 +60,11 @@ echo "*******************"
 echo "Processing Overview"
 echo "*******************"
 # Overview HTML, LaTeX
-xsltproc -xinclude ${MBX}/xsl/mathbook-html.xsl  ${ROOT}/worksheets/overview.xml
-xsltproc -xinclude ${MBX}/xsl/mathbook-latex.xsl ${ROOT}/worksheets/overview.xml
+xsltproc -xinclude ${NODATE} ${MBX}/xsl/mathbook-html.xsl  ${ROOT}/worksheets/overview.xml
+xsltproc -xinclude ${NODATE} ${MBX}/xsl/mathbook-latex.xsl ${ROOT}/worksheets/overview.xml
 ${LATEX} overview.tex
 ${LATEX} overview.tex
+cp -a overview.html overview.pdf ${OUTPUT}
 
 for SEC in ${SECTIONS[*]}
 do
@@ -68,7 +74,7 @@ do
   ###############################
   # PDF, process twice with LaTeX
   ###############################
-  xsltproc -stringparam numbering.theorems.level 0 -xinclude \
+  xsltproc -stringparam numbering.theorems.level 0 ${NODATE} -xinclude \
       ${MBX}/xsl/mathbook-latex.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
   ${LATEX} ${SEC}.tex
   ${LATEX} ${SEC}.tex
@@ -76,18 +82,19 @@ do
   # HTML
   ######
   xsltproc -stringparam numbering.theorems.level 0 -stringparam chunk.level 0 \
-      -stringparam html.knowl.exercise.inline no -xinclude \
+      -stringparam html.knowl.exercise.inline no ${NODATE} -xinclude \
       ${MBX}/xsl/mathbook-html.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
   ###############
   # SageMathCloud
   ###############
-  xsltproc -stringparam numbering.theorems.level 0 -stringparam chunk.level 0 -xinclude \
+  xsltproc -stringparam numbering.theorems.level 0 -stringparam chunk.level 0 ${NODATE} -xinclude \
       ${MBX}/xsl/mathbook-smc.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
   #########
   # Jupyter
   #########
-  xsltproc -stringparam numbering.theorems.level 0 -stringparam chunk.level 0 -xinclude \
+  xsltproc -stringparam numbering.theorems.level 0 -stringparam chunk.level 0 ${NODATE} -xinclude \
       ${MBX}/xsl/mathbook-jupyter.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
+  cp -a ${SEC}.pdf ${SEC}.html ${SEC}.sagews ${SEC}.ipynb ${OUTPUT}/${SEC}
 done
 
 # restore working directory
