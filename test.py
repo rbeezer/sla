@@ -18,9 +18,13 @@ for ipynb in glob.iglob('**/*.ipynb', recursive=True):
     except:
         print("validation failed: {}".format(ipynb))
         fail = True
+    else:
+        print("valid ipynb: {}".format(ipynb))
 if fail:
+    print("TESTS FAILED")
     sys.exit(1)
 else:
+    print("TESTS PASS")
     sys.exit(0)
 
 
