@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rbeezer/sla.svg?branch=master)](https://travis-ci.org/rbeezer/sla)
+
 Sage and Linear Algebra
 -----------------------
 
