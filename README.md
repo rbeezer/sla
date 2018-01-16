@@ -11,9 +11,9 @@ These are designed to be presented in class, and the overview includes time esti
 
 For each section covered there is
   * PDF: which does not show the empty Sage cells present elsewhere
-  * HTML: a single webpage, with active Sage cells, and empty cells for the exercises.  There is no facility for saving your work with these.
+  * HTML: a single webpage, with active Sage cells, and empty cells for the exercises.  These require no more set-up than an internet-connected browser, but there is no facility for saving your work.
+  * Jupyter Notebooks: these can be viewed in a variety of ways, but require a Sage kernel.  [CoCalc](https://cocalc.com) is a natural choice, while a local Sage installation will also contain a notebook server with the right kernel.
   * CoCalc: the native format on CoCalc, `*.sagews`.  Make a (free) account and upload, or pay for an account and just clone this repository with the provided internet access.
-  * Jupyter Notebooks: experimental, but fairly functional.  These are tested in CoCalc, elsewhere you may need to locate and select a Sage kernel.  You can similarly save your work with your SageMathCloud account.
 
 There is a bash script, which you can experiment with.  However we are distributing, and updating, all the same outputs via this repository.
 
