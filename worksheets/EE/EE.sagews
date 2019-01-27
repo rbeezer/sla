@@ -1,60 +1,62 @@
-︠cfd28ce0-a9d0-41e4-abdf-8629cb8e0b9e︠
+︠7046d733-b6c9-431d-accc-a7bd1ae92c52︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡e6dc8586-6203-4312-a7c0-747ae356152b︡
-︠4111da75-0e80-41b2-a43e-4a3c41fa810b︠
+︡dc213096-34d0-4e01-accd-865447e30105︡
+︠3e26f569-b9d8-49c9-ab85-91ce51545656︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><div class="hidden-content">\(
+<div class="mathbook-content"><div class="hidden-content" style="display:none">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡d4cf599d-fab7-4bd3-ad16-c60f2512f930︡
-︠51410aba-7a42-42f0-a5c1-c88c8a29c230︠
+︡b94df425-defb-4797-a040-6d13c742ba81︡
+︠04a41984-f62e-4197-a9ac-90aa46289d31︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡28179215-c9f1-4c20-ac7d-e3660e038d5b︡
-︠861b096c-d1c6-492d-a911-8fc16cd74f9e︠
+︡e3688721-c27e-4088-a813-5b3f57680f54︡
+︠73d02d00-6146-4d9d-a38c-6f61a7b4fe31︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="EE"></section></div>
-︡c24de575-246e-4bf1-a982-a1163821f709︡
-︠5cbaaa01-f265-4015-a1ae-45f5b3de4d54︠
+︡7b54b82c-88dd-4fa6-adef-a4f06982d701︡
+︠98cfd870-4092-4d8c-a46b-300316c98919︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡6b125bc5-db73-4185-a6a0-5e5441810cf6︡
-︠151277d3-dbf5-4e1d-a488-5d7a2bcadd6c︠
+︡ba28af01-f518-47f1-a437-f780a9663f04︡
+︠8bfa39a4-baad-422c-a46f-c66460dd70c7︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <h1 class="heading">
 <span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section EE</span>
 </h1>
-<address class="contributors"><p>Robert Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound</p></address>
-<address class="contributors">Spring 2017</address>
-<p></p>
+<div class="author">
+<div class="author-name">Robert Beezer</div>
+<div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-︡371499c7-d92c-4e1e-ac66-4b3c65730406︡
-︠13e388c5-f9e2-46d4-a49a-be6fac420570︠
+<div class="date">Spring 2019</div>
+</div>
+︡553407ea-c946-4678-a3bf-2769cda9a1a7︡
+︠90cc4c43-70db-4632-af7e-e965322dcdf7︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 Eigenvalues and Eigenvectors">
-<span class="type">Section</span><span class="codenumber">1</span><span class="title">Eigenvalues and Eigenvectors</span>
+<div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Eigenvalues and Eigenvectors</span>
 </h2></section></div>
-︡b849bc18-1110-448d-a9d7-486a717c371a︡
-︠7d3c7e99-6ba8-4bf1-a98e-1c776e9ebc5c︠
+︡49716cea-f5ac-4010-a307-2f1845b73742︡
+︠f8c69228-d1d8-4ee9-af1a-6398ced751f9︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">A \(6\times 6\) matrix with “nice” eigenvalues.</p></div>
-︡7daa9193-a0e5-4994-aa3d-9490c0e5ea24︡
-︠7a215c2e-fded-4287-a72a-4bfdbbea1c44︠
+︡3e205c27-4f91-478f-a171-be5562449a59︡
+︠4986ad3c-57cf-4947-a96e-b2d0842c8c6e︠
 A = matrix(QQ, [
     [-31, -23, -16,  12, 120, -17],
     [ -3,   7,   0, -12,  60, -21],
@@ -64,115 +66,115 @@ A = matrix(QQ, [
     [ -1,   1,   0,  -4,  20,  -3]
     ]) 
 A
-︡1cf3d4ff-3fc2-4cfa-a46c-ea8e83a6eb33︡
-︠04f08c48-c879-4a48-a48f-179951df7bba︠
+︡6b8f22d5-f3dc-4270-a917-8c95d190d2d4︡
+︠140a32c1-7c44-486c-a90d-09a9e7a888b5︠
 p = A.characteristic_polynomial()
 p
-︡fcfec7b0-f886-423a-aa73-a8a32f5fedba︡
-︠7a6792e4-3ddc-44ff-afa7-240c82cd1bac︠
+︡dcae7e04-f704-4c8b-a92b-6240c387c007︡
+︠6e40cbec-fe4f-4218-adab-91ee2a2a2eb2︠
 p.factor()
-︡527b90e7-5152-4d92-ad9c-4b04896468f0︡
-︠552c0cdf-3209-45e3-a7bc-407540eb4434︠
+︡610a2d61-a5fe-4520-ae0b-9ac78e2b9494︡
+︠7f68a850-9f59-4ebc-af9d-a276a05cbe14︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">Eigenvalues are the roots of the characteristic polynomial (Theorem EMRCP), which should be obvious from the factored version, including their (algebraic) multiplicities.  Of course, it can be very easy to get these in Sage.</p></div>
-︡58a75a32-a74a-40a9-a315-0558aa895dd8︡
-︠221ca67e-915e-4c68-a5aa-ba002aab3f81︠
+︡38490e15-eb54-453f-a139-edc6466a3194︡
+︠6cda5d97-3838-4c8c-acaf-68c2e185bc64︠
 A.eigenvalues()
-︡8b4a7e1e-ca02-48c8-a123-bddbd068ba84︡
-︠b1ffb7ec-5a75-4df1-a504-9c177f7d7370︠
+︡0c0d76b0-ee91-4669-a323-28cfab130cf7︡
+︠0041eb7a-c685-47fb-a12e-557152d65e25︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h6 class="heading">
-<span class="type">Exercise</span><span class="codenumber">1</span>
+<span class="type">Demonstration</span> <span class="codenumber">1</span>
 </h6>
 <p id="p-3">Create the singular matrices \(A-\lambda I_6\) for each eigenvalue (we will choose to do two with “random” choices for the eigenvalue).   Row-reducing these matrices will exhibit their nonzero nullity.</p></article></div>
-︡83182cf0-94b0-4a80-ace0-07c1f40618a9︡
-︠83cabf6a-00fb-4094-a052-16ae8929041b︠
+︡636a456c-f228-48a7-a3ba-20f924b0b1fd︡
+︠751df535-2385-4b0f-a24b-d7cc0f1c0ddf︠
 (A-( )*identity_matrix(6)).rref()
-︡dae9499b-39b3-45cc-a9d2-ce87c10fa13c︡
-︠c06aab43-78c3-4b1f-a7bc-a7b3e84f7e1a︠
+︡a44c2426-a492-4a43-aa78-64f21023c20a︡
+︠2be671b9-75e0-4885-ac3c-4914c24e5116︠
 (A-( )*identity_matrix(6)).rref()
-︡adb185cd-9456-4708-a773-32bf59799e8a︡
-︠928431a0-e343-4ab4-a22b-56e053acd4b5︠
+︡b31aa8b6-23b1-434a-a80d-5576a38f2e03︡
+︠4c7662e2-8154-4298-ac19-a7e1d9468758︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="exercise-like" id="exercise-2"><h6 class="heading">
-<span class="type">Exercise</span><span class="codenumber">2</span>
+<span class="type">Demonstration</span> <span class="codenumber">2</span>
 </h6>
 <p id="p-4">Examine the eigenspace for the eigenvalue \(\lambda=3\text{,}\) using Sage's right kernel command and the pivot basis.</p>
 <p id="p-5">Use a basis for the eigenspace to create eigenvectors of <code class="code-inline tex2jax_ignore">A</code> for the eigenvalue \(\lambda=3\) at will.</p></article></div>
-︡f4778b93-b760-4b0b-af3e-b8599ad47a83︡
-︠f877f029-3e1a-4ecb-aacf-988e119f619f︠
+︡a942fb5e-de02-422b-abfd-5a44b2d0857d︡
+︠d27257da-5a85-4db8-a868-6c3b0fddf627︠
 E6 = (A-3*identity_matrix(6)).right_kernel(basis='pivot')
 E6
-︡497c07c3-0022-4b1e-a7bb-743f351c47dd︡
-︠727ee86b-b7ce-498f-a80a-37f762c7f0fd︠
+︡40ab2f20-a8a2-4e7e-a705-f613112ff252︡
+︠99245547-5e00-41e8-af58-45f6818a17c6︠
 B = E6.basis()
 B
-︡e6055eec-a937-48d0-a750-29820f5c74d6︡
-︠2bd2131f-fb93-4321-a397-3c0ce1b4e29b︠
+︡960cb51f-d7ee-47fc-aff2-8478a0a2aba7︡
+︠24e20981-9697-4406-a106-39ab15bb8672︠
 v = *B[0] + *B[1]
 v
-︡9b76e9af-9ab3-4ee5-af1e-65b72a8de6f7︡
-︠2939013a-0c5b-4f3a-a43c-392f049817f1︠
+︡e96cc765-9fc2-4612-ad23-36ce2e3eac41︡
+︠e2b5f8d5-d659-48ba-ab9d-ec4bb69f43b9︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-6">We can check this.  Compare \(Av\) with \(3v\text{.}\)</p></div>
-︡f1b2bb3e-64bb-40ae-aaf1-73b92cdb5f34︡
-︠126c5179-0ddc-49e6-a796-90959b17767a︠
+︡5ac10b9d-1636-40c2-ab7b-968d134b29fe︡
+︠258e68af-5b59-4265-a41d-0a3885cc1f50︠
 A*v
-︡a8d1522c-b3a9-4f37-a6b0-d516ab2b392a︡
-︠4d31e841-404f-4943-a1be-2844fef2a2cd︠
+︡d8556cd1-b3d1-4cf7-a249-f433db8a8a9e︡
+︠a760cdca-e8eb-49ab-a0df-9c4df298c125︠
 3*v
-︡c0af2886-9c6e-4c02-af2d-e46285187ca3︡
-︠974376cf-d5c3-4384-a686-36b994fbc676︠
+︡fdd6ea3a-4123-4dce-a8cb-867d47fdfbf2︡
+︠1ffe5d88-8dab-4077-ae04-99a16e85c81c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-7">Here's an easy check:</p></div>
-︡a1ee5541-4160-45a9-aa01-148cd20ddc44︡
-︠3e61db72-cc43-4dad-a64d-85112f32d0f1︠
+︡b2ca0189-a165-4c6d-a35d-8e720d193e24︡
+︠ad668780-0316-49ed-a612-4a1bc28ebcdd︠
 A*v - 3*v
-︡530c5d7c-0384-475e-a4c3-15936b2aefbe︡
-︠1111d7f4-3f8c-44f2-a34f-76409bcc5ac1︠
+︡08b6f3d8-4db5-4454-a1b6-4f05bd74b309︡
+︠101c60f4-9425-4a7a-ae85-4c54201a4dd5︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-8">Can you make more eigenvectors?</p></div>
-︡9d2aff2f-46fd-423d-a571-5e79f05bdb69︡
-︠cf7ea7ec-6226-4f5a-acb1-e0059f6fb3a1︠
+︡6e58bc9b-02f3-479a-a173-7c0c02d1d2fb︡
+︠759de597-0aa0-4d29-a831-bbdc8df5fc8e︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-2"><h2 class="heading hide-type" alt="Section 2 Eigenspaces, Eigenmatrices">
-<span class="type">Section</span><span class="codenumber">2</span><span class="title">Eigenspaces, Eigenmatrices</span>
+<div class="mathbook-content"><section class="section" id="section-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Eigenspaces, Eigenmatrices</span>
 </h2></section></div>
-︡d6154bd2-845b-4a50-a42b-60b6555c400f︡
-︠2d533af0-d842-43f8-a33a-f9bb0115d66d︠
+︡7f41c366-b705-47e7-a17b-2260eeed4dac︡
+︠c1c1384a-ff1f-459e-ada5-8d8fd6db429e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-9">Continuing with <code class="code-inline tex2jax_ignore">A</code> from above, we can get eigen-stuff quickly from Sage, once we understand what is really happening (according to the definitions).</p></div>
-︡58bace5c-f244-4573-adb7-8b13614871ed︡
-︠f36ae383-f864-4cbc-a087-713849a911a0︠
+︡e50a733b-e2bf-4219-a0e3-660e5d539952︡
+︠8489ffd3-bb57-4b88-a496-7fd8e3636fdc︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-10">As always we want the “right” versions of the relevant commands.  Eigenspaces are in the second parts of pairs, where the first part of each pair is the eigenvalue.  Notice that they are vector spaces (with bases, etc).  The basis vectors are Sage's version of a basis, with vectors from an echelonized matrix, typically with lots of zeros and ones in the first part of the vectors.</p></div>
-︡fa36429d-595b-4d27-a920-191426edf0fa︡
-︠0e44487e-6d7b-484e-a0e0-0fa14c83a739︠
+︡261af09d-3489-4b41-a48b-a0a889bfc2f9︡
+︠e1f0bf05-c4a5-4d69-afa1-a525dbe8aab9︠
 A.eigenspaces_right()
-︡14769cf0-a5d1-4166-af64-074a9971c190︡
-︠ab521ee1-f96d-4a83-a18a-582a3b3acfc6︠
+︡49b4964a-c0e6-45bc-aeb7-05c2bad9384e︡
+︠298dd141-c02a-4786-a461-b778a228c500︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-11">The <code class="code-inline tex2jax_ignore">eigenmatrix</code> commands return pair of matrices.  The first is a diagonal matrix with the eigenvalues on the diagonal.  The second is a square matrix with linearly independent eigenvectors in the columns, and the order of the eigenvectors is the same as the order of the eigenvalues.  That is, the eigenvector in column <code class="code-inline tex2jax_ignore">i</code> of the second matrix is a basis vector for the eigenspace of the eigenvalue in column <code class="code-inline tex2jax_ignore">i</code> of the first matrix.</p></div>
-︡f7159238-332a-40d3-a3eb-e340d8c0290f︡
-︠f0605029-96cb-41c8-a406-0ea5f7db8f49︠
+︡32ab08d4-9a5c-44c4-ab0b-dc244d7753c6︡
+︠408ec96a-d042-4c9f-a14f-c1cf60cd7104︠
 A.eigenmatrix_right()
-︡f3953f56-8fd4-4ae1-a321-93f48fb5a45f︡
-︠e428967f-d0ea-4598-a6cb-76f7a766c1b2︠
+︡755032aa-c7a1-4a7a-a98f-840437504d15︡
+︠29a8ada4-87c2-486a-a3f2-2873dba3be0d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-12">Sometimes the dimension of an eigenspace (the geometric multiplicity) is strictly less than the number of times the eigenvalue appears as a root of the characteristic polynomial.  This is the case with <code class="code-inline tex2jax_ignore">C</code> next, but was not the case with <code class="code-inline tex2jax_ignore">A</code> above.</p></div>
-︡0963209a-06af-4109-aa66-5ec457cce9d9︡
-︠be32163a-031a-432b-acc1-32f0757326cf︠
+︡337db2b5-64d3-4769-a199-4b2bef783273︡
+︠fb679295-7095-430b-ad14-75091f988cbf︠
 C = matrix(QQ, [
     [128,   20,  44, -50,  236, -18, -330, -565],
     [ -23, -16,  -5,   6,  -40,  27,   62,  128],
@@ -184,89 +186,99 @@ C = matrix(QQ, [
     [  13,   6,   3,  -4,   23, -12,  -35,  -72]
     ])
 C
-︡08d4bfae-9a2b-455e-a02a-25d2647d8a45︡
-︠94e78962-70d9-4b2f-a932-45827e7fcf90︠
+︡0ba6248b-90b2-46f2-a1c4-63a6cc565d20︡
+︠d2b89ec2-9535-4794-aab0-f149715d7aaa︠
 C.eigenmatrix_right()
-︡5343bcc2-f43c-4dff-ad92-fd88f067036a︡
-︠3cd7f94c-c40f-41de-a0b7-3b5c34cacdd2︠
+︡b8d6065c-9e1c-4496-a841-932ecaf277c2︡
+︠17aeeb53-7e29-4b62-a1f6-2995760788e5︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-3"><h2 class="heading hide-type" alt="Section 3 Fancy Footwork">
-<span class="type">Section</span><span class="codenumber">3</span><span class="title">Fancy Footwork</span>
+<div class="mathbook-content"><section class="section" id="section-3"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Fancy Footwork</span>
 </h2></section></div>
-︡70e58efd-ab1a-4a28-a833-f6f4329fd5da︡
-︠84b7a459-1043-4be6-a379-7707c3a537b0︠
+︡afd5ec03-0822-41d9-a4e9-b1257ab714f0︡
+︠9a070e31-2394-46a1-a0e0-9a1cf86a08ff︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-13">A totally random matrix is unlikely to have a characteristic polynomial that factors if we restrict ourseves to the rationals.  But we can find all the roots over \(\overline{Q}\text{,}\) the set of all algebraic numbers.  (This is the set of all real roots of all possible polynomials with integer coefficients.)</p></div>
-︡245dbf11-832d-46dc-ad13-69a6069acd18︡
-︠d3c31823-ab7d-49ea-a5bc-815385a207f1︠
+︡99a90a84-ca85-4fe0-a0ef-089248ab3b42︡
+︠adb56c0e-0c98-4187-a295-1aeac227e522︠
 D = random_matrix(QQ, 10)
 D
-︡fc5c0752-a0e2-4d70-a8cb-55da950470b6︡
-︠2b38730d-6be4-4dcc-ad59-9af658b5c268︠
+︡8d0327f3-60ff-4918-a031-64b4f872f582︡
+︠80f94204-5645-45d7-addb-f4fa8f3f125a︠
 p = D.characteristic_polynomial()
 p.factor()
-︡993d2b02-87d7-4cb3-a888-223188a3d664︡
-︠e0e2d0de-3651-4d1c-a195-ab7dd05743ea︠
+︡4ea47e67-3cd7-4235-a912-4074bf3ef514︡
+︠f63aaa91-1cdf-43f3-a994-cd432026e2cf︠
 p.roots(ring=QQbar, multiplicities=False)
-︡7db6f87c-6a3b-4c1d-a926-ec26a06f7a25︡
-︠5a210298-e022-4cf3-a986-f632dd34daff︠
+︡6b5a604f-16bf-46ff-a988-d562892af1cb︡
+︠1377dd72-d989-48e8-a771-05667efa9fb6︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-14">If we make a “block diagonal” matrix, then the characteristic polynomial will definitely factor some</p></div>
-︡04a25b4f-33f6-46b5-a94d-0443721a6e55︡
-︠e5a8803d-f71f-4d7b-a210-01555d768e5d︠
+︡ada247fc-ac52-45d1-ae49-04e7b66b10ad︡
+︠64a07f86-b230-459d-a782-097f0267d778︠
 E = block_diagonal_matrix( [random_matrix(QQ, 5), random_matrix(QQ, 5)])
 E
-︡333dbbef-8e69-4d40-a972-a73fd9d50535︡
-︠36964512-4a1b-43ef-a486-62ea2b400453︠
+︡5edfe4e7-aaae-4af8-a871-b7a27b5e236a︡
+︠bb88b6c9-e748-46e8-ae7f-f2794e5ad7d3︠
 p = E.charpoly()
 p.factor()
-︡a8a3ff80-2da3-48e2-a72a-e9dc408808d6︡
-︠c7f7be63-f809-4b98-ad1a-8f46b97328cf︠
+︡18f90a0d-4e48-47a6-af9d-e9052548f1fc︡
+︠5154a6eb-32a8-4a13-a10c-ff5f484904b0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-15">Finally a large example, illustrating how fast Sage is at making characteristic polynomials and at factoring.</p></div>
-︡e97e02d7-6cf7-46b0-ae91-920d8c60088d︡
-︠876f5723-e8fd-4f59-a032-1c42adf1dfa6︠
+︡00155cc4-8f62-4813-ab34-823e287718bc︡
+︠9cda237e-7fee-426f-a623-aa6e9960079c︠
 F = block_diagonal_matrix( [random_matrix(QQ, 50), random_matrix(QQ, 50)])
 p = F.charpoly()
 p.factor()
-︡d2d323a4-68c6-46cb-afcf-2ec706508302︡
-︠9d4717ac-b157-48b4-a4b0-3ee05f6bfeef︠
+︡4282da55-8c57-4a7d-aad0-d8b464dc5d4f︡
+︠9812bfc0-45c9-4d70-aa2e-bf663cb090ed︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-16">This is such a common operation, that Sage has a shorthand method for the <b class="terminology">Factored Characteristic Polynomial</b>, namely <code class="code-inline tex2jax_ignore">.fcp()</code>.</p></div>
-︡17d6eed9-a8bf-403b-a476-4b53bb226214︡
-︠22cf8bd5-57d1-47e4-a22c-977ea39d50f6︠
+<div class="mathbook-content"><p id="p-16">This is such a common operation, that Sage has a shorthand method for the <dfn class="terminology">Factored Characteristic Polynomial</dfn>, namely <code class="code-inline tex2jax_ignore">.fcp()</code>.</p></div>
+︡f861a207-24df-4da7-ae59-c0836c01d92c︡
+︠725e4f04-7394-427f-a954-225b5b85d6f0︠
 F.fcp()
-︡428111cf-6274-43e2-a804-49cc86f24524︡
-︠c7648755-6c8d-40bc-a33c-88645fa51ea3︠
+︡27375776-bf95-44cc-a351-784d498df63e︡
+︠765aeb16-1d5b-4397-afdd-15652afb8e1b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-17">Nothing short of amazing!</p></div>
-︡36b9b311-97d1-45ec-a110-e995de58367e︡
-︠aa554095-22d0-432e-a040-13ab989e1d59︠
+︡d92331e5-803d-4b67-a364-0796db1c6ab8︡
+︠5918d5ac-b2ce-4f85-a7bb-cc363015d8f9︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-4"><h2 class="heading hide-type" alt="Section 4 Numerical Matrices">
-<span class="type">Section</span><span class="codenumber">4</span><span class="title">Numerical Matrices</span>
+<div class="mathbook-content"><section class="section" id="section-4"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4</span> <span class="title">Numerical Matrices</span>
 </h2></section></div>
-︡cf31582e-d40a-444d-a352-476f2f8ce993︡
-︠252677e9-5ce6-463b-a471-6b8cbac36ad0︠
+︡1523ef98-b4a8-43a1-a91d-4e984d8526e2︡
+︠f072352d-dd18-4652-a7e4-432eb6c4ceab︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-18">If we use <code class="code-inline tex2jax_ignore">CDF</code> (Complex Double Field) for the number system of the entries of our matrix, we get (good) approximate values for eigenvalues.  (If we are OK with the approximate nature, these routines are very, very fast.)</p></div>
-︡ef606d85-7e16-4589-a0c0-12caf84cbb78︡
-︠c5826e0e-47d5-4d2d-a729-84c4ecd398f0︠
+︡19b8cfee-cccd-4422-a7a1-bf4def4a308d︡
+︠ba772461-22de-4021-a39c-45c83a874b8d︠
 G = random_matrix(QQ, 300)
 H = G.change_ring(CDF)
 H.eigenvalues()
-︡1b69ec8e-ac67-413a-afbc-83158f253bd2︡
-︠e84ffe21-3ea2-4f64-a02c-d00360273a59︠
+︡9371aa51-b839-473b-a964-5b923ccb407c︡
+︠e1053bf8-cb10-4483-af2a-485ea9a64f7c︠
+%auto
+%html(hide=True)
+<div class="mathbook-content"><article class="conclusion" id="conclusion-1"><h5 class="heading"><span></span></h5></article></div>
+︡b5dbb17b-a36b-43b4-a7a6-1ee7d908f577︡
+︠12dfe805-4a9a-45d5-aa40-06ffdc8d482b︠
+%auto
+%html(hide=True)
+<div class="mathbook-content"><p id="p-19">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="url" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
+︡f3ed3d53-39ec-4449-aaed-bf3ae077eb00︡
+︠1488d0ff-1b19-4a22-a3b3-60ea0416c262︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡632a3185-2b4c-4e33-a346-f26f5d08543a︡
+︡786f03f0-31c4-4b67-ad92-1f2f924b91e0︡
 

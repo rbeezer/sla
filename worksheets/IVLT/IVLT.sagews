@@ -1,200 +1,212 @@
-︠62338aed-d1a4-4734-a54b-879cf82554d5︠
+︠064ece0d-ab79-43ed-a2a5-a1b93be96105︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡c48070a5-e878-4ceb-a04f-bc7586ebc3f9︡
-︠9cd2c527-b1f2-49b1-a5c5-581dda4b60e5︠
+︡a1ce08c1-67cd-40fc-ae26-3d8f6bb54165︡
+︠6073f7cb-8234-4044-ac27-364b5b700b26︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><div class="hidden-content">\(
+<div class="mathbook-content"><div class="hidden-content" style="display:none">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡9817aedd-58e4-4b80-acec-244411e5c45b︡
-︠af4c7ea4-b0da-4592-a551-1756b68ac5f1︠
+︡1978c6f9-28b6-4dba-a18c-8b3d699d999c︡
+︠0a6833f2-c2a7-4873-a39b-0263fdc8b624︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡0a157832-df2a-4973-acc9-ee135dad8628︡
-︠3c0e3f11-d2e8-4453-a1e8-98b999db8058︠
+︡33f9b2ca-59c0-4057-a491-f936d349cf0f︡
+︠d6d52276-fd65-45e3-aa4c-4682a827152d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="IVLT"></section></div>
-︡48457749-92c8-4a0d-ae1c-6a524eb2942f︡
-︠c770cf81-8134-49d5-a6b6-32185670814a︠
+︡bf4947cc-db94-41f3-a597-1ed918230392︡
+︠0525f7cb-3a7c-4e8c-a2e5-9f47950b90e2︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡01181d79-efa2-434f-a8bb-fee1738e40f8︡
-︠a09c8baf-59e0-4b24-abb0-7be5d6855c55︠
+︡2f8547c1-2fba-4ca3-a8c1-e502d98d41e3︡
+︠403c6842-9715-41ef-a47b-56169ef1c42a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <h1 class="heading">
 <span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section IVLT</span>
 </h1>
-<address class="contributors"><p>Robert Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound</p></address>
-<address class="contributors">Spring 2017</address>
-<p></p>
+<div class="author">
+<div class="author-name">Robert Beezer</div>
+<div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-︡505fdda7-c01b-40de-a489-4f53429d7f9c︡
-︠4ed9ea69-2393-4f90-ade9-728c6de0a5f4︠
+<div class="date">Spring 2019</div>
+</div>
+︡86bc3157-3ee5-43f4-a34b-e91ffaefcb4e︡
+︠5c41972e-e6dd-4c1c-a041-c3ae3a9195ce︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 Invertible Linear Transformations">
-<span class="type">Section</span><span class="codenumber">1</span><span class="title">Invertible Linear Transformations</span>
+<div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Invertible Linear Transformations</span>
 </h2></section></div>
-︡2330d1a4-ad73-417c-a14a-bcd483164cc3︡
-︠0f73044a-8e80-4198-aebc-8695a19c8d85︠
+︡32b83406-3fc0-4c82-a996-a5953cfce92b︡
+︠75d2e16e-7ad3-4aac-ac35-3ebd3f92c8ce︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">A carefully-crafted invertible linear transformation from \(\mathbb{Q}^5\) to \(\mathbb{Q}^5\text{.}\)</p></div>
-︡1858b5d0-06e8-4702-afed-c745de76bf43︡
-︠55cae8fc-8f37-48a8-aaa7-77ebdba42547︠
+︡3341622d-197e-4d19-aaec-f1abeea8060d︡
+︠440856b8-3c1a-4bfc-a49a-19bc5aaf2b53︠
 A = matrix(QQ, [[1, 1, -1, -2, 0], [-3, -2, 1, 4, 7],
     [2, 2, -1, -3, -4], [-4, -3, 3, 8, 3], [5, 6, -7, -8, 8]])
 T = linear_transformation(QQ^5, QQ^5, A, side='right')
 T
-︡99d53ce3-862b-4ea6-a640-dc8b75729a8d︡
-︠227f7ab5-e4c0-4fab-a600-6ecea4317dcf︠
+︡8a783dff-52b7-4d76-a9b0-4ca08fa2ede4︡
+︠06f8f35e-2b1e-42e5-a980-acd4c6478347︠
 T.is_injective(), T.is_surjective()
-︡be12d9d9-fbdc-4cd6-a737-8a549f9c10ad︡
-︠05c27ac4-3c00-48ce-ae41-6cbb14bb1ccb︠
+︡85d7ecb4-adfc-4c2a-a1b2-26ffab5f3e27︡
+︠5ad32bfd-fabf-4671-a18d-4b33aef0d2e0︠
 T.is_invertible()
-︡ad16090c-e38e-441b-a2ff-46cf1d4c9595︡
-︠132292ca-fae8-4839-a469-3affa1dee737︠
+︡a4a77d37-b226-428d-a396-0d141c20c02b︡
+︠0c0b4787-f3a1-4aca-a804-e12053c73986︠
 S = T.inverse()
 S
-︡c5af8424-e2ed-4a70-a4b6-df0dfaed8c4c︡
-︠412f1a43-f36e-4016-a051-6217f02edbb1︠
+︡483447cd-fc19-4db6-a736-c28e3d10559d︡
+︠ce603a80-77c8-41a4-a828-feb7ce4eea38︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">The <code class="code-inline tex2jax_ignore">*</code> operator, like we would use for multiplication, will create a composition.  This will be perfectly natural once we discuss Section MR.  Here, composing an invertible linear transformation with its inverse will yield an identity linear transformation.</p></div>
-︡8f3af453-846e-426f-a874-ae7b56c85a30︡
-︠bbff6e3b-2b08-492f-a9b6-d5441abd3086︠
+︡707e0a88-b0f7-4911-ad93-6811fef4cee0︡
+︠760e409c-84d8-4c6a-ad43-1ac3cb1b0dae︠
 comp = S*T
 comp
-︡142139f6-4214-4ab7-aa42-01856a02733f︡
-︠a43d5765-db7e-4029-a8cd-bdf336d4858b︠
+︡d14d08e9-57e3-4faa-a98e-d999d55e15cb︡
+︠49d97d25-78c5-4bc0-a568-442edf43e68a︠
 comp.is_identity()
-︡53090507-bd33-4c45-a6c2-3803b49981f1︡
-︠d44de53f-dfd1-4296-a7f3-a3ba77f0082f︠
+︡2d3f6bc9-131e-49ca-a921-2754534a620f︡
+︠c2c023be-cc2d-4bca-a65d-774dca005625︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-2"><h2 class="heading hide-type" alt="Section 2 Defining an Invertible Linear Transformation on Bases">
-<span class="type">Section</span><span class="codenumber">2</span><span class="title">Defining an Invertible Linear Transformation on Bases</span>
+<div class="mathbook-content"><section class="section" id="section-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Defining an Invertible Linear Transformation on Bases</span>
 </h2></section></div>
-︡904ed341-220f-4329-a9a9-c4d8f4fe5f67︡
-︠f074e583-7b58-4b9b-a425-efac8907867e︠
+︡6f82fa6b-938c-4138-ab9e-906ee28e3d56︡
+︠3b5ce565-0f88-4b9b-a455-2e59c3b52f28︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-3">Now, an invertible linear transformation defined on a basis, and the resulting inverse linear transformation.  We get two “random” bases of \(\mathbb{Q}^7\) from nonsingular (determinant one) matrices.</p></div>
-︡e7e6cdb4-03f5-4bae-a7f1-ce16a90b1818︡
-︠70f56c32-0350-491b-a88a-959bc35cf650︠
+︡564b2209-8180-4a49-a59e-acd05941e701︡
+︠f5831a61-3e3c-4fd1-a83a-7e74fce3dcbd︠
 C = random_matrix(QQ, 7, 7, algorithm='unimodular', upper_bound=99)
 Cbasis = C.columns()
 D = random_matrix(QQ, 7, 7, algorithm='unimodular', upper_bound=99)
 Dbasis = D.columns()
-︡fc1e27a6-9b9f-4b31-a6b9-15fa1be68dde︡
-︠ecafad75-301d-4fd0-a13c-b51a026e9ec6︠
+︡eb36e415-654a-4237-a3ca-e3958826cf37︡
+︠c1208159-7bfb-451e-ad5a-84e1969bc6b0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-4">Vector spaces with defined user bases.</p></div>
-︡cb27ad41-3824-4521-a635-2eb48b7ea0d6︡
-︠6a191c76-eae0-4f42-a0a6-6d411dd8c789︠
+︡e811892d-3a92-45f3-a4c9-f5dd6740316e︡
+︠14625ec8-c035-4284-a6d1-fc7dad4ee705︠
 Cspace = (QQ^7).subspace_with_basis(Cbasis)
 Dspace = (QQ^7).subspace_with_basis(Dbasis)
 Cspace, Dspace
-︡ef4095d0-cbaa-4c9f-afaa-507a297f137a︡
-︠d5a26473-43ef-4ea9-ae93-8e4087906b4d︠
+︡51ab40a0-960c-4c34-a192-29fa697b8628︡
+︠b7953d6e-ef4f-4b12-a02c-2561fcb673da︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-5">The invertible linear transformation defined with images as the vectors in the codomain basis <code class="code-inline tex2jax_ignore">D</code>.</p></div>
-︡6231495c-c90b-48e5-a2df-55ea671078bc︡
-︠62e93238-ef2e-4abd-a0db-f31dd74f7c73︠
+︡c825e635-4249-41fa-a40c-031640307b34︡
+︠5fd75cd9-12b6-4bd6-a516-21937e4beb62︠
 T = linear_transformation(Cspace, QQ^7, Dbasis)
 T
-︡8d57789a-18a3-474f-a55c-04f12d97c043︡
-︠3c19381d-336d-47e1-a647-25c26ef06b0a︠
+︡0b1e37a1-0c3c-42e9-a84a-f6c9a47ef596︡
+︠8a198513-620a-4e29-a8bd-3b404e4bd417︠
 T.is_invertible()
-︡f470db9f-8c3f-49ad-ab02-237e5ed4e30f︡
-︠ef35f108-1954-48ef-a69f-8b3fa8e7dcbe︠
+︡a91c3a25-d87d-4360-acfc-a27e3bd77ac9︡
+︠272336e6-bce3-4a29-aae8-78be7ea56103︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-6">Now we simply “turn around” the definition, to make the inverse.</p></div>
-︡b9dffd1f-629b-472a-a683-61f9192f10bc︡
-︠e76c65a8-50af-4c21-a69a-a0c9ad3cd4c8︠
+︡b2ad6e44-4003-43a5-ad53-6cc2b3159879︡
+︠b2b50145-6856-4b91-a176-4d210e513e9b︠
 S = linear_transformation(Dspace, QQ^7, Cbasis)
 S
-︡1b0876e1-f429-43fc-a456-ff6b908cd50a︡
-︠e25fad68-e5c1-4e00-ab56-2458fe98b6ec︠
+︡74d3ae5e-3b78-4222-a349-997ca7af9ed2︡
+︠9577815d-0887-41aa-a4ee-e87541df17ee︠
 S.is_invertible()
-︡0de5c922-217f-426f-a325-949fd9e629c1︡
-︠5de43bd6-e075-4fac-afee-473d607469e3︠
+︡a841fc35-94d2-4bfd-a63b-523c88e680d6︡
+︠f7f39efc-3911-4bd1-a935-48785f135932︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-7">Composition with vector spaces using different bases does not seem to be working properly.  So we just check some random inputs to the composition.</p></div>
-︡b4098356-9361-485c-a54a-3826696ded7c︡
-︠0200c941-fd45-4fdb-ab3f-6788de14c014︠
+︡02af53e5-02e1-44ae-a532-b8a20f2137b7︡
+︠aca5c08b-59e4-4b2e-aa81-c3a66a68ca08︠
 comp = S*T
 comp.is_identity()
-︡c26d2366-4549-4a47-a60b-562effd14916︡
-︠dd84ab80-2c67-461b-ae7b-9d1bb1b82024︠
+︡1a5c01c9-d22b-46ed-a486-64a1b0b288c8︡
+︠1e36a487-d69f-41fe-af46-5bafc6f88804︠
 v = random_vector(QQ, 7)
 v, T(S(v)) == v, S(T(v)) == v
-︡702f5dbd-eda4-4415-a0fc-b99d55f1d110︡
-︠69088554-231c-486d-ad7d-a2740d9fe610︠
+︡12359e92-568e-469e-a492-aed5eabe2373︡
+︠885cdfa7-10da-4f43-ad8c-03be8a839a70︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-3"><h2 class="heading hide-type" alt="Section 3 Rank and Nullity">
-<span class="type">Section</span><span class="codenumber">3</span><span class="title">Rank and Nullity</span>
+<div class="mathbook-content"><section class="section" id="section-3"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Rank and Nullity</span>
 </h2></section></div>
-︡679702c6-6fa8-4b2f-a906-7a9ee9c78ae9︡
-︠b515c178-7e81-4643-a6d4-c5e54df047b3︠
+︡d083c626-d47b-4e6f-a147-e5ba335c7e6e︡
+︠e4e77bea-2be9-47cf-a6e4-ed998ddd95b0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-8">A general (i.e. not invertible) linear transformation from \(\mathbb{Q}^6\) to \(\mathbb{Q}^5\text{.}\)</p></div>
-︡1682c433-db25-4d9a-a0f8-5cd32201259e︡
-︠8a51d151-43c7-4990-a3af-bfb93eb4fda8︠
+︡4a431cef-60b5-4921-a990-d8d7254f3d5e︡
+︠e982cafa-96a5-4b48-add2-dbab3d07c452︠
 F = matrix(QQ, [[1, 0, 2, -1, -4, 2], [-1, -1, -4, 3, 6, -5], [0, 1, 3, -2, -4, 5],
     [0, 4, 6, -8, -4, 8], [0, 1, 2, -2, -2, 3]])
 R = linear_transformation(QQ^6, QQ^5, F, side='right')
 R
-︡b231402a-17de-4e78-aea2-d629f58a9784︡
-︠04645b48-56f3-45db-adc6-fac24c7c7130︠
+︡24bb6756-1fcc-4571-ae4f-01bbce8d651c︡
+︠74020795-db59-48b1-a995-8973541d2834︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-9">Rank is dimension of range (image).  Note there are not left/right variants.</p></div>
-︡544c9a8d-3d42-4190-ac6c-266f8ab0732b︡
-︠38f8583e-66cb-48d5-a8ac-5d2ccb78cebf︠
+︡4a85c9c6-f924-43a0-a549-ad32086269a9︡
+︠df3640f0-7eaa-43e5-a339-de6017989f14︠
 R.image()
-︡9e896e29-c9f9-4486-a911-66e92b4a318e︡
-︠12cab39d-c56c-4fb4-a555-7bc64f1994b2︠
+︡9e4d58d4-9534-4f63-a4a7-e75486b1e510︡
+︠aafe7475-91ad-46a3-aafe-1d572dedfd30︠
 R.rank()
-︡2c4f7f20-df64-4b5f-a0b4-62028429dbe8︡
-︠e052fc12-df13-43d8-a2d3-74677fc99957︠
+︡deacd215-7a62-47dc-ab7c-a99f0bde9cbd︡
+︠d8b758a6-d114-4492-a149-de26e31c1b9d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-10">Nullity is dimension of kernel.  Note there are not left/right variants.</p></div>
-︡23786758-a27b-46a9-afd6-35b9c288c122︡
-︠9560ec84-427c-4ed7-a7c4-ef9996c2f942︠
+︡8653dbb8-1993-4ddc-afe1-9c0c2ff4b1f4︡
+︠e7a4b806-010a-45d8-a1d7-37333633ae4a︠
 R.kernel()
-︡bd81e7e7-b2a2-4f80-a6fd-aed486b49bdd︡
-︠d9b6aad8-18bb-4ba3-ab03-8b250acbe57c︠
+︡331e8c78-37a3-42f1-ab1f-24668acbd7a2︡
+︠1e62cef3-73b1-46d0-a882-7b7e1f8eb656︠
 R.nullity()
-︡355fb099-8a24-46de-aa9f-e2a08ba579be︡
-︠5e3befb7-842a-4898-a732-61411dcc235d︠
+︡864f90d9-44cf-463d-a6b6-931013fa2b07︡
+︠19e68865-1aad-4a01-a77c-d00f0230c5cc︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-11">Note that rank and nullity sum to the dimension of the domain (which is \(6\) here).</p></div>
-︡2bc57b42-2d75-48fe-a072-3e48f55c2808︡
-︠83298a1c-cebe-4955-ad22-7019466e3f56︠
+︡dd5c4d4a-365d-44fe-a575-2553465871e3︡
+︠ec13851d-0545-4285-a0ed-602c4729faad︠
+%auto
+%html(hide=True)
+<div class="mathbook-content"><article class="conclusion" id="conclusion-1"><h5 class="heading"><span></span></h5></article></div>
+︡d99fd24e-0434-4a6c-a07b-dec0a07d9774︡
+︠54df4a18-92dd-4674-a38b-e6aa64ae1359︠
+%auto
+%html(hide=True)
+<div class="mathbook-content"><p id="p-12">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="url" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
+︡8be5a20c-aae7-474f-ab78-75e1045a37e8︡
+︠4324dd6a-8c35-4c4b-a484-57d9ead24a14︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡7daa6248-e07a-4e00-a4e2-7638f7e5625b︡
+︡968ba591-02d3-4797-a2df-7374c5fa834a︡
 

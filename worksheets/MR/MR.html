@@ -2,7 +2,7 @@
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <html lang="en-US">
@@ -11,11 +11,17 @@
 <title>Sage and Linear Algebra Worksheet</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
-        inlineMath: [['\\(','\\)']],
+        inlineMath: [['\\(','\\)']]
     },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
     TeX: {
         extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
@@ -34,7 +40,7 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
     // Make *any* div with class 'sagecell-sage' an executable Sage cell
     // Their results will be linked, only within language type
     sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
@@ -42,13 +48,19 @@ MathJax.Hub.Config({
                            languages: ['sage'],
                            evalButtonText: 'Evaluate (Sage)'});
 });
-</script><script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+</script>
 </head>
 <body class="mathbook-article has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -59,28 +71,31 @@ MathJax.Hub.Config({
 <p class="byline">Robert Beezer</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Prev</span><span id="upbutton" class="up-button button disabled toolbar-item">Up</span><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Prev</span><span id="upbutton" class="up-button button disabled toolbar-item">Up</span><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
 <button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><span class="next-button button toolbar-item disabled">Next</span>
 </div>
 </div></nav></header><div class="page">
-<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
-<h2 class="link"><a href="MR.html#section-1" data-scroll="section-1"><span class="codenumber">1</span><span class="title">A Linear Transformation and some Bases</span></a></h2>
-<h2 class="link"><a href="MR.html#section-2" data-scroll="section-2"><span class="codenumber">2</span><span class="title">A Matrix Representation, Old Style</span></a></h2>
-<h2 class="link"><a href="MR.html#section-3" data-scroll="section-3"><span class="codenumber">3</span><span class="title">A Matrix Representation, Sage Style</span></a></h2>
-<h2 class="link"><a href="MR.html#section-4" data-scroll="section-4"><span class="codenumber">4</span><span class="title">Sneak Preview</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="article" id="MR"><section class="frontmatter" id="frontmatter-1"><h1 class="heading">
+<h2 class="link"><a href="MR.html#section-1" data-scroll="section-1"><span class="codenumber">1</span> <span class="title">A Linear Transformation and some Bases</span></a></h2>
+<h2 class="link"><a href="MR.html#section-2" data-scroll="section-2"><span class="codenumber">2</span> <span class="title">A Matrix Representation, Old Style</span></a></h2>
+<h2 class="link"><a href="MR.html#section-3" data-scroll="section-3"><span class="codenumber">3</span> <span class="title">A Matrix Representation, Sage Style</span></a></h2>
+<h2 class="link"><a href="MR.html#section-4" data-scroll="section-4"><span class="codenumber">4</span> <span class="title">Sneak Preview</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="mathbook-content"><section class="article" id="MR"><section class="frontmatter" id="frontmatter-1"><h1 class="heading">
 <span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section MR</span>
 </h1>
-<address class="contributors"><p>Robert Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound</p></address>
-<address class="contributors">Spring 2017</address>
-<p></p></section><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 A Linear Transformation and some Bases">
-<span class="type">Section</span><span class="codenumber">1</span><span class="title">A Linear Transformation and some Bases</span>
+<div class="author">
+<div class="author-name">Robert Beezer</div>
+<div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
+</div>
+<div class="date">Spring 2019</div></section><section class="section" id="section-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1</span> <span class="title">A Linear Transformation and some Bases</span>
 </h2>
 <p id="p-1">In this section we define a linear transformation from \(\mathbb{C}^6\) to \(\mathbb{C}^4\text{.}\)  The definition is a \(4\times 6\) matrix of rank \(4\) that we will use to multiply input vectors with a matrix-vector product.  It is not important if the linear transformation is injective and/or surjective.</p>
 <div class="sagecell-sage" id="sage-1"><script type="text/x-sage">m, n = 4, 6
@@ -98,8 +113,8 @@ D
 <div class="sagecell-sage" id="sage-4"><script type="text/x-sage">Cmat = random_matrix(QQ, m, m, algorithm='unimodular', upper_bound=9)
 C = Cmat.columns()
 C
-</script></div></section><section class="section" id="section-2"><h2 class="heading hide-type" alt="Section 2 A Matrix Representation, Old Style">
-<span class="type">Section</span><span class="codenumber">2</span><span class="title">A Matrix Representation, Old Style</span>
+</script></div></section><section class="section" id="section-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2</span> <span class="title">A Matrix Representation, Old Style</span>
 </h2>
 <p id="p-3">We will coordinatize the outputs of the linear transformation, for inputs from the basis of the domain, relative to the basis of the codomain, and pack them in a matrix.</p>
 <p id="p-4">Outputs on the domain basis first.</p>
@@ -127,8 +142,8 @@ VD
 out = VC.linear_combination_of_basis(rep*VD.coordinate_vector(u))
 u, out, T(u) ==  out
 </script></div>
-<p id="p-10">Nice.</p></section><section class="section" id="section-3"><h2 class="heading hide-type" alt="Section 3 A Matrix Representation, Sage Style">
-<span class="type">Section</span><span class="codenumber">3</span><span class="title">A Matrix Representation, Sage Style</span>
+<p id="p-10">Nice.</p></section><section class="section" id="section-3"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3</span> <span class="title">A Matrix Representation, Sage Style</span>
 </h2>
 <p id="p-11">Now we do it Sage style.  The matrix of the linear transformation first, as we like to see it.</p>
 <div class="sagecell-sage" id="sage-11"><script type="text/x-sage">T.matrix(side='right')
@@ -140,8 +155,8 @@ rep2
 </script></div>
 <p id="p-13">Bingo!  This is representation we found above.  A one-liner in Sage.</p>
 <div class="sagecell-sage" id="sage-13"><script type="text/x-sage">rep2 == rep
-</script></div></section><section class="section" id="section-4"><h2 class="heading hide-type" alt="Section 4 Sneak Preview">
-<span class="type">Section</span><span class="codenumber">4</span><span class="title">Sneak Preview</span>
+</script></div></section><section class="section" id="section-4"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4</span> <span class="title">Sneak Preview</span>
 </h2>
 <p id="p-14">Ponder the following computation — matrix representations and nonsingular matrices with columns from the two bases.</p>
 <div class="sagecell-sage" id="sage-14"><script type="text/x-sage">S.matrix(side='right') - Cmat.inverse()*T.matrix(side='right')*Dmat
@@ -150,7 +165,9 @@ rep2
 <div class="sagecell-sage" id="sage-15"><script type="text/x-sage">S == T
 </script></div>
 <div class="sagecell-sage" id="sage-16"><script type="text/x-sage">S.is_equal_function(T)
-</script></div></section></section></div></main>
+</script></div></section><section class="conclusion" id="conclusion-1"><p id="p-16">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="url" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></section></section></div></main>
 </div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>
