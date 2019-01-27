@@ -21,11 +21,11 @@
         <section>
             <title>LU Decomposition, Triangular Form</title>
 
-            <p>This is a topic not covered in our text.  You <em>can</em> find a discussion in <booktitle>A Second Course in Linear Algebra</booktitle> at <url href="http://linear.ups.edu/scla/html/index.html" />.</p>
+            <p>This is a topic not covered in our text.  You <em>can</em> find a discussion in <pubtitle>A Second Course in Linear Algebra</pubtitle> at <url href="http://linear.ups.edu/scla/html/index.html" />.</p>
 
             <p>Our goal is to row-reduce a matrix with elementary matrices, track the changes, and arrive at an expression for a square matrix <m>A</m> as a product of a lower-triangular matrix, <m>L</m>, and an upper-triangular matrix, <m>U</m>, that is <me>A=LU</me> the so-called <term>LU decomposition</term>.  I sometimes prefer to call it <term>triangular form</term>.</p>
 
-            <p>There are no exercises in this worksheet, but instead there is a careful and detailed exposition of using elementary matrices (row operations) to arrive at a <term>matrix decomposition</term>.  There are many kinds of matrix decompositions, such as the <term>singular value decomposition</term> (SVD).  Five or six such decompositions form a central part of the linear algebra canon.  Again, see <booktitle>A Second Course in Linear Algebra</booktitle> for details on these.</p>
+            <p>There are no exercises in this worksheet, but instead there is a careful and detailed exposition of using elementary matrices (row operations) to arrive at a <term>matrix decomposition</term>.  There are many kinds of matrix decompositions, such as the <term>singular value decomposition</term> (SVD).  Five or six such decompositions form a central part of the linear algebra canon.  Again, see <pubtitle>A Second Course in Linear Algebra</pubtitle> for details on these.</p>
 
             <p>We decompose a <m>5\times 5</m> matrix.  It is most natural to describe an LU decomposition of a square matrix, but the decomposition can be generalized to rectangular matrices.</p>
 
