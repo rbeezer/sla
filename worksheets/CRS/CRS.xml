@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Sage and Linear Algebra Worksheets -->
-<!--          Robert A. Beezer          -->
-<!--  Copyright 2017 License: CC BY-SA  -->
-<!--  See COPYING for more information  -->
+<!--   Sage and Linear Algebra Worksheets    -->
+<!--            Robert A. Beezer             -->
+<!--  Copyright 2017-2019 License: CC BY-SA  -->
+<!--  See COPYING for more information       -->
 
 <mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <xi:include href="../worksheetinfo.xml" />
 
     <article xml:id="CRS">
         <title>Sage and Linear Algebra Worksheet</title>
@@ -87,5 +89,8 @@
 
             <p>Moral of the Story: the elements of the column space are <em>exactly</em> those vectors of constants that lead to consistent systems.  It is easy, especially with a linearly independent spanning set for the column space, to make a vector of constants that yields an inconsistent system.</p>
         </section>
+
+        <xi:include href="../legal.xml" />
+
     </article>
 </mathbook>

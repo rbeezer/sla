@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Sage and Linear Algebra Worksheets -->
-<!--          Robert A. Beezer          -->
-<!--  Copyright 2017 License: CC BY-SA  -->
-<!--  See COPYING for more information  -->
+<!--   Sage and Linear Algebra Worksheets    -->
+<!--            Robert A. Beezer             -->
+<!--  Copyright 2017-2019 License: CC BY-SA  -->
+<!--  See COPYING for more information       -->
 
 <mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <xi:include href="../worksheetinfo.xml" />
 
     <article xml:id="LT">
         <title>Sage and Linear Algebra Worksheet</title>
@@ -196,5 +198,8 @@
             <p>The problem is that Sage is simply adding the matrices representing the linear transformations, without checking that they are defined using domains with the <em>same</em> basis.  We will understand the subtlety better in Chapter R.</p>
 
         </section>
+
+        <xi:include href="../legal.xml" />
+
     </article>
 </mathbook>

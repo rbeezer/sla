@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Sage and Linear Algebra Worksheets -->
-<!--          Robert A. Beezer          -->
-<!--  Copyright 2017 License: CC BY-SA  -->
-<!--  See COPYING for more information  -->
+<!--   Sage and Linear Algebra Worksheets    -->
+<!--            Robert A. Beezer             -->
+<!--  Copyright 2017-2019 License: CC BY-SA  -->
+<!--  See COPYING for more information       -->
 
 <mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <xi:include href="../worksheetinfo.xml" />
 
     <article xml:id="SS">
         <title>Sage and Linear Algebra Worksheet</title>
@@ -107,9 +109,9 @@
             </sage>
 
             <p>It should make sense that arbitrary linear combinations are in the span.  How did we manufacture a vector <em>not</em> in the span?  Stay tuned.</p>
+        </section>
 
         <xi:include href="../legal.xml" />
 
-        </section>
     </article>
 </mathbook>

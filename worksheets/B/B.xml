@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Sage and Linear Algebra Worksheets -->
-<!--          Robert A. Beezer          -->
-<!--  Copyright 2017 License: CC BY-SA  -->
-<!--  See COPYING for more information  -->
+<!--   Sage and Linear Algebra Worksheets    -->
+<!--            Robert A. Beezer             -->
+<!--  Copyright 2017-2019 License: CC BY-SA  -->
+<!--  See COPYING for more information       -->
 
 <mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <xi:include href="../worksheetinfo.xml" />
 
     <article xml:id="B">
         <title>Sage and Linear Algebra Worksheet</title>
@@ -206,5 +208,8 @@
             a1, a2, a3
             </input></sage>
         </section>
+
+        <xi:include href="../legal.xml" />
+
     </article>
 </mathbook>

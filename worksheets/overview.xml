@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Sage and Linear Algebra Worksheets -->
-<!--          Robert A. Beezer          -->
-<!--  Copyright 2016 License: CC BY-SA  -->
-<!--  See COPYING for more information  -->
+<!--   Sage and Linear Algebra Worksheets    -->
+<!--            Robert A. Beezer             -->
+<!--  Copyright 2017-2019 License: CC BY-SA  -->
+<!--  See COPYING for more information       -->
 
 <mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
 
@@ -168,9 +168,7 @@
             <p>Medium, 20 minutes: one simple exercise. [<url href="MR/MR.html">HTML</url>]<nbsp />[<url href="MR/MR.pdf">PDF</url>]</p>
         </paragraphs>
 
-        <paragraphs>
-            <xi:include href="./legal.xml" />
-        </paragraphs>
+        <xi:include href="./legal.xml" />
 
     </article>
 </mathbook>

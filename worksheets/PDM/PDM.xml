@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Sage and Linear Algebra Worksheets -->
-<!--          Robert A. Beezer          -->
-<!--  Copyright 2017 License: CC BY-SA  -->
-<!--  See COPYING for more information  -->
+<!--   Sage and Linear Algebra Worksheets    -->
+<!--            Robert A. Beezer             -->
+<!--  Copyright 2017-2019 License: CC BY-SA  -->
+<!--  See COPYING for more information       -->
 
 <mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <xi:include href="../worksheetinfo.xml" />
 
     <article xml:id="PDM">
         <title>Sage and Linear Algebra Worksheet</title>
@@ -124,5 +126,8 @@
 
             <p>We solve <em>two</em> simple systems, but only do half as many row-operations as if we went fully to reduced row-echelon form.  If you count the opertions carefully, you will see that this is a big win, roughly reducing computation time by a factor of half for large systems.</p>
         </section>
+
+        <xi:include href="../legal.xml" />
+
     </article>
 </mathbook>
