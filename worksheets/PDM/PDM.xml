@@ -30,7 +30,6 @@
             <p>We decompose a <m>5\times 5</m> matrix.  It is most natural to describe an LU decomposition of a square matrix, but the decomposition can be generalized to rectangular matrices.</p>
 
             <sage><input>
-            entries = 
             A = matrix(QQ, [[-6, -10,  0, 10, 14],
                             [ 2,   3,  0, -4, -3],
                             [ 0,  -2, -3,  1,  8],
