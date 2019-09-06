@@ -5,7 +5,7 @@
 <!--  Copyright 2017-2019 License: CC BY-SA  -->
 <!--  See COPYING for more information       -->
 
-<mathbook  xmlns:xi="http://www.w3.org/2001/XInclude">
+<pretext  xmlns:xi="http://www.w3.org/2001/XInclude">
 
     <xi:include href="../worksheetinfo.xml" />
 
@@ -63,4 +63,4 @@
 
     </article>
 
-</mathbook>
+</pretext>

@@ -6,5 +6,5 @@
 <!--  See COPYING for more information       -->
 
 <docinfo>
-    <rename element="inlineexercise" lang="en-US">Demonstration</rename>
+    <rename element="inlineexercise" xml:lang="en-US">Demonstration</rename>
 </docinfo>
