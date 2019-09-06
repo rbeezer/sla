@@ -61,7 +61,7 @@ echo "Processing Overview"
 echo "*******************"
 # Overview HTML, LaTeX
 xsltproc -xinclude ${NODATE} ${MBX}/xsl/mathbook-html.xsl  ${ROOT}/worksheets/overview.xml
-xsltproc -xinclude ${NODATE} ${MBX}/xsl/mathbook-latex.xsl ${ROOT}/worksheets/overview.xml
+xsltproc -xinclude  -o overview.tex ${NODATE} ${MBX}/xsl/mathbook-latex.xsl ${ROOT}/worksheets/overview.xml
 ${LATEX} overview.tex
 ${LATEX} overview.tex
 cp -a overview.html overview.pdf ${OUTPUT}
@@ -75,7 +75,7 @@ do
   # PDF, process twice with LaTeX
   ###############################
   xsltproc -stringparam numbering.theorems.level 0 ${NODATE} -xinclude \
-      ${MBX}/xsl/mathbook-latex.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
+      -o ${SEC}.tex ${MBX}/xsl/mathbook-latex.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
   ${LATEX} ${SEC}.tex
   ${LATEX} ${SEC}.tex
   ######
