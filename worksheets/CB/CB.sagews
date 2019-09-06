@@ -1,12 +1,12 @@
-︠0004792f-2d96-428c-a753-6347fcd094d5︠
+︠2adacd2f-6cce-42a2-a5cc-aeab7adb1b26︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡5d661df3-d217-483f-a5b5-828d98a784b5︡
-︠913075e7-9c9a-432e-a37a-8fc1d597d1b8︠
+︡a418fe62-edea-4b05-ad61-9004c7f93055︡
+︠7fa98a7e-c5ca-4f7b-a551-6e263ee3714c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content" style="display:none">\(
@@ -14,68 +14,68 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡75aa6104-9902-4344-a28b-c0b828ec0beb︡
-︠451e0700-c99c-4cd1-a0f9-cba84c1281d6︠
+︡6bc155bc-3710-4217-ad6c-fdb14f022746︡
+︠4a21c767-4af6-4a28-a2ff-efca11913c98︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡d1cf0d61-d2a7-4f74-a174-a404c41e7af4︡
-︠334eaf5c-6002-48ca-acbe-da99c7044ed5︠
+︡3d26fee5-63f5-49a7-a1c7-0b7d59efa2c4︡
+︠610fc61f-4e63-4263-a6d5-a6df8e720d46︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="CB"></section></div>
-︡a19ef3e4-0450-46ec-a1b8-f83820024512︡
-︠ab43a378-87dd-474b-a456-c5f0e10f3544︠
+︡aa7ba41b-45aa-49c0-ac3e-1d5eddd40e14︡
+︠4cfc7909-54e0-4f8d-af41-e6f35c120102︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡8e0c2a09-3900-4674-a2ba-98f89e9addf1︡
-︠180252d5-b0ec-4153-a67f-008092e2ccfb︠
+︡65f517f2-057f-4667-a46c-5524871aa1ba︡
+︠41f371b7-3bda-4a41-a287-eed03584f26b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
-<h1 class="heading">
-<span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section CB</span>
-</h1>
+<h2 class="heading">
+<span class="title">Sage and Linear Algebra Worksheet:</span> <span class="subtitle">FCLA Section CB</span>
+</h2>
 <div class="author">
 <div class="author-name">Robert Beezer</div>
 <div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-<div class="date">Spring 2019</div>
+<div class="date">Fall 2019</div>
 </div>
-︡d13d4901-ec1d-4823-ac8a-c9b5a4787357︡
-︠e2920db1-eadf-4862-ab2b-6f514f6b8ded︠
+︡dadde4e9-c25a-4d0e-ae27-6053189ac8d2︡
+︠4bd18b67-529a-4c7b-ab5d-2ce7f008bc19︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type">
+<div class="mathbook-content"><section class="section" id="section-1"><h6 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1</span> <span class="title">A Linear Transformation, Two Vector Spaces, Four Bases</span>
-</h2></section></div>
-︡5d0e01bc-2960-49f6-aca9-818d3cd97575︡
-︠3c33a355-f7f6-4785-ae40-7c1fa4b7e3c5︠
+</h6></section></div>
+︡f64c7d8d-4e0e-49c5-a48a-2a701611fde1︡
+︠6d7aaf73-cb1d-4aa9-afe2-a1c11e83080e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">In this section we deﬁne a linear transformation from \(\mathbb{C}^{3}\) to \(\mathbb{C}^{7}\) using a randomly selected matrix. The deﬁnition is a \(7\times 3\) matrix of rank \(3\) that we will use to multiply input vectors with a matrix-vector product. It is not important if the linear transformation is injective and/or surjective.</p></div>
-︡802c4cf9-2e01-448a-aa6e-bdbdc518c0b9︡
-︠64980e5f-78e8-4930-a3e7-295d6238a086︠
+︡96c11718-ad4c-4ae6-a4e5-6873a912c1ad︡
+︠044c5546-de42-4bf1-a24f-8b8fe280541f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">We will build two representations, using a total of four bases — two for the domain and two for the codomain.</p></div>
-︡9fa38b1d-b859-41fd-a23b-964e4b073b7c︡
-︠11bb4376-12f7-4b07-a92b-4b19a55ac864︠
+︡2236e9b3-0924-4bd4-adf9-d745738f3d45︡
+︠d670c698-9a1b-4ed9-a3b8-c800e746674b︠
 m, n = 7, 3
 A = random_matrix(QQ, m, n, algorithm='echelonizable', rank=n, upper_bound=9)
 A
-︡57503a4a-06cf-4e8f-a511-06d1077524d8︡
-︠830e4388-d8fa-48d2-a734-93a65aec010e︠
+︡d1141ebb-6458-4045-a980-249257aae022︡
+︠bf3d45cf-1247-4a5c-a0e4-109a3f2d90eb︠
 T = linear_transformation(A, side='right')
 T
-︡a91a75df-eb8d-450b-a78e-b22698174195︡
-︠03f1d66a-656f-42bf-ae38-dfaf5377bc94︠
+︡2aa67fb3-ed63-4418-a127-647febe18816︡
+︠340ea8d6-cc42-4094-a8a6-f0a7093ebb7c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-3">The four bases, associated with the two vector spaces.</p></div>
-︡2971b572-0e76-4da1-ad84-6530494c108a︡
-︠5a4dcf24-1228-4802-aadb-e40255b92cab︠
+︡1b129cb7-3747-4a41-aedb-5dc05ca8b532︡
+︠25d48703-e4a3-4b58-ac36-8934a9041ba5︠
 D1mat = random_matrix(QQ, n, n, algorithm='unimodular', upper_bound=9)
 D1 = D1mat.columns()
 D1
@@ -95,103 +95,102 @@ C2mat = random_matrix(QQ, m, m, algorithm='unimodular', upper_bound=9)
 C2 = C2mat.columns()
 C2
 VC2 = (QQ^m).subspace_with_basis(C2)
-︡7f5bd2bf-6c28-45b8-a856-34a460a2acf4︡
-︠764d21fd-15a4-4eff-a775-ea99f0992351︠
+︡ecbb1431-7252-4517-adeb-3657bf0b327d︡
+︠86a41b85-d073-42c4-aaa3-6e9b65a70d98︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">1</span>
-</h6>
+<span class="type">Demonstration</span> <span class="codenumber">1</span>.</h6>
 <p id="p-4">Check out a few of these bases by just asking Sage to display them.</p></article></div>
-︡8d7cb9ea-7001-45f0-a568-a534f248c6c1︡
-︠74ff1a90-5015-4265-a3bc-b51ea01e9d45︠
+︡b2e6602e-5ffc-4319-a8c4-b225e9a80b6a︡
+︠42c2833b-29b1-46e2-af6f-322670f180df︠
 D1
-︡fc9ecb95-be6c-4483-a9be-57465e77c041︡
-︠53ef2abb-f6a6-43ef-a67b-5c29378af5a3︠
+︡a1164a97-5b10-4d7e-a075-fb712e210a1e︡
+︠acfb336d-bb8c-4b64-aa6b-f5677869a64c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-5">Now we build two <em class="emphasis">different</em> representations.</p></div>
-︡707509fb-5f2f-455d-a5c5-0112b4a4f999︡
-︠d1a46ae6-5457-43bd-a109-61b837debc75︠
+︡4e84ab70-83b1-4077-a41d-01379aff4a58︡
+︠7a6fe0b6-14ac-46a3-aef5-cf7f60a60e05︠
 rep1 = T.restrict_domain(VD1).restrict_codomain(VC1)
 rep1.matrix(side='right')
-︡64609db7-30b9-48f4-a615-077b0a2d9e90︡
-︠405a0e8b-6bc2-4451-a9b2-fca67a1a7a91︠
+︡770e7fe3-507f-4cea-a0c9-698e9ff35f25︡
+︠5ad58446-8a60-4a3e-a44b-da469e582a84︠
 rep2 = T.restrict_domain(VD2).restrict_codomain(VC2)
 rep2.matrix(side='right')
-︡bd1072ff-e6bb-4800-a99c-c986f011b9c4︡
-︠a71c89e8-9ce4-4764-a80e-5c7e37e49ad5︠
+︡0ded3628-da34-4ad8-a91c-4f79617b9a62︡
+︠f6fe4357-b31e-47cb-a06d-dbd5436cef64︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-2"><h2 class="heading hide-type">
+<div class="mathbook-content"><section class="section" id="section-2"><h6 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Change of Basis Matrices</span>
-</h2></section></div>
-︡e8cf4593-d2fb-4771-ac02-a6f242a374d4︡
-︠9bc6b1b4-4874-43ec-a5ac-85278793a077︠
+</h6></section></div>
+︡15b14f49-60c8-4f45-ab4b-82667b9d88df︡
+︠df580985-2e6e-4752-ac07-899ff0a9d31b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-6">A natural way to build a change-of-basis matrix in Sage is to adjust the bases for domain and range of the identity linear transformation by supplying an identity matrix to the linear tansformation constructor.</p></div>
-︡50227e32-28ba-4ce9-a844-5d9842fe5afc︡
-︠14d4742a-7532-4ff1-a886-ce3677975e15︠
+︡3fa87a20-05e6-435b-a62c-ea579584e680︡
+︠1bfb4766-76b6-4dfc-a96e-549bc3048fa0︠
 identity_domain = linear_transformation(QQ^n, QQ^n, identity_matrix(n))
 identity_domain
-︡b2a961e9-c5ef-47ee-a877-e451bc943f34︡
-︠4f7e8e06-7cb6-4b35-aabd-1a16cc351754︠
+︡fccf706d-7e43-4413-a1aa-f0e9bbdb05ab︡
+︠6a729e30-cbf1-4f33-a24d-c4ebe97b5700︠
 CBdom = identity_domain.restrict_domain(VD1).restrict_codomain(VD2)
 CBdom_mat = CBdom.matrix(side='right')
 CBdom_mat
-︡ca338c29-295e-4001-a6ad-3c74341692df︡
-︠7a9bd27f-ba90-49a1-aa0c-83808b492ec0︠
+︡27baa59e-5694-4798-aabd-8826400bb63c︡
+︠76320d79-bdf5-427e-aa1a-893a07b13677︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-7">This matrix should convert between the two bases for the domain.  Here's a check of Theorem CB.</p></div>
-︡d4a6f787-7310-44bb-a56b-1eeae653081c︡
-︠8e0240ad-7209-4354-aeab-9c9868fcbf4c︠
+︡3ed61d48-7067-458f-a430-fba26ba1ce84︡
+︠5b222406-c872-40db-af1e-f0aa315d31cb︠
 u = random_vector(QQ, n)
 u1 = VD1.coordinate_vector(u)
 u2 = VD2.coordinate_vector(u)
 u, u1, u2, u2 == CBdom_mat*u1
-︡cdadffea-c5cd-4ff3-a4ed-f7a9001fdcf2︡
-︠9cf39f38-90e6-4ed6-a124-f2c9bcacc79b︠
+︡517839c4-09c7-4cc5-a7b6-6b715b2b95d5︡
+︠1269ba28-f31b-4be8-a054-7cffd5a0046d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-8">Same drill in the codomain.</p></div>
-︡9288618a-91a7-4885-aea8-39af25cd284b︡
-︠4eec75ef-f81a-4093-a68d-eb78a9d7700b︠
+︡97000ca3-4a76-4534-ae3a-2b62b47558ab︡
+︠6336443e-879f-4de2-a2d6-cf232d8a3d2d︠
 identity_codomain = linear_transformation(QQ^m, QQ^m, identity_matrix(m))
 identity_codomain
-︡b4aa11f0-0f81-499b-acf3-ade169b30230︡
-︠ef58a7a9-7a80-4c29-a7e8-b969ac350374︠
+︡991c0513-49ad-498b-acb9-2795bb235518︡
+︠2a137188-4c1f-4ab8-a673-fab8f631a96c︠
 CBcodom = identity_codomain.restrict_domain(VC1).restrict_codomain(VC2)
 CBcodom_mat = CBcodom.matrix(side='right')
 CBcodom_mat
-︡464aee28-8931-4a03-a482-d3b3c50fb033︡
-︠58993875-00f4-4194-a4ec-7bf2ec8fc4f0︠
+︡1963dd46-6937-49d2-a13a-5240a37e527c︡
+︠f955c331-99ac-4149-a45d-eb03cb749c71︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-9">And here is the check on Theorem MRCB.  Convert from domain basis 1 to domain basis 2, use the second representation, then convert back from codomain basis 2 to codomain basis 1 and get as a result the representation relative to the first bases.</p></div>
-︡7581ec96-1a61-4e8b-a2d9-f44f63bf2832︡
-︠8b71c6d6-df03-40ec-ab19-41d904cb3e47︠
+︡96aec72f-8b93-48b7-a20d-ff8f25aa9460︡
+︠5f60e371-20cc-4348-aa78-867069603f4a︠
 rep1.matrix(side='right') == CBcodom_mat.inverse()*rep2.matrix(side='right')*CBdom_mat
-︡1c28dfeb-5ca5-4fb4-ac66-5b7248714af8︡
-︠20459248-da48-4043-a50a-b6538acfb0ab︠
+︡0aa7a9a2-ad27-496b-a112-a991afb00f04︡
+︠90f47ad2-c8ff-4f95-abb7-e5076a72b71b︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-3"><h2 class="heading hide-type">
+<div class="mathbook-content"><section class="section" id="section-3"><h6 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3</span> <span class="title">A Diagonal Representation</span>
-</h2></section></div>
-︡8dcd2607-ee13-4627-aa78-43ea77537042︡
-︠ccf8a1ea-9d8b-40fd-a8a5-1f8f907f3ef7︠
+</h6></section></div>
+︡cbbcf36d-5364-425e-a819-ffe075be7669︡
+︠134df405-2588-4abe-a84f-24f146705f6b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-10">We specialize to linear transformations with equal domain and codomain.</p></div>
-︡1c404f23-ab13-4612-a4ad-9bc2a6225514︡
-︠d2122615-9b0a-4e7c-a1c6-f51b8c1ae600︠
+︡88fd5e16-44bd-4c68-abfd-a21a360b65ad︡
+︠13500bf2-136d-4034-a9e3-696839e4459f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-11">First a matrix representation using a square matrix.</p></div>
-︡bd2c0522-acdb-47c3-a4ef-ad5c9d8a7707︡
-︠7c5a96fc-8a86-4503-a941-8efea8b333b4︠
+︡3b28c24b-45eb-43fe-a78d-ae607aa5efb8︡
+︠ee317f4c-b819-4349-a2b1-f6067702df28︠
 A = matrix(QQ,
 [[ -2,   3, -20,  15,   1,  30,  -5,   17],
  [-27, -38, -30, -50, 268, -73, 210, -273],
@@ -203,13 +202,13 @@ A = matrix(QQ,
  [  0,   3,   0,   5, -19,  10, -15,   25]])
 T = linear_transformation(A, side='right')
 T
-︡b201d97c-5f7e-45ce-a863-ae29cc2805cb︡
-︠98ea9b30-890f-485c-a6e2-a81c2e9469a3︠
+︡717b2fb6-b6fd-4032-a95e-b45bac2bf0a1︡
+︠8220d409-bb0a-480d-aba3-957e02b3da38︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-12">A basis of \(\mathbb{C}^8\text{.}\) And a vector space with this basis.</p></div>
-︡53b3e5e1-56b6-463b-a2aa-54260549ab34︡
-︠e88ab6fa-8513-4b76-a7a1-1f545599f342︠
+︡bcaed83d-2e82-4912-a7cd-a522434f629a︡
+︠a57534e6-105a-42ec-a558-2fe512862f8b︠
 v1 = vector(QQ, [-4,  -6, -1,  7, -2, -4, 1, 0])
 v2 = vector(QQ, [ 3, -10, -6, -6, -2,  0, 0, 1])
 v3 = vector(QQ, [ 0,  -9, -4, -1, -3, -1, 1, 0])
@@ -220,81 +219,81 @@ v7 = vector(QQ, [ 0,   0,  2,  3,  0,  0, 1, 0])
 v8 = vector(QQ, [ 3,  -4, -2, -3,  0,  0, 0, 1])
 B = [v1, v2, v3, v4, v5, v6, v7, v8]
 V = (QQ^8).subspace_with_basis(B)
-︡83b1e67d-1032-44e9-ab63-c721b8751796︡
-︠91a538cb-6db9-4ff8-a8ae-c66f82707970︠
+︡93018456-a66f-419e-ade4-6034657ecad4︡
+︠578681be-755e-4568-a436-897ced26ce09︠
 S = T.restrict_domain(V).restrict_codomain(V)
 S.matrix(side='right')
-︡f1296622-19fc-42ec-ab77-a4e0362b7a4e︡
-︠b3fed540-8597-42c6-af7e-612516c413e5︠
+︡361bdad8-85ed-4344-ac88-212ad08f74e7︡
+︠e1e0dbaa-33f1-4136-a50e-d2ffdd06c7ab︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-13">That's a nice representation!  Where did the basis come from?</p></div>
-︡1990876c-7e10-464d-ac34-a96df83bc5eb︡
-︠bf540db6-935b-44bf-a182-53cc0b446095︠
+︡f9ddab94-6d85-4f99-a5f9-3cc3ca0d0d4b︡
+︠84552f1c-479c-4d86-a6d5-012d4f85c931︠
 A.eigenvalues()
-︡c44195f5-b881-43dc-a3e4-647308e4c556︡
-︠b1bf3442-a0b3-41f0-ae2e-382bb23a700c︠
+︡5b6a18a2-4e9e-4b66-a2d3-8e4bc9a5e7e1︡
+︠93dfef88-2d7c-4b23-a151-5d0a8c3312b0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-14">Some (right) eigenvectors.</p></div>
-︡7be2b270-4210-452f-a511-35a606941051︡
-︠dcdcf8e7-8399-43fc-a24e-483ff458878e︠
+︡4432311c-9491-4054-a479-5c756f2933ce︡
+︠30272684-328d-4492-a8d9-12688c8a6ce2︠
 (A - 3).right_kernel(basis='pivot').basis()
-︡86b62ae0-274c-417b-aea0-df80e744fdb8︡
-︠b4f6a118-2406-402e-ab08-bd74e6b3ab16︠
+︡a23d9642-a853-459d-a81a-23d8c5550b1e︡
+︠ec02aa8f-c371-46db-a45d-e80c0d252214︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-15">Eigenvalues are a property of the linear transformation.</p></div>
-︡4da43455-d89e-4fa0-ad51-51ed5d310dd1︡
-︠32ee623c-8052-4f4c-af12-073f49c8bd59︠
+︡1f111cba-b8d3-4a41-a587-27f34f165496︡
+︠8a6ac868-2210-45b4-a60d-e35d79c901da︠
 T.eigenvalues()
-︡e9bd82fb-f8b4-4ab9-a6ab-8b2ca757f045︡
-︠a3f50780-278e-4c29-a593-01f3daa31a46︠
+︡865e0176-a99b-4ae7-af58-c3b213cdccfa︡
+︠670c60ed-7871-4410-ab05-3d9ffa3b8f88︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-16">Bases for the eigenspaces depend on the representation, but the actual eigenvectors are also a property of the linear transformation.</p></div>
-︡fe9e4a5c-a842-4615-af7f-3802bec62d06︡
-︠305df975-61da-443c-aa23-95ba8694db2e︠
+︡affab5b9-332a-446b-a42b-a58448f8477c︡
+︠f2bfc657-08b2-42f8-ae4a-9e0225b2dfa5︠
 S.eigenvectors()
-︡26e73d1a-37c0-4213-aeb6-15cdf448914b︡
-︠061ed4ce-ff6c-4f8d-a379-a9f66eba74cc︠
+︡ba7793df-be76-40a6-a98a-42945c90e708︡
+︠cb242c80-b3f3-4afe-a187-cda5101b1f21︠
 T.eigenvectors()
-︡fc21b057-f575-417e-afb5-85e8c5780ecd︡
-︠bc9dd5d3-dd94-42ac-a0a7-63d4baa22a1f︠
+︡8fdb307b-03ff-47af-a5c8-d858d68f29e5︡
+︠a757288a-48d4-485f-a8bb-083500c90f2f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-17">We could do the same thing, but in the style of Section SD, using a change-of-basis matrix.</p></div>
-︡7cb19967-d346-4871-a58b-defa3a4dc78e︡
-︠6fa214b7-c9b1-4f48-a091-c6fb1266f2d8︠
+︡4d69592d-3761-4ce6-ab72-67a9dbaa4a97︡
+︠9e408a9a-7c2d-4eec-a593-7fb298d432fc︠
 identity = linear_transformation(QQ^8, QQ^8, identity_matrix(8))
 identity
-︡047b6802-0cbc-4da0-a6ba-7807319979c5︡
-︠1d999f29-225d-4f38-afa3-a1ba9fc294c6︠
+︡a9be9382-e0f0-4dee-aa37-da78c11a54c4︡
+︠16ec570e-aefa-4ec8-ad7b-446cd2dfc349︠
 CB = identity.restrict_domain(V).restrict_codomain(QQ^8)
 CB
-︡9d327d29-64cb-41bf-a9b9-d5b9048c7203︡
-︠891cc89e-1f3d-4b49-abe5-4ca05b5e7c08︠
+︡850626e2-5804-43f1-abc8-71ddda0bacee︡
+︠5746d6cb-8149-4588-a634-fb5c9379f16e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-18">Here is similarity, in disguise.</p></div>
-︡f9205e9e-dae0-48a5-a154-6a01a5c044c4︡
-︠ccded3d6-2a01-4b9b-a0a1-51b526be6f33︠
+︡0c5423af-f303-4c6c-a5df-acb08530f215︡
+︠01266590-4835-4c0b-a859-8f54fe93e960︠
 CBmat = CB.matrix(side='right')
 CBmat.inverse()*T.matrix(side='right')*CBmat
-︡4ff2ed5b-3864-491d-a428-6791db89af8d︡
-︠2dd2fbf5-73dd-486f-a5b1-d197372b0da9︠
+︡f721d866-9bfc-40cd-ac52-6e2b22ac595b︡
+︠a52c6f5d-6e96-4b93-a868-bc6e890365dc︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="conclusion" id="conclusion-1"><h5 class="heading"><span></span></h5></article></div>
-︡bd68f53f-ab27-48be-a709-9eb35ea8aa65︡
-︠412a91fd-1a84-421f-a080-a2e6545fcfa2︠
+︡07133839-5a7e-4028-a3bf-c7c355c583a5︡
+︠fbd0f082-9ec1-4dd4-a50f-4d610c6c1ffc︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-19">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="url" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
-︡4e469d89-b934-4e65-ad6e-d10c760c6dc1︡
-︠1d6dc7a3-8862-4f59-a461-816963d71421︠
+<div class="mathbook-content"><p id="p-19">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
+︡5f820728-9c76-4e43-a294-1e18f146e65e︡
+︠a02d61c5-7286-4811-a03d-84901e90e33b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡93e00b7b-ef34-423a-ac81-d134a97808d2︡
+︡7dbab1b7-72af-4931-aa44-8c81ca05af9d︡
 

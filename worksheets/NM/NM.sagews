@@ -1,12 +1,12 @@
-︠59bcf05b-09ca-4edb-a900-2d1339faa9e1︠
+︠ed966f16-d853-4ca6-a706-73eeff022819︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡33affa05-61f2-4cd0-a770-89e9c13cbd6a︡
-︠e9e99e4a-3ab2-4d70-aef7-f71d0ef4ab10︠
+︡306c6dc7-3909-4dc4-a444-bb899789ab2c︡
+︠56cb229e-ad8b-4667-abac-f678f1f8ba4d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content" style="display:none">\(
@@ -14,173 +14,167 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡50a4942e-e599-4861-a950-04822902dbde︡
-︠c3f779ba-7af0-4387-a51c-511e44746404︠
+︡6933566e-51cd-4c34-a4ef-0e586596e412︡
+︠18c5b2c1-113d-4ff0-a34e-24d8c3e5acab︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡3c8230bf-a29a-42d2-a923-685769bee22e︡
-︠c7c17fd1-4693-4c18-a0e0-8bf0102340ed︠
+︡fb4b1fed-1fe4-4ce4-ad18-b4d9d9dbf779︡
+︠7c8bae14-24f4-4da1-aa8f-df3dde900e46︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="NM"></section></div>
-︡2b5fddea-e208-45d9-aee8-e64e75f98397︡
-︠1c26bf3a-a2da-4a27-a416-d0c1e47dd017︠
+︡ac327d08-23d1-47bc-a855-724a019a1986︡
+︠03336a17-33a0-451c-a192-615bc6c50ef8︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡7249809c-a3e7-4e9a-a5eb-bbb8dac58a59︡
-︠1cb66460-003f-4819-a277-e33ac1496c3b︠
+︡40c83225-9684-47d5-a3ff-661b1d1d31c2︡
+︠a126969b-b224-4792-acd1-c37de8bf6e12︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
-<h1 class="heading">
-<span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section NM</span>
-</h1>
+<h2 class="heading">
+<span class="title">Sage and Linear Algebra Worksheet:</span> <span class="subtitle">FCLA Section NM</span>
+</h2>
 <div class="author">
 <div class="author-name">Robert Beezer</div>
 <div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-<div class="date">Spring 2019</div>
+<div class="date">Fall 2019</div>
 </div>
-︡5581be61-e622-46a4-afdb-7bfb5bc94367︡
-︠fcd7d863-a5ad-4717-ac04-8807352ff735︠
+︡0b332cab-86ea-4a53-ad21-ef45c2e82463︡
+︠77faa175-cfba-4960-ad32-f2137e6668bc︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">First, a guaranteed nonsingular \(5\times 5\) matrix, created at random.</p></div>
-︡f22c9050-305e-4ddf-a590-a18a9b0cbf3e︡
-︠5207fa85-ab50-4a2e-aa78-a1a3c3ecfac3︠
+︡c24bcec3-4930-43d7-a4ba-6ad8d573bdc6︡
+︠a88e35d0-929c-42d9-a914-48e11c68f26b︠
 A = random_matrix(QQ, 5, algorithm="unimodular", upper_bound=20)
 A
-︡81699531-aed0-4f82-ad2a-5dcf082f52a1︡
-︠523bcd10-ecec-4cd5-afa8-9056f6f16440︠
+︡8141f86d-80f2-4c20-a6b2-a0b91c5845ab︡
+︠13c55cdc-96c9-498b-a9e7-c9873a3828ed︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">1</span>
-</h6>
+<span class="type">Demonstration</span> <span class="codenumber">1</span>.</h6>
 <p id="p-2">Augment with the zero vector, using the matrix method <code class="code-inline tex2jax_ignore">.augment()</code> and the vector constructor <code class="code-inline tex2jax_ignore">zero_vector(QQ, 5)</code>.  Then row-reduce to use Definition NM.  Or instead, do not augment and apply Theorem NMRRI.</p></article></div>
-︡59384f56-f42e-41eb-a6d6-e764e6ad711b︡
-︠1655fa45-04a2-42b0-ae1e-506c442f1a02︠
-︡629b795c-e508-4723-a815-666d2a15a2fa︡
-︠55de0475-06b1-4e24-a2b5-82ceff904334︠
+︡3f1046c2-269e-4f27-abc6-380bf353c8ba︡
+︠6fa7ffeb-101b-4f1d-a7da-d13ec3126eb2︠
+︡91139127-d48f-4f80-adfe-8dfbbbede4c9︡
+︠75b894ac-b704-460c-a7db-5594140f2e4e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="exercise-like" id="exercise-2"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">2</span>
-</h6>
+<span class="type">Demonstration</span> <span class="codenumber">2</span>.</h6>
 <p id="p-3">Build some random vectors with <code class="code-inline tex2jax_ignore">random_vector(QQ, 5)</code>, augment the matrix and row-reduce.  There will always be a unique solution to the linear system represented by the augmented matrix.  This is Theorem NMUS.</p></article></div>
-︡e89b790f-f15b-424e-a779-cfb9ea97bdbe︡
-︠1a7b5e56-d573-40a8-ae1f-7ef38ed168f1︠
-︡70bec1c1-7a6f-4e6a-a65c-6cb5034d5a64︡
-︠bd57b188-2039-401f-aa85-7e124268fc26︠
+︡8b434d7f-936a-47da-a348-f9e8dfddffc4︡
+︠d40274ff-392a-4497-afdb-8d566363063d︠
+︡a12a39f3-83cb-4d15-a503-0906f696aacd︡
+︠77e92131-4c51-4723-ad74-08d0ed783120︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-4">Instead—cheap, easy and powerful:</p></div>
-︡0e46507e-8aeb-43ed-a395-813a47cb0c72︡
-︠3707d675-4f02-4b41-a87b-d0c1b098b953︠
+︡f98d3af7-c431-46b4-a98c-d84a9371bb3e︡
+︠c2840bef-2b46-4ca1-a039-c121cc53d0f1︠
 A.is_singular()
-︡c8acf836-e76e-4a22-acaa-78b49652f0c4︡
-︠48cf4c78-26f9-45ac-a866-2dfe1956c478︠
+︡fb37f42e-4598-4b63-ad66-7389446984a7︡
+︠5a3912d4-119a-4a50-ad27-4abc4f1a99e4︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-5">Now, a carefully crafted singular matrix.</p></div>
-︡8b04a512-d48c-4de7-a96d-08a07c9c250a︡
-︠d96de03f-303c-4d0a-a4a0-1b9cc085dbbd︠
+︡13e4c06a-47ce-4273-a346-b9066467ff1d︡
+︠42136e3d-8755-458c-a9b1-07a1d1638539︠
 B = matrix(QQ, [[ 7, -1, -12, 21, -8],
                 [-3,  3,   0, -9,  6],
                 [ 3,  3, -12,  9,  0],
                 [ 2,  3, -10,  6,  1],
                 [-2,  2,   0, -6,  4]])
 B
-︡597b75ca-40a7-4c88-a7c3-7df19b221fdd︡
-︠d274eeab-8eb3-468b-aff8-27528fda1fae︠
+︡28c4b22e-fb65-41bd-ad58-f5fa6dbc0414︡
+︠e4ca97cb-6c7c-4188-ae6d-7636094b6408︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="exercise-like" id="exercise-3"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">3</span>
-</h6>
+<span class="type">Demonstration</span> <span class="codenumber">3</span>.</h6>
 <p id="p-6">Augment with the zero vector and row-reduce (Definition NM), or don't augment and row-reduce (Theorem NMRRI).]</p></article></div>
-︡d714c026-bb57-4fb0-abaf-3d69ff8daad4︡
-︠9acae9b0-07c5-4fb1-af6b-e995285b6f53︠
-︡4ed19ba4-cac8-40b4-a1aa-d946e6f42537︡
-︠88669014-5ee1-46fc-aa06-5d093e023286︠
+︡9ec586c4-1319-4f22-a718-58f8ff23b88b︡
+︠019d7133-6578-4e6b-a0ec-9448c48f7370︠
+︡f72859a8-d1d4-49cb-a4da-17e6fba8a2b1︡
+︠2a943edd-7af4-4f91-aaee-4f5255efd818︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="exercise-like" id="exercise-4"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">4</span>
-</h6>
+<span class="type">Demonstration</span> <span class="codenumber">4</span>.</h6>
 <p id="p-7">A random vector of constants will only rarely build a consistent system when paired with <code class="code-inline tex2jax_ignore">B</code>.  Try it.  But this is not a theorem, see the vector <code class="code-inline tex2jax_ignore">c</code> below.</p></article></div>
-︡a1e17819-c67b-47ea-a48a-be7b8ba8edb6︡
-︠36727fb9-87ff-427d-acb6-664e1cab5981︠
-︡fc77fe7a-7f27-4e4e-ac19-38077141daa6︡
-︠ba322319-e980-4174-a046-a7eaf5c479e1︠
+︡a4349626-4a14-4e0d-a0bb-efb420900692︡
+︠f4638fab-6f58-4349-a144-c34876807870︠
+︡b641ad14-883d-4162-aa76-f493c19510e9︡
+︠19f6ba3c-ec51-4a68-ac10-305d31ed70e5︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-8">Instead—cheap, easy and powerful:</p></div>
-︡0ac3de7f-8581-45a8-aaac-044ee34b7b45︡
-︠d5099d80-c155-42af-aa49-75eb4df8864d︠
+︡9fe9693a-617c-4312-ace4-c242f83e5ae3︡
+︠073e1984-4f6b-4bad-ad7b-13d66de9b34a︠
 B.is_singular()
-︡c22ccb95-b660-4b8b-aa30-4a536a0628c7︡
-︠5997563f-bf51-4019-abcc-c1714eb44ed1︠
+︡751a334c-89be-4469-a240-d64bda9b44f9︡
+︠e7e01236-ebfa-4a41-a466-44d90a3968e6︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-9">Two carefully crafted vectors for linear systems with <code class="code-inline tex2jax_ignore">B</code> as coefficient matrix.</p></div>
-︡62a0a06e-f1d5-43d6-ac92-953077f3c329︡
-︠58cf96ff-4f12-454f-ab19-eae1b69b95fb︠
+︡1cd0df20-51c5-4c7a-adb1-406196bd026e︡
+︠87a5784a-8ab5-4f7d-aa58-b991a3860896︠
 c = vector(QQ, [17,-15,-3,-5,-10])
 d = vector(QQ, [-3,1,-2,1,2])
-︡f44b4d24-d73e-4983-a945-32014b8d6135︡
-︠d2a1eee1-2b86-4a2e-aec3-3f531af976ab︠
+︡71e276ac-127c-4864-a51a-ec37deb65cef︡
+︠35117881-594c-46d3-ab34-51199f845e04︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="exercise-like" id="exercise-5"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">5</span>
-</h6>
+<span class="type">Demonstration</span> <span class="codenumber">5</span>.</h6>
 <p id="p-10">Which of these two column vectors will create a consistent system for this singular coefficient matrix? (Stay tuned.)</p></article></div>
-︡b8e59c48-d646-4ce8-abd5-e04445e3e699︡
-︠151fbbcf-3a57-4026-a9d3-ec43088fb755︠
-︡06a266e2-51cb-49dd-af7a-366797016b8b︡
-︠191cc82a-a7c6-4254-a05b-b8110a90cfc5︠
+︡d49e517e-3c78-49d5-ac88-1ea2741096ea︡
+︠abe49360-1ad9-4266-a83f-14dc750859f3︠
+︡3af1f856-9707-403e-a7c1-7d649daa6f36︡
+︠370280be-6567-4c6a-abe6-c643be15885b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-11">A null space is called a <dfn class="terminology">right kernel</dfn> in Sage.  It's description contains a lot of things we do not understand yet.</p></div>
-︡adec9b4c-5f41-4677-aa7c-5247441d5ec1︡
-︠37e148d9-5289-44e0-ab97-7eac6e18b668︠
+︡e83fbbf6-a6c0-4d97-a846-e1c24706c8e2︡
+︠4da7c63c-de29-4e02-a687-c7899d0a3d32︠
 NS = B.right_kernel()
 NS
-︡79f6b4f8-d4b6-4df4-aead-52cfe3e0b961︡
-︠1eb14664-f39a-4a6a-ae45-ca79a6c8682d︠
+︡f8fa0b04-8e2b-471b-aa74-14bad58efbb3︡
+︠ebbd5c96-0143-4cc4-a86c-c8173fcbdc79︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="exercise-like" id="exercise-6"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">6</span>
-</h6>
+<span class="type">Demonstration</span> <span class="codenumber">6</span>.</h6>
 <p id="p-12">But we can test membership in the null space, which is the most basic property of a set.  Try <code class="code-inline tex2jax_ignore">u in NS</code> and then repeat with <code class="code-inline tex2jax_ignore">v</code>.</p></article></div>
-︡94b550cc-5b0e-46a5-a09a-554dff3c7a4a︡
-︠8ee4345f-0ab0-481a-ad13-879d49c8542a︠
+︡f54b3a7c-18d6-4ba2-a029-df2e65d31af8︡
+︠4fe8b133-e4bb-4a66-ac79-64882fe02fb2︠
 u = vector(QQ, [0,0,3,4,6])
-︡eb8cfc14-c1f8-4179-ac5b-0d2aa637e9b1︡
-︠3adc7c98-1690-4eb8-a88e-38b626c5ebe9︠
-︡d24aeb68-38ed-48c8-a150-f88beb2b007f︡
-︠a41ee095-8de7-4a74-a389-382c3175d864︠
+︡8f278d8b-06fc-42a3-a97a-2dea61942c4d︡
+︠edd145ed-0f40-4b7a-af01-93e8e4a79c4e︠
+︡a3b740c2-dd21-4de9-a7d9-87c70bca2577︡
+︠31af9ef5-1c34-4e02-a780-108e78933c9a︠
 v = vector(QQ, [1,0,0,5,-2])
-︡809af8b9-e46c-4b03-af3c-974b48cce944︡
-︠ed5774f2-dd74-4925-ad28-9b0e646315d6︠
-︡ab3f2b42-e2f5-4697-ab69-4054ec95fabd︡
-︠05944bf9-edbd-4216-aacd-40d95c5f25ad︠
+︡3dcec5cb-be8e-427e-a5f6-607eff693a5d︡
+︠49a07664-212a-4f51-aeb1-511df1d6a000︠
+︡d59761ec-50d8-4ade-acc9-d2af0a0d0bd1︡
+︠bb653d61-9c27-44d5-a292-c7476417123f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="conclusion" id="conclusion-1"><h5 class="heading"><span></span></h5></article></div>
-︡3b2cf78f-06cb-43fc-aa99-7ea4701df32a︡
-︠065325aa-4a11-4640-a3fa-c687b07dd700︠
+︡3eba3f89-1153-49a0-aeda-091508a20c43︡
+︠c827367b-f8d5-4c60-ad5d-7679b826a32f︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-13">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="url" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
-︡116649cf-40a5-410a-a249-d1068c60947a︡
-︠65ae7ee3-e957-4385-a517-880df77b55d7︠
+<div class="mathbook-content"><p id="p-13">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
+︡6e796bfd-6f64-452a-a5f0-376b12338e6a︡
+︠37573771-4903-4ec1-a293-b588f52c1249︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡33de25d1-8bad-43e5-a837-fc009f71bc68︡
+︡b8010387-5c15-40f2-a12c-5e2d6139d5b1︡
 

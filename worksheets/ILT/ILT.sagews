@@ -1,12 +1,12 @@
-︠f669d884-6292-4754-abab-2a00a4518489︠
+︠4f35c035-9a65-4c80-a539-1185946b1975︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡680d2e5b-2bdc-4e52-a31c-e37f41392bda︡
-︠54361546-072e-4414-a645-329b1dc47e04︠
+︡5c591195-63fd-49c5-a919-22bb740ef277︡
+︠7d3d65e0-a53a-42d7-a869-29bd43241269︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content" style="display:none">\(
@@ -14,93 +14,93 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡958db920-0283-40d4-a539-a7b42d2f19e2︡
-︠d8765307-41ad-44aa-a90e-2a6df8a18ca6︠
+︡9e7dbd2a-edf2-482f-afa5-9ce4938b8aee︡
+︠47db4997-3743-49d5-a8d0-e6cdb60428e0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡f8e6f3af-af04-4c5f-a7ef-50abe949bc66︡
-︠3f069dc2-a56e-4f14-a6b3-a6157549d317︠
+︡7384ede7-42f9-4586-ab14-bfa8d6eda168︡
+︠54c73485-034f-4825-a759-62cb33c69170︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="ILT"></section></div>
-︡0461bff7-29d8-47c9-ac25-fcb02357c3ae︡
-︠ab31ce1c-5352-4cdf-a691-b9e790af8722︠
+︡8d4558ae-da22-49a4-ae29-89b54f80621e︡
+︠2ac701fa-fd42-4fdc-a4cf-d4899c92df4f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡6de9eb70-7d4d-400a-af64-12df970478c9︡
-︠b279b642-6cfa-49fb-a4f2-8046fed0248e︠
+︡d799eabe-4ab8-4db6-a9f2-8d7171d03af8︡
+︠9df36ed1-c2c8-4a93-a132-3cfad6bb7f66︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
-<h1 class="heading">
-<span class="title">Sage and Linear Algebra Worksheet</span><span class="subtitle">FCLA Section ILT</span>
-</h1>
+<h2 class="heading">
+<span class="title">Sage and Linear Algebra Worksheet:</span> <span class="subtitle">FCLA Section ILT</span>
+</h2>
 <div class="author">
 <div class="author-name">Robert Beezer</div>
 <div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-<div class="date">Spring 2019</div>
+<div class="date">Fall 2019</div>
 </div>
-︡e406dcc2-e3fe-4e8e-a9cd-b5d0bde9d1e6︡
-︠fda038c0-bb3a-4923-a7b0-475271f6bd79︠
+︡7f373a51-b138-49e2-adf5-f21fdf69ad80︡
+︠4007742c-5ee8-4686-a955-e58046fbfa88︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type">
+<div class="mathbook-content"><section class="section" id="section-1"><h6 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Injective Linear Transformations</span>
-</h2></section></div>
-︡477e7a74-b20e-4d90-a11c-16378b981468︡
-︠eaf59700-cb3c-4a16-ab27-73dbb664f786︠
+</h6></section></div>
+︡bc8b4ff7-c55a-4dc3-a458-a4d34294d8f6︡
+︠0a396896-f5b4-4081-a3d6-b7a9afc349c3︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">Two carefully-crafted linear transformations: <code class="code-inline tex2jax_ignore">T</code> is injective, <code class="code-inline tex2jax_ignore">S</code> is not.</p></div>
-︡0700d98d-a49e-413f-a8e1-f65d104744fd︡
-︠af4a0148-ffd8-4dec-ac6b-e6144348b9da︠
+︡0dd363bf-9a55-4f5d-a09b-7521ed1a154d︡
+︠84b681a3-14e7-49dc-a7e6-25b5792844e9︠
 A = matrix(QQ, [[1, 2, 2], [3, 7, 6], [1, 2, 1], [2, 5, 7]])
 T = linear_transformation(QQ^3, QQ^4, A, side='right')
-︡67ab2ad6-3d50-462f-a2f6-edc02136af07︡
-︠a7e420f0-73dd-433f-a26f-94d65f786186︠
+︡17ecd6e7-a0b8-4756-a4c4-afa541f7a4b8︡
+︠ddfbad29-5c91-4506-ab42-0f2a46c3e68a︠
 T.is_injective()
-︡82d67076-1e9e-4bd2-ab08-a9d8f276bd83︡
-︠40527c3e-34dd-428b-a54b-de5b74deb8c3︠
+︡f57f12c4-b214-4365-a92a-c39eed5a1319︡
+︠d1f5017d-52f6-472d-acc0-683072dccf0d︠
 T.kernel()
-︡c1413be6-92a6-40df-ab33-702cb9198d25︡
-︠0e65090f-0a2b-4129-a1ec-46c728142914︠
+︡8ef84f9b-deed-4550-a22c-29569d87956a︡
+︠3f927d20-90e7-4d3d-ad6f-a99002d897ef︠
 B = matrix(QQ, [[0, 1, -2], [-1, 1, 3], [-2, 5, 0], [0, 2, -4]])
 S = linear_transformation(QQ^3, QQ^4, B, side='right')
-︡e22573e8-2e24-4a47-a356-facc1e4327d4︡
-︠bb6e1d1f-54e8-498c-a0b1-7bb37d1c043d︠
+︡11eb4686-6174-4948-a62e-6c7fd71a0b1f︡
+︠b21ae506-c683-4b18-a38a-2e7ad42fe3bf︠
 S.is_injective()
-︡9e9fdadf-a339-4bd2-a8ee-a595803ac4f0︡
-︠28fc7c75-b18f-4a4d-acdb-b714d9404153︠
+︡26231091-7580-4932-a17a-b99347767692︡
+︠6b98fa98-c1e4-4177-a48f-f4988df0376d︠
 K = S.kernel()
 K
-︡17b033da-99c1-4966-a633-2eb338d8919e︡
-︠5b50c949-3d3f-4fc6-a63a-a6959cd7469e︠
+︡9c8358ee-0a0f-4e26-a66f-654fdccdcf53︡
+︠dff625e0-4fb4-4e96-a50d-56295062e323︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">We create two different inputs, which differ by a random vector from the kernel (which we hope is not simply the zero vector, a distinct possibility).  We always get the same output from <code class="code-inline tex2jax_ignore">S</code>, predictably.  If we try this with <code class="code-inline tex2jax_ignore">T</code> then the kernel vector is <em class="emphasis">always</em> the zero vector and the demonstration is very uninteresting.</p></div>
-︡4e9ae633-0603-4600-ac63-719063d4b1a4︡
-︠ff29a10d-4045-43a5-a47c-8fd1f45c81e2︠
+︡6f2655b3-6f31-441b-aa6b-7b2a58aca9fc︡
+︠d6bfd059-4c97-4dd8-a88f-40b7b1f6d9fc︠
 z = K.random_element()
 u = random_vector(QQ, 3)
 w = u + z
 u, w, S(u), S(w), S(u) == S(w)
-︡5e278c88-9c8e-42c9-a700-48f2af60ce1b︡
-︠1693e207-aa33-4860-a1d1-2292441a5e97︠
+︡5c30c112-a5e4-4cb2-a54b-59b0071fdf8d︡
+︠ce9ff600-8b66-4f22-a287-dd08e0000df8︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="conclusion" id="conclusion-1"><h5 class="heading"><span></span></h5></article></div>
-︡9ae3ec5e-3087-431d-a32b-44ee7239d977︡
-︠011e5fba-eeb7-46e8-a32b-f7fd670a0e38︠
+︡ab74b6ac-638c-4a7f-ada8-4754045055d5︡
+︠e805dcb8-82b0-4e68-ae32-679cca12a688︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-3">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="url" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
-︡53962f6d-95c5-4c23-a466-f5ef3463f712︡
-︠25e1ce47-df6e-4333-a3a1-302eb180a3c0︠
+<div class="mathbook-content"><p id="p-3">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
+︡b71cde89-61b2-42a8-aa9c-df47b01d3c3c︡
+︠1db92a60-2b21-458a-ab4b-0fba88076b8c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡9f580265-944f-4282-a6bd-7fdad9b59696︡
+︡3a9f4bab-cc6e-4eb7-a87b-47b02383aee3︡
 
