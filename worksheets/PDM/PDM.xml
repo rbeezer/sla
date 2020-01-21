@@ -123,7 +123,7 @@
 
             <p>With a solution for <m>\mathbf{y}</m>, form the system <m>U\mathbf{x}=\mathbf{y}</m>.  You can check that a solution, <m>\mathbf{x}</m>, to this system is also a solution to the original system <m>A\mathbf{x}=\mathbf{b}</m>.  Further, this solution can be found easily by determining the entries of <m>\mathbf{x}</m> in reverse order, exploiting the upper triangular nature of <m>U</m>.  This is what is meant by the term <term>back solve</term>.</p>
 
-            <p>We solve <em>two</em> simple systems, but only do half as many row-operations as if we went fully to reduced row-echelon form.  If you count the opertions carefully, you will see that this is a big win, roughly reducing computation time by a factor of half for large systems.</p>
+            <p>We solve <em>two</em> simple systems, but only do half as many row-operations as if we went fully to reduced row-echelon form.  If you count the operations carefully, you will see that this is a big win, roughly reducing computation time by a factor of half for large systems.</p>
         </section>
 
         <xi:include href="../legal.xml" />
