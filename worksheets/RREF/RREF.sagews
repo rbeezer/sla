@@ -1,12 +1,12 @@
-︠aa0dc9c7-abd0-44ca-adf0-0828d8b59fc3︠
+︠527bb37d-024d-495b-a067-62a63cf442e5︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡47d44ae0-18cf-491b-a3fb-3f4681f36823︡
-︠b7b9cf3a-053c-44ce-a0fd-b3df9509871b︠
+︡e375e396-0a94-473a-a330-a935061fa619︡
+︠b0c35b6e-178b-4c0e-a631-7daa2b14abbc︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content" style="display:none">\(
@@ -14,23 +14,23 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡bd267f6b-970d-4449-a249-ffccf610fa81︡
-︠53e8a580-0180-4ec5-a8e9-1d9e985b8560︠
+︡57c1a2d1-0f99-4a59-a8cd-94a4fdf02acd︡
+︠71543f60-17fa-4090-aa1c-8b13000f03ac︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡6c454ead-fbe7-4cd4-a252-b7f569eb570b︡
-︠e11b5bf6-b87c-4279-ac8a-b77fbde9e587︠
+︡01e6516b-1720-423a-a2ec-f670980a71d2︡
+︠43c3a522-56b0-4d5b-aaae-eae379dff099︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="RREF"></section></div>
-︡d78f2ea2-46bc-42e4-acac-764f5fc49b92︡
-︠279b6ca1-ee7a-4ba8-af63-cda0c008493e︠
+︡2edf1744-aaa5-4a8a-a625-51f346d16c2f︡
+︠65e440c8-463e-4bd7-a53a-a8bacf091763︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡b6642c1c-dfb4-4a6f-a365-62303f1385dc︡
-︠493ae66f-24fd-4994-a8ca-d3d1400549a1︠
+︡7d851d5d-5a39-48e6-a04a-af369f5a861f︡
+︠a9c3ed04-b6ef-4f7d-a572-02138b2e6b57︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -41,68 +41,70 @@
 <div class="author-name">Robert Beezer</div>
 <div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-<div class="date">Fall 2019</div>
+<div class="date">Spring 2020</div>
 </div>
-︡6fa998f0-7257-40e0-a57d-f40d64d69104︡
-︠364e0e70-ff24-4633-a68a-38f45592c34c︠
+︡b0173f53-4093-4f9a-adf2-ff512ed5c312︡
+︠bc2c36c9-a094-439d-ae6c-06b68e453184︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">To specify a matrix, first specify that your entries are rational numbers, <code class="code-inline tex2jax_ignore">QQ</code> in Sage parlance.  This is extremely important, though an explanation is best saved for later.  Then the number of rows and columns.  Follow this with a list of rows for the matrix, where each row is another list.  We use square brackets, <code class="code-inline tex2jax_ignore">[, ]</code> to organize lists.  To actually see <code class="code-inline tex2jax_ignore">A</code> we just write it as the last line.</p></div>
-︡883c64ad-49c7-4e2a-a192-bdaa20fb2be7︡
-︠860c360e-4481-4b64-a68e-93b3ed3e96a7︠
+︡3306f4cb-d7c7-4bf0-a8e7-4ed046e9b1a3︡
+︠6e7657b1-398f-403f-a1cd-80c601cea704︠
 A = matrix(QQ, 3, 4, [[-1,  1,  1,  1],
                       [ 2, -1, -2, -3],
                       [-2,  2,  1, -1]])
 A
-︡e2eee15f-0a38-4bfe-a057-eea9297670d2︡
-︠8b56a480-38a6-4066-af6b-65a1fdb63361︠
+︡b632d898-ac13-4c27-ab33-9b45246e3064︡
+︠51a9471e-0bb2-4f75-a628-9b4e1637468a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">Then use the <code class="code-inline tex2jax_ignore">.rref()</code> method to compute the reduced row-echelon form.</p></div>
-︡5fda57ee-8163-487a-ae71-ae65f52bb6e2︡
-︠7314d7cc-55ec-4873-a36b-409a69f94bf2︠
+︡bec570d9-ee59-4140-a6b3-e4f221858dc1︡
+︠8704d85b-1397-4dab-ae06-1fb12e2b4b81︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">1</span>.</h6>
+<div class="mathbook-content"><article class="exercise exercise-like" id="exercise-1"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
+</h6>
 <p id="p-3">Use a new cell, enter <code class="code-inline tex2jax_ignore">A.rref()</code>, and execute the cell.</p></article></div>
-︡e750c379-fdfe-4975-adbb-8fc192a9be5b︡
-︠14364f9c-99a8-4740-ac1b-7aa4c466e254︠
-︡d681dd07-aa04-4288-a25a-ed4810d77bad︡
-︠0848926a-904a-4463-ad98-775c06dee498︠
+︡d19d665b-27fb-4ec6-aaa7-1c6de8b140cc︡
+︠1aeb742d-f44e-403a-a6e5-ef14cfd8019d︠
+︡ea7d6f18-c0c1-4fc5-aa33-f1316f048161︡
+︠f4c72263-a347-4534-aad7-ec81df1e3909︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-4">Here is a larger example.</p></div>
-︡29072998-3288-4ddf-a0a8-820ee14bf309︡
-︠c23d9562-ea57-4324-a23f-bb1ba0dfbc2c︠
+︡b0e770ae-3427-4c7b-a028-8051230313c2︡
+︠d72bfac9-9feb-47b3-a2b6-b4705935c599︠
 B = matrix(QQ, [[ 0,  0, -1,  3,  3, -1,  2, -1],
                 [ 1, -5,  0, -4,  5, -2,  4,  4],
                 [-1,  5, -1,  7, -2,  2, -5, -7],
                 [-1,  5,  1,  1, -8,  3, -6, -3]])
 B
-︡6ee9b8f2-bdd1-4504-a937-8e3a9da7c63f︡
-︠2ae03a93-c50a-465b-abfe-28c6263dd031︠
+︡861b205e-afe8-4b63-ae8f-433b4857e1d8︡
+︠a5fb02b6-055f-4e15-a2fe-142506e5ec7c︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-2"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">2</span>.</h6>
+<div class="mathbook-content"><article class="exercise exercise-like" id="exercise-2"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
+</h6>
 <p id="p-5">As above, use a new cell to compute the reduced row-echelon form of <code class="code-inline tex2jax_ignore">B</code>.</p></article></div>
-︡f5bd6f7f-2453-4fb9-ab68-9916f3d30b33︡
-︠c3880f88-ead4-4dcf-a776-f1008f453506︠
-︡8da15a0d-3f80-436d-a3d4-ad6aeea23d74︡
-︠301d2783-4c3d-4c73-a9a0-e5d5fb39e766︠
+︡5124d269-97ff-47d0-adf0-b15e6654c413︡
+︠0652b252-bfab-4e19-aff9-fba591bf5737︠
+︡b4d0793c-bfc6-4aa8-a3a7-ca26fc8bbd2f︡
+︠5e33eac1-7803-4ebe-a6e9-eb3113dae981︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="conclusion" id="conclusion-1"><h5 class="heading"><span></span></h5></article></div>
-︡ba6d8941-c9df-46a6-a941-a368863cf236︡
-︠8f1ec980-b498-4403-ab97-d4a3c3a0f923︠
+︡8dfc0e6d-0e51-424c-a1ba-aa5db7182f2a︡
+︠1a7167fd-50ca-41ef-ad0b-8a5e8069889b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-6">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
-︡0a219eb1-f659-4fa9-a252-9274637037a5︡
-︠777cccb7-9b38-43f6-a71c-9d3939215885︠
+︡2b59cc1c-a6c7-41e6-a0b6-b30018182a0c︡
+︠ee3c49da-4f27-404b-aa79-660e79674e91︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡30dbc978-1134-4963-afd5-b73f06938eb0︡
+︡070434d1-e201-4a05-a5bc-f12f09971e6a︡
 

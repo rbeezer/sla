@@ -1,12 +1,12 @@
-︠266b28db-7e7a-4d4d-a4f7-f07783b3de17︠
+︠ecf4ccb0-c7d8-4088-ad01-981e4ff190e7︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡f4d5ffed-b6b3-4088-aed7-5c8d40104ee6︡
-︠5ea24923-6e92-41aa-a988-1e49b9ac9fa8︠
+︡7d37203d-005d-4866-a136-2df3b33b4db3︡
+︠4308a38e-19e6-477c-ae8f-4ad4e8714be0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content" style="display:none">\(
@@ -14,23 +14,23 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡506f2a95-e037-4251-adfa-518ab4360d5b︡
-︠5bbbbe64-4458-4c8d-ad6d-8be1695af675︠
+︡f340bf34-d4eb-4a53-a74b-7864c4c46104︡
+︠1f75f352-8276-4e2c-a190-d0934681ae3a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡2c0e8cce-0126-49ff-a7d5-550367dc1d29︡
-︠b1b0b073-7ed3-4394-a24b-766ad29c4238︠
+︡25aab9e0-c624-4d16-a920-a01436ab85ab︡
+︠517a51d0-2f14-4b86-aec8-8ef78af14374︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="VR"></section></div>
-︡ff9b05b7-8365-479f-abc3-74ade8f744a8︡
-︠da7758c1-f445-4abf-a96c-dd07befa63f0︠
+︡8d607b24-c54d-4af6-a0e2-8618e92ea722︡
+︠caf2b7ed-ca30-48df-aede-1642e3b11693︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡ccb440c0-1c45-42f1-a188-e65ed0ddb41b︡
-︠5d801c0e-c2a1-48c1-a9ea-1c07bd89b4dc︠
+︡85d88906-7c1a-4ca7-ac85-aabfca28b3f5︡
+︠68a403e1-a5db-4f95-a65e-c097f512ed6d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -41,108 +41,109 @@
 <div class="author-name">Robert Beezer</div>
 <div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-<div class="date">Fall 2019</div>
+<div class="date">Spring 2020</div>
 </div>
-︡f2a82c43-a154-43d0-a47f-e9be07c907dd︡
-︠4dfe52aa-55cb-49f8-aa40-929519dd2d50︠
+︡2c5d1600-7a54-464e-acb4-b754f5a178fd︡
+︠62abfc20-c9b1-4e16-ade2-19a7eac8b31b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-1"><h6 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Vector Representations</span>
 </h6></section></div>
-︡b9db83d3-e38a-4e29-a7ce-7600c1a9fd74︡
-︠d2dbe6fc-adf2-47e5-a152-fc80d527f147︠
+︡17db3c86-d4f8-46ea-adb8-0d1b4050804a︡
+︠b5191559-b2eb-4b49-a525-d22fd7f3784b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">It is easy to form vector representations of vectors in \(\mathbb{C}^n\text{.}\)</p></div>
-︡52a3e8ad-44b3-4631-ac57-e54751c89c9e︡
-︠3f0d3f5d-da18-4d8c-af51-736bacc6563e︠
+︡201492ae-b519-41de-ab21-0042f1af5179︡
+︠da9fe218-1de2-470f-a5b2-7b2be2d812a9︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">We get a nonstandard basis quickly from the columns of a nonsingular matrix.  The keyword <code class="code-inline tex2jax_ignore">algorithm='unimodular'</code> requests a matrix with determinant \(1\text{.}\)</p></div>
-︡46e53149-f131-491a-a51f-782e4ca13076︡
-︠ebdd01e4-ae6d-4fff-a950-8d9abd76eb66︠
+︡b8347269-b76a-4ada-aa35-ca1e5f027242︡
+︠b0af422a-bd11-48ce-a262-82d91291513a︠
 n = 6
 A = random_matrix(QQ, n, algorithm='unimodular', upper_bound=9)
 A
-︡151f2201-6afc-48ec-a772-80f2bbf21ed7︡
-︠4fd6ef8e-0f9f-4c1e-a996-b26b41744832︠
+︡3faefe01-9bfb-4d77-acad-e30bc1e52376︡
+︠ea688679-7047-4c1e-a3e9-1cc18926f5a6︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-3">The columns of <code class="code-inline tex2jax_ignore">A</code> become the “user basis” of a vector space.</p></div>
-︡082de1d7-0d69-4d3b-abc5-18874d9b1e45︡
-︠15d33c50-45db-4fae-ab6a-1739e7683877︠
+︡c8131a99-30a8-486a-a698-0b4dcd6f365d︡
+︠c16e578e-0bfa-4471-aeeb-7e6cb3922c87︠
 B = A.columns()
 V = (QQ^n).subspace_with_basis(B)
 V
-︡d8dbc081-0c6d-4768-a61e-1354c4c3dfb4︡
-︠79c4584d-a591-4217-ab79-a8c0d959c298︠
+︡a5903e8b-d97c-43b3-a4a2-f106ec97ec47︡
+︠4eceffc7-ba02-464e-aa88-c8adf8a80844︠
 u = random_vector(QQ, n)
 u
-︡711466da-47fe-482f-a0e7-99059eee8b11︡
-︠3935d9cb-4023-4eb6-aeb5-65e7b75a6d58︠
+︡092c71c3-97e9-494d-a7f6-0cfb9e4374cb︡
+︠8c4b9bd5-f6cd-4062-ade2-4fe3a71eb837︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-4">Now, we get values of the invertible linear transformation \(\rho_B\) with the Sage method <code class="code-inline tex2jax_ignore">.coordinate_vector()</code> method of the vector space.</p></div>
-︡f812dfca-a0ad-4399-aa85-ffad665c0b95︡
-︠49e5cc58-6080-4eca-a863-d62838e95e5e︠
+︡4b497d55-25bf-43c5-a593-8d361dd2c8bf︡
+︠00b5922f-7543-447f-aad9-e571b8e9bb26︠
 c = V.coordinate_vector(u)
 c
-︡3982f4e5-c454-4540-afc7-29d521e0a3ff︡
-︠239a58e3-da73-4fc7-a0c3-7fd54f63016f︠
+︡a365807b-ff04-435c-a3fa-cdf4fbce5798︡
+︠e3b58360-e60f-4a44-a673-041081c5f2d8︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-5">The inverse linear transformation is also available as the <code class="code-inline tex2jax_ignore">.linear_combination_of_basis()</code> method of the vector space.</p></div>
-︡183a2831-c1c3-44b0-acbd-f3cc81cf4c1b︡
-︠c23fd680-7423-486f-a83b-62f2f74c7998︠
+︡acc51598-68e7-479b-acf2-0071103e5202︡
+︠bae7f0c9-8317-4a90-a55f-850f72fa05c0︠
 round_trip = V.linear_combination_of_basis(c)
 round_trip
-︡45b858fe-962b-4aa2-a935-5984c7c133ac︡
-︠cf2788f7-69e9-4484-a728-c825ced8f0ca︠
+︡87a6fa7c-30f4-47ad-a7f3-78887fa79ac6︡
+︠b5e5bd03-a339-48a3-a623-99b2131bbb67︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-6">And the automated check:</p></div>
-︡d8a0029f-9087-49d0-ae42-61a87774075c︡
-︠135b35ed-57de-4f6c-af41-2a3d3a4ae413︠
+︡11df78d7-c7bf-413a-a49c-835457773229︡
+︠a3b73200-ac85-4c98-a7e2-3669ab022445︠
 u == round_trip
-︡1367facd-7244-404b-ac3f-e5a13eb789ca︡
-︠ced35dd2-a44f-4953-a427-30ce10cc7564︠
+︡df986cb6-d535-4aff-a26d-5a4b4f752a96︡
+︠f668fc5a-32f6-4896-a8cd-628becb51dfa︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-7">Notice that this is something we could do “by hand” with just reduced row-echelon form. The coordinitization of <code class="code-inline tex2jax_ignore">u</code> relative to the basis <code class="code-inline tex2jax_ignore">B</code> is just a (unique) solution to a linear system.</p></div>
-︡f33d69b4-b58f-4525-a967-0a7d98d545ba︡
-︠abdd9464-82a1-42f3-a79a-e9456ee4429f︠
+︡4f1a716c-bafb-4185-a802-564e12ac8ca8︡
+︠7e798faf-c5ab-41b4-a634-89bc7df2a7f4︠
 aug = column_matrix(B + [u])
 aug.rref()
-︡d3ab1408-88a3-49c3-ad3c-725c7ca50e8a︡
-︠e6d82fd2-75b1-495e-ac22-8a4e7cb12c0b︠
+︡f7370c6a-c206-4e11-a275-70e3d60c9b48︡
+︠04f3bff2-ab4a-423c-a354-8d4701d0e6c2︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-8">The following stanza will always return <code class="code-inline tex2jax_ignore">True</code> as we “coordinatize” and then use the coordinates to form a linear combination of the basis.</p></div>
-︡6e247434-7ba2-4d37-abfa-d8527ce2d1ee︡
-︠c4ce933d-7a82-4d55-a515-ffd414007e15︠
+︡fc6ef2ef-49b9-44ec-a012-4af92fbf096c︡
+︠c5834853-8ac4-4302-a004-25f2f11a1248︠
 w = random_vector(QQ, n)
 x = V.coordinate_vector(w)
 y = V.linear_combination_of_basis(x)
 y == w
-︡cea9c4cf-14a9-467f-acc1-1b0f02412b04︡
-︠1d2b6f02-e178-4be0-abac-cc8db9f0a2bb︠
+︡e0e73209-5932-4d72-a073-4a94c85e3707︡
+︠ff8d7b07-5618-48e0-abf8-e4378f0ee35e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-2"><h6 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Abstract Vector Spaces</span>
 </h6></section></div>
-︡7c898e88-17a8-4056-a100-ddd6a8f98ac4︡
-︠631ecac5-2ddd-45e2-acf3-dc0a3a234bd0︠
+︡b4e315f2-d48e-4d0d-aebc-6a092992786c︡
+︠710552a4-588d-466e-a34a-0b4156ae916f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-9">Sage does not implement abstract vector spaces.  It presumes we have “nice” standard bases available and can apply an intermediate coordinatization ourselves.</p></div>
-︡043120be-6ec4-4b22-aee1-1be261d95143︡
-︠24766971-8ef4-42b7-a495-6b14d76b0bd5︠
+︡ed1e361e-a763-44da-a31e-d1a22f9de2f5︡
+︠2d23c69e-445a-4897-a2c8-1aaccdb5a979︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">1</span>.</h6>
+<div class="mathbook-content"><article class="exercise exercise-like" id="exercise-1"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
+</h6>
 <p id="p-10">In \(P_3\text{,}\) the vector space of polynomials with degree at most \(3\text{,}\) find the vector representation of \(p = x^{3} + x^{2} + \frac{1}{2} \, x - \frac{33}{14}\) relative to the basis for \(P_3\text{:}\)</p>
 <div class="displaymath">
 \begin{align*}
@@ -154,62 +155,62 @@ B = \{&amp;
 \end{align*}
 </div>
 <p id="p-11">Hint:  Coordinatize with respect to the basis \(\left\{1, x, x^2, x^3\right\}\text{.}\)</p></article></div>
-︡efa561fe-27c2-4cee-a337-993be035b418︡
-︠a0846f55-d8c9-4b88-a9cc-15541454a18b︠
+︡ea61d277-0cc5-464f-ae7c-796252f17aaf︡
+︠39aab7d2-fefc-4460-a348-0c26e88e9084︠
 A = matrix(QQ, [[1, -2, 2, -2], [1, -1, 1, 1], [2, -3, 4, 3], [5, -8, 7, -7]])
 B = A.columns()
 B
-︡a2b2712d-7f53-491c-a1b9-dce31f86428c︡
-︠e2fa56c7-3379-460a-a326-c03b44bcbff4︠
+︡0cda7924-c12b-4d71-aea6-7a2911290ba8︡
+︠fa5d4c67-0283-4d6a-af55-5c086298b946︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-12"><code class="code-inline tex2jax_ignore">B</code> is a basis, since <code class="code-inline tex2jax_ignore">A</code> is nonsingular.</p></div>
-︡be6a8c14-347b-4eeb-a91e-fee29275f34f︡
-︠70deb5ac-9e11-49ff-a581-38f2a952f453︠
+︡24071548-d5b5-489c-a381-9dea54cfd891︡
+︠ec5f4758-02db-4864-a49d-53a4d0890629︠
 A.is_singular()
-︡3d40bf65-cf3d-41cc-a015-15d178bcaa10︡
-︠d4d1581b-ddb0-4acd-a7df-de4a0b2b8d69︠
+︡805ef965-267f-42f5-a64f-493fd0f6a0dc︡
+︠95df4d9a-2b19-4a39-a0ad-0e73d54dced9︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-13">Now coordinatize <code class="code-inline tex2jax_ignore">p</code>.</p></div>
-︡d4ea6327-f04b-40f8-ae75-d441e4d105e6︡
-︠fcad6019-719c-4cac-a483-957d66248296︠
+︡b7f8645f-e7a0-4153-ab6d-96b0a86e62c3︡
+︠c8ac0006-0fdb-4ff1-a2b7-04eb484b6ad3︠
 p = vector(QQ, [-33/14, 1/2, 1, 1])
 p
-︡89336a38-3b9d-4867-a4a0-745f2c540d6a︡
-︠4f482a26-362d-43a3-abfd-b72164dc9eaf︠
+︡dab86b97-196f-456f-a69a-d9fc5349eb3c︡
+︠e1699d52-46cb-4612-a68b-15502a463317︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-14">We'll get a coordinatization old-style.</p></div>
-︡9ffd7289-8bfb-4936-ace5-aaccb3190a8a︡
-︠a299f1b8-a44a-4fdd-a59c-b37703b2dcc5︠
+︡ff86923e-5851-44c3-a62b-23183337a6ab︡
+︠eab70494-3fd8-4124-a487-0ba24e576fe0︠
 aug = column_matrix(B + [p])
 r = aug.rref()
 r
-︡6680071b-0c04-46f1-a45b-10f88fb4290e︡
-︠e75675e9-1e62-43d1-a417-037fc0f84114︠
+︡bcb63cbd-1fce-47e0-ac29-335e59da03ae︡
+︠36afdeb8-cc79-4af7-abca-5fdae23bd3e8︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-15">Let's check to see if this is right and we can recover <code class="code-inline tex2jax_ignore">p</code>.</p></div>
-︡00c573b5-dd43-4f71-a1c3-8c60c20ba5dc︡
-︠adc633af-97ce-4bb5-acd2-f6f66c9784c5︠
+︡22ed1bbc-489c-414b-a8f7-3470f6321160︡
+︠a8395441-199a-45bf-a14e-9731827c59ec︠
 soln = r.column(4)
 round_trip = sum([soln[i]*B[i] for i in range(4)])
 round_trip, round_trip == p
-︡073cd707-69f2-47be-ad8c-082fe8b804cd︡
-︠9c4d9149-9a38-4da4-ac8c-885a8434c388︠
+︡a84d1a16-c3f6-4e51-ad65-c0d015382820︡
+︠4c899a4b-00e0-46d5-a8ac-d7cb7d0a6228︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="conclusion" id="conclusion-1"><h5 class="heading"><span></span></h5></article></div>
-︡0254fe64-8feb-48c6-ac8e-917ebf2f3f2c︡
-︠73ed8ebf-24e1-407d-a636-5d7dc3ce20d5︠
+︡374b1d55-8667-46c4-ac4f-8264dd2e781a︡
+︠04250336-8cce-433b-a8f0-783ec1be0371︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-16">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
-︡c58b219e-0b2f-4d36-aa9a-0f88c4b93d90︡
-︠25533ef0-c01f-47be-a62b-b71cb7384566︠
+︡e760d630-ccc9-4bfc-a78c-804be1da0dd7︡
+︠0d0a7b46-c1ce-459f-ac32-ce2d264c2c2c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡f9b5cf3c-ffd0-4f4b-adbe-975a312796d0︡
+︡7298d141-7024-4f8e-af41-1004e2b2fef1︡
 

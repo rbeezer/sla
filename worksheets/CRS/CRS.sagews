@@ -1,12 +1,12 @@
-︠bad534cf-6748-4575-a109-c11ca732087d︠
+︠8910220c-5f45-4121-a8f4-3e13ca72000a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡a3789bc5-a2cf-4b16-a137-a08bc32f638e︡
-︠0218aa37-0eac-4e6e-a571-c115dd8fde25︠
+︡b93d96fa-2597-4ab9-ac48-0772a4c26d27︡
+︠7e0bba2a-540f-4bba-a47e-d76590962035︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content" style="display:none">\(
@@ -14,23 +14,23 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡c38ec390-b9f5-46db-a423-6f47415c13b4︡
-︠88816450-50a4-4502-a155-4b4938b94dc0︠
+︡7b387e29-98d9-4794-a2ec-1c372d8c3bc6︡
+︠0423c92f-2c70-46fa-ab18-725b97823cd0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡158a6ffb-f4ca-491a-ab30-08b51fdd82a5︡
-︠38b1865f-6093-4f1f-ac35-9e512ca563ab︠
+︡3d4510e4-0107-4167-ac28-49aa441d6594︡
+︠1ae8577b-8e4f-4372-a2d1-39cd689b06b6︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="CRS"></section></div>
-︡3d4ffd54-cb55-4f57-af2a-4b9acb771eac︡
-︠ae9ee8b3-d7f2-4df7-a5e9-f359e2559634︠
+︡9d1756fd-17c6-47fe-a92b-b5473b0c7032︡
+︠6c0846f3-30b0-4720-a6c2-1776fb2f890b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡2d3cb157-53f4-45c4-ad12-715ca3ef986c︡
-︠d990651b-c6ec-4b48-af2a-29c866c565dd︠
+︡c77cfc3e-07fc-477f-a7db-af3252d82522︡
+︠0e98b95e-8557-41df-a05c-bfbf111e934b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -41,103 +41,105 @@
 <div class="author-name">Robert Beezer</div>
 <div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-<div class="date">Fall 2019</div>
+<div class="date">Spring 2020</div>
 </div>
-︡1b6bbc0d-8d47-4afb-a2fd-d279ad0626c0︡
-︠4dba977a-4088-4728-a258-f2a7b44cb727︠
+︡65a0e6a3-528b-4aa8-a9ad-66d15e37dcb2︡
+︠8172259c-9ee1-499b-a126-f8cca2bd99a5︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-1"><h6 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Column and Row Spaces</span>
 </h6></section></div>
-︡87542fb9-9f91-4804-a039-83b3a77f3366︡
-︠bfd13f0e-99e3-4b64-af68-8fb426ca5fdc︠
+︡b373699f-52d4-436d-af80-689254512fad︡
+︠460b9653-6b53-4f9a-ad93-efb720b71e6c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">This is an illustration of Theorem CSCS (and the utility of linearly independent spanning sets). <code class="code-inline tex2jax_ignore">A</code> is a \(5\times 7\) matrix.</p></div>
-︡69b4ae4b-cd5b-4101-a607-e97ad9093591︡
-︠1fac35b8-0865-4376-a4e6-ccf36dc660c0︠
+︡bb3b6d2c-0875-4c6e-a747-a266a9760947︡
+︠5f29a96d-565d-4b23-aa98-23a8a511b2af︠
 A = matrix(QQ, [[ 1, -1, -2,  0,  0, -2, 0],
                 [-4,  5,  6, -3, -1,  5, 0],
                 [-3, -2, -3,  1, -2, -2, 5],
                 [-7,  3,  3, -2, -3,  3, 5],
                 [-1, -5, -5,  4, -1, -3, 5]])
 A
-︡2dfca325-c2d2-4809-ae58-51445b12282e︡
-︠84b816c3-b869-4afa-a4ef-c31186c98e2a︠
+︡a0ed997f-7d6c-4a2e-adc8-5ec0765971c2︡
+︠063f3c9a-c072-4d15-acf1-4500687c2ede︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-2">And its column space:</p></div>
-︡daf930ff-4b7b-441a-af68-e2c03460eef0︡
-︠9cb95ea5-de05-4a57-a54d-e30a33ea4c93︠
+︡1d44d816-3d7a-404c-a50c-7418571c43b1︡
+︠1cf61ce2-310a-4c0f-a86f-4e4679e862b1︠
 A.column_space()
-︡c208c666-b45c-49f2-a047-d2adde1b8681︡
-︠954ad003-7c7c-481c-ab11-2f4dd1bfd355︠
+︡3ce22ff1-2222-4de3-ac7a-cc8020a18034︡
+︠1710a4f9-51c8-44a7-a77e-13ba3daee3e2︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-3">Grab the elements of a linearly independent spanning set.</p></div>
-︡5fa998aa-c163-4df5-aaa6-bc6f93152e98︡
-︠4e7f8172-b332-4711-accc-379973c98f71︠
+︡709803d0-d22a-4b64-a2db-1ffc9294087f︡
+︠aff48085-0572-4028-a456-065f2f2c334a︠
 S = A.column_space().basis()
 S
-︡8c00b812-bd6e-40d0-a2ac-ed476cb3532d︡
-︠5b95b4dc-79ad-47ab-a8c5-5b29396ecb2f︠
+︡2f92322c-721f-4422-ad67-37d97089ccd1︡
+︠6f002424-0a72-49b4-ab9b-2d307a0f3cb0︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-1"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">1</span>.</h6>
+<div class="mathbook-content"><article class="exercise exercise-like" id="exercise-1"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
+</h6>
 <p id="p-4">Use the cells below to make a linear combination of the three vectors of the column space provided in <code class="code-inline tex2jax_ignore">S</code>.  Of course, this will also be a column space vector.  As such, we can use it as the vector of constants in a linear system of equations, and the system will be guaranteed to be consistent.</p></article></div>
-︡87a1c56a-2e3c-4cb7-a744-daff429a1553︡
-︠4daef746-2646-4301-ab76-f50f542ee333︠
+︡e20e3236-740e-46aa-ab53-771a88488854︡
+︠937a2ad5-1492-420c-adc2-13a2d2a2b3a0︠
 b = *S[0] + *S[1] + *S[2]
 b
-︡6811618b-7b2b-415b-a303-908afde1bd4f︡
-︠1b73ce45-9b0b-4611-a242-5e2e81c73848︠
+︡744ee69b-cbf5-4d26-aaf3-d167349e6411︡
+︠595973f1-fbce-41a1-a851-b22296635d86︠
 P = A.augment(b, subdivide=True)
 P.rref()
-︡763f90dd-5785-43f7-a51c-77a963b2afbf︡
-︠735a2ea0-c084-45b3-ad05-98c4237d51d1︠
-︡0446e759-8190-46fc-aacd-f65ca8f15523︡
-︠737c953f-fc08-4d77-a914-71ade45e5b38︠
+︡fef47787-8734-465f-a7d4-996cb022470c︡
+︠efbe326c-ae3d-4393-a211-7bad76ea9219︠
+︡f08aecd5-873b-4575-a8a7-9124fabd4406︡
+︠df76a627-bbfe-4746-add0-4717b016e6be︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><article class="exercise-like" id="exercise-2"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">2</span>.</h6>
+<div class="mathbook-content"><article class="exercise exercise-like" id="exercise-2"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
+</h6>
 <p id="p-5">Repeat the exercise above, but with a slight variation to produce an inconsistent system.  Notice that the vectors of <code class="code-inline tex2jax_ignore">S</code> have a nice pattern of zeros and ones in several of the entries (three to be precise).  The scalars you choose for the linear combination will automatically become three entries of the vector.  What about the other entries?  I like to say they are “forced.”  Let's wiggle one of these forced entries just a little bit.  Such a vector will now leave the column space and when used as a vector of constants, will create an inconsistent system.</p></article></div>
-︡ebc575bb-5a75-424d-aaee-e6093fd8d341︡
-︠c2c883e3-e3d6-490a-a6a9-59f62250b23f︠
+︡c9e3f892-f4de-4353-aa20-a77ce3dfab65︡
+︠a2e86e00-0f5e-4e94-a136-1ed9acc7b732︠
 c = *S[0] + *S[1] + *S[2]
 c
-︡30208a36-e2ac-483c-a3a7-c00b63eb39e7︡
-︠927b2f56-6391-4f15-ac5f-41f4d68b1b40︠
+︡dd4b5ba5-cb51-4a3b-ae4e-56c3f7fceb31︡
+︠d0f2c4d7-a92f-4bc3-a6b7-51d14d83a7fd︠
 d = copy(c)
 d[4] = d[4]+1
 d
-︡3d2a85ae-c125-4227-a7ec-72e77bd06fba︡
-︠fe829173-f341-4974-a0f3-d65bed6bdcb9︠
+︡9ce8fadc-2764-4621-a98c-1ddff2d857f5︡
+︠482311ee-e054-44c7-a560-28e08d2568c5︠
 P = A.augment(d, subdivide=True)
 P.rref()
-︡7b80d115-5099-4221-a630-907fc5d31b0c︡
-︠477c74e8-a393-4dc5-ae38-ed95c6ba9c59︠
-︡8a107855-1f9b-4267-a85a-137b9415ea14︡
-︠3ae4b5d0-bf04-4a3a-a2bf-dc357d993834︠
+︡d1e04013-ef34-4481-abe8-b0091874edca︡
+︠3ac1a11c-40b7-45f0-a6be-e7ff00884651︠
+︡19cea7fc-34de-4c2e-ac8a-a71972afaf60︡
+︠079d6445-07ae-4660-a529-fd1078217d0e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-6">Moral of the Story: the elements of the column space are <em class="emphasis">exactly</em> those vectors of constants that lead to consistent systems.  It is easy, especially with a linearly independent spanning set for the column space, to make a vector of constants that yields an inconsistent system.</p></div>
-︡d6fbba19-bc8b-413e-ab6a-b36f8ed271bb︡
-︠68154d06-6b3e-4742-a608-0cb6c4596db2︠
+︡d156eca3-1bbb-4a22-ab74-462679eaa67b︡
+︠44dabc66-f82b-44cd-a684-bcbd2261d174︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="conclusion" id="conclusion-1"><h5 class="heading"><span></span></h5></article></div>
-︡81ba6f77-6d39-4cad-ae0d-7092756dfdaa︡
-︠f2bad2a4-902c-49f7-a7d7-448d7f3ec3c6︠
+︡cc99756d-b56e-40ab-ae13-2c0e93004e1c︡
+︠2e9c701e-ed45-4b50-a731-a5ea38e4822a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-7">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
-︡db9966b1-b52d-42cc-a93a-08f9678954c1︡
-︠2caa6195-d9a9-433b-aefe-e06a58936250︠
+︡f5891092-e802-4db7-ad2a-fd0d84568e9b︡
+︠5c1923a0-7a27-424e-a900-24acff10c856︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡87d2134b-9143-4b87-a667-548cfe591bb6︡
+︡ca2e451e-5898-40cc-af6c-081a409606f6︡
 

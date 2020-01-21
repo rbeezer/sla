@@ -23,7 +23,7 @@ MathJax.Hub.Config({
     jax: ["input/AsciiMath"],
     extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -48,19 +48,23 @@ MathJax.Hub.Config({
                            languages: ['sage'],
                            evalButtonText: 'Evaluate (Sage)'});
 });
-</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/features.css" rel="stylesheet" type="text/css">
 <script>var logged_in = false;
 var role = 'student';
 var guest_access = true;
 var login_required = false;
-var js_version = 0.12;
+var js_version = 0.13;
 </script>
 </head>
 <body class="mathbook-article">
@@ -93,15 +97,17 @@ var js_version = 0.12;
 <div class="author-name">Robert Beezer</div>
 <div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-<div class="date">Fall 2019</div></section><p id="p-1">First, a guaranteed nonsingular \(5\times 5\) matrix, created at random.</p>
+<div class="date">Spring 2020</div></section><p id="p-1">First, a guaranteed nonsingular \(5\times 5\) matrix, created at random.</p>
 <div class="sagecell-sage" id="sage-1"><script type="text/x-sage">A = random_matrix(QQ, 5, algorithm="unimodular", upper_bound=20)
 A
 </script></div>
-<article class="exercise-like" id="exercise-1"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">1</span>.</h6>
+<article class="exercise exercise-like" id="exercise-1"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
+</h6>
 <p id="p-2">Augment with the zero vector, using the matrix method <code class="code-inline tex2jax_ignore">.augment()</code> and the vector constructor <code class="code-inline tex2jax_ignore">zero_vector(QQ, 5)</code>.  Then row-reduce to use Definition NM.  Or instead, do not augment and apply Theorem NMRRI.</p></article><div class="sagecell-sage" id="sage-2"><script type="text/x-sage"></script></div>
-<article class="exercise-like" id="exercise-2"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">2</span>.</h6>
+<article class="exercise exercise-like" id="exercise-2"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
+</h6>
 <p id="p-3">Build some random vectors with <code class="code-inline tex2jax_ignore">random_vector(QQ, 5)</code>, augment the matrix and row-reduce.  There will always be a unique solution to the linear system represented by the augmented matrix.  This is Theorem NMUS.</p></article><div class="sagecell-sage" id="sage-3"><script type="text/x-sage"></script></div>
 <p id="p-4">Instead—cheap, easy and powerful:</p>
 <div class="sagecell-sage" id="sage-4"><script type="text/x-sage">A.is_singular()
@@ -114,11 +120,13 @@ A
                 [-2,  2,   0, -6,  4]])
 B
 </script></div>
-<article class="exercise-like" id="exercise-3"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">3</span>.</h6>
+<article class="exercise exercise-like" id="exercise-3"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span>
+</h6>
 <p id="p-6">Augment with the zero vector and row-reduce (Definition NM), or don't augment and row-reduce (Theorem NMRRI).]</p></article><div class="sagecell-sage" id="sage-6"><script type="text/x-sage"></script></div>
-<article class="exercise-like" id="exercise-4"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">4</span>.</h6>
+<article class="exercise exercise-like" id="exercise-4"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span>
+</h6>
 <p id="p-7">A random vector of constants will only rarely build a consistent system when paired with <code class="code-inline tex2jax_ignore">B</code>.  Try it.  But this is not a theorem, see the vector <code class="code-inline tex2jax_ignore">c</code> below.</p></article><div class="sagecell-sage" id="sage-7"><script type="text/x-sage"></script></div>
 <p id="p-8">Instead—cheap, easy and powerful:</p>
 <div class="sagecell-sage" id="sage-8"><script type="text/x-sage">B.is_singular()
@@ -127,15 +135,17 @@ B
 <div class="sagecell-sage" id="sage-9"><script type="text/x-sage">c = vector(QQ, [17,-15,-3,-5,-10])
 d = vector(QQ, [-3,1,-2,1,2])
 </script></div>
-<article class="exercise-like" id="exercise-5"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">5</span>.</h6>
+<article class="exercise exercise-like" id="exercise-5"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span>
+</h6>
 <p id="p-10">Which of these two column vectors will create a consistent system for this singular coefficient matrix? (Stay tuned.)</p></article><div class="sagecell-sage" id="sage-10"><script type="text/x-sage"></script></div>
 <p id="p-11">A null space is called a <dfn class="terminology">right kernel</dfn> in Sage.  It's description contains a lot of things we do not understand yet.</p>
 <div class="sagecell-sage" id="sage-11"><script type="text/x-sage">NS = B.right_kernel()
 NS
 </script></div>
-<article class="exercise-like" id="exercise-6"><h6 class="heading">
-<span class="type">Demonstration</span> <span class="codenumber">6</span>.</h6>
+<article class="exercise exercise-like" id="exercise-6"><h6 class="heading">
+<span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">6</span><span class="period">.</span>
+</h6>
 <p id="p-12">But we can test membership in the null space, which is the most basic property of a set.  Try <code class="code-inline tex2jax_ignore">u in NS</code> and then repeat with <code class="code-inline tex2jax_ignore">v</code>.</p></article><div class="sagecell-sage" id="sage-12"><script type="text/x-sage">u = vector(QQ, [0,0,3,4,6])
 </script></div>
 <div class="sagecell-sage" id="sage-13"><script type="text/x-sage"></script></div>
@@ -145,6 +155,6 @@ NS
 <section class="conclusion" id="conclusion-1"><p id="p-13">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.12/login.js"></script>
+<script src="https://pretextbook.org/js/0.13/login.js"></script>
 </body>
 </html>
