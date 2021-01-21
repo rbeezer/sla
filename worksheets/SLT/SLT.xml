@@ -62,7 +62,7 @@
         </section>
 
         <section>
-            <title>Pre-Images</title>
+            <title>Preimages</title>
 
             <exercise>
                 <statement>
@@ -106,7 +106,7 @@
                 <statement>
                 <p>Elements outside the range (image) will have empty preimages.  We mildly <q>wreck</q> an element of the range.</p>
 
-                <p>With two initial entries determined by the zeros and ones in the basis vectors, the third entry must be determined, so we can <q>twiddle</q> it just a bit to obtain a vector of the codomain that lies outside the range.  We will ask Sage for a pre-image representative anyway and see what happens.</p>
+                <p>With two initial entries determined by the zeros and ones in the basis vectors, the third entry must be determined, so we can <q>twiddle</q> it just a bit to obtain a vector of the codomain that lies outside the range.  We will ask Sage for a preimage representative anyway and see what happens.</p>
                 </statement>
             </exercise>
 
