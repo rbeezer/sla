@@ -1,233 +1,233 @@
-︠fe9f8912-389d-40c4-a241-936f3824a7e0︠
+︠db22de53-ef71-40ba-add7-02268c6bfc82︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡7ef0d79e-ad64-4a71-af96-03972df41ac0︡
-︠a3e93b1d-9cb0-4157-a251-8542c7fcc168︠
+︡36d58b3d-e1d6-43e2-adbf-5b272a49635f︡
+︠5952edd2-bc48-4276-a551-4ad72016989f︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><div class="hidden-content" style="display:none">\(
+<div class="mathbook-content"><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡11bfbfad-d498-44ad-acd3-d681958914a8︡
-︠cca8c577-24bc-4c07-aac5-d9b6b5b4ed99︠
+︡7f9c28a0-a5ce-4df6-a44b-59530732edb7︡
+︠d276f9e9-99e6-48c6-ae0b-954f957c85a3︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡6660e265-98a5-4566-ad12-2ecd5830c1e5︡
-︠d6a6bfbd-4b6e-4471-a47f-f0694e28628b︠
+︡d754e4ed-d76c-4ee8-a4d8-f6e4679d412f︡
+︠995a9933-f641-45a9-a895-a3401a965a7e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="PDM"></section></div>
-︡261ccdb8-b031-4e88-afd0-fc066448dab6︡
-︠6dc89965-2156-433e-ac3c-c38d9e1d7f83︠
+︡e084b1ee-4d59-4ea4-a73e-de12e3c7a221︡
+︠01185da3-cf11-48fb-ac7e-a5cc7bf43965︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡5f027abd-fdf4-4328-a2ec-ebf7886a6e9f︡
-︠1ee206cc-3c93-41d5-aa04-6ef667fc16ab︠
+︡b77dfca9-0681-4711-a3d9-18ee46a4aee1︡
+︠498b6881-287b-49ec-ab2a-4423279dc4bb︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
-<h2 class="heading">
+<h2 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="title">Sage and Linear Algebra Worksheet:</span> <span class="subtitle">FCLA Section PDM</span>
 </h2>
-<div class="author">
+<div xmlns:svg="http://www.w3.org/2000/svg" class="author">
 <div class="author-name">Robert Beezer</div>
 <div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-<div class="date">Spring 2020</div>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="date">Spring 2021</div>
 </div>
-︡5b94eaaa-6d60-417e-a62e-b8cbf23ee549︡
-︠095ae348-eb64-4b7c-a9ee-7974467856d9︠
+︡5f4dbb63-c8b4-4353-af05-a59d8c419155︡
+︠cb5190df-397f-4da4-a0a5-64af13c6558a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-1"><h6 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">1</span> <span class="title">LU Decomposition, Triangular Form</span>
+<span xmlns:svg="http://www.w3.org/2000/svg" class="type">Section</span> <span xmlns:svg="http://www.w3.org/2000/svg" class="codenumber">1</span> <span xmlns:svg="http://www.w3.org/2000/svg" class="title">LU Decomposition, Triangular Form</span>
 </h6></section></div>
-︡fd35718c-967f-4b37-a8d5-75ee9351ba79︡
-︠4767ce94-a2b1-4265-a9e2-f57e412a2e5a︠
+︡b4606f13-f5d6-44a1-a9bc-e21913cda132︡
+︠cf730d21-116e-48b9-aa45-7278c9b965ba︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-1">This is a topic not covered in our text.  You <em class="emphasis">can</em> find a discussion in <span class="booktitle">A Second Course in Linear Algebra</span> at <a class="external" href="http://linear.ups.edu/scla/html/index.html" target="_blank"><code class="code-inline tex2jax_ignore">http://linear.ups.edu/scla/html/index.html</code></a>.</p></div>
-︡791d1dba-26dd-47f3-ad92-f8876d887b6d︡
-︠5e66b747-26ef-446f-a838-a213980218d8︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-1">This is a topic not covered in our text.  You <em class="emphasis">can</em> find a discussion in <span class="booktitle">A Second Course in Linear Algebra</span> at <a class="external" href="http://linear.ups.edu/scla/html/index.html" target="_blank"><code class="code-inline tex2jax_ignore">http://linear.ups.edu/scla/html/index.html</code></a>.</p></div>
+︡8790a9ed-bff1-4e8c-a721-da3420de9444︡
+︠ecc8d71b-5da4-4e8d-ab00-cda02c1fbb4f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <p id="p-2">Our goal is to row-reduce a matrix with elementary matrices, track the changes, and arrive at an expression for a square matrix \(A\) as a product of a lower-triangular matrix, \(L\text{,}\) and an upper-triangular matrix, \(U\text{,}\) that is</p>
-<div class="displaymath">
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
 A=LU
 \end{equation*}
 </div>
-<p data-braille="continuation">the so-called <dfn class="terminology">LU decomposition</dfn>.  I sometimes prefer to call it <dfn class="terminology">triangular form</dfn>.</p>
+<p class="continuation">the so-called <dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">LU decomposition</dfn>.  I sometimes prefer to call it <dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">triangular form</dfn>.</p>
 </div>
-︡636ca24e-a658-459e-a411-db4efe70089e︡
-︠1f18bca0-a56f-4dc8-ac09-de52d50451de︠
+︡f3ccb93d-59af-4e98-ab59-b26528248efd︡
+︠ee0abb4f-9984-496d-a213-bd5138a6c34b︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-3">There are no exercises in this worksheet, but instead there is a careful and detailed exposition of using elementary matrices (row operations) to arrive at a <dfn class="terminology">matrix decomposition</dfn>.  There are many kinds of matrix decompositions, such as the <dfn class="terminology">singular value decomposition</dfn> (SVD).  Five or six such decompositions form a central part of the linear algebra canon.  Again, see <span class="booktitle">A Second Course in Linear Algebra</span> for details on these.</p></div>
-︡0fd279e1-986f-484c-a10d-beb10861db3b︡
-︠a4b76204-49db-496f-a570-32ee4f7a1555︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-3">There are no exercises in this worksheet, but instead there is a careful and detailed exposition of using elementary matrices (row operations) to arrive at a <dfn class="terminology">matrix decomposition</dfn>.  There are many kinds of matrix decompositions, such as the <dfn class="terminology">singular value decomposition</dfn> (SVD).  Five or six such decompositions form a central part of the linear algebra canon.  Again, see <span class="booktitle">A Second Course in Linear Algebra</span> for details on these.</p></div>
+︡02a1d5c2-56cd-4a54-a876-b340578fd531︡
+︠044a5102-3680-4425-a8bd-f60365af5749︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-4">We decompose a \(5\times 5\) matrix.  It is most natural to describe an LU decomposition of a square matrix, but the decomposition can be generalized to rectangular matrices.</p></div>
-︡1f9c70f7-4312-4eb9-ae11-f44e38ea2f08︡
-︠517eefed-7309-46f4-a0e6-1db5bed99f9a︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-4">We decompose a \(5\times 5\) matrix.  It is most natural to describe an LU decomposition of a square matrix, but the decomposition can be generalized to rectangular matrices.</p></div>
+︡95de02f1-437d-43b0-a94b-731868e1839d︡
+︠d32a12d0-424b-4f87-af1b-a9ec154f6c30︠
 A = matrix(QQ, [[-6, -10,  0, 10, 14],
                 [ 2,   3,  0, -4, -3],
                 [ 0,  -2, -3,  1,  8],
                 [ 5,   6, -3, -7, -3],
                 [-1,   1,  6, -1, -8]])
 A
-︡7ecfdafc-8608-4f68-a467-a846d04a9ea3︡
-︠82241ff1-c77c-4063-a9ba-0624cf41ae04︠
+︡a03cb4f8-53b9-4fa2-a6a4-15d01e55dc21︡
+︠cc1f9c38-58c0-42bb-a415-83a53c482244︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-5">Elementary matrices to “do” row operations in the first column.</p></div>
-︡1874d93d-a041-4c58-a0e3-aead26d78768︡
-︠c813cfc0-c601-48d6-a0d4-482e5552dd93︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-5">Elementary matrices to “do” row operations in the first column.</p></div>
+︡30150b23-47c0-48ec-a42e-ab140415d372︡
+︠7a39f341-6892-4921-a564-30f45096569c︠
 actionA = elementary_matrix(QQ, 5, row1=1, row2=0, scale=-2)*elementary_matrix(QQ, 5, row1=3, row2=0, scale=-5)*elementary_matrix(QQ, 5, row1=4, row2=0, scale=1)*elementary_matrix(QQ, 5, row1=0, scale=-1/6)
 B = actionA*A
 B
-︡56b7a866-83d9-4456-ab64-fac2927e44be︡
-︠81449ecf-5532-4f78-a63e-a297429c0d1c︠
+︡817cb7f0-9593-4825-aa8b-ebcd01da8312︡
+︠0a376ff5-f8b8-4b4a-a1e2-cce9afb893bb︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-6">Now in second column, moving to <dfn class="terminology">row-echelon form</dfn> (i.e. <em class="emphasis">not</em> <dfn class="terminology">reduced row-echelon form</dfn>).</p></div>
-︡cad1e6fb-6519-4801-a064-f1788cb29b0a︡
-︠8c46d3dd-e32f-4da0-afb6-4a7c308e21a2︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-6">Now in second column, moving to <dfn class="terminology">row-echelon form</dfn> (i.e. <em class="emphasis">not</em> <dfn class="terminology">reduced row-echelon form</dfn>).</p></div>
+︡5b593b82-17bc-4f70-aa8f-d5bce6b9e5d9︡
+︠1346c824-a3c6-40cd-a175-04ac182c202f︠
 actionB = elementary_matrix(QQ, 5, row1=2, row2=1, scale=2)*elementary_matrix(QQ, 5, row1=3, row2=1, scale=7/3)*elementary_matrix(QQ, 5, row1=4, row2=1, scale=-8/3)*elementary_matrix(QQ, 5, row1=1, scale=-3)
 C = actionB*B
 C
-︡c2f18c45-a29d-4277-a273-9bd08110f329︡
-︠6fc60534-ad74-4aab-a2d2-56e3764874ca︠
+︡932eaf7c-4100-480c-a513-a184e9d06009︡
+︠0ad29720-4624-47a4-a3f6-7a80f6ac60d7︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-7">The “bottom” of the third column.</p></div>
-︡e39a9afc-eaa6-4e50-aa7e-dd4c1c364ba1︡
-︠594f3ea3-b8d5-4fcb-a073-e50312f59404︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-7">The “bottom” of the third column.</p></div>
+︡9d260be2-c28f-47fa-ab39-2b4ac306076d︡
+︠e0a07ac6-d986-48f6-a2ba-ce608249840f︠
 actionC = elementary_matrix(QQ, 5, row1=3, row2=2, scale=3)*elementary_matrix(QQ, 5, row1=4, row2=2, scale=-6)*elementary_matrix(QQ, 5, row1=2, scale=-1/3)
 D = actionC*C
 D
-︡56da6190-4482-4a8f-a586-87b9adc925d2︡
-︠9386de86-fcb8-4f60-aeb9-4400ebda5f03︠
+︡1e0cf77b-e546-4bd6-a1f2-cc02c9402c52︡
+︠c71c304b-c201-49ce-a0ee-2aa3c7c07fdd︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-8">And now the penultimate column.</p></div>
-︡296b04a8-b956-414d-a228-b7dc8c756c57︡
-︠f80631ae-a57f-4c94-a9b6-26e026cac361︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-8">And now the penultimate column.</p></div>
+︡1a42683b-30d4-4170-a07e-f98ad5196984︡
+︠6aead531-061e-4b35-ab4c-a363e38fdf96︠
 actionD = elementary_matrix(QQ, 5, row1=4, row2=3, scale=-2)*elementary_matrix(QQ, 5, row1=3, scale=1)
 E = actionD*D
 E
-︡a6abcdc7-c7c3-469c-ab37-26e06073b361︡
-︠518fc5d9-c909-4d72-aa25-24b0421c5cfb︠
+︡3f02ad7d-e840-46f3-acb7-85bf99219f12︡
+︠64266d4e-b36f-43df-a69a-e20a1944bd4c︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-9">And done.</p></div>
-︡e4c649b2-28b2-419a-a33c-951556772d31︡
-︠92669af4-d1c8-44e2-ae15-bbac0028846c︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-9">And done.</p></div>
+︡0a121805-6b8d-4aba-aa24-4075a9feeac2︡
+︠7cd9fe2f-48ac-4658-a1fa-64bd95784531︠
 actionE = elementary_matrix(QQ, 5, row1=4, scale=1)
 F = actionE*E
 F
-︡6fec5774-c469-4db7-afa8-55402504e994︡
-︠5033d9a4-d794-407f-a779-0ce4c1ad686f︠
+︡7bd55d47-c807-446c-ac8b-6ef1b9722c85︡
+︠d01b5689-e51e-4d65-a92d-59c5b7e3a103︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
-<p id="p-10">Clearly, <code class="code-inline tex2jax_ignore">F</code> has determinant 1, since it is an upper triangular matrix with diagonal entries equal to \(1\text{.}\)  By tracking the effect of the above manipulations (tantamount to performing row operations) we expect that</p>
-<div class="displaymath">
+<p id="p-10">Clearly, <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">F</code> has determinant 1, since it is an upper triangular matrix with diagonal entries equal to \(1\text{.}\)  By tracking the effect of the above manipulations (tantamount to performing row operations) we expect that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
 \det(A) = \left(\frac{1}{-1/6}\right)\left(\frac{1}{-3}\right)\left(\frac{1}{-1/3}\right)\left(\frac{1}{1}\right)\left(\frac{1}{1}\right)\det(F) = -6.
 \end{equation*}
 </div>
-<p data-braille="continuation">Let's check.</p>
+<p class="continuation">Let's check.</p>
 </div>
-︡dbf0fcaa-181b-4c12-ab89-4963e2480a07︡
-︠ad3ae279-c91e-44df-a788-1d2710a68b19︠
+︡6e3898f2-2d83-4c5a-a1fd-f47ba3397ea7︡
+︠11549fc8-2f6a-4320-ad4f-a341ee527c02︠
 A.determinant()
-︡2c75667e-f470-42cd-a236-b44dc6d7c52e︡
-︠f4a691c1-fc66-4c82-aab6-06b537b1e870︠
+︡31395c82-5b2c-455e-a622-5d6af4846007︡
+︠2385de25-1813-4468-a3db-628cc715b86b︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-11">Yep.  But it gets better.  <code class="code-inline tex2jax_ignore">F</code> is the product of the “action” matrices on the left of <code class="code-inline tex2jax_ignore">A</code>.</p></div>
-︡6651de2a-0166-482f-abda-1e0c344f538c︡
-︠4f390083-a841-4ed3-ad91-8af972dc23fa︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-11">Yep.  But it gets better.  <code class="code-inline tex2jax_ignore">F</code> is the product of the “action” matrices on the left of <code class="code-inline tex2jax_ignore">A</code>.</p></div>
+︡f8f8ec71-2894-4ceb-a528-18b95817ddf3︡
+︠9fc88a5f-b885-4c54-a7a6-0bfb5536c14c︠
 total_action = prod([actionE, actionD, actionC, actionB, actionA])
 total_action
-︡0394c945-dfd1-40cf-a4a8-5234bb7979d6︡
-︠3ead2777-c469-4676-a5c0-e1326fdd9476︠
+︡4dc164bc-474c-4d11-a19c-89885ed85a99︡
+︠7e63fc8b-8c3d-490f-aa19-7a2f28d002aa︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-12">Notice that the elementary matrices we used are all lower triangular (because we just formed zeros below the diagonal of the original matrix as we brought it to row-echelon form, and there were no row swaps).  Hence their product is again lower triangular.  Now check that we have the correct matrix.</p></div>
-︡bb4587c0-e944-43ac-a908-afad10cfe545︡
-︠cf015982-96bd-4be8-a779-028af9ac982d︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-12">Notice that the elementary matrices we used are all lower triangular (because we just formed zeros below the diagonal of the original matrix as we brought it to row-echelon form, and there were no row swaps).  Hence their product is again lower triangular.  Now check that we have the correct matrix.</p></div>
+︡c28258fe-37a6-4537-a4e9-d53056836961︡
+︠323c5954-79c2-4016-a764-03a440ad306a︠
 F == total_action * A
-︡efcf0289-42ff-40be-a836-138ad8485d17︡
-︠af77f797-0d90-4d9c-ac2f-243be03299fb︠
+︡2ad572fc-6653-4954-afda-4dee13fc03c6︡
+︠de0a48d3-44aa-4740-ac3d-68b56d869896︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-13">The “total action” matrix is a product of elementary matrices, which are individually nonsingular.  So their product is nonsingular.  Futhermore, the inverse is again lower triangular.</p></div>
-︡1aa8190a-108b-4155-ad27-c4c00a14dadc︡
-︠5e6068a6-2c7a-4790-ad62-537137b4b9f8︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-13">The “total action” matrix is a product of elementary matrices, which are individually nonsingular.  So their product is nonsingular.  Futhermore, the inverse is again lower triangular.</p></div>
+︡f6501a8f-ec38-47ad-a771-5d9130ec674f︡
+︠e36348dc-7b9b-4406-a18d-3dbceecda25f︠
 ta_inv = total_action.inverse()
 ta_inv
-︡557c5d40-47cc-4145-a21b-47fb83248ed7︡
-︠73ce02c5-21cf-4de4-a206-e4de0512a917︠
+︡23396714-39fc-444d-aa65-89335222fd54︡
+︠c7701e72-3bb3-4807-a5be-b37e6d080f55︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-14">We reach our goal by rearranging the equality above, writing <code class="code-inline tex2jax_ignore">A</code> as a product of a lower-triangular matrix with an upper-triangular matrix.</p></div>
-︡18bd6bf3-024c-421a-a64a-c2f91ff229c3︡
-︠1dbcb27a-58da-44fc-af60-a239c49b7b54︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-14">We reach our goal by rearranging the equality above, writing <code class="code-inline tex2jax_ignore">A</code> as a product of a lower-triangular matrix with an upper-triangular matrix.</p></div>
+︡42dc2ea9-1d5c-40dd-a838-6ebec2bdacd0︡
+︠113fd5d8-ff54-4b62-a8f5-153c40efd9ba︠
 A == ta_inv * F
-︡f61b3cda-7335-4e84-aa7b-a2deca356a1b︡
-︠e020b5c9-04d3-49bb-ae53-9057e11177c9︠
+︡adbdc82a-1297-475d-a9ed-ff32c72a7f42︡
+︠ae05bdee-7f11-4787-a425-215531c6c360︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-15">Yes!  So we have decomposed the original matrix (<code class="code-inline tex2jax_ignore">A</code>) into the product of a lower triangular matrix (inverse of the total action matrix) and an upper triangular matrix with all ones on the diagonal (<code class="code-inline tex2jax_ignore">F</code>, the original matrix in row-echelon form).</p></div>
-︡3b95b5b8-fbcc-4f68-ab4e-eee45d67fdfc︡
-︠63709264-a507-420d-abb2-9908e664e51e︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-15">Yes!  So we have decomposed the original matrix (<code class="code-inline tex2jax_ignore">A</code>) into the product of a lower triangular matrix (inverse of the total action matrix) and an upper triangular matrix with all ones on the diagonal (<code class="code-inline tex2jax_ignore">F</code>, the original matrix in row-echelon form).</p></div>
+︡60f76a45-9c4a-4eb3-a505-b3608a251f87︡
+︠0f8f6eab-3378-4e54-a2b5-768e719a6a9f︠
 A, ta_inv, F
-︡18198bbf-f650-4d80-ab3c-dd6e545c842a︡
-︠2324cb08-b0e0-40c8-a17c-d5934f79b0ed︠
+︡29fa9593-0d78-466e-ab89-1f0ae8b7222c︡
+︠1460ff69-377a-40d0-ae99-8a99471ff411︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-16">This decomposition (the <dfn class="terminology">LU decomposition</dfn>) can be useful for solving systems quickly.  You <dfn class="terminology">forward solve</dfn> with \(L\text{,}\) then <dfn class="terminology">back solve</dfn> with \(U\text{.}\)</p></div>
-︡a11d5e96-6465-4461-ad89-95e28220cd0a︡
-︠abbc81a1-706d-46b4-a88c-122f5a27be5b︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-16">This decomposition (the <dfn class="terminology">LU decomposition</dfn>) can be useful for solving systems quickly.  You <dfn class="terminology">forward solve</dfn> with \(L\text{,}\) then <dfn class="terminology">back solve</dfn> with \(U\text{.}\)</p></div>
+︡1367467b-0a27-4525-a61e-fa883c05cfae︡
+︠1b2836fb-2064-47b7-ad29-c134a71acea7︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-17">More specifically, suppose you want to solve \(A\mathbf{x}=\mathbf{b}\) for \(\mathbf{x}\text{,}\) and you have a decomposition \(A=LU\text{.}\)  First solve the intermediate system, \(L\mathbf{y}=\mathbf{b}\) for \(\mathbf{y}\text{,}\) which can be accomplished easily by determining the entries of \(\mathbf{y}\) in order, exploiting the lower triangular nature of \(L\text{.}\)  This is what is meant by the term <dfn class="terminology">forward solve</dfn>.</p></div>
-︡9f64cf56-1d77-4ad2-ae5b-b7ed7389b380︡
-︠f1065c5b-368a-4e38-a12e-dd5bbcf35b7e︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-17">More specifically, suppose you want to solve \(A\mathbf{x}=\mathbf{b}\) for \(\mathbf{x}\text{,}\) and you have a decomposition \(A=LU\text{.}\)  First solve the intermediate system, \(L\mathbf{y}=\mathbf{b}\) for \(\mathbf{y}\text{,}\) which can be accomplished easily by determining the entries of \(\mathbf{y}\) in order, exploiting the lower triangular nature of \(L\text{.}\)  This is what is meant by the term <dfn class="terminology">forward solve</dfn>.</p></div>
+︡cc2e5655-2758-4cd4-a4a6-d680b28dd4b8︡
+︠b74e6a5c-f744-4001-a44c-b2232e6bb3f6︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-18">With a solution for \(\mathbf{y}\text{,}\) form the system \(U\mathbf{x}=\mathbf{y}\text{.}\)  You can check that a solution, \(\mathbf{x}\text{,}\) to this system is also a solution to the original system \(A\mathbf{x}=\mathbf{b}\text{.}\)  Further, this solution can be found easily by determining the entries of \(\mathbf{x}\) in reverse order, exploiting the upper triangular nature of \(U\text{.}\)  This is what is meant by the term <dfn class="terminology">back solve</dfn>.</p></div>
-︡b6fcc592-1c99-468d-af9f-d7c237e2b4d2︡
-︠3992668f-89b2-432a-a014-febc1e401f5f︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-18">With a solution for \(\mathbf{y}\text{,}\) form the system \(U\mathbf{x}=\mathbf{y}\text{.}\)  You can check that a solution, \(\mathbf{x}\text{,}\) to this system is also a solution to the original system \(A\mathbf{x}=\mathbf{b}\text{.}\)  Further, this solution can be found easily by determining the entries of \(\mathbf{x}\) in reverse order, exploiting the upper triangular nature of \(U\text{.}\)  This is what is meant by the term <dfn class="terminology">back solve</dfn>.</p></div>
+︡bbe0a5a0-1a75-4e85-a0ca-c8cfbfd1a85a︡
+︠f06d102c-0468-4951-af5e-a266116e2177︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-19">We solve <em class="emphasis">two</em> simple systems, but only do half as many row-operations as if we went fully to reduced row-echelon form.  If you count the operations carefully, you will see that this is a big win, roughly reducing computation time by a factor of half for large systems.</p></div>
-︡289baf13-facb-4dfd-a80f-cfe8cf700805︡
-︠82d1d80f-bfa8-4a78-a8f8-8c86446b5645︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-19">We solve <em class="emphasis">two</em> simple systems, but only do half as many row-operations as if we went fully to reduced row-echelon form.  If you count the operations carefully, you will see that this is a big win, roughly reducing computation time by a factor of half for large systems.</p></div>
+︡b7814a27-73be-4c53-ad59-bfb16d3cc6d3︡
+︠e9a7bf1d-7913-47d8-abbe-56d183ec0a2d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="conclusion" id="conclusion-1"><h5 class="heading"><span></span></h5></article></div>
-︡bc79d51e-4dee-4596-ae15-7a1f064619d5︡
-︠e9152fa4-df2b-4e84-a466-9d0bd11183b5︠
+︡e179828a-0031-43be-ac7a-ac07d9bb6b69︡
+︠94a1e236-d371-45ac-a473-e20fad959f10︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-20">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
-︡89faf29a-6798-4271-a7c7-e55f12124950︡
-︠b4b1593b-fd49-4390-a961-c80965296eb4︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-20">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
+︡8b52c35f-a331-448c-a1c3-5b55a0335d26︡
+︠5f7a46f2-3daa-4a89-a2d6-acd9031a15c3︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡469f8e9c-99ad-43d7-a37d-5466dcc062e2︡
+︡513cc82c-b695-403e-aa6b-008ea91b321f︡
 

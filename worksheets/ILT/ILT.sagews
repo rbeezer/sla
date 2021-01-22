@@ -1,106 +1,106 @@
-︠1132b59e-7f86-4d96-a0cf-ca7498f1eb71︠
+︠f5924ade-2c76-47a9-aefe-d58fbcf8119b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡5939cee5-d645-4d1f-a31b-3e5a3f2201e8︡
-︠2325ce4b-3227-47f9-a63b-26980d73084e︠
+︡e817b529-446b-4ae6-a3c5-2aaaa669f8b8︡
+︠39150db2-6f6d-4b1b-a158-67212d896712︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><div class="hidden-content" style="display:none">\(
+<div class="mathbook-content"><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡1723cf11-a43d-4cbd-a520-047ac784a8df︡
-︠7e691382-4378-4134-ae86-f9a637ebc849︠
+︡05b2acf6-e655-4307-af2c-784a96720e91︡
+︠0a7cc28c-872d-4c6e-a350-0c9472ae5adf︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡8b7e481d-b612-4f26-a31f-91847cc589ec︡
-︠2544f196-eb8d-491f-ac2a-4743a5646727︠
+︡ce93a662-2ea5-4c7b-aab1-bbe4057a4c52︡
+︠dd9079f6-b2d8-4fa0-a343-e3f4f02b36cb︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="ILT"></section></div>
-︡04d48c61-25da-427b-a23d-c851b0624ca7︡
-︠4ac1e4e5-61a3-4bca-a7fe-5b6ac2b250f0︠
+︡7991a1aa-76c5-4ebf-aef3-2d62252516be︡
+︠238b43cf-d35a-4846-a835-b522758aa906︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡74a36984-ef59-4316-ae85-ce039d640c40︡
-︠cb46fa07-ff75-48a6-ae8f-35d4971fb1bf︠
+︡8290de3a-d1d2-4b67-a1ea-6a09c8e428e2︡
+︠f758727b-d4ca-4781-af9f-9f998617b309︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
-<h2 class="heading">
+<h2 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="title">Sage and Linear Algebra Worksheet:</span> <span class="subtitle">FCLA Section ILT</span>
 </h2>
-<div class="author">
+<div xmlns:svg="http://www.w3.org/2000/svg" class="author">
 <div class="author-name">Robert Beezer</div>
 <div class="author-info">Department of Mathematics and Computer Science<br>University of Puget Sound</div>
 </div>
-<div class="date">Spring 2020</div>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="date">Spring 2021</div>
 </div>
-︡17b6eb1e-30ea-4564-ac4c-c82acb1dace6︡
-︠c0e86c37-b689-40e0-a5a5-27d419f27af6︠
+︡6f0b78ef-4b41-46b9-a7a2-7411da7e1221︡
+︠c80d4852-7aeb-4b47-a4b2-7379443b35e6︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-1"><h6 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Injective Linear Transformations</span>
+<span xmlns:svg="http://www.w3.org/2000/svg" class="type">Section</span> <span xmlns:svg="http://www.w3.org/2000/svg" class="codenumber">1</span> <span xmlns:svg="http://www.w3.org/2000/svg" class="title">Injective Linear Transformations</span>
 </h6></section></div>
-︡1c6f4db8-57ed-41fb-a246-76d4beea1651︡
-︠c6d35201-a699-43a8-aecd-44419f07a1e0︠
+︡6af773fd-5773-4338-ab74-de748b9b6d05︡
+︠37f2e75e-4b6b-4f9e-a746-b2527de094ea︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-1">Two carefully-crafted linear transformations: <code class="code-inline tex2jax_ignore">T</code> is injective, <code class="code-inline tex2jax_ignore">S</code> is not.</p></div>
-︡2a6fec2f-ec57-4582-ae6f-bb30ccfc4ae2︡
-︠a0d00bd2-abff-4247-a53e-4fa8f65e3a82︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-1">Two carefully-crafted linear transformations: <code class="code-inline tex2jax_ignore">T</code> is injective, <code class="code-inline tex2jax_ignore">S</code> is not.</p></div>
+︡a1193009-f445-404e-afc3-685bbd99e2ec︡
+︠c8de11f2-ae7f-4373-a27f-5d7b9292c75a︠
 A = matrix(QQ, [[1, 2, 2], [3, 7, 6], [1, 2, 1], [2, 5, 7]])
 T = linear_transformation(QQ^3, QQ^4, A, side='right')
-︡c32a4351-50c4-40f9-a85d-79c12b879b12︡
-︠ee609a3f-b9f8-4ef8-a88d-5f6109c81642︠
+︡32211420-6ced-4b15-af4d-e9b6549e765d︡
+︠09f2a07d-0d9f-4b50-a144-e3e9a4e426a8︠
 T.is_injective()
-︡921f3a97-a509-4df9-a572-3c1ae13ba41e︡
-︠7b19a444-beac-487b-a2d3-4005ae7e912b︠
+︡3b13ec35-a424-44e9-a4fe-9e287dc62fcd︡
+︠70893667-b0be-440d-ae5c-dea072e49135︠
 T.kernel()
-︡09623167-6250-4fd8-abf6-e37f92d00722︡
-︠33ca5fbc-62fc-43e9-ab99-18d976b57bda︠
+︡eb5759db-09cc-481c-a501-2e0ce7fdc8ef︡
+︠ecb430d1-cdb8-494a-a59a-6b8687e84a03︠
 B = matrix(QQ, [[0, 1, -2], [-1, 1, 3], [-2, 5, 0], [0, 2, -4]])
 S = linear_transformation(QQ^3, QQ^4, B, side='right')
-︡d0eaa3a6-019f-4dce-a778-091e295ded8c︡
-︠76d5189b-fac8-4aa4-a81c-126208b56a2f︠
+︡aef63370-53d0-4c64-a6ce-12a99318b63b︡
+︠9ea94ecb-e2fb-43b2-a82e-6311db4e3f57︠
 S.is_injective()
-︡7a6407ca-3b40-44fa-a98b-59dbce474b27︡
-︠a911e29a-cc61-4ca0-a738-29205ee96358︠
+︡be567a44-6265-4da1-a023-e96fa3be2ee7︡
+︠696bfd64-2c69-4243-a345-63ed391e74d5︠
 K = S.kernel()
 K
-︡af2c10ea-ab71-4c3c-adb0-6d98ef6c8c0d︡
-︠5ad76f74-92f0-43c4-af9f-0fda8b9e82b8︠
+︡c3f2ff05-322a-4b4f-af84-4f73cbce9426︡
+︠aeaa0990-fd31-47e5-a6de-b2d269e3778a︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-2">We create two different inputs, which differ by a random vector from the kernel (which we hope is not simply the zero vector, a distinct possibility).  We always get the same output from <code class="code-inline tex2jax_ignore">S</code>, predictably.  If we try this with <code class="code-inline tex2jax_ignore">T</code> then the kernel vector is <em class="emphasis">always</em> the zero vector and the demonstration is very uninteresting.</p></div>
-︡002d89df-e61d-475a-ac54-b549fc48bcb6︡
-︠5b779006-fed1-4c46-a70b-bc0f60ca9774︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-2">We create two different inputs, which differ by a random vector from the kernel (which we hope is not simply the zero vector, a distinct possibility).  We always get the same output from <code class="code-inline tex2jax_ignore">S</code>, predictably.  If we try this with <code class="code-inline tex2jax_ignore">T</code> then the kernel vector is <em class="emphasis">always</em> the zero vector and the demonstration is very uninteresting.</p></div>
+︡e288d826-913c-42bb-a819-6db402de555e︡
+︠f417de0f-4a08-4633-a1b5-b22762940fa6︠
 z = K.random_element()
 u = random_vector(QQ, 3)
 w = u + z
 u, w, S(u), S(w), S(u) == S(w)
-︡edf64865-f54c-4610-ad91-84e945a10387︡
-︠8748d904-ff94-4c06-adef-f64d092aa2d3︠
+︡d9ae17c2-61c7-492a-ac46-10937f6046fe︡
+︠cd87b9e8-b598-4d2b-a7f0-e007477b7c17︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="conclusion" id="conclusion-1"><h5 class="heading"><span></span></h5></article></div>
-︡a6afe89f-c8f6-4db6-a385-27b65b086ab4︡
-︠d6a758ff-7c86-4252-a98a-eb292752fbca︠
+︡ae426fc4-78a1-4073-abf3-be3b682e3aa5︡
+︠14457a53-fdba-4ec1-a271-53f9e61145be︠
 %auto
 %html(hide=True)
-<div class="mathbook-content"><p id="p-3">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
-︡fa092622-5aee-4003-a39c-d77f1a76c629︡
-︠267a5c37-aeec-41df-a810-7b1009cdf56d︠
+<div class="mathbook-content"><p xmlns:svg="http://www.w3.org/2000/svg" id="p-3">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></div>
+︡ac3f1b97-e94a-4327-a45e-6a1630c510ac︡
+︠b2056abc-dea7-446f-a01a-1c5006570a36︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡19493a66-1150-4d7d-acff-d7bf7b84879f︡
+︡cf9c4f70-c4e6-4c3d-ab3e-55bb5b1b2256︡
 
