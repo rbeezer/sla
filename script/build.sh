@@ -60,8 +60,8 @@ echo "*******************"
 echo "Processing Overview"
 echo "*******************"
 # Overview HTML, LaTeX
-xsltproc -xinclude ${NODATE} ${MBX}/xsl/mathbook-html.xsl  ${ROOT}/worksheets/overview.xml
-xsltproc -xinclude  -o overview.tex ${NODATE} ${MBX}/xsl/mathbook-latex.xsl ${ROOT}/worksheets/overview.xml
+xsltproc -xinclude ${NODATE} ${MBX}/xsl/pretext-html.xsl  ${ROOT}/worksheets/overview.xml
+xsltproc -xinclude  -o overview.tex ${NODATE} ${MBX}/xsl/pretext-latex.xsl ${ROOT}/worksheets/overview.xml
 ${LATEX} overview.tex
 ${LATEX} overview.tex
 cp -a overview.html overview.pdf ${OUTPUT}
@@ -75,7 +75,7 @@ do
   # PDF, process twice with LaTeX
   ###############################
   xsltproc -stringparam numbering.theorems.level 0 ${NODATE} -xinclude \
-      -o ${SEC}.tex ${MBX}/xsl/mathbook-latex.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
+      -o ${SEC}.tex ${MBX}/xsl/pretext-latex.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
   ${LATEX} ${SEC}.tex
   ${LATEX} ${SEC}.tex
   ######
@@ -83,17 +83,17 @@ do
   ######
   xsltproc -stringparam numbering.theorems.level 0 -stringparam chunk.level 0 \
       -stringparam html.knowl.exercise.inline no ${NODATE} -xinclude \
-      ${MBX}/xsl/mathbook-html.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
+      ${MBX}/xsl/pretext-html.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
   ###############
   # SageMathCloud
   ###############
   xsltproc -stringparam numbering.theorems.level 0 -stringparam chunk.level 0 ${NODATE} -xinclude \
-      ${MBX}/xsl/mathbook-smc.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
+      ${MBX}/xsl/pretext-smc.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
   #########
   # Jupyter
   #########
   xsltproc -stringparam numbering.theorems.level 0 -stringparam chunk.level 0 ${NODATE} -xinclude \
-      ${MBX}/xsl/mathbook-jupyter.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
+      ${MBX}/xsl/pretext-jupyter.xsl ${ROOT}/worksheets/${SEC}/${SEC}.xml
   cp -a ${SEC}.pdf ${SEC}.html ${SEC}.sagews ${SEC}.ipynb ${OUTPUT}/${SEC}
 done
 
