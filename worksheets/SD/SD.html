@@ -86,7 +86,8 @@ MathJax.Hub.Config({
 <li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
 <li class="link"><a href="SD.html#section-1" data-scroll="section-1"><span class="codenumber">1</span> <span class="title">Similarity</span></a></li>
 <li class="link"><a href="SD.html#section-2" data-scroll="section-2"><span class="codenumber">2</span> <span class="title">Diagonalization</span></a></li>
-<li class="link"><a href="SD.html#section-3" data-scroll="section-3"><span class="codenumber">3</span> <span class="title">Nearly Diagonalizable</span></a></li>
+<li class="link"><a href="SD.html#section-3" data-scroll="section-3"><span class="codenumber">3</span> <span class="title">Block Diagonal</span></a></li>
+<li class="link"><a href="SD.html#section-4" data-scroll="section-4"><span class="codenumber">4</span> <span class="title">Nearly Diagonalizable</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="article" id="SD"><section class="frontmatter" id="frontmatter-1"><h2 class="heading">
@@ -160,28 +161,50 @@ D, S
 </script></div>
 <div class="sagecell-sage" id="sage-11"><script type="text/x-sage">C.is_diagonalizable()
 </script></div></section><section class="section" id="section-3"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Nearly Diagonalizable</span>
+<span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Block Diagonal</span>
 </h2>
-<p id="p-11">A matrix that is not diagonalizable will always be similar to a matrix that is <em class="emphasis">almost</em> diagonalizable.  The “nearly diagonal” matrix is called the <dfn class="terminology">Jordan canonical form</dfn> of the matrix.</p>
+<p id="p-11">This section uses results about generalized eigenspaces, a topic from Section IS, which is only available in the Late Determinants version.  We continue with the matrix <code class="code-inline tex2jax_ignore">C</code> from above.</p>
+<p id="p-12">We compute a generalized eigenspace for each of the two eigenvalues, by using \(n=8\) as the power of \(C-\lambda I\) in the null space computation, according to Theorem GNES.  The choice of a pivot basis provides slightly cleaner results later, but Sage's default basis would work equally well.</p>
+<div class="sagecell-sage" id="sage-12"><script type="text/x-sage">G1 = ((C-1)^8).right_kernel(basis='pivot')
+G1.dimension()
+</script></div>
+<div class="sagecell-sage" id="sage-13"><script type="text/x-sage">G2 = ((C+2)^8).right_kernel(basis='pivot')
+G2.dimension()
+</script></div>
+<p id="p-13">Notice that the dimensions of the two generalized eigenspaces sum to \(n=8\text{.}\)  Even better, the union of the two bases is a linearly independent set, and hence a basis of \({\mathbf C}^8\text{.}\)  None of this is an accident, and is the content of the upcoming Theorem GEB.</p>
+<p id="p-14">We grab a basis of each generalized eigenspace, form their union (a “sum” of lists in Python syntax), and make a (nonsingular) matrix with the basis vectors as columns.</p>
+<div class="sagecell-sage" id="sage-14"><script type="text/x-sage">B1 = G1.basis()
+B2 = G2.basis()
+S = column_matrix(B1+B2)
+S
+</script></div>
+<p id="p-15">We form a similar matrix, which has a <dfn class="terminology">block diagonal</dfn> form, indicated by the subdivisions we have added.  The blocks are a direct consequence, and manifestation, of the fact that the generalized eigenspaces are invariant subspaces of \(C\text{.}\)</p>
+<div class="sagecell-sage" id="sage-15"><script type="text/x-sage">BD = S.inverse()*C*S
+BD.subdivide([3],[3])
+BD
+</script></div></section><section class="section" id="section-4"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4</span> <span class="title">Nearly Diagonalizable</span>
+</h2>
+<p id="p-16">A matrix that is not diagonalizable will always be similar to a matrix that is <em class="emphasis">almost</em> diagonalizable.  The “nearly diagonal” matrix is called the <dfn class="terminology">Jordan canonical form</dfn> of the matrix.</p>
 <article class="exercise exercise-like" id="exercise-3"><h6 class="heading">
 <span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span>
 </h6>
-<p id="p-12">While beyond the scope of this course, use Sage to compute the Jordan canonical form for the matrix <code class="code-inline tex2jax_ignore">C</code>.  Notice the eigenvalues of <code class="code-inline tex2jax_ignore">C</code> on the diagonal and the 1's on the <dfn class="terminology">super-diagonal</dfn>.</p>
-<p id="p-13">Peculiarly, the similarity matrix need not be computed to get the form, and it is a significant computational expense.  So we ask for it explicitly.</p></article><div class="sagecell-sage" id="sage-12"><script type="text/x-sage">J, T = C.jordan_form(transformation=True)
+<p id="p-17">While beyond the scope of this course, use Sage to compute the Jordan canonical form for the matrix <code class="code-inline tex2jax_ignore">C</code>.  Notice the eigenvalues of <code class="code-inline tex2jax_ignore">C</code> on the diagonal and the 1's on the <dfn class="terminology">super-diagonal</dfn>.</p>
+<p id="p-18">Peculiarly, the similarity matrix need not be computed to get the form, and it is a significant computational expense.  So we ask for it explicitly.</p></article><div class="sagecell-sage" id="sage-16"><script type="text/x-sage">J, T = C.jordan_form(transformation=True)
 J, T
 </script></div>
-<p id="p-14">The transformation matrix, <code class="code-inline tex2jax_ignore">T</code>, is invertible and will “almost diagonalize” <code class="code-inline tex2jax_ignore">C</code>.</p>
-<div class="sagecell-sage" id="sage-13"><script type="text/x-sage">T.inverse()*C*T == J
+<p id="p-19">The transformation matrix, <code class="code-inline tex2jax_ignore">T</code>, is invertible and will “almost diagonalize” <code class="code-inline tex2jax_ignore">C</code>.</p>
+<div class="sagecell-sage" id="sage-17"><script type="text/x-sage">T.inverse()*C*T == J
 </script></div>
 <article class="exercise exercise-like" id="exercise-4"><h6 class="heading">
 <span class="type">Demonstration</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span>
 </h6>
-<p id="p-15"><dfn class="terminology">Rational canonical form</dfn> is another interesting version of this idea, try <code class="code-inline tex2jax_ignore">.rational_form()</code> on <code class="code-inline tex2jax_ignore">C</code>.  And if you do, then execute the following two cells and see if the coefficients look familiar.  Learn more about <dfn class="terminology">companion matrices</dfn> if this makes you curious.</p></article><div class="sagecell-sage" id="sage-14"><script type="text/x-sage">C.rational_form()
+<p id="p-20"><dfn class="terminology">Rational canonical form</dfn> is another interesting version of this idea, try <code class="code-inline tex2jax_ignore">.rational_form()</code> on <code class="code-inline tex2jax_ignore">C</code>.  And if you do, then execute the following two cells and see if the coefficients look familiar.  Learn more about <dfn class="terminology">companion matrices</dfn> if this makes you curious.</p></article><div class="sagecell-sage" id="sage-18"><script type="text/x-sage">C.rational_form()
 </script></div>
-<div class="sagecell-sage" id="sage-15"><script type="text/x-sage">C.fcp()
+<div class="sagecell-sage" id="sage-19"><script type="text/x-sage">C.fcp()
 </script></div>
-<div class="sagecell-sage" id="sage-16"><script type="text/x-sage">((x-1)^3*(x+2)^3).expand()
-</script></div></section><section class="conclusion" id="conclusion-1"><p id="p-16">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></section></section></div></main>
+<div class="sagecell-sage" id="sage-20"><script type="text/x-sage">((x-1)^3*(x+2)^3).expand()
+</script></div></section><section class="conclusion" id="conclusion-1"><p id="p-21">This work is Copyright 2016–2019 by Robert A. Beezer.  It is licensed under a <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p></section></section></div></main>
 </div>
 </body>
 </html>
