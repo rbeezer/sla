@@ -122,6 +122,43 @@
         </section>
 
         <section>
+            <title>Block Diagonal</title>
+
+            <p>This section uses results about generalized eigenspaces, a topic from Section IS, which is only available in the Late Determinants version.  We continue with the matrix <c>C</c> from above.</p>
+
+            <p>We compute a generalized eigenspace for each of the two eigenvalues, by using <m>n=8</m> as the power of <m>C-\lambda I</m> in the null space computation, according to Theorem GNES.  The choice of a pivot basis provides slightly cleaner results later, but Sage's default basis would work equally well.</p>
+
+            <sage><input>
+            G1 = ((C-1)^8).right_kernel(basis='pivot')
+            G1.dimension()
+            </input></sage>
+
+            <sage><input>
+            G2 = ((C+2)^8).right_kernel(basis='pivot')
+            G2.dimension()
+            </input></sage>
+
+            <p>Notice that the dimensions of the two generalized eigenspaces sum to <m>n=8</m>.  Even better, the union of the two bases is a linearly independent set, and hence a basis of <m>{\mathbf C}^8</m>.  None of this is an accident, and is the content of the upcoming Theorem GEB.</p>
+
+            <p>We grab a basis of each generalized eigenspace, form their union (a <q>sum</q> of lists in Python syntax), and make a (nonsingular) matrix with the basis vectors as columns.</p>
+
+            <sage><input>
+            B1 = G1.basis()
+            B2 = G2.basis()
+            S = column_matrix(B1+B2)
+            S
+            </input></sage>
+
+            <p>We form a similar matrix, which has a <term>block diagonal</term> form, indicated by the subdivisions we have added.  The blocks are a direct consequence, and manifestation, of the fact that the generalized eigenspaces are invariant subspaces of <m>C</m>.</p>
+
+            <sage><input>
+            BD = S.inverse()*C*S
+            BD.subdivide([3],[3])
+            BD
+            </input></sage>
+        </section>
+
+        <section>
             <title>Nearly Diagonalizable</title>
 
             <p>A matrix that is not diagonalizable will always be similar to a matrix that is <em>almost</em> diagonalizable.  The <q>nearly diagonal</q> matrix is called the <term>Jordan canonical form</term> of the matrix.</p>
